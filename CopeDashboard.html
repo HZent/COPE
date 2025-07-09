@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OWL SPARQL Queries</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div>
+      <h1>OWL SPARQL Queries</h1>
+
+      <!-- Patient and Disease Associations -->
+      <h2 id="data-category">Patient and Disease Associations</h2>
+      <!-- Query 1 -->
+      <h2>
+        Which patient characteristics are most strongly associated with
+        increased susceptibility to specific diseases?
+      </h2>
+      <label><strong>SPARQL Query:</strong></label
+      ><br />
+      <textarea class="sparqlBox" readonly rows="1">
+PREFIX COPE: <http://www.semanticweb.org/user/ontologies/2025/3/cope#>
+PREFIX sio: <http://semanticscience.org/resource/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT 
+  ?personCharacteristic
+  ?diseaseName 
+  (STR(COUNT(DISTINCT ?person)) AS ?patient_count)
+WHERE {
+  ?person a sio:SIO_000498 ;
+          COPE:hasCharacteristic ?charInd ;
+          COPE:hasRiskFactor ?risk .
+
+  ?charInd a ?charType ;
+           ?personCharacteristic ?value .
+
+  FILTER(?charType IN (
+    COPE:Biological, 
+    COPE:Demographic, 
+    COPE:Behavioral, 
+    COPE:Psychographic, 
+    COPE:Geographical
+  ))
+
+  FILTER(
+    ?personCharacteristic != rdf:type &&
+    ?personCharacteristic != rdfs:label &&
+    ?personCharacteristic != rdfs:comment
+  )
+
+  ?risk COPE:contributesTo ?disease .
+  ?disease COPE:hasDiseaseName ?diseaseName .
+}
+GROUP BY ?personCharacteristic ?diseaseName
+ORDER BY DESC(?patient_count)
+    </textarea
+      >
+      <iframe class="iframeBox" src="results/query1.html"></iframe>
+      <!-- <table>
+        <thead>
+          <tr>
+            <th>personCharacteristic</th>
+            <th>diseaseName</th>
+            <th>patient_count</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>hasHealthAttitude</td>
+            <td>Diabetes Mellitus</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>hasHealthAttitude</td>
+            <td>Chronic Kidney Disease</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>hasEthnicity</td>
+            <td>Diabetes Mellitus</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>hasEthnicity</td>
+            <td>Chronic Kidney Disease</td>
+            <td>2</td>
+          </tr>
+        </tbody>
+      </table> -->
+
+      <!-- Query 6 -->
+      <h2>
+        Which population groups are most susceptible Diabetes Mellitus based on
+        their characteristics?
+      </h2>
+      <label><strong>SPARQL Query:</strong></label
+      ><br />
+      <textarea class="sparqlBox" readonly rows="1">
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX COPE: <http://www.semanticweb.org/user/ontologies/2025/3/cope#>
+PREFIX sio: <http://semanticscience.org/resource/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT 
+  ?personCharacteristic
+  (STR(COUNT(DISTINCT ?person)) AS ?patient_count)
+WHERE {
+  ?person a sio:SIO_000498 ;
+          COPE:hasCharacteristic ?charInd ;
+          COPE:hasRiskFactor ?risk .
+
+  ?charInd a ?charType ;
+           ?personCharacteristic ?value .
+
+  ?risk COPE:contributesTo ?disease .
+  ?disease COPE:hasDiseaseName ?diseaseName .
+
+  FILTER regex(?diseaseName, "Diabetes Mellitus", "i")
+
+  FILTER(?charType IN (
+    COPE:Biological, 
+    COPE:Demographic, 
+    COPE:Behavioral, 
+    COPE:Psychographic, 
+    COPE:Geographical
+  ))
+
+  FILTER(?personCharacteristic != rdf:type)
+  FILTER(?personCharacteristic != rdfs:label)
+  FILTER(?personCharacteristic != rdfs:comment)
+}
+GROUP BY ?personCharacteristic
+ORDER BY DESC(?patient_count)
+    </textarea
+      >
+
+      <!-- Query 2 -->
+      <h2>
+        Given patient characteristics of age, what disease(s) are they at risk
+        of developing in the near future?
+      </h2>
+      <label><strong>SPARQL Query:</strong></label
+      ><br />
+      <textarea class="sparqlBox" readonly rows="1">
+PREFIX COPE: <http://www.semanticweb.org/user/ontologies/2025/3/9710A#>
+PREFIX sio:  <http://semanticscience.org/resource/>
+PREFIX xsd:  <http://www.w3.org/2001/XMLSchema#>
+
+SELECT ?person ?disease WHERE {
+  ?person rdf:type sio:SIO_000498 .
+  ?person COPE:hasCharacteristic ?bio .
+  ?bio   rdf:type COPE:Biological ;
+         COPE:hasAge ?age .
+  FILTER( ?age > 60 )
+
+  ?person      COPE:hasRiskFactor ?riskFactor .
+  ?riskFactor  COPE:contributesTo ?disease .
+}
+    </textarea
+      >
+
+      <!-- Risk and Disease Progression -->
+      <h2 id="data-category">Risk and Disease Progression</h2>
+
+      <!-- AI/ML Techniques and Applications -->
+      <h2 id="data-category">AI/ML Techniques and Applications</h2>
+      <!-- Query 3 -->
+      <h2>
+        Which AI/ML techniques are most commonly used for modeling disease
+        progression?
+      </h2>
+      <label><strong>SPARQL Query:</strong></label
+      ><br />
+      <textarea class="sparqlBox" readonly rows="1">
+PREFIX COPE: <http://www.semanticweb.org/user/ontologies/2025/3/cope#>
+
+SELECT ?AI_ML_Technique (STR(COUNT(?model)) AS ?Usage_Count) WHERE {
+  ?model COPE:usesApproach ?AI_ML_Technique .
+}
+GROUP BY ?AI_ML_Technique
+ORDER BY DESC(?Usage_Count)
+    </textarea
+      >
+      <!-- Query 4 -->
+      <h2>
+        What machine learning models and input features are commonly used for
+        predicting diseases such as Diabetes Mellitus?
+      </h2>
+      <label><strong>SPARQL Query:</strong></label
+      ><br />
+      <textarea class="sparqlBox" readonly rows="1">
+PREFIX COPE: <http://www.semanticweb.org/user/ontologies/2025/3/cope#>
+PREFIX sio: <http://semanticscience.org/resource/>
+
+SELECT DISTINCT ?AIModel ?disease (GROUP_CONCAT(DISTINCT ?inputName; separator=", ") AS ?InputDataNatures)
+WHERE {
+  ?AIModel a COPE:AIModel ;
+           COPE:trainedOn ?dataset ;
+           COPE:includes ?inputDataNature .
+
+  ?inputDataNature COPE:hasInputDataNatureName ?inputName .
+
+  ?dataset sio:SIO_000253 ?source .
+
+  ?riskFactor COPE:observedBy ?source ;
+              COPE:contributesTo ?disease .
+
+  ?disease COPE:hasDiseaseName ?diseaseName .
+  
+  FILTER regex(?diseaseName, "diabetes", "i")
+}
+GROUP BY ?AIModel ?disease
+    </textarea
+      >
+      <!-- Query 5 -->
+      <h2>
+        Which research articles focus on the detection or prediction of chronic
+        diseases using AI/ML methods?
+      </h2>
+      <label><strong>SPARQL Query:</strong></label
+      ><br />
+      <textarea class="sparqlBox" readonly rows="1">
+PREFIX COPE: <http://www.semanticweb.org/user/ontologies/2025/3/cope#>
+PREFIX sio: <http://semanticscience.org/resource/>
+
+SELECT DISTINCT ?article WHERE {
+  ?article a COPE:ResearchArticle ;
+           COPE:proposes ?model .
+
+  ?model a COPE:AIModel ;
+         COPE:trainedOn ?data .
+
+  ?data sio:SIO_000253 ?source .
+
+  ?risk_factor COPE:observedBy ?source ;
+               COPE:contributesTo ?disease .
+}
+    </textarea
+      >
+      <!-- Query 6 -->
+      <h2>
+        For a given data source (ECG, EHR, wearable sensor data), which AI/ML
+        techniques are most frequently applied?
+      </h2>
+      <label><strong>SPARQL Query:</strong></label
+      ><br />
+      <textarea class="sparqlBox" readonly rows="1">
+PREFIX COPE: <http://www.semanticweb.org/user/ontologies/2025/3/cope#>
+PREFIX sio: <http://semanticscience.org/resource/>
+
+SELECT ?source ?AIModel (STR(COUNT(?AIModel)) AS ?count) WHERE {
+  ?AIModel a COPE:AIModel ;
+           COPE:trainedOn ?dataset .
+
+  ?dataset sio:SIO_000253 ?source .
+}
+GROUP BY ?source ?AIModel
+ORDER BY DESC(?count)
+    </textarea
+      >
+    </div>
+
+    <script>
+      function autoExpandTextarea(box) {
+        box.style.height = "auto";
+        box.style.height = box.scrollHeight + "px";
+      }
+
+      window.addEventListener("load", () => {
+        document.querySelectorAll(".sparqlBox").forEach((box) => {
+          autoExpandTextarea(box);
+        });
+      });
+
+      window.addEventListener("resize", () => {
+        document.querySelectorAll(".sparqlBox").forEach((box) => {
+          autoExpandTextarea(box);
+        });
+      });
+    </script>
+  </body>
+</html>

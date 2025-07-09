@@ -1,0 +1,24 @@
+textarea.sparqlBox {
+  font-family: "Fira Code", monospace;
+  white-space: pre;
+  resize: none;
+  overflow: hidden;
+  border: none;
+  background-color: #f9f9f9;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+textarea.sparqlBox:focus {
+  outline: none;
+  border: none;
+}
+
+#data-category {
+  color: rgb(25, 25, 196);
+}
+
+iframe.iframeBox {
+  width: 100%;
+  height: 100%;
+}
