@@ -22,3 +22,7 @@ iframe.iframeBox {
   width: 100%;
   height: 100%;
 }
+
+#answerLabel {
+  margin-bottom: 0px;
+}

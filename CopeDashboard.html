@@ -62,6 +62,7 @@ GROUP BY ?personCharacteristic ?diseaseName
 ORDER BY DESC(?patient_count)
     </textarea
       >
+      <p id="answerLabel"><b>Example Answer:</b></p>
       <iframe class="iframeBox" src="results/query1.html"></iframe>
 
       <!-- Query 6 -->
@@ -110,6 +111,7 @@ GROUP BY ?personCharacteristic
 ORDER BY DESC(?patient_count)
     </textarea
       >
+      <p id="answerLabel"><b>Example Answer:</b></p>
       <iframe class="iframeBox" src="results/query6.html"></iframe>
 
       <!-- Query 2 -->
@@ -136,11 +138,67 @@ SELECT ?person ?disease WHERE {
 } 
     </textarea
       >
+      <p id="answerLabel"><b>Example Answer:</b></p>
       <iframe class="iframeBox" src="results/query2.html"></iframe>
 
       <!-- Risk and Disease Progression -->
       <h2 id="data-category">Risk and Disease Progression</h2>
+      <!-- Query 8 -->
+      <h2>What are the risk factors associated with lung cancer?</h2>
+      <label><strong>SPARQL Query:</strong></label
+      ><br />
+      <textarea class="sparqlBox" readonly rows="1">
+PREFIX COPE: <http://www.semanticweb.org/user/ontologies/2025/3/cope#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
+SELECT DISTINCT ?RiskFactor WHERE {
+  ?riskFactor a COPE:RiskFactor ;
+              COPE:contributesTo ?disease ;
+              rdfs:label ?RiskFactor .
+
+  ?disease COPE:hasDiseaseName ?diseaseName .
+  FILTER regex(?diseaseName, "Lung Cancer", "i")
+}
+ORDER BY ?RiskFactor
+    </textarea
+      >
+      <p id="answerLabel"><b>Example Answer:</b></p>
+      <iframe class="iframeBox" src="results/query8.html"></iframe>
+
+      <!-- Query 9 -->
+      <h2>
+        What diseases are patients at risk of, and what are the associated
+        disease outcomes and identifying symptoms?
+      </h2>
+      <label><strong>SPARQL Query:</strong></label
+      ><br />
+      <textarea class="sparqlBox" readonly rows="1">
+PREFIX COPE: <http://www.semanticweb.org/user/ontologies/2025/3/cope#>
+PREFIX sio: <http://semanticscience.org/resource/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?diseaseName ?diseaseOutcomeName ?symptomName WHERE {
+  ?person a sio:SIO_000498 ;
+          COPE:hasRiskFactor ?riskFactor .
+
+  ?riskFactor COPE:contributesTo ?disease .
+  ?disease COPE:hasDiseaseName ?diseaseName .
+
+  OPTIONAL {
+    ?disease COPE:leadsTo ?diseaseOutcome .
+    ?diseaseOutcome COPE:hasDiseaseOutcomeName ?diseaseOutcomeName .
+  }
+
+  OPTIONAL {
+    ?disease COPE:isIdentifiedBy ?symptom .
+    ?symptom rdfs:label ?symptomName .
+  }
+}
+ORDER BY ?diseaseName ?diseaseOutcomeName ?symptomName
+    </textarea
+      >
+      <p id="answerLabel"><b>Example Answer:</b></p>
+      <iframe class="iframeBox" src="results/query9.html"></iframe>
       <!-- AI/ML Techniques and Applications -->
       <h2 id="data-category">AI/ML Techniques and Applications</h2>
       <!-- Query 7 -->
@@ -160,6 +218,7 @@ GROUP BY ?AI_ML_Technique
 ORDER BY DESC(?Usage_Count)
     </textarea
       >
+      <p id="answerLabel"><b>Example Answer:</b></p>
       <iframe class="iframeBox" src="results/query7.html"></iframe>
       <!-- Query 4 -->
       <h2>
@@ -192,6 +251,7 @@ WHERE {
 GROUP BY ?AIModel ?disease
     </textarea
       >
+      <p id="answerLabel"><b>Example Answer:</b></p>
       <iframe class="iframeBox" src="results/query4.html"></iframe>
       <!-- Query 5 -->
       <h2>
@@ -218,6 +278,7 @@ SELECT DISTINCT ?article WHERE {
 }
     </textarea
       >
+      <p id="answerLabel"><b>Example Answer:</b></p>
       <iframe class="iframeBox" src="results/query5.html"></iframe>
       <!-- Query 3 -->
       <h2>
@@ -240,6 +301,7 @@ GROUP BY ?source ?AIModel
 ORDER BY DESC(?count)
     </textarea
       >
+      <p id="answerLabel"><b>Example Answer:</b></p>
       <iframe class="iframeBox" src="results/query3.html"></iframe>
     </div>
 
