@@ -1,3 +1,9 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  color: #333;
+}
+
 textarea.sparqlBox {
   font-family: "Fira Code", monospace;
   white-space: pre;
