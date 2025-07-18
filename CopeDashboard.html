@@ -16,7 +16,7 @@
   </head>
   <body>
     <nav>
-      <div class="logo">COPE</div>
+      <div class="logo"><a href="#">COPE</a></div>
       <div class="menu-toggle" id="menu-toggle">
         <span></span>
         <span></span>
@@ -200,7 +200,7 @@
         <label><strong>SPARQL Query:</strong></label
         ><br />
         <textarea class="sparqlBox" readonly rows="1">
-PREFIX COPE: <http://www.semanticweb.org/user/ontologies/2025/3/9710A#>
+PREFIX COPE: <http://www.semanticweb.org/user/ontologies/2025/3/cope#>
 PREFIX sio: <http://semanticscience.org/resource/>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
@@ -250,7 +250,7 @@ ORDER BY DESC(?patient_count)
         ><br />
         <textarea class="sparqlBox" readonly rows="1">
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-PREFIX COPE: <http://www.semanticweb.org/user/ontologies/2025/3/9710A#>
+PREFIX COPE: <http://www.semanticweb.org/user/ontologies/2025/3/cope#>
 PREFIX sio: <http://semanticscience.org/resource/>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
@@ -298,7 +298,7 @@ ORDER BY DESC(?patient_count)
         <label><strong>SPARQL Query:</strong></label
         ><br />
         <textarea class="sparqlBox" readonly rows="1">
-PREFIX COPE: <http://www.semanticweb.org/user/ontologies/2025/3/9710A#>
+PREFIX COPE: <http://www.semanticweb.org/user/ontologies/2025/3/cope#>
 PREFIX sio:  <http://semanticscience.org/resource/>
 PREFIX xsd:  <http://www.w3.org/2001/XMLSchema#>
 
@@ -326,7 +326,7 @@ SELECT ?person ?disease WHERE {
         <label><strong>SPARQL Query:</strong></label
         ><br />
         <textarea class="sparqlBox" readonly rows="1">
-PREFIX COPE: <http://www.semanticweb.org/user/ontologies/2025/3/9710A#>
+PREFIX COPE: <http://www.semanticweb.org/user/ontologies/2025/3/cope#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
 SELECT DISTINCT ?RiskFactor WHERE {
@@ -351,7 +351,7 @@ ORDER BY ?RiskFactor
         <label><strong>SPARQL Query:</strong></label
         ><br />
         <textarea class="sparqlBox" readonly rows="1">
-PREFIX COPE: <http://www.semanticweb.org/user/ontologies/2025/3/9710A#>
+PREFIX COPE: <http://www.semanticweb.org/user/ontologies/2025/3/cope#>
 PREFIX sio: <http://semanticscience.org/resource/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
@@ -387,7 +387,7 @@ ORDER BY ?diseaseName ?diseaseOutcomeName ?symptomName
         <label><strong>SPARQL Query:</strong></label
         ><br />
         <textarea class="sparqlBox" readonly rows="1">
-PREFIX COPE: <http://www.semanticweb.org/user/ontologies/2025/3/9710A#>
+PREFIX COPE: <http://www.semanticweb.org/user/ontologies/2025/3/cope#>
 
 SELECT ?AI_ML_Technique (STR(COUNT(?model)) AS ?Usage_Count) WHERE {
   ?model COPE:usesApproach ?AI_ML_Technique .
@@ -406,7 +406,7 @@ ORDER BY DESC(?Usage_Count)
         <label><strong>SPARQL Query:</strong></label
         ><br />
         <textarea class="sparqlBox" readonly rows="1">
-PREFIX COPE: <http://www.semanticweb.org/user/ontologies/2025/3/9710A#>
+PREFIX COPE: <http://www.semanticweb.org/user/ontologies/2025/3/cope#>
 PREFIX sio: <http://semanticscience.org/resource/>
 
 SELECT DISTINCT ?AIModel ?disease (GROUP_CONCAT(DISTINCT ?inputName; separator=", ") AS ?InputDataNatures)
@@ -439,7 +439,7 @@ GROUP BY ?AIModel ?disease
         <label><strong>SPARQL Query:</strong></label
         ><br />
         <textarea class="sparqlBox" readonly rows="1">
-PREFIX COPE: <http://www.semanticweb.org/user/ontologies/2025/3/9710A#>
+PREFIX COPE: <http://www.semanticweb.org/user/ontologies/2025/3/cope#>
 PREFIX sio: <http://semanticscience.org/resource/>
 
 SELECT DISTINCT ?article WHERE {
@@ -466,7 +466,7 @@ SELECT DISTINCT ?article WHERE {
         <label><strong>SPARQL Query:</strong></label
         ><br />
         <textarea class="sparqlBox" readonly rows="1">
-PREFIX COPE: <http://www.semanticweb.org/user/ontologies/2025/3/9710A#>
+PREFIX COPE: <http://www.semanticweb.org/user/ontologies/2025/3/cope#>
 PREFIX sio: <http://semanticscience.org/resource/>
 
 SELECT ?source ?AIModel (STR(COUNT(?AIModel)) AS ?count) WHERE {
