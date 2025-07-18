@@ -1,7 +1,8 @@
-body {
+html {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   color: #333;
+  scroll-padding-top: 5em;
 }
 
 textarea.sparqlBox {
@@ -31,4 +32,103 @@ iframe.iframeBox {
 
 #answerLabel {
   margin-bottom: 0px;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  margin: 10px;
+}
+
+.competency-questions-list {
+  padding-left: 1.8em;
+}
+
+h2 {
+  margin-bottom: 0px;
+}
+
+img {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  object-fit: contain;
+}
+
+.class-definition-table {
+  border: black 1px solid;
+}
+
+.class-definition-table th,
+td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
+
+/* navbar */
+nav {
+  background-color: #2e333c;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 2em;
+  font-family: "Segoe UI", sans-serif;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+nav .logo {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+nav .nav-links {
+  display: flex;
+  gap: 1em;
+}
+
+nav .nav-links a {
+  text-decoration: none;
+  color: white;
+  padding: 0.5em;
+  transition: background-color 0.3s;
+}
+
+nav .nav-links a:hover {
+  background: #57606f;
+  border-radius: 5px;
+}
+
+nav .menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+nav .menu-toggle span {
+  height: 3px;
+  width: 25px;
+  background: white;
+  margin: 4px 0;
+}
+
+@media (max-width: 768px) {
+  nav .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  nav .nav-links.active {
+    display: flex;
+  }
+
+  nav .menu-toggle {
+    display: flex;
+  }
 }

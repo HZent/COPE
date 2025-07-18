@@ -15,20 +15,192 @@
     />
   </head>
   <body>
-    <div>
+    <nav>
+      <div class="logo">COPE</div>
+      <div class="menu-toggle" id="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="nav-links" id="nav-links">
+        <a href="#abstract">Abstract</a>
+        <a href="#introduction">Introduction</a>
+        <a href="#ontology">Ontology</a>
+        <a href="#competency-questions">Competency Questions</a>
+        <a href="#sparql-queries">SPARQL Queries</a>
+        <a href="#class-definition">Class Definitions</a>
+      </div>
+    </nav>
+    <div class="container">
       <h1>COPE: Chronic Observation and Progression Events Ontology</h1>
-
-      <!-- Patient and Disease Associations -->
-      <h2 id="data-category">Patient and Disease Associations</h2>
-      <!-- Query 1 -->
-      <h2>
-        Which patient characteristics are most strongly associated with
-        increased susceptibility to specific diseases?
-      </h2>
-      <label><strong>SPARQL Query:</strong></label
-      ><br />
-      <textarea class="sparqlBox" readonly rows="1">
-PREFIX COPE: <http://www.semanticweb.org/user/ontologies/2025/3/cope#>
+      <div id="abstract">
+        <h2>Abstract</h2>
+        <p>
+          Artificial Intelligence (AI) and Machine Learning (ML) are
+          increasingly being leveraged in healthcare to support the early
+          detection, prediction, and personalized management of chronic
+          diseases. Yet, their effective application remains limited by the
+          absence of structured frameworks that unify diverse patient data,
+          evolving disease trajectories, and computational methodologies. In
+          this work, we present a comprehensive ontology designed to support
+          health informaticians and data scientists in navigating this complex
+          landscape. The ontology formalizes critical components of chronic
+          disease modeling, including biological, behavioral, demographic, and
+          geographical patient characteristics, modifiable and non-modifiable
+          risk factors, symptom evolution, disease outcomes, and cycles of
+          deconditioning. In parallel, it incorporates representations of AI/ML
+          concepts such as modelling techniques, data modalities, sources, and
+          problem formulation strategies. Crucially, the ontology embeds a
+          temporal framework, allowing for the representation of timestamped
+          observations and interventions supporting trajectory modelling from
+          real-time and longitudinal data. It also models the provenance and
+          context of AI/ML models, linking them to datasets, research
+          publications, and domain-specific concepts. By providing a semantic
+          foundation that bridges clinical knowledge and AI capabilities, this
+          ontology enables the identification of data and methodological gaps,
+          supports interpretability, and fosters the development of patient
+          focused, data driven solutions. We demonstrate its utility through
+          exemplar queries and use cases, offering it as a reusable resource for
+          advancing the integration of AI in chronic disease care.
+        </p>
+      </div>
+      <div id="introduction">
+        <h2>Introduction</h2>
+        <p>
+          Chronic diseases such as diabetes, cardiovascular conditions, and
+          respiratory illnesses represent a significant burden on global
+          healthcare systems, accounting for nearly 74% of all deaths worldwide
+          [1]. Early detection and effective intervention are critical to
+          managing these conditions and improving patient outcomes. In recent
+          years, Artificial Intelligence (AI) and Machine Learning (ML) have
+          emerged as powerful tools in this space, enabling prediction,
+          stratification, and personalized care planning [2, 3]. However,
+          despite the availability of increasingly rich datasets from sources
+          such as Electronic Health Records (EHRs), wearable devices, and
+          clinical imaging, the practical integration of AI/ML into chronic
+          disease management remains a challenge.
+        </p>
+        <p>
+          A key barrier lies in the lack of semantic frameworks that formally
+          connect patient characteristics, disease trajectories, risk factors,
+          and computational methods. Health informaticians often struggle to
+          navigate a fragmented landscape of data types, algorithms, and domain
+          knowledge when designing or interpreting AI driven health systems.
+          Ontologies, a formal and structured representation of knowl- edge [4],
+          offer a promising solution by capturing the complex interdependencies
+          among data, models in a machine interpretable way [5]. While several
+          biomedical ontologies exist, such as Systematized Nomenclature of
+          Medicine: Clinical Terms (SNOMED CT) [6], International Classification
+          of Diseases (ICD) [7], and Fast Healthcare Interoperability Resources
+          (FHIR) [8], they often lack support for repre- senting technical AI/ML
+          dimensions such as modelling approaches, explainability mechanisms, or
+          the evolving nature of wearable derived data [6].
+        </p>
+        <p>
+          To address this gap, we propose an ontology that provides a unified
+          representation of patient centered disease modelling and AI/ML
+          integration. This ontology is designed to support health
+          informaticians and data scientists in selecting appropriate modelling
+          techniques, identifying relevant data sources, and understanding the
+          implications of patient specific attributes on prediction outcomes. It
+          captures key elements such as biological, behavioral, psychographic,
+          demographic, and geographical characteristics of patients, disease
+          risk factors (including their modifiability), symptom profiles, and
+          outcomes. Impor- tantly, it also includes classes and properties for
+          AI/ML techniques (such as classification, regression, clustering),
+          data nature (such as structured, time series), data sources (such as
+          ECG, EHRs), and research outputs (such as datasets, papers, venues).
+        </p>
+        <p>
+          Crucially, the ontology introduces a temporal framework by modelling
+          timestamped clinical observa- tions. Through the ObservationEvent
+          class, it records the temporal context of symptoms, interventions, and
+          risk exposure, enabling the representation of dynamic disease
+          trajectories. This supports complex temporal queries such as: What
+          symptoms manifested following a particular intervention? or How did a
+          patient’s risk profile evolve across disease stages?
+        </p>
+        <p>
+          The ontology also supports traceable and interpretable AI by embedding
+          the provenance of compu- tational models including their training
+          datasets, algorithmic strategies, and contextual usage within the same
+          semantic space as clinical knowledge. AI models are connected to the
+          specific data they consume, the techniques they employ, and the
+          literature that supports their use, thereby aligning with the
+          principles of transparency, reproducibility, and explainability in
+          healthcare AI [9].
+        </p>
+        <p>
+          The proposed ontology aims to serve three purposes: (1) to support
+          trajectory modelling of chronic diseases using continuous or episodic
+          data from wearable devices, (2) to enable health informaticians and
+          data scientists to systematically explore how data science can
+          contribute to chronic disease prediction and management, and (3) to
+          guide the development and evaluation of AI/ML methods that are
+          interpretable, patient focused, and clinically actionable. We
+          demonstrate the applicability of the ontology through a set of
+          competency questions, use case examples, and exemplar queries.
+        </p>
+      </div>
+      <div id="ontology">
+        <h2>Ontology</h2>
+        <img src="images/ontology.png" alt="ontology graph" />
+      </div>
+      <div id="competency-questions">
+        <h2>Competency Questions</h2>
+        <ol class="competency-questions-list">
+          <li>
+            Which patient characteristics are most strongly associated with
+            increased susceptibility to specific diseases?
+          </li>
+          <li>
+            Which population groups are most susceptible Diabetes Mellitus based
+            on their characteristics?
+          </li>
+          <li>
+            Given patient characteristics of age, what disease(s) are they at
+            risk of developing in the near future?
+          </li>
+          <li>What are the risk factors associated with lung cancer?</li>
+          <li>
+            What diseases are patients at risk of, and what are the associated
+            disease outcomes and identifying symptoms?
+          </li>
+          <li>
+            Which AI/ML techniques are most commonly used for modeling disease
+            progression?
+          </li>
+          <li>
+            What machine learning models and input features are commonly used
+            for predicting diseases such as Diabetes Mellitus?
+          </li>
+          <li>
+            Which research articles focus on the detection or prediction of
+            chronic diseases using AI/ML methods?
+          </li>
+          <li>
+            For a given data source (ECG, EHR, wearable sensor data), which
+            AI/ML techniques are most frequently applied?
+          </li>
+          <li>
+            Which AI/ML modeling approaches are most commonly used to model
+            disease progression in Hypertension?
+          </li>
+        </ol>
+      </div>
+      <div id="sparql-queries">
+        <h2>SPARQL Queries</h2>
+        <!-- Patient and Disease Associations -->
+        <h2 id="data-category">Patient and Disease Associations</h2>
+        <!-- Query 1 -->
+        <h2 style="margin-top: 0">
+          Which patient characteristics are most strongly associated with
+          increased susceptibility to specific diseases?
+        </h2>
+        <label><strong>SPARQL Query:</strong></label
+        ><br />
+        <textarea class="sparqlBox" readonly rows="1">
+PREFIX COPE: <http://www.semanticweb.org/user/ontologies/2025/3/9710A#>
 PREFIX sio: <http://semanticscience.org/resource/>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
@@ -65,20 +237,20 @@ WHERE {
 GROUP BY ?personCharacteristic ?diseaseName
 ORDER BY DESC(?patient_count)
     </textarea
-      >
-      <p id="answerLabel"><b>Example Answer:</b></p>
-      <iframe class="iframeBox" src="results/query1.html"></iframe>
+        >
+        <p id="answerLabel"><b>Example Answer:</b></p>
+        <iframe class="iframeBox" src="results/query1.html"></iframe>
 
-      <!-- Query 6 -->
-      <h2>
-        Which population groups are most susceptible Diabetes Mellitus based on
-        their characteristics?
-      </h2>
-      <label><strong>SPARQL Query:</strong></label
-      ><br />
-      <textarea class="sparqlBox" readonly rows="1">
+        <!-- Query 6 -->
+        <h2>
+          Which population groups are most susceptible Diabetes Mellitus based
+          on their characteristics?
+        </h2>
+        <label><strong>SPARQL Query:</strong></label
+        ><br />
+        <textarea class="sparqlBox" readonly rows="1">
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-PREFIX COPE: <http://www.semanticweb.org/user/ontologies/2025/3/cope#>
+PREFIX COPE: <http://www.semanticweb.org/user/ontologies/2025/3/9710A#>
 PREFIX sio: <http://semanticscience.org/resource/>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
@@ -114,19 +286,19 @@ WHERE {
 GROUP BY ?personCharacteristic
 ORDER BY DESC(?patient_count)
     </textarea
-      >
-      <p id="answerLabel"><b>Example Answer:</b></p>
-      <iframe class="iframeBox" src="results/query6.html"></iframe>
+        >
+        <p id="answerLabel"><b>Example Answer:</b></p>
+        <iframe class="iframeBox" src="results/query6.html"></iframe>
 
-      <!-- Query 2 -->
-      <h2>
-        Given patient characteristics of age, what disease(s) are they at risk
-        of developing in the near future?
-      </h2>
-      <label><strong>SPARQL Query:</strong></label
-      ><br />
-      <textarea class="sparqlBox" readonly rows="1">
-PREFIX COPE: <http://www.semanticweb.org/user/ontologies/2025/3/cope#>
+        <!-- Query 2 -->
+        <h2>
+          Given patient characteristics of age, what disease(s) are they at risk
+          of developing in the near future?
+        </h2>
+        <label><strong>SPARQL Query:</strong></label
+        ><br />
+        <textarea class="sparqlBox" readonly rows="1">
+PREFIX COPE: <http://www.semanticweb.org/user/ontologies/2025/3/9710A#>
 PREFIX sio:  <http://semanticscience.org/resource/>
 PREFIX xsd:  <http://www.w3.org/2001/XMLSchema#>
 
@@ -141,18 +313,20 @@ SELECT ?person ?disease WHERE {
   ?riskFactor  COPE:contributesTo ?disease .
 } 
     </textarea
-      >
-      <p id="answerLabel"><b>Example Answer:</b></p>
-      <iframe class="iframeBox" src="results/query2.html"></iframe>
+        >
+        <p id="answerLabel"><b>Example Answer:</b></p>
+        <iframe class="iframeBox" src="results/query2.html"></iframe>
 
-      <!-- Risk and Disease Progression -->
-      <h2 id="data-category">Risk and Disease Progression</h2>
-      <!-- Query 8 -->
-      <h2>What are the risk factors associated with lung cancer?</h2>
-      <label><strong>SPARQL Query:</strong></label
-      ><br />
-      <textarea class="sparqlBox" readonly rows="1">
-PREFIX COPE: <http://www.semanticweb.org/user/ontologies/2025/3/cope#>
+        <!-- Risk and Disease Progression -->
+        <h2 id="data-category">Risk and Disease Progression</h2>
+        <!-- Query 8 -->
+        <h2 style="margin-top: 0">
+          What are the risk factors associated with lung cancer?
+        </h2>
+        <label><strong>SPARQL Query:</strong></label
+        ><br />
+        <textarea class="sparqlBox" readonly rows="1">
+PREFIX COPE: <http://www.semanticweb.org/user/ontologies/2025/3/9710A#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
 SELECT DISTINCT ?RiskFactor WHERE {
@@ -165,19 +339,19 @@ SELECT DISTINCT ?RiskFactor WHERE {
 }
 ORDER BY ?RiskFactor
     </textarea
-      >
-      <p id="answerLabel"><b>Example Answer:</b></p>
-      <iframe class="iframeBox" src="results/query8.html"></iframe>
+        >
+        <p id="answerLabel"><b>Example Answer:</b></p>
+        <iframe class="iframeBox" src="results/query8.html"></iframe>
 
-      <!-- Query 9 -->
-      <h2>
-        What diseases are patients at risk of, and what are the associated
-        disease outcomes and identifying symptoms?
-      </h2>
-      <label><strong>SPARQL Query:</strong></label
-      ><br />
-      <textarea class="sparqlBox" readonly rows="1">
-PREFIX COPE: <http://www.semanticweb.org/user/ontologies/2025/3/cope#>
+        <!-- Query 9 -->
+        <h2>
+          What diseases are patients at risk of, and what are the associated
+          disease outcomes and identifying symptoms?
+        </h2>
+        <label><strong>SPARQL Query:</strong></label
+        ><br />
+        <textarea class="sparqlBox" readonly rows="1">
+PREFIX COPE: <http://www.semanticweb.org/user/ontologies/2025/3/9710A#>
 PREFIX sio: <http://semanticscience.org/resource/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
@@ -200,20 +374,20 @@ SELECT DISTINCT ?diseaseName ?diseaseOutcomeName ?symptomName WHERE {
 }
 ORDER BY ?diseaseName ?diseaseOutcomeName ?symptomName
     </textarea
-      >
-      <p id="answerLabel"><b>Example Answer:</b></p>
-      <iframe class="iframeBox" src="results/query9.html"></iframe>
-      <!-- AI/ML Techniques and Applications -->
-      <h2 id="data-category">AI/ML Techniques and Applications</h2>
-      <!-- Query 7 -->
-      <h2>
-        Which AI/ML techniques are most commonly used for modeling disease
-        progression?
-      </h2>
-      <label><strong>SPARQL Query:</strong></label
-      ><br />
-      <textarea class="sparqlBox" readonly rows="1">
-PREFIX COPE: <http://www.semanticweb.org/user/ontologies/2025/3/cope#>
+        >
+        <p id="answerLabel"><b>Example Answer:</b></p>
+        <iframe class="iframeBox" src="results/query9.html"></iframe>
+        <!-- AI/ML Techniques and Applications -->
+        <h2 id="data-category">AI/ML Techniques and Applications</h2>
+        <!-- Query 7 -->
+        <h2 style="margin-top: 0">
+          Which AI/ML techniques are most commonly used for modeling disease
+          progression?
+        </h2>
+        <label><strong>SPARQL Query:</strong></label
+        ><br />
+        <textarea class="sparqlBox" readonly rows="1">
+PREFIX COPE: <http://www.semanticweb.org/user/ontologies/2025/3/9710A#>
 
 SELECT ?AI_ML_Technique (STR(COUNT(?model)) AS ?Usage_Count) WHERE {
   ?model COPE:usesApproach ?AI_ML_Technique .
@@ -221,18 +395,18 @@ SELECT ?AI_ML_Technique (STR(COUNT(?model)) AS ?Usage_Count) WHERE {
 GROUP BY ?AI_ML_Technique
 ORDER BY DESC(?Usage_Count)
     </textarea
-      >
-      <p id="answerLabel"><b>Example Answer:</b></p>
-      <iframe class="iframeBox" src="results/query7.html"></iframe>
-      <!-- Query 4 -->
-      <h2>
-        What machine learning models and input features are commonly used for
-        predicting diseases such as Diabetes Mellitus?
-      </h2>
-      <label><strong>SPARQL Query:</strong></label
-      ><br />
-      <textarea class="sparqlBox" readonly rows="1">
-PREFIX COPE: <http://www.semanticweb.org/user/ontologies/2025/3/cope#>
+        >
+        <p id="answerLabel"><b>Example Answer:</b></p>
+        <iframe class="iframeBox" src="results/query7.html"></iframe>
+        <!-- Query 4 -->
+        <h2>
+          What machine learning models and input features are commonly used for
+          predicting diseases such as Diabetes Mellitus?
+        </h2>
+        <label><strong>SPARQL Query:</strong></label
+        ><br />
+        <textarea class="sparqlBox" readonly rows="1">
+PREFIX COPE: <http://www.semanticweb.org/user/ontologies/2025/3/9710A#>
 PREFIX sio: <http://semanticscience.org/resource/>
 
 SELECT DISTINCT ?AIModel ?disease (GROUP_CONCAT(DISTINCT ?inputName; separator=", ") AS ?InputDataNatures)
@@ -254,18 +428,18 @@ WHERE {
 }
 GROUP BY ?AIModel ?disease
     </textarea
-      >
-      <p id="answerLabel"><b>Example Answer:</b></p>
-      <iframe class="iframeBox" src="results/query4.html"></iframe>
-      <!-- Query 5 -->
-      <h2>
-        Which research articles focus on the detection or prediction of chronic
-        diseases using AI/ML methods?
-      </h2>
-      <label><strong>SPARQL Query:</strong></label
-      ><br />
-      <textarea class="sparqlBox" readonly rows="1">
-PREFIX COPE: <http://www.semanticweb.org/user/ontologies/2025/3/cope#>
+        >
+        <p id="answerLabel"><b>Example Answer:</b></p>
+        <iframe class="iframeBox" src="results/query4.html"></iframe>
+        <!-- Query 5 -->
+        <h2>
+          Which research articles focus on the detection or prediction of
+          chronic diseases using AI/ML methods?
+        </h2>
+        <label><strong>SPARQL Query:</strong></label
+        ><br />
+        <textarea class="sparqlBox" readonly rows="1">
+PREFIX COPE: <http://www.semanticweb.org/user/ontologies/2025/3/9710A#>
 PREFIX sio: <http://semanticscience.org/resource/>
 
 SELECT DISTINCT ?article WHERE {
@@ -281,18 +455,18 @@ SELECT DISTINCT ?article WHERE {
                COPE:contributesTo ?disease .
 }
     </textarea
-      >
-      <p id="answerLabel"><b>Example Answer:</b></p>
-      <iframe class="iframeBox" src="results/query5.html"></iframe>
-      <!-- Query 3 -->
-      <h2>
-        For a given data source (ECG, EHR, wearable sensor data), which AI/ML
-        techniques are most frequently applied?
-      </h2>
-      <label><strong>SPARQL Query:</strong></label
-      ><br />
-      <textarea class="sparqlBox" readonly rows="1">
-PREFIX COPE: <http://www.semanticweb.org/user/ontologies/2025/3/cope#>
+        >
+        <p id="answerLabel"><b>Example Answer:</b></p>
+        <iframe class="iframeBox" src="results/query5.html"></iframe>
+        <!-- Query 3 -->
+        <h2>
+          For a given data source (ECG, EHR, wearable sensor data), which AI/ML
+          techniques are most frequently applied?
+        </h2>
+        <label><strong>SPARQL Query:</strong></label
+        ><br />
+        <textarea class="sparqlBox" readonly rows="1">
+PREFIX COPE: <http://www.semanticweb.org/user/ontologies/2025/3/9710A#>
 PREFIX sio: <http://semanticscience.org/resource/>
 
 SELECT ?source ?AIModel (STR(COUNT(?AIModel)) AS ?count) WHERE {
@@ -304,11 +478,226 @@ SELECT ?source ?AIModel (STR(COUNT(?AIModel)) AS ?count) WHERE {
 GROUP BY ?source ?AIModel
 ORDER BY DESC(?count)
     </textarea
-      >
-      <p id="answerLabel"><b>Example Answer:</b></p>
-      <iframe class="iframeBox" src="results/query3.html"></iframe>
-    </div>
+        >
+        <p id="answerLabel"><b>Example Answer:</b></p>
+        <iframe class="iframeBox" src="results/query3.html"></iframe>
+        <!-- Query 10 -->
+        <h2>
+          Which AI/ML modeling approaches are most commonly used to model
+          disease progression in Hypertension?
+        </h2>
+        <label><strong>SPARQL Query:</strong></label
+        ><br />
+        <textarea class="sparqlBox" readonly rows="1">
+PREFIX COPE: <http://www.semanticweb.org/user/ontologies/2025/3/cope#>
+PREFIX sio: <http://semanticscience.org/resource/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 
+SELECT ?modellingApproach (STR(COUNT(DISTINCT ?model)) AS ?usageCount) WHERE {
+  COPE:Hypertension a sio:SIO_010299 .
+
+  ?riskFactor COPE:contributesTo COPE:Hypertension ;
+              COPE:observedBy ?obsSource .
+
+  ?dataset sio:SIO_000253 ?obsSource ;
+           rdfs:label ?datasetLabel .
+
+  ?model rdf:type COPE:AIModel ;
+         COPE:trainedOn ?dataset ;
+         COPE:usesApproach ?modellingApproach .
+}
+GROUP BY ?modellingApproach
+ORDER BY DESC(?usageCount)
+    </textarea
+        >
+        <p id="answerLabel"><b>Example Answer:</b></p>
+        <iframe class="iframeBox" src="results/query10.html"></iframe>
+      </div>
+      <div id="class-definition">
+        <h2>Class Definitions</h2>
+        <table class="class-definition-table">
+          <th>Class</th>
+          <th>Definition</th>
+          <th>IRI</th>
+          <tr>
+            <td>Person</td>
+            <td>
+              A person is an object that has certain capacities or attributes
+              constituting personhood.
+            </td>
+            <td>http://semanticscience.org/resource/SIO_000498</td>
+          </tr>
+          <tr>
+            <td>Disease</td>
+            <td>
+              Disease is the outward manifestation of one or more disorders
+            </td>
+            <td>http://semanticscience.org/resource/SIO_010299</td>
+          </tr>
+          <tr>
+            <td>Research Article</td>
+            <td>
+              Research article is a published research source for a specific
+              health context.
+            </td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>AI Technique</td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Symptom</td>
+            <td>
+              Symptom is a variation (range or a threshold) of a measurement
+              that could functionally associated with a specific disease.
+            </td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Person Characteristic</td>
+            <td>
+              Personal characteristic is a collection of personal aspects that
+              describe the profile of a person.
+            </td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Health Trajectory</td>
+            <td>
+              A trajectory is a collection of sequentially linked temporal
+              observer events that belong to a specific person and share the
+              same membership.
+            </td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Risk Factor</td>
+            <td>
+              Risk factor is a condition of a personal charactoristic that
+              recognizes a plausible disease.
+            </td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Observation Source</td>
+            <td>
+              Observation source is a manifestation of an anchor that collates a
+              variety of measurements.
+            </td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Measurement Unit</td>
+            <td>
+              Measurement unit is a set of variations observed for a purpose.
+              E.g. ECG
+            </td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Trajectory Phase</td>
+            <td>
+              Trajectory phase is a lifecycle stage of a trajectory. {predicted,
+              verified, remission}
+            </td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Participation Rank</td>
+            <td>
+              Participation rank is a numerical representation indicating the
+              unitary distance of a trajectory from the participation. [0,n]
+              where 0 represents the current trajectory.
+            </td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Observation Event</td>
+            <td>
+              An observation event is a temporal trigger for processing
+              information.
+            </td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Disease Characteristics</td>
+            <td>
+              Disease characteristic is a collection of disease aspects that
+              describe the profile of a disease.
+            </td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Disease Outcome</td>
+            <td>
+              Disease outcome is a specific resulting state that a person is
+              forced to be in.
+            </td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Cycle of Deconditioning</td>
+            <td>
+              Cycle of deconditioning is the stages of changes that occur in a
+              person's body due to prolonged inactivity.
+            </td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Performance Metric</td>
+            <td>
+              A performance metric is the collection of quantifiable
+              measurements that validates the performance of a model.
+            </td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Input Data Source</td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Explanation</td>
+            <td>
+              Explanation is the associated reasoning of the used AI model.
+            </td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Modelling Approach</td>
+            <td>
+              Modeling Approach is the utilized machine learning approach for a
+              given Artificial Intelligence model.
+            </td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Device</td>
+            <td>
+              A data collection device is a device that collects information
+              about one or more objects
+            </td>
+            <td>http://semanticscience.org/resource/SIO_001236</td>
+          </tr>
+          <tr>
+            <td>Intervention</td>
+            <td>
+              A medical intervention is a medical procedure to treat (to cure or
+              alleviate) a health condition
+            </td>
+            <td>http://semanticscience.org/resource/SIO_001398</td>
+          </tr>
+          <tr>
+            <td>Dataset</td>
+            <td>A dataset is a data item that is a collection of data items</td>
+            <td>http://semanticscience.org/resource/SIO_000089</td>
+          </tr>
+        </table>
+      </div>
+    </div>
     <script>
       function autoExpandTextarea(box) {
         box.style.height = "auto";
@@ -325,6 +714,13 @@ ORDER BY DESC(?count)
         document.querySelectorAll(".sparqlBox").forEach((box) => {
           autoExpandTextarea(box);
         });
+      });
+
+      const toggle = document.getElementById("menu-toggle");
+      const navLinks = document.getElementById("nav-links");
+
+      toggle.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
       });
     </script>
   </body>
