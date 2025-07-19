@@ -3,6 +3,7 @@ html {
   font-size: 16px;
   color: #333;
   scroll-padding-top: 5em;
+  overflow-x: hidden;
 }
 
 textarea.sparqlBox {
@@ -66,6 +67,11 @@ td {
   border: 1px solid #ccc;
   padding: 8px;
   text-align: left;
+}
+
+.competency-questions-img {
+  width: 40vw;
+  height: 40vh;
 }
 
 /* navbar */
