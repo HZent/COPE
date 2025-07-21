@@ -24,6 +24,7 @@ textarea.sparqlBox:focus {
 
 #data-category {
   color: rgb(25, 25, 196);
+  margin-bottom: 0;
 }
 
 iframe.iframeBox {
@@ -41,15 +42,15 @@ body {
 
 .container {
   max-width: 1200px; /* Sets a maximum width for the content */
-  margin: 0 auto;    /* Centers the container horizontally */
- padding: 20px;     /* Adds space around the content */
+  margin: 0 auto; /* Centers the container horizontally */
+  padding: 20px; /* Adds space around the content */
 }
 
 .competency-questions-list {
   padding-left: 1.8em;
 }
 
-h2 {
+.sparql-question {
   margin-bottom: 0px;
 }
 
@@ -71,9 +72,13 @@ td {
   text-align: left;
 }
 
+/* there are hard coded widths in CopeDashboard.html*/
 .competency-questions-img {
-  width: 40vw;
-  height: 40vh;
+  width: 25vw;
+  height: auto;
+  max-height: 40vh;
+  object-fit: contain;
+  display: block;
 }
 
 /* navbar */
