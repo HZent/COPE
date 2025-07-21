@@ -40,7 +40,9 @@ body {
 }
 
 .container {
-  margin: 10px;
+  max-width: 1200px; /* Sets a maximum width for the content */
+  margin: 0 auto;    /* Centers the container horizontally */
+ padding: 20px;     /* Adds space around the content */
 }
 
 .competency-questions-list {
