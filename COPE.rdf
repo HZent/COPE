@@ -1,0 +1,2403 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/user/ontologies/2025/3/cop#"
+     xml:base="http://www.semanticweb.org/user/ontologies/2025/3/cop"
+     xmlns:A="http://www.semanticweb.org/user/ontologies/2025/3/9710A#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:COPE="http://www.semanticweb.org/user/ontologies/2025/3/cope#"
+     xmlns:cito="http://purl.org/spar/cito/"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:void="http://rdfs.org/ns/void#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:schema="http://schema.org/"
+     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+     xmlns:resource="http://semanticscience.org/resource/">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cop">
+        <owl:imports rdf:resource="http://semanticscience.org/ontology/sio/v1.59/sio-release.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_000068 -->
+
+    <rdf:Description rdf:about="http://semanticscience.org/resource/SIO_000068">
+        <rdfs:domain rdf:resource="http://semanticscience.org/resource/SIO_010299"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#CycleOfDeconditioning"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_000095 -->
+
+    <rdf:Description rdf:about="http://semanticscience.org/resource/SIO_000095">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#ObservationEvent"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#HealthTrajectory"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_000248 -->
+
+    <rdf:Description rdf:about="http://semanticscience.org/resource/SIO_000248">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#ObservationEvent"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#ObservationEvent"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_000253 -->
+
+    <rdf:Description rdf:about="http://semanticscience.org/resource/SIO_000253">
+        <rdfs:domain rdf:resource="http://semanticscience.org/resource/SIO_000089"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#ObservationSource"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_000563 -->
+
+    <rdf:Description rdf:about="http://semanticscience.org/resource/SIO_000563">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#ResearchArticle"/>
+        <rdfs:range rdf:resource="http://semanticscience.org/resource/SIO_001398"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#appliedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#appliedIn">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://semanticscience.org/resource/SIO_001398"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#ObservationEvent"/>
+        <rdfs:comment>The administering process is initiated in a specific temporal observation event.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#appliedTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#appliedTo">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://semanticscience.org/resource/SIO_001398"/>
+        <rdfs:range rdf:resource="http://semanticscience.org/resource/SIO_010299"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#contributesTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#contributesTo">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#RiskFactor"/>
+        <rdfs:range rdf:resource="http://semanticscience.org/resource/SIO_010299"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#evaluatedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#evaluatedBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#AIModel"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#PerformanceMetric"/>
+        <rdfs:comment>Ones validity is determined by the specifications of the other.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#getSymptom -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#getSymptom">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#Symptom"/>
+        <rdfs:range rdf:resource="http://semanticscience.org/resource/SIO_000498"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#hasCharacteristic -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#hasCharacteristic">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://semanticscience.org/resource/SIO_000498"/>
+        <rdfs:domain rdf:resource="http://semanticscience.org/resource/SIO_010299"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#DiseaseCharacteristic"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#PersonCharacteristic"/>
+        <rdfs:comment>An instance constitutes an instance of an aspect of a person.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#hasExplanation -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#hasExplanation">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#AIModel"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#Explanation"/>
+        <rdfs:comment>A model instance extends an instance of an explanation.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#hasHealthTrajectory -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#hasHealthTrajectory">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://semanticscience.org/resource/SIO_000498"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#HealthTrajectory"/>
+        <rdfs:comment>Progression is only associated with single instance of the other.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#hasMeasurementUnit -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#hasMeasurementUnit">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://semanticscience.org/resource/SIO_001236"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#MeasurementUnit"/>
+        <rdfs:comment>Collecting information is described in a unit.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#hasParticipationRank -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#hasParticipationRank">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#HealthTrajectory"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#ParticipationRank"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#hasPhase -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#hasPhase">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#HealthTrajectory"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#TrajectoryPhase"/>
+        <rdfs:comment>Is indicative of a distinct state of a progressive entity.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#hasRiskFactor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#hasRiskFactor">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://semanticscience.org/resource/SIO_000498"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#RiskFactor"/>
+        <rdfs:comment>An instance constitutes an instance of riskFactor</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#includes -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#includes">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#AIModel"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#ObservationSource"/>
+        <rdfs:range rdf:resource="http://semanticscience.org/resource/SIO_001236"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#InputDataNature"/>
+        <rdfs:comment>An instance of a source comprises of an instance that capture variations.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#isIdentifiedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#isIdentifiedBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://semanticscience.org/resource/SIO_010299"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#Symptom"/>
+        <rdfs:comment>isIdentifiedBy is a reflective relationship in which the variation of one is reflected in the other.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#isPairedWith -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#isPairedWith">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#ObservationEvent"/>
+        <rdfs:range rdf:resource="http://semanticscience.org/resource/SIO_000498"/>
+        <rdfs:comment>Occurrence of which is exclusively associated with a specific entity.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#leadsTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#leadsTo">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://semanticscience.org/resource/SIO_010299"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#DiseaseOutcome"/>
+        <rdfs:comment>Resulting state or a collection of states due to a change in disease entity.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#observedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#observedBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#RiskFactor"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#Symptom"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#ObservationSource"/>
+        <rdfs:comment>Is accessible through a collated set of variations</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#observedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#observedIn">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#Symptom"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#ObservationEvent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#proposes -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#proposes">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#ResearchArticle"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#AIModel"/>
+        <rdfs:comment>One entity suggestive of an application of another.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#pullsFromTrajectory -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#pullsFromTrajectory">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#HealthTrajectory"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#HealthTrajectory"/>
+        <rdfs:comment>The progression in place is shifted from the a progress of a similar instance.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#targets -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#targets">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://semanticscience.org/resource/SIO_001398"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#RiskFactor"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#Symptom"/>
+        <rdfs:comment>Intends to minimize or to elemeinate an existence of another.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#trainedOn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#trainedOn">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#AIModel"/>
+        <rdfs:range rdf:resource="http://semanticscience.org/resource/SIO_000089"/>
+        <rdfs:comment>The estimates are drawn from a collection of variations.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#triggers -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#triggers">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#ObservationSource"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#ObservationEvent"/>
+        <rdfs:comment>A change in one cases an initiation of another.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#uses -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#uses">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#ResearchArticle"/>
+        <rdfs:range rdf:resource="http://semanticscience.org/resource/SIO_000089"/>
+        <rdfs:comment>One referrs another in the process of existence.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#usesApproach -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#usesApproach">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#AIModel"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#ModellingApproach"/>
+        <rdfs:comment>A model instance adopts a specific instance of an approach.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#alcoholConsumption -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#alcoholConsumption"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#hasAIModelName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#hasAIModelName"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#hasAge -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#hasAge"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#hasCODDetails -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#hasCODDetails"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#hasCity -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#hasCity"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#hasCountry -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#hasCountry"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#hasDataset -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#hasDataset"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#hasDatasetName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#hasDatasetName">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>Unhealthy lifestyle &gt; Blood pressure increase &gt; Increases cardiovascular risk &gt; Reduced physical activity &gt; Decline in lifestyle quality &gt; Disease</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#hasDeviceName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#hasDeviceName"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#hasDiseaseCharacteristicName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#hasDiseaseCharacteristicName"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#hasDiseaseName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#hasDiseaseName"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#hasDiseaseOutcomeName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#hasDiseaseOutcomeName"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#hasEndDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#hasEndDate">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#HealthTrajectory"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#hasEthnicity -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#hasEthnicity"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#hasExerciseFrequency -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#hasExerciseFrequency"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#hasExplanationDetails -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#hasExplanationDetails"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#hasFullName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#hasFullName"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#hasGender -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#hasGender"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#hasHealthAttitude -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#hasHealthAttitude"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#hasHealthTrajectoryName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#hasHealthTrajectoryName"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#hasInputDataNatureName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#hasInputDataNatureName"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#hasInterventionName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#hasInterventionName"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#hasMeasurementUnitName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#hasMeasurementUnitName"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#hasModellingApproachName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#hasModellingApproachName"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#hasObservationEventName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#hasObservationEventName"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#hasObservationSourceName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#hasObservationSourceName"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#hasParticipationRank -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#hasParticipationRank"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#hasPerformanceMetricName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#hasPerformanceMetricName"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#hasPostalCode -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#hasPostalCode"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#hasResearchArticleName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#hasResearchArticleName">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#hasRiskFactorName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#hasRiskFactorName"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#hasStartDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#hasStartDate">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#HealthTrajectory"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#hasSymptomName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#hasSymptomName"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#hasTrajectoryPhaseName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#hasTrajectoryPhaseName"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#observationTimestamp -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#observationTimestamp">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#ObservationEvent"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#observationValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#observationValue">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#ObservationEvent"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#AIModel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#AIModel"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#Behavioral -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#Behavioral">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_001398"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#PersonCharacteristic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#Biological -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#Biological">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#PersonCharacteristic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#CycleOfDeconditioning -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#CycleOfDeconditioning">
+        <rdfs:comment>Cycle of deconditioning is the stages of changes that occur in a person&apos;s body due to prolonged inactivity.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#Demographic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#Demographic">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#PersonCharacteristic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#DiseaseCharacteristic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#DiseaseCharacteristic">
+        <rdfs:comment>Disease characteristic is a collection of disease aspects that describe the profile of a disease.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#DiseaseOutcome -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#DiseaseOutcome">
+        <rdfs:comment>Disease outcome is a specific resulting state that a person is forced to be in.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#Explanation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#Explanation">
+        <rdfs:comment>Explanation is the associated reasoning of the used AI model.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#Geographical -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#Geographical">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#PersonCharacteristic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#HealthTrajectory -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#HealthTrajectory">
+        <rdfs:comment>A trajectory is a collection of sequentially linked temporal observer events that belong to a specific person and share the same membership.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#InputDataNature -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#InputDataNature"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#MeasurementUnit -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#MeasurementUnit">
+        <rdfs:comment>Measurement unit is a set of variations observed for a purpose. E.g. ECG</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#ModellingApproach -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#ModellingApproach">
+        <rdfs:comment>Modeling Approach is the utilized machine learning approach for a given Artificial Intelligence model.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#ObservationEvent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#ObservationEvent">
+        <rdfs:comment>An observation event is a temporal trigger for processing information.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#ObservationSource -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#ObservationSource">
+        <rdfs:comment>Observation source is a manifestation of an anchor that collates a variety of measurements.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#ParticipationRank -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#ParticipationRank">
+        <rdfs:comment>Participation rank is a numerical representation indicating the unitary distance of a trajectory from the participation. [0,n] where 0 represents the current trajectory.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#PerformanceMetric -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#PerformanceMetric">
+        <rdfs:comment>A performance metric is the collection of quantifiable measurements that validates the performance of a model.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#PersonCharacteristic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#PersonCharacteristic">
+        <rdfs:comment>Personal characteristic is a collection of personal aspects that describe the profile of a person.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#Pharmalogical -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#Pharmalogical">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_001398"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#Preventive -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#Preventive">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_001398"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#Psychographic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#Psychographic">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#PersonCharacteristic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#ResearchArticle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#ResearchArticle">
+        <rdfs:comment>Research article is a published research source for a specific health context.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#RiskFactor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#RiskFactor">
+        <rdfs:comment>Risk factor is a condition of a personal charactoristic that recognizes a plausible disease.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#Symptom -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#Symptom">
+        <rdfs:comment>Symptom is a variation (range or a threshold) of a measurement that is functionally associated with a specific disease.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#Therapeutic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#Therapeutic">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_001398"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#TrajectoryPhase -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#TrajectoryPhase">
+        <rdfs:comment>Trajectory phase is a lifecycle stage of a trajectory. {predicted, verified, remission}</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#AIHAD -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#AIHAD">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#AIModel"/>
+        <COPE:evaluatedBy rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#F1-Score"/>
+        <COPE:evaluatedBy rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#MSE"/>
+        <COPE:hasExplanation rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#Explanation002"/>
+        <COPE:includes rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#ECGSignalFeatures"/>
+        <COPE:trainedOn rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#Dataset002"/>
+        <COPE:usesApproach rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#CNN"/>
+        <COPE:hasAIModelName>Artificial Intelligence-based Hybrid Anomaly Detection (AIHAD)</COPE:hasAIModelName>
+        <rdfs:label>Artificial Intelligence-based Hybrid Anomaly Detection (AIHAD)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#AbnormalCSNA -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#AbnormalCSNA">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#RiskFactor"/>
+        <COPE:contributesTo rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#CAD"/>
+        <COPE:observedBy rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#CSNASignalFeatureSource"/>
+        <COPE:hasRiskFactorName>Abnormal CSNA</COPE:hasRiskFactorName>
+        <rdfs:label>Abnormal CSNA</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#AbnormalCSNAObservationEvent -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#AbnormalCSNAObservationEvent">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#ObservationEvent"/>
+        <resource:SIO_000095 rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#CADHealthTrajectory"/>
+        <COPE:isPairedWith rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#MaryJane"/>
+        <COPE:hasObservationEventName>Abnormal CSNA Observation Event</COPE:hasObservationEventName>
+        <COPE:observationTimestamp rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTimeStamp">2025-07-23T08:30:00Z</COPE:observationTimestamp>
+        <COPE:observationValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">75</COPE:observationValue>
+        <rdfs:label>Abnormal CSNA Observation Event</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#AbuBakar -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#AbuBakar">
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000498"/>
+        <COPE:hasCharacteristic rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#BehavAbuBakar"/>
+        <COPE:hasCharacteristic rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#BioAbuBakar"/>
+        <COPE:hasCharacteristic rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#DemoAbuBakar"/>
+        <COPE:hasCharacteristic rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#GeoAbuBakar"/>
+        <COPE:hasCharacteristic rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#PsychAbuBakar"/>
+        <COPE:hasHealthTrajectory rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#LungCancerHealthTrajectory"/>
+        <COPE:hasRiskFactor rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#Smoking"/>
+        <COPE:hasFullName>Abu Bakar</COPE:hasFullName>
+        <rdfs:label>Abu Bakar</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#AnthonyPatel -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#AnthonyPatel">
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000498"/>
+        <COPE:hasCharacteristic rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#BehavAnthonyPatel"/>
+        <COPE:hasCharacteristic rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#BioAnthonyPatel"/>
+        <COPE:hasCharacteristic rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#DemoAnthonyPatel"/>
+        <COPE:hasCharacteristic rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#GeoAnthonyPatel"/>
+        <COPE:hasCharacteristic rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#PsychAnthonyPatel"/>
+        <COPE:hasHealthTrajectory rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#CKDHealthTrajectory"/>
+        <COPE:hasHealthTrajectory rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#HypertensionHealthTrajectory"/>
+        <COPE:hasRiskFactor rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#Hypertension"/>
+        <COPE:hasRiskFactor rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#Obesity"/>
+        <COPE:hasFullName>Anthony Patel</COPE:hasFullName>
+        <rdfs:label>Anthony Patel</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#Atherosclerosis -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#Atherosclerosis">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#DiseaseCharacteristic"/>
+        <COPE:hasDiseaseCharacteristicName>Atherosclerosis</COPE:hasDiseaseCharacteristicName>
+        <rdfs:label>Atherosclerosis</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#BMI -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#BMI">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#InputDataNature"/>
+        <COPE:hasInputDataNatureName>Body Mass Index</COPE:hasInputDataNatureName>
+        <rdfs:label>Body Mass Index</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#BMIObservationEvent -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#BMIObservationEvent">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#ObservationEvent"/>
+        <COPE:hasObservationEventName>BMI Observation Event</COPE:hasObservationEventName>
+        <COPE:observationTimestamp rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTimeStamp">2025-07-23T08:30:00Z</COPE:observationTimestamp>
+        <rdfs:label>BMI Observation Event</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#BehavAbuBakar -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#BehavAbuBakar">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#Behavioral"/>
+        <COPE:alcoholConsumption>Non-Drinker</COPE:alcoholConsumption>
+        <COPE:hasExerciseFrequency>3 times a week</COPE:hasExerciseFrequency>
+        <rdfs:label>Abu Bakar Behavioral</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#BehavAnthonyPatel -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#BehavAnthonyPatel">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#Behavioral"/>
+        <COPE:alcoholConsumption>Regularly</COPE:alcoholConsumption>
+        <COPE:hasExerciseFrequency>Rarely</COPE:hasExerciseFrequency>
+        <rdfs:label>Anthony Patel Behavioral</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#BehavJohnPaul -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#BehavJohnPaul">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#Behavioral"/>
+        <COPE:alcoholConsumption>Alcoholic</COPE:alcoholConsumption>
+        <COPE:hasExerciseFrequency>5 times a week</COPE:hasExerciseFrequency>
+        <rdfs:label>John Paul Behavioral</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#BehavMaryJane -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#BehavMaryJane">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#Behavioral"/>
+        <COPE:alcoholConsumption>Former Drinker</COPE:alcoholConsumption>
+        <COPE:hasExerciseFrequency>1 time a week</COPE:hasExerciseFrequency>
+        <rdfs:label>Mary Jane Behavioral</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#BioAbuBakar -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#BioAbuBakar">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#Biological"/>
+        <COPE:hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">42</COPE:hasAge>
+        <COPE:hasGender>Male</COPE:hasGender>
+        <rdfs:label>Abu Bakar Biological</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#BioAnthonyPatel -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#BioAnthonyPatel">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#Biological"/>
+        <COPE:hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">65</COPE:hasAge>
+        <COPE:hasGender>Male</COPE:hasGender>
+        <rdfs:label>Anthony Patel Biological</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#BioJohnPaul -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#BioJohnPaul">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#Biological"/>
+        <COPE:hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">55</COPE:hasAge>
+        <COPE:hasGender>Male</COPE:hasGender>
+        <rdfs:label>John Paul Biological</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#BioMaryJane -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#BioMaryJane">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#Biological"/>
+        <COPE:hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">67</COPE:hasAge>
+        <COPE:hasGender>Female</COPE:hasGender>
+        <rdfs:label>Mary Jane Biological</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#BloodGlucoseMeters -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#BloodGlucoseMeters">
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_001236"/>
+        <COPE:hasMeasurementUnit rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#mmol/L"/>
+        <COPE:hasDeviceName>Blood Glucose Meters</COPE:hasDeviceName>
+        <rdfs:label>Blood Glucose Meters</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#BloodPressureMonitor -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#BloodPressureMonitor">
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_001236"/>
+        <COPE:hasMeasurementUnit rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#mmHg"/>
+        <COPE:hasDeviceName>Blood Pressure Monitor</COPE:hasDeviceName>
+        <rdfs:label>Blood Pressure Monitor</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#BloodSugar -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#BloodSugar">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#RiskFactor"/>
+        <COPE:observedBy rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#BloodSugarLevelSource"/>
+        <COPE:hasRiskFactorName>Blood Sugar</COPE:hasRiskFactorName>
+        <rdfs:label>Blood Sugar</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#BloodSugarLevel -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#BloodSugarLevel">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#InputDataNature"/>
+        <COPE:hasInputDataNatureName>Blood Sugar Level</COPE:hasInputDataNatureName>
+        <rdfs:label>Blood Sugar Level</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#BloodSugarLevelSource -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#BloodSugarLevelSource">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#ObservationSource"/>
+        <COPE:includes rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#BloodGlucoseMeters"/>
+        <COPE:triggers rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#FastingBloodGlucoseObservationEvent"/>
+        <COPE:hasObservationSourceName>Blood Sugar Level Source</COPE:hasObservationSourceName>
+        <rdfs:label>Blood Sugar Level Source</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#BlurredVision -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#BlurredVision">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#Symptom"/>
+        <COPE:getSymptom rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#JohnPaul"/>
+        <COPE:observedBy rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#SystolicBPSource"/>
+        <COPE:observedIn rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#HypertensionObservationEvent"/>
+        <COPE:hasSymptomName>Bliurred Vision</COPE:hasSymptomName>
+        <rdfs:label>Blurred Vision</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#CAD -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#CAD">
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_010299"/>
+        <resource:SIO_000068 rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#COD2"/>
+        <COPE:hasCharacteristic rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#Atherosclerosis"/>
+        <COPE:isIdentifiedBy rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#ChestPain"/>
+        <COPE:isIdentifiedBy rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#ShortnessOfBreath"/>
+        <COPE:leadsTo rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#SuddenCardiacDeath"/>
+        <COPE:hasDiseaseName>Coronary Artery Disease (CAD)</COPE:hasDiseaseName>
+        <rdfs:label>Coronary Artery Disease (CAD)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#CADHealthTrajectory -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#CADHealthTrajectory">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#HealthTrajectory"/>
+        <COPE:hasPhase rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#VerifiedTrajectoryPhase"/>
+        <COPE:hasEndDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-04T11:15:00</COPE:hasEndDate>
+        <COPE:hasHealthTrajectoryName>CAD Health Trajectory</COPE:hasHealthTrajectoryName>
+        <COPE:hasParticipationRank rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</COPE:hasParticipationRank>
+        <COPE:hasStartDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-15T08:00:00</COPE:hasStartDate>
+        <rdfs:label>CAD Health Trajectory</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#CKDHealthTrajectory -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#CKDHealthTrajectory">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#HealthTrajectory"/>
+        <COPE:hasPhase rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#VerifiedTrajectoryPhase"/>
+        <COPE:hasEndDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-04T11:45:00</COPE:hasEndDate>
+        <COPE:hasHealthTrajectoryName>Chronic Kidney Disease Health Trajectory</COPE:hasHealthTrajectoryName>
+        <COPE:hasParticipationRank rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</COPE:hasParticipationRank>
+        <COPE:hasStartDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-01-15T08:00:00</COPE:hasStartDate>
+        <rdfs:label>Chronic Kidney Disease Health Trajectory</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#CNN -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#CNN">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#ModellingApproach"/>
+        <COPE:hasModellingApproachName>Convolutional Neural Networks (CNN)</COPE:hasModellingApproachName>
+        <rdfs:label>Convolutional Neural Networks (CNN)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#COD1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#COD1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#CycleOfDeconditioning"/>
+        <COPE:hasCODDetails>Unhealthy lifestyle &gt; Blood pressure increase &gt; Increases cardiovascular risk &gt; Reduced physical activity &gt; Decline in lifestyle quality &gt; Disease progression</COPE:hasCODDetails>
+        <rdfs:label>Unhealthy lifestyle &gt; Blood pressure increase &gt; Increases cardiovascular risk &gt; Reduced physical activity &gt; Decline in lifestyle quality &gt; Disease progression</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#COD2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#COD2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#CycleOfDeconditioning"/>
+        <COPE:hasCODDetails>ECG Anomalies Detected &gt; Decreased Cardiac Efficiency &gt; Reduced Physical Activity &gt; Increased Hypertension &gt; Chronic Disease Progression</COPE:hasCODDetails>
+        <rdfs:label>ECG Anomalies Detected &gt; Decreased Cardiac Efficiency &gt; Reduced Physical Activity &gt; Increased Hypertension &gt; Chronic Disease Progression</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#COD3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#COD3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#CycleOfDeconditioning"/>
+        <COPE:hasCODDetails>Increased Hypertension &gt; Reduced Kidney Function &gt; Reduced Physical Activity &gt; Metabolic Deterioration &gt; Worsen CKD &gt; Chronic Disease Progression</COPE:hasCODDetails>
+        <rdfs:label>Increased Hypertension &gt; Reduced Kidney Function &gt; Reduced Physical Activity &gt; Metabolic Deterioration &gt; Worsen CKD &gt; Chronic Disease Progression</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#COD4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#COD4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#CycleOfDeconditioning"/>
+        <COPE:hasCODDetails>Obesity &gt; Insulin Resistance and Inflammation &gt; Type 2 Diabetes &gt; Hypertension &gt; Vascular Dysfunction &gt; Reduction in Exercise &gt; Worsen Insuin Resistance and Inflammation &gt; Worsen Hypertension</COPE:hasCODDetails>
+        <rdfs:label>Obesity &gt; Insulin Resistance and Inflammation &gt; Type 2 Diabetes &gt; Hypertension &gt; Vascular Dysfunction &gt; Reduction in Exercise &gt; Worsen Insuin Resistance and Inflammation &gt; Worsen Hypertension</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#COD5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#COD5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#CycleOfDeconditioning"/>
+        <COPE:hasCODDetails>Smoking &gt; Lung Damage &gt; Fatigue &gt; Reduced Exercise &gt; Increased Disability &gt; Further Reduction in Exercise &gt; Cycle Worsen</COPE:hasCODDetails>
+        <rdfs:label>Smoking &gt; Lung Damage &gt; Fatigue &gt; Reduced Exercise &gt; Increased Disability &gt; Further Reduction in Exercise &gt; Cycle Worsen</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#CSNASignalFeatureSource -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#CSNASignalFeatureSource">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#ObservationSource"/>
+        <COPE:includes rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#MicroneurographySystem"/>
+        <COPE:triggers rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#AbnormalCSNAObservationEvent"/>
+        <COPE:hasObservationSourceName>CSNA Signal Feature Source</COPE:hasObservationSourceName>
+        <rdfs:label>CSNA Signal Feature Source</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#CardiacRehab -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#CardiacRehab">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#Preventive"/>
+        <COPE:appliedIn rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#ECGAnomalyObservationEvent"/>
+        <COPE:appliedTo rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#CAD"/>
+        <COPE:targets rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#ECGAnomalies"/>
+        <COPE:targets rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#ShortnessOfBreath"/>
+        <COPE:hasInterventionName>Cardiac Exercise Rehabilitation</COPE:hasInterventionName>
+        <rdfs:label>Cardiac Exercise Rehabilitation</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#ChestPain -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#ChestPain">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#Symptom"/>
+        <COPE:getSymptom rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#MaryJane"/>
+        <COPE:observedBy rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#CSNASignalFeatureSource"/>
+        <COPE:observedIn rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#AbnormalCSNAObservationEvent"/>
+        <COPE:hasSymptomName>Chest Pain</COPE:hasSymptomName>
+        <rdfs:label>Chest Pain</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#ChronicKidneyDisease -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#ChronicKidneyDisease">
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_010299"/>
+        <resource:SIO_000068 rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#COD3"/>
+        <COPE:hasCharacteristic rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#ReducedGFR"/>
+        <COPE:isIdentifiedBy rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#ShortnessOfBreath"/>
+        <COPE:isIdentifiedBy rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#Swelling"/>
+        <COPE:leadsTo rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#HighCVDRisk"/>
+        <COPE:hasDiseaseName>Chronic Kidney Disease</COPE:hasDiseaseName>
+        <rdfs:label>Chronic Kidney Disease</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#Dataset001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#Dataset001">
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000089"/>
+        <resource:SIO_000253 rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#BloodSugarLevelSource"/>
+        <resource:SIO_000253 rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#DiastolicBPSource"/>
+        <resource:SIO_000253 rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#HeightMeasurementSource"/>
+        <resource:SIO_000253 rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#SystolicBPSource"/>
+        <resource:SIO_000253 rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#WeightMeasurementSource"/>
+        <COPE:hasDataset>Secondary surveillance data from Puskesmas Johar Baru, Jakarta, in 2019, 2020, and 2021</COPE:hasDataset>
+        <rdfs:label>Secondary surveillance data from Puskesmas Johar Baru, Jakarta, in 2019, 2020, and 2021</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#Dataset002 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#Dataset002">
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000089"/>
+        <resource:SIO_000253 rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#CSNASignalFeatureSource"/>
+        <resource:SIO_000253 rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#ECGSignalFeatureSource"/>
+        <COPE:hasDataset>Fully labeled STAFF III and PTBD databases, which contain the 12-lead wideband raw recordings non-invasively acquired from 260 subjects</COPE:hasDataset>
+        <rdfs:label>Fully labeled STAFF III and PTBD databases, which contain the 12-lead wideband raw recordings non-invasively acquired from 260 subjects</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#Dataset003 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#Dataset003">
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000089"/>
+        <resource:SIO_000253 rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#DiastolicBPSource"/>
+        <resource:SIO_000253 rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#SystolicBPSource"/>
+        <COPE:hasDataset>Mashhad Stroke and Heart Atherosclerotic Disorders (MASHAD) Study database</COPE:hasDataset>
+        <rdfs:label>Mashhad Stroke and Heart Atherosclerotic Disorders (MASHAD) Study database</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#Dataset004 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#Dataset004">
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000089"/>
+        <resource:SIO_000253 rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#HeightMeasurementSource"/>
+        <resource:SIO_000253 rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#WeightMeasurementSource"/>
+        <COPE:hasDataset>Blood Pressure Data for Disease Prediction from Kaggle</COPE:hasDataset>
+        <rdfs:label>Blood Pressure Data for Disease Prediction from Kaggle</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#Dataset005 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#Dataset005">
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000089"/>
+        <resource:SIO_000253 rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#SelfReportedSmokingSource"/>
+        <COPE:hasDataset>Electronic Medical Records and chest CT scans</COPE:hasDataset>
+        <rdfs:label>Electronic Medical Records and chest CT scans</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#DemoAbuBakar -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#DemoAbuBakar">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#Demographic"/>
+        <COPE:hasEthnicity>Malay</COPE:hasEthnicity>
+        <rdfs:label>Abu Bakar Demographic</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#DemoAnthonyPatel -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#DemoAnthonyPatel">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#Demographic"/>
+        <COPE:hasEthnicity>South Asian</COPE:hasEthnicity>
+        <rdfs:label>Anthony Patel Demographic</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#DemoJohnPaul -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#DemoJohnPaul">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#Demographic"/>
+        <COPE:hasEthnicity>Caucasian</COPE:hasEthnicity>
+        <rdfs:label>John Paul Demographic</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#DemoMaryJane -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#DemoMaryJane">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#Demographic"/>
+        <COPE:hasEthnicity>Caucasian</COPE:hasEthnicity>
+        <rdfs:label>Mary Jane Demographic</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#DiabetesHealthTrajectory -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#DiabetesHealthTrajectory">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#HealthTrajectory"/>
+        <COPE:hasPhase rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#VerifiedTrajectoryPhase"/>
+        <COPE:hasEndDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-04T10:15:00</COPE:hasEndDate>
+        <COPE:hasHealthTrajectoryName>Diabetes Health Trajectory</COPE:hasHealthTrajectoryName>
+        <COPE:hasParticipationRank rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</COPE:hasParticipationRank>
+        <COPE:hasStartDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-11-01T08:00:00</COPE:hasStartDate>
+        <rdfs:label>Diabetes Health Trajectory</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#DiabetesMellitus -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#DiabetesMellitus">
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_010299"/>
+        <resource:SIO_000068 rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#COD1"/>
+        <COPE:hasCharacteristic rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#InsulinDysfunction"/>
+        <COPE:isIdentifiedBy rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#BlurredVision"/>
+        <COPE:isIdentifiedBy rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#SlowWoundHealing"/>
+        <COPE:leadsTo rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#KidneyFailure"/>
+        <COPE:hasDiseaseName>Diabetes Mellitus</COPE:hasDiseaseName>
+        <rdfs:label>Diabetes Mellitus</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#DiastolicBP -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#DiastolicBP">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#InputDataNature"/>
+        <COPE:hasInputDataNatureName>Diastolic BP</COPE:hasInputDataNatureName>
+        <rdfs:label>Diastolic BP</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#DiastolicBPSource -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#DiastolicBPSource">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#ObservationSource"/>
+        <COPE:includes rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#BloodPressureMonitor"/>
+        <COPE:triggers rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#HypertensionObservationEvent"/>
+        <COPE:hasObservationSourceName>Diastolic BP Source</COPE:hasObservationSourceName>
+        <rdfs:label>Diastolic BP Source</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#DietEducation -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#DietEducation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#Preventive"/>
+        <COPE:appliedTo rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#DiabetesMellitus"/>
+        <COPE:targets rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#BlurredVision"/>
+        <COPE:hasInterventionName>Diet Education</COPE:hasInterventionName>
+        <rdfs:label>Diet Education</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#ECGAnomalies -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#ECGAnomalies">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#RiskFactor"/>
+        <COPE:contributesTo rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#CAD"/>
+        <COPE:observedBy rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#ECGSignalFeatureSource"/>
+        <COPE:hasRiskFactorName>ECG Anomalies</COPE:hasRiskFactorName>
+        <rdfs:label>ECG Anomalies</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#ECGAnomalyObservationEvent -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#ECGAnomalyObservationEvent">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#ObservationEvent"/>
+        <resource:SIO_000095 rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#CADHealthTrajectory"/>
+        <COPE:isPairedWith rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#MaryJane"/>
+        <COPE:hasObservationEventName>ECG Anomaly Observation Event</COPE:hasObservationEventName>
+        <COPE:observationTimestamp rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-23T08:30:00Z</COPE:observationTimestamp>
+        <COPE:observationValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">18</COPE:observationValue>
+        <rdfs:label>ECG Anomaly Observation Event</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#ECGMachine -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#ECGMachine">
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_001236"/>
+        <COPE:hasMeasurementUnit rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#mV"/>
+        <COPE:hasDeviceName>ECG Machine</COPE:hasDeviceName>
+        <rdfs:label>ECG Machine</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#ECGSignalFeatureSource -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#ECGSignalFeatureSource">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#ObservationSource"/>
+        <COPE:includes rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#ECGMachine"/>
+        <COPE:triggers rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#ECGAnomalyObservationEvent"/>
+        <COPE:hasObservationSourceName>ECG Signal Feature Source</COPE:hasObservationSourceName>
+        <rdfs:label>ECG Signal Feature Source</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#ECGSignalFeatures -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#ECGSignalFeatures">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#InputDataNature"/>
+        <COPE:hasInputDataNatureName>ECG signal features</COPE:hasInputDataNatureName>
+        <rdfs:label>ECG signal features</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#ElevatedBloodPressure -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#ElevatedBloodPressure">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#DiseaseCharacteristic"/>
+        <COPE:hasDiseaseCharacteristicName>Elevated Blood Pressure</COPE:hasDiseaseCharacteristicName>
+        <rdfs:label>Elevated Blood Pressure</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#EnsembleLearning -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#EnsembleLearning">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#ModellingApproach"/>
+        <COPE:hasModellingApproachName>Ensmeble Learning</COPE:hasModellingApproachName>
+        <rdfs:label>Ensemble Learning</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#ExplainableAI -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#ExplainableAI">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#AIModel"/>
+        <COPE:evaluatedBy rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#F1-Score"/>
+        <COPE:hasExplanation rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#Explanation004"/>
+        <COPE:includes rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#BMI"/>
+        <COPE:trainedOn rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#Dataset004"/>
+        <COPE:usesApproach rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#StackedEnsembleWithSHAP"/>
+        <COPE:hasAIModelName>Explainable AI</COPE:hasAIModelName>
+        <rdfs:label>Explainable AI</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#Explanation001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#Explanation001">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#Explanation"/>
+        <COPE:hasExplanationDetails>Explanation 1 here</COPE:hasExplanationDetails>
+        <rdfs:label>Explanation 1 here</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#Explanation002 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#Explanation002">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#Explanation"/>
+        <COPE:hasExplanationDetails>Explanation 2 here</COPE:hasExplanationDetails>
+        <rdfs:label>Explanation 2 here</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#Explanation003 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#Explanation003">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#Explanation"/>
+        <COPE:hasExplanationDetails>Explanation 3 here</COPE:hasExplanationDetails>
+        <rdfs:label>Explanation 3 here</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#Explanation004 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#Explanation004">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#Explanation"/>
+        <COPE:hasExplanationDetails>Explanation 4 here</COPE:hasExplanationDetails>
+        <rdfs:label>Explanation 4 here</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#Explanation5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#Explanation5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#Explanation"/>
+        <COPE:hasExplanationDetails>Explanation here 5</COPE:hasExplanationDetails>
+        <rdfs:label>Explanation 5 here</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#F1-Score -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#F1-Score">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#PerformanceMetric"/>
+        <COPE:hasPerformanceMetricName>F1-Score</COPE:hasPerformanceMetricName>
+        <rdfs:label>F1-Score</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#FastingBloodGlucoseObservationEvent -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#FastingBloodGlucoseObservationEvent">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#ObservationEvent"/>
+        <resource:SIO_000095 rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#DiabetesHealthTrajectory"/>
+        <COPE:isPairedWith rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#JohnPaul"/>
+        <COPE:hasObservationEventName>Fasting Blood Glucose Observation Event</COPE:hasObservationEventName>
+        <COPE:observationValue>7.8 mmol/L</COPE:observationValue>
+        <COPE:observationValue rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTimeStamp">2025-07-13T09:30:00Z</COPE:observationValue>
+        <rdfs:label>Fasting Blood Glucose Observation Event</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#Fatigue -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#Fatigue">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#Symptom"/>
+        <COPE:getSymptom rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#AnthonyPatel"/>
+        <COPE:observedBy rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#HeightMeasurementSource"/>
+        <COPE:observedBy rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#WeightMeasurementSource"/>
+        <COPE:observedIn rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#BMIObservationEvent"/>
+        <COPE:hasSymptomName>Fatigue</COPE:hasSymptomName>
+        <rdfs:label>Fatigue</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#GeoAbuBakar -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#GeoAbuBakar">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#Geographical"/>
+        <COPE:hasCity>Kuala Lumpur</COPE:hasCity>
+        <COPE:hasCountry>Malaysia</COPE:hasCountry>
+        <COPE:hasPostalCode rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">50450</COPE:hasPostalCode>
+        <rdfs:label>Abu Bakar Geographical</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#GeoAnthonyPatel -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#GeoAnthonyPatel">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#Geographical"/>
+        <COPE:hasCity>Austin</COPE:hasCity>
+        <COPE:hasCountry>United States</COPE:hasCountry>
+        <COPE:hasPostalCode rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">78701</COPE:hasPostalCode>
+        <rdfs:label>Anthony Patel Geographical</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#GeoJohnPaul -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#GeoJohnPaul">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#Geographical"/>
+        <COPE:hasCity>Adelaide</COPE:hasCity>
+        <COPE:hasCountry>Australia</COPE:hasCountry>
+        <COPE:hasPostalCode rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5000</COPE:hasPostalCode>
+        <rdfs:label>John Paul Geographical</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#GeoMaryJane -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#GeoMaryJane">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#Geographical"/>
+        <COPE:hasCity>Melbourne</COPE:hasCity>
+        <COPE:hasCountry>Australia</COPE:hasCountry>
+        <COPE:hasPostalCode rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3004</COPE:hasPostalCode>
+        <rdfs:label>Mary Jane Geographical</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#HeightMeasurementSource -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#HeightMeasurementSource">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#ObservationSource"/>
+        <COPE:includes rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#WearableDevice"/>
+        <COPE:triggers rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#BMIObservationEvent"/>
+        <COPE:hasObservationSourceName>Height Measurement Source</COPE:hasObservationSourceName>
+        <rdfs:label>Height Measurement Source</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#HighCVDRisk -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#HighCVDRisk">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#DiseaseOutcome"/>
+        <COPE:hasDiseaseOutcomeName>Increase Cardiovascular Events</COPE:hasDiseaseOutcomeName>
+        <rdfs:label>Increase Cardiovascular Events</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#Hypertension -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#Hypertension">
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_010299"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#RiskFactor"/>
+        <resource:SIO_000068 rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#COD4"/>
+        <COPE:contributesTo rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#ChronicKidneyDisease"/>
+        <COPE:contributesTo rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#DiabetesMellitus"/>
+        <COPE:hasCharacteristic rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#ElevatedBloodPressure"/>
+        <COPE:isIdentifiedBy rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#Fatigue"/>
+        <COPE:leadsTo rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#Stroke"/>
+        <COPE:observedBy rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#DiastolicBPSource"/>
+        <COPE:observedBy rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#SystolicBPSource"/>
+        <COPE:hasDiseaseName>Hypertension</COPE:hasDiseaseName>
+        <COPE:hasRiskFactorName>Hypertension</COPE:hasRiskFactorName>
+        <rdfs:label>Hypertension</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#HypertensionHealthTrajectory -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#HypertensionHealthTrajectory">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#HealthTrajectory"/>
+        <COPE:hasPhase rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#VerifiedTrajectoryPhase"/>
+        <COPE:hasEndDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-11-01T12:00:00</COPE:hasEndDate>
+        <COPE:hasHealthTrajectoryName>Hypertension Health Trajectory</COPE:hasHealthTrajectoryName>
+        <COPE:hasParticipationRank rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</COPE:hasParticipationRank>
+        <COPE:hasStartDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-11-01T09:00:00</COPE:hasStartDate>
+        <rdfs:label>Hypertension Health Trajectory</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#HypertensionObservationEvent -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#HypertensionObservationEvent">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#ObservationEvent"/>
+        <resource:SIO_000095 rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#CKDHealthTrajectory"/>
+        <resource:SIO_000095 rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#DiabetesHealthTrajectory"/>
+        <resource:SIO_000095 rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#HypertensionHealthTrajectory"/>
+        <resource:SIO_000248 rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#FastingBloodGlucoseObservationEvent"/>
+        <COPE:isPairedWith rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#AnthonyPatel"/>
+        <COPE:isPairedWith rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#JohnPaul"/>
+        <COPE:hasObservationEventName>Hypertension Observation Event</COPE:hasObservationEventName>
+        <COPE:observationTimestamp rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTimeStamp">2025-07-03T08:30:00Z</COPE:observationTimestamp>
+        <COPE:observationValue>Systolic_145_Diastolic_95</COPE:observationValue>
+        <rdfs:label>Hypertension Observation Event</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#IncreasePhysicalActivity -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#IncreasePhysicalActivity">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#Behavioral"/>
+        <COPE:appliedIn rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#HypertensionObservationEvent"/>
+        <COPE:appliedTo rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#DiabetesMellitus"/>
+        <COPE:targets rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#Hypertension"/>
+        <COPE:hasInterventionName>Increase Physical Activity</COPE:hasInterventionName>
+        <rdfs:label>Increase Physical Activity</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#InsulinDysfunction -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#InsulinDysfunction">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#DiseaseCharacteristic"/>
+        <COPE:hasDiseaseCharacteristicName>Insulin Dysfunction</COPE:hasDiseaseCharacteristicName>
+        <rdfs:label>Insulin Dysfunction</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#JohnPaul -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#JohnPaul">
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000498"/>
+        <COPE:hasCharacteristic rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#BehavJohnPaul"/>
+        <COPE:hasCharacteristic rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#BioJohnPaul"/>
+        <COPE:hasCharacteristic rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#DemoJohnPaul"/>
+        <COPE:hasCharacteristic rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#GeoJohnPaul"/>
+        <COPE:hasCharacteristic rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#PsychJohnPaul"/>
+        <COPE:hasRiskFactor rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#Hypertension"/>
+        <COPE:hasFullName>John Paul</COPE:hasFullName>
+        <rdfs:label>John Paul</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#KidneyFailure -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#KidneyFailure">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#DiseaseOutcome"/>
+        <COPE:hasDiseaseOutcomeName>Kidney Failure</COPE:hasDiseaseOutcomeName>
+        <rdfs:label>Kidney Failure</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#LifestyleImprovementPlan -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#LifestyleImprovementPlan">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#Behavioral"/>
+        <COPE:appliedIn rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#BMIObservationEvent"/>
+        <COPE:appliedIn rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#FastingBloodGlucoseObservationEvent"/>
+        <COPE:appliedTo rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#DiabetesMellitus"/>
+        <COPE:appliedTo rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#Hypertension"/>
+        <COPE:targets rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#BloodSugar"/>
+        <COPE:targets rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#Fatigue"/>
+        <COPE:targets rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#Obesity"/>
+        <COPE:hasInterventionName>Lifestyle Improvement Plan</COPE:hasInterventionName>
+        <rdfs:label>Lifestyle Improvement Plan</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#LungCancer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#LungCancer">
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_010299"/>
+        <resource:SIO_000068 rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#COD5"/>
+        <COPE:hasCharacteristic rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#UncontrolledCellGrowth"/>
+        <COPE:isIdentifiedBy rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#PersistentCough"/>
+        <COPE:isIdentifiedBy rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#ShortnessOfBreath"/>
+        <COPE:leadsTo rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#RespiratoryFailure"/>
+        <COPE:hasDiseaseName>Lung Cancer</COPE:hasDiseaseName>
+        <rdfs:label>Lung Cancer</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#LungCancerHealthTrajectory -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#LungCancerHealthTrajectory">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#HealthTrajectory"/>
+        <COPE:hasPhase rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#VerifiedTrajectoryPhase"/>
+        <COPE:hasEndDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-12-01T12:20:00</COPE:hasEndDate>
+        <COPE:hasHealthTrajectoryName>Lung Cancer Health Trajectory</COPE:hasHealthTrajectoryName>
+        <COPE:hasParticipationRank rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</COPE:hasParticipationRank>
+        <COPE:hasStartDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-01T09:00:00</COPE:hasStartDate>
+        <rdfs:label>Lung Cancer Health Trajectory</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#MSE -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#MSE">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#PerformanceMetric"/>
+        <COPE:hasPerformanceMetricName>Mean Squared Error (MSE)</COPE:hasPerformanceMetricName>
+        <rdfs:label>Mean Squared Error (MSE)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#MaryJane -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#MaryJane">
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000498"/>
+        <COPE:hasCharacteristic rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#BehavMaryJane"/>
+        <COPE:hasCharacteristic rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#BioMaryJane"/>
+        <COPE:hasCharacteristic rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#DemoMaryJane"/>
+        <COPE:hasCharacteristic rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#GeoMaryJane"/>
+        <COPE:hasCharacteristic rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#PsychMaryJane"/>
+        <COPE:hasHealthTrajectory rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#DiabetesHealthTrajectory"/>
+        <COPE:hasRiskFactor rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#AbnormalCSNA"/>
+        <COPE:hasRiskFactor rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#ECGAnomalies"/>
+        <COPE:hasFullName>Mary Jane</COPE:hasFullName>
+        <rdfs:label>Mary Jane</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#MicroneurographySystem -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#MicroneurographySystem">
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_001236"/>
+        <COPE:hasDeviceName>Microneurography System</COPE:hasDeviceName>
+        <rdfs:label>Microneurography System</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#MobileAppSurvey -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#MobileAppSurvey">
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_001236"/>
+        <COPE:hasMeasurementUnit rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#SmokingStatusCategory"/>
+        <COPE:hasDeviceName>Mobile App Survey</COPE:hasDeviceName>
+        <rdfs:label>Mobile App Survey</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#Obesity -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#Obesity">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#RiskFactor"/>
+        <COPE:contributesTo rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#DiabetesMellitus"/>
+        <COPE:contributesTo rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#Hypertension"/>
+        <COPE:observedBy rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#HeightMeasurementSource"/>
+        <COPE:observedBy rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#WeightMeasurementSource"/>
+        <COPE:hasRiskFactorName>Obesity</COPE:hasRiskFactorName>
+        <rdfs:label>Obesity</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#PersistentCough -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#PersistentCough">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#Symptom"/>
+        <COPE:observedBy rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#SelfReportedSmokingSource"/>
+        <COPE:observedIn rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#SmokingStatusObservationEvent"/>
+        <COPE:hasSymptomName>Persistent Cough</COPE:hasSymptomName>
+        <rdfs:label>Persistent Cough</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#PredictedTrajectoryPhase -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#PredictedTrajectoryPhase">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#TrajectoryPhase"/>
+        <COPE:hasTrajectoryPhaseName>Predicted</COPE:hasTrajectoryPhaseName>
+        <rdfs:label>Predicted</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#PsychAbuBakar -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#PsychAbuBakar">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#Psychographic"/>
+        <COPE:hasHealthAttitude>Proactive</COPE:hasHealthAttitude>
+        <rdfs:label>Abu Bakar Psychographic</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#PsychAnthonyPatel -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#PsychAnthonyPatel">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#Psychographic"/>
+        <COPE:hasHealthAttitude>Proactive</COPE:hasHealthAttitude>
+        <rdfs:label>Anthony Patel Psychographic</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#PsychJohnPaul -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#PsychJohnPaul">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#Psychographic"/>
+        <COPE:hasHealthAttitude>Proactive</COPE:hasHealthAttitude>
+        <rdfs:label>John Paul Psychographic</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#PsychMaryJane -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#PsychMaryJane">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#Psychographic"/>
+        <COPE:hasHealthAttitude>Committed</COPE:hasHealthAttitude>
+        <rdfs:label>Mary Jane Psychographic</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#QuitSmoking -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#QuitSmoking">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#Behavioral"/>
+        <COPE:appliedTo rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#DiabetesMellitus"/>
+        <COPE:hasInterventionName>Quit Smoking</COPE:hasInterventionName>
+        <rdfs:label>Quit Smoking</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#RFEnhancedFeedForwardNetwork -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#RFEnhancedFeedForwardNetwork">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#AIModel"/>
+        <COPE:evaluatedBy rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#F1-Score"/>
+        <COPE:hasExplanation rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#Explanation003"/>
+        <COPE:includes rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#DiastolicBP"/>
+        <COPE:includes rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#SystolicBP"/>
+        <COPE:trainedOn rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#Dataset003"/>
+        <COPE:usesApproach rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#EnsembleLearning"/>
+        <COPE:hasAIModelName>RF Enhanced Feed Forward Network</COPE:hasAIModelName>
+        <rdfs:label>RF Enhanced Feed Forward Network</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#RandomForest -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#RandomForest">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#AIModel"/>
+        <COPE:evaluatedBy rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#F1-Score"/>
+        <COPE:hasExplanation rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#Explanation001"/>
+        <COPE:includes rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#BMI"/>
+        <COPE:includes rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#BloodSugarLevel"/>
+        <COPE:includes rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#DiastolicBP"/>
+        <COPE:includes rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#SystolicBP"/>
+        <COPE:trainedOn rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#Dataset001"/>
+        <COPE:usesApproach rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#EnsembleLearning"/>
+        <COPE:hasAIModelName>Random Forest</COPE:hasAIModelName>
+        <rdfs:label>Random Forest</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#ReducedGFR -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#ReducedGFR">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#DiseaseCharacteristic"/>
+        <COPE:hasDiseaseCharacteristicName>Reduced Glomerular Filtration Rate</COPE:hasDiseaseCharacteristicName>
+        <rdfs:label>Reduced Glomerular Filtration Rate</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#ResearchArticle001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#ResearchArticle001">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#ResearchArticle"/>
+        <resource:SIO_000563 rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#DietEducation"/>
+        <resource:SIO_000563 rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#IncreasePhysicalActivity"/>
+        <resource:SIO_000563 rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#QuitSmoking"/>
+        <resource:SIO_000563 rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#Self-ManagementEducation"/>
+        <COPE:proposes rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#RandomForest"/>
+        <COPE:uses rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#Dataset001"/>
+        <COPE:hasResearchArticleName>Ginting, J., Suci, T., Ginting, C., &amp; Girsang, E. (2023). Early detection system of risk factors for diabetes mellitus type 2 utilization of machine learning-random forest. Journal of Family &amp; Community Medicine, 30(3), 171–179. https://doi.org/10.4103/jfcm.jfcm_33_23</COPE:hasResearchArticleName>
+        <rdfs:label>Ginting, J., Suci, T., Ginting, C., &amp; Girsang, E. (2023). Early detection system of risk factors for diabetes mellitus type 2 utilization of machine learning-random forest. Journal of Family &amp; Community Medicine, 30(3), 171–179. https://doi.org/10.4103/jfcm.jfcm_33_23</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#ResearchArticle2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#ResearchArticle2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#ResearchArticle"/>
+        <resource:SIO_000563 rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#CardiacRehab"/>
+        <resource:SIO_000563 rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#StatinTreatment"/>
+        <COPE:proposes rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#AIHAD"/>
+        <COPE:uses rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#Dataset002"/>
+        <COPE:hasResearchArticleName>Terzi, M. B., &amp; Arikan, O. (2024). Machine learning based hybrid anomaly detection technique for automatic diagnosis of cardiovascular diseases using cardiac sympathetic nerve activity and electrocardiogram. Biomedizinische Technik, 69(1), 79–109. https://doi.org/10.1515/bmt-2022-0406</COPE:hasResearchArticleName>
+        <rdfs:label>Terzi, M. B., &amp; Arikan, O. (2024). Machine learning based hybrid anomaly detection technique for automatic diagnosis of cardiovascular diseases using cardiac sympathetic nerve activity and electrocardiogram. Biomedizinische Technik, 69(1), 79–109. https://doi.org/10.1515/bmt-2022-0406</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#ResearchArticle3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#ResearchArticle3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#ResearchArticle"/>
+        <COPE:proposes rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#RFEnhancedFeedForwardNetwork"/>
+        <COPE:uses rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#Dataset003"/>
+        <COPE:hasResearchArticleName>Bahrami, P., Tanbakuchi, D., Afzalaghaee, M., Ghayour-Mobarhan, M., &amp; Esmaily, H. (2024). Development of risk models for early detection and prediction of chronic kidney disease in clinical settings. Scientific Reports, 14(1), 32136–10. https://doi.org/10.1038/s41598-024-83973-5</COPE:hasResearchArticleName>
+        <rdfs:label>Bahrami, P., Tanbakuchi, D., Afzalaghaee, M., Ghayour-Mobarhan, M., &amp; Esmaily, H. (2024). Development of risk models for early detection and prediction of chronic kidney disease in clinical settings. Scientific Reports, 14(1), 32136–10. https://doi.org/10.1038/s41598-024-83973-5</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#ResearchArticle4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#ResearchArticle4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#ResearchArticle"/>
+        <resource:SIO_000563 rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#LifestyleImprovementPlan"/>
+        <COPE:proposes rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#ExplainableAI"/>
+        <COPE:uses rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#Dataset004"/>
+        <COPE:hasResearchArticleName>Islam, H., Iqbal, Md. S., &amp; Hossain, M. M. (2025). Blood pressure abnormality detection and interpretation utilizing explainable artificial intelligence. Intelligent Medicine, 5(1), 54–65. https://doi.org/10.1016/j.imed.2024.09.005</COPE:hasResearchArticleName>
+        <rdfs:label>Islam, H., Iqbal, Md. S., &amp; Hossain, M. M. (2025). Blood pressure abnormality detection and interpretation utilizing explainable artificial intelligence. Intelligent Medicine, 5(1), 54–65. https://doi.org/10.1016/j.imed.2024.09.005</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#ResearchArticle5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#ResearchArticle5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#ResearchArticle"/>
+        <COPE:proposes rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#TPOT-optimized_ensemble_model"/>
+        <COPE:uses rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#Dataset005"/>
+        <COPE:hasResearchArticleName>Levi, M., Lazebnik, T., Kushnir, S., Yosef, N., &amp; Shlomi, D. (2024). Machine learning computational model to predict lung cancer using electronic medical records. Cancer Epidemiology, 92, 102631-. https://doi.org/10.1016/j.canep.2024.102631</COPE:hasResearchArticleName>
+        <rdfs:label>Levi, M., Lazebnik, T., Kushnir, S., Yosef, N., &amp; Shlomi, D. (2024). Machine learning computational model to predict lung cancer using electronic medical records. Cancer Epidemiology, 92, 102631-. https://doi.org/10.1016/j.canep.2024.102631</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#RespiratoryFailure -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#RespiratoryFailure">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#DiseaseOutcome"/>
+        <COPE:hasDiseaseOutcomeName>Respiratory Failure</COPE:hasDiseaseOutcomeName>
+        <rdfs:label>Respiratory Failure</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#Self-ManagementEducation -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#Self-ManagementEducation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#Therapeutic"/>
+        <COPE:appliedTo rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#DiabetesMellitus"/>
+        <COPE:hasInterventionName>Self-Management Education</COPE:hasInterventionName>
+        <rdfs:label>Self-Management Education</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#SelfReportedSmokingSource -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#SelfReportedSmokingSource">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#ObservationSource"/>
+        <resource:SIO_000095 rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#LungCancerHealthTrajectory"/>
+        <COPE:includes rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#MobileAppSurvey"/>
+        <COPE:triggers rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#SmokingStatusObservationEvent"/>
+        <COPE:hasObservationSourceName>Self Reported Smoking Source</COPE:hasObservationSourceName>
+        <rdfs:label>Self Reported Smoking Source</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#ShortnessOfBreath -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#ShortnessOfBreath">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#Symptom"/>
+        <COPE:getSymptom rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#AbuBakar"/>
+        <COPE:getSymptom rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#MaryJane"/>
+        <COPE:observedIn rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#ECGAnomalyObservationEvent"/>
+        <COPE:hasSymptomName>Shortness Of Breath</COPE:hasSymptomName>
+        <rdfs:label>Shortness Of Breath</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#SlowWoundHealing -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#SlowWoundHealing">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#Symptom"/>
+        <COPE:observedBy rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#BloodSugarLevelSource"/>
+        <COPE:observedIn rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#FastingBloodGlucoseObservationEvent"/>
+        <COPE:hasSymptomName>Slow Wound Healing</COPE:hasSymptomName>
+        <rdfs:label>Slow Wound Healing</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#Smoking -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#Smoking">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#RiskFactor"/>
+        <COPE:contributesTo rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#LungCancer"/>
+        <COPE:observedBy rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#SelfReportedSmokingSource"/>
+        <COPE:hasRiskFactorName>Smoking</COPE:hasRiskFactorName>
+        <rdfs:label>Smoking</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#SmokingCessationPrograms -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#SmokingCessationPrograms">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#Behavioral"/>
+        <COPE:appliedIn rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#SmokingStatusObservationEvent"/>
+        <COPE:appliedTo rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#LungCancer"/>
+        <COPE:targets rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#PersistentCough"/>
+        <COPE:targets rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#Smoking"/>
+        <COPE:hasInterventionName>Smoking Cessation Programs</COPE:hasInterventionName>
+        <rdfs:label>Smoking Cessation Programs</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#SmokingStatus -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#SmokingStatus">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#InputDataNature"/>
+        <COPE:hasInputDataNatureName>Smoking Status</COPE:hasInputDataNatureName>
+        <rdfs:label>Smoking Status</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#SmokingStatusCategory -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#SmokingStatusCategory">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#MeasurementUnit"/>
+        <COPE:hasMeasurementUnitName>Smoking Status Category</COPE:hasMeasurementUnitName>
+        <rdfs:label>Smoking Status Category</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#SmokingStatusObservationEvent -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#SmokingStatusObservationEvent">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#ObservationEvent"/>
+        <COPE:isPairedWith rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#AbuBakar"/>
+        <COPE:hasObservationEventName>Smoking Status Observation Event</COPE:hasObservationEventName>
+        <COPE:observationTimestamp rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-04T13:15:00</COPE:observationTimestamp>
+        <COPE:observationValue>Current Smoker</COPE:observationValue>
+        <rdfs:label>Smoking Status Observation Event</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#StackedEnsembleWithSHAP -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#StackedEnsembleWithSHAP">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#ModellingApproach"/>
+        <COPE:hasModellingApproachName>Stacked Ensemble + SHAP</COPE:hasModellingApproachName>
+        <rdfs:label>Stacked Ensemble + SHAP</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#StatinTreatment -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#StatinTreatment">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#Pharmalogical"/>
+        <COPE:appliedIn rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#AbnormalCSNAObservationEvent"/>
+        <COPE:appliedTo rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#CAD"/>
+        <COPE:targets rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#AbnormalCSNA"/>
+        <COPE:targets rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#ChestPain"/>
+        <COPE:hasInterventionName>Statin Treatment</COPE:hasInterventionName>
+        <rdfs:label>Statin Treatment</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#Stroke -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#Stroke">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#DiseaseOutcome"/>
+        <COPE:hasDiseaseOutcomeName>Stroke</COPE:hasDiseaseOutcomeName>
+        <rdfs:label>Stroke</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#SuddenCardiacDeath -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#SuddenCardiacDeath">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#DiseaseOutcome"/>
+        <COPE:hasDiseaseOutcomeName>Sudden Cardiac Death</COPE:hasDiseaseOutcomeName>
+        <rdfs:label>Sudden Cardiac Death</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#Swelling -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#Swelling">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#Symptom"/>
+        <COPE:getSymptom rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#AnthonyPatel"/>
+        <COPE:hasSymptomName>Swelling</COPE:hasSymptomName>
+        <rdfs:label>Swelling</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#SystolicBP -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#SystolicBP">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#InputDataNature"/>
+        <COPE:hasInputDataNatureName>Systolic BP</COPE:hasInputDataNatureName>
+        <rdfs:label>Systolic BP</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#SystolicBPSource -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#SystolicBPSource">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#ObservationSource"/>
+        <COPE:includes rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#BloodPressureMonitor"/>
+        <COPE:triggers rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#HypertensionObservationEvent"/>
+        <COPE:hasObservationSourceName>Systolic BP Source</COPE:hasObservationSourceName>
+        <rdfs:label>Systolic BP Source</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#TPOT-optimized_ensemble_model -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#TPOT-optimized_ensemble_model">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#AIModel"/>
+        <COPE:evaluatedBy rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#F1-Score"/>
+        <COPE:hasExplanation rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#Explanation5"/>
+        <COPE:includes rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#SmokingStatus"/>
+        <COPE:trainedOn rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#Dataset005"/>
+        <COPE:usesApproach rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#RandomForest+XGBoost"/>
+        <COPE:hasAIModelName>TPOT-optimized ensemble model</COPE:hasAIModelName>
+        <rdfs:label>TPOT-optimized ensemble model</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#UncontrolledCellGrowth -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#UncontrolledCellGrowth">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#DiseaseCharacteristic"/>
+        <COPE:getSymptom rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#AbuBakar"/>
+        <COPE:hasDiseaseCharacteristicName>Uncontrolled Cell Growth</COPE:hasDiseaseCharacteristicName>
+        <rdfs:label>Uncontrolled Cell Growth</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#VerifiedTrajectoryPhase -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#VerifiedTrajectoryPhase">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#TrajectoryPhase"/>
+        <COPE:hasTrajectoryPhaseName>Verified</COPE:hasTrajectoryPhaseName>
+        <rdfs:label>Verified</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#WearableDevice -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#WearableDevice">
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_001236"/>
+        <COPE:hasMeasurementUnit rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#cm"/>
+        <COPE:hasMeasurementUnit rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#kg"/>
+        <COPE:hasDeviceName>Wearable Device</COPE:hasDeviceName>
+        <rdfs:label>Wearable Device</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#WeightMeasurementSource -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#WeightMeasurementSource">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#ObservationSource"/>
+        <COPE:includes rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#WearableDevice"/>
+        <COPE:triggers rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#BMIObservationEvent"/>
+        <COPE:hasObservationSourceName>Weight Measurement Source</COPE:hasObservationSourceName>
+        <rdfs:label>Weight Measurement Source</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#burstsPerMin -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#burstsPerMin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#MeasurementUnit"/>
+        <COPE:hasMeasurementUnitName>bursts/min</COPE:hasMeasurementUnitName>
+        <rdfs:label>bursts/min</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#cm -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#cm">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#MeasurementUnit"/>
+        <COPE:hasMeasurementUnitName>cm</COPE:hasMeasurementUnitName>
+        <rdfs:label>cm</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#kg -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#kg">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#MeasurementUnit"/>
+        <COPE:hasMeasurementUnitName>kg</COPE:hasMeasurementUnitName>
+        <rdfs:label>kg</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#mV -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#mV">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#MeasurementUnit"/>
+        <COPE:hasMeasurementUnitName>mV</COPE:hasMeasurementUnitName>
+        <rdfs:label>mV</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#mmHg -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#mmHg">
+        <COPE:hasMeasurementUnitName>mmHg</COPE:hasMeasurementUnitName>
+        <rdfs:label>mmHg</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#RandomForest+XGBoost -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#RandomForest+XGBoost">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#ModellingApproach"/>
+        <COPE:hasModellingApproachName>Random Forest + XGBoost</COPE:hasModellingApproachName>
+        <rdfs:label>Random Forest + XGBoost</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/cope#mmol/L -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#mmol/L">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/cope#MeasurementUnit"/>
+        <COPE:hasMeasurementUnitName>mmol/L</COPE:hasMeasurementUnitName>
+        <rdfs:label>mmol/L</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/cope#hasParticipationRank">
+        <rdfs:comment>Representative of a specific level of inclination towards being a part of.</rdfs:comment>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
