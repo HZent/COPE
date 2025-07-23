@@ -34,6 +34,7 @@ iframe.iframeBox {
 
 #answerLabel {
   margin-bottom: 0px;
+  margin-top: 0px;
 }
 
 body {
@@ -47,7 +48,7 @@ body {
 }
 
 .competency-questions-list {
-  padding-left: 1.8em;
+  padding-left: 0px;
 }
 
 .sparql-question {
@@ -79,6 +80,7 @@ td {
   max-height: 40vh;
   object-fit: contain;
   display: block;
+  padding-left: 1em;
 }
 
 /* navbar */
@@ -133,6 +135,31 @@ nav .menu-toggle span {
 .logo a {
   text-decoration: none;
   color: white;
+}
+
+.toggle-query-btn {
+  background-color: transparent;
+  color: #4c90d4;
+  border: 1px solid #4c90d4;
+  padding: 0.5rem 1rem;
+  font-size: 0.95rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  font-family: "Helvetica Neue", sans-serif;
+}
+
+.toggle-query-btn:hover {
+  background-color: #4c90d4;
+  color: white;
+}
+
+.query-button-container {
+  padding-left: 1.4em;
+}
+
+ol {
+  list-style-position: inside;
 }
 
 @media (max-width: 768px) {

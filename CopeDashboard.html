@@ -27,7 +27,6 @@
         <a href="#introduction">Introduction</a>
         <a href="#ontology">Ontology</a>
         <a href="#competency-questions">Competency Questions</a>
-        <a href="#sparql-queries">SPARQL Queries</a>
         <a href="#class-definition">Class Definitions</a>
       </div>
     </nav>
@@ -149,6 +148,7 @@
       <div id="competency-questions">
         <h2>Competency Questions</h2>
         <ol class="competency-questions-list">
+          <h3 id="data-category">Patient and Disease Associations</h3>
           <li>
             Which patient characteristics are most strongly associated with
             increased susceptibility to specific diseases?
@@ -156,107 +156,13 @@
               class="competency-questions-img"
               src="images/out-2.png"
               alt=""
-              style="width: 35vw;"
+              style="width: 35vw"
             />
-          </li>
-          <li>
-            Which population groups are most susceptible Diabetes Mellitus based
-            on their characteristics?
-            <img
-              class="competency-questions-img"
-              src="images/out-3.png"
-              alt=""
-            />
-          </li>
-          <li>
-            Given patient characteristics of age, what disease(s) are they at
-            risk of developing in the near future?
-            <img
-              class="competency-questions-img"
-              src="images/out-4.png"
-              alt=""
-            />
-          </li>
-          <li>
-            What are the risk factors associated with lung cancer?
-            <img
-              class="competency-questions-img"
-              src="images/out-5.png"
-              alt=""
-            />
-          </li>
-          <li>
-            What diseases are patients at risk of, and what are the associated
-            disease outcomes and identifying symptoms?
-            <img
-              class="competency-questions-img"
-              src="images/out-6.png"
-              alt=""
-              style="width: 28vw;"
-            />
-          </li>
-          <li>
-            Which AI/ML techniques are most commonly used for modeling disease
-            progression?
-            <img
-              class="competency-questions-img"
-              src="images/out-7.png"
-              alt=""
-              style="width: 41vw;"
-            />
-          </li>
-          <li>
-            What machine learning models and input features are commonly used
-            for predicting diseases such as Diabetes Mellitus?
-            <img
-              class="competency-questions-img"
-              src="images/out-8.png"
-              alt=""
-              style="width: 36vw;"
-            />
-          </li>
-          <li>
-            Which research articles focus on the detection or prediction of
-            chronic diseases using AI/ML methods?
-            <img
-              class="competency-questions-img"
-              src="images/out-9.png"
-              alt=""
-              style="width: 29vw;"
-            />
-          </li>
-          <li>
-            For a given data source (ECG, EHR, wearable sensor data), which
-            AI/ML techniques are most frequently applied?
-            <img
-              class="competency-questions-img"
-              src="images/out-10.png"
-              alt=""
-              style="width: 29.5vw;"
-            />
-          </li>
-          <li>
-            Which AI/ML modeling approaches are most commonly used to model
-            disease progression in Hypertension?
-            <img
-              class="competency-questions-img"
-              src="images/out-11.png"
-              alt=""
-            />
-          </li>
-        </ol>
-      </div>
-      <div id="sparql-queries">
-        <h2>SPARQL Queries</h2>
-        <!-- Patient and Disease Associations -->
-        <h3 id="data-category">Patient and Disease Associations</h3>
-        <!-- Query 1 -->
-        <p class="sparql-question" style="margin-top: 0">
-          1. Which patient characteristics are most strongly associated with
-          increased susceptibility to specific diseases?
-        </p>
-          <label>SPARQL Query:</label><br />
-          <textarea class="sparqlBox" readonly rows="1">
+            <div class="query-button-container">
+              <button class="toggle-query-btn">Show SPARQL</button>
+            </div>
+            <div class="sparql-container" style="display: none">
+              <textarea class="sparqlBox" readonly rows="1">
 PREFIX COPE: <http://www.semanticweb.org/user/ontologies/2025/3/cope#>
 PREFIX sio: <http://semanticscience.org/resource/>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -294,19 +200,24 @@ WHERE {
 GROUP BY ?personCharacteristic ?diseaseName
 ORDER BY DESC(?patient_count)
     </textarea
-          >
-        </p>
-
-        <p id="answerLabel">Example Answer:</p>
-        <iframe class="iframeBox" src="results/query1.html"></iframe>
-
-        <!-- Query 6 -->
-        <p class="sparql-question">
-          2. Which population groups are most susceptible Diabetes Mellitus based
-          on their characteristics?
-        </p>
-        <label>SPARQL Query:</label><br />
-        <textarea class="sparqlBox" readonly rows="1">
+              >
+              <p id="answerLabel">Example Answer:</p>
+              <iframe class="iframeBox" src="results/query1.html"></iframe>
+            </div>
+          </li>
+          <li>
+            Which population groups are most susceptible Diabetes Mellitus based
+            on their characteristics?
+            <img
+              class="competency-questions-img"
+              src="images/out-3.png"
+              alt=""
+            />
+            <div class="query-button-container">
+              <button class="toggle-query-btn">Show SPARQL</button>
+            </div>
+            <div class="sparql-container" style="display: none">
+              <textarea class="sparqlBox" readonly rows="1">
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX COPE: <http://www.semanticweb.org/user/ontologies/2025/3/cope#>
 PREFIX sio: <http://semanticscience.org/resource/>
@@ -344,17 +255,24 @@ WHERE {
 GROUP BY ?personCharacteristic
 ORDER BY DESC(?patient_count)
     </textarea
-        >
-        <p id="answerLabel">Example Answer:</p>
-        <iframe class="iframeBox" src="results/query6.html"></iframe>
-
-        <!-- Query 2 -->
-        <p class="sparql-question">
-          3. Given patient characteristics of age, what disease(s) are they at risk
-          of developing in the near future?
-        </p>
-        <label>SPARQL Query:</label><br />
-        <textarea class="sparqlBox" readonly rows="1">
+              >
+              <p id="answerLabel">Example Answer:</p>
+              <iframe class="iframeBox" src="results/query6.html"></iframe>
+            </div>
+          </li>
+          <li>
+            Given patient characteristics of age, what disease(s) are they at
+            risk of developing in the near future?
+            <img
+              class="competency-questions-img"
+              src="images/out-4.png"
+              alt=""
+            />
+            <div class="query-button-container">
+              <button class="toggle-query-btn">Show SPARQL</button>
+            </div>
+            <div class="sparql-container" style="display: none">
+              <textarea class="sparqlBox" readonly rows="1">
 PREFIX COPE: <http://www.semanticweb.org/user/ontologies/2025/3/cope#>
 PREFIX sio:  <http://semanticscience.org/resource/>
 PREFIX xsd:  <http://www.w3.org/2001/XMLSchema#>
@@ -370,18 +288,24 @@ SELECT ?person ?disease WHERE {
   ?riskFactor  COPE:contributesTo ?disease .
 } 
     </textarea
-        >
-        <p id="answerLabel">Example Answer:</p>
-        <iframe class="iframeBox" src="results/query2.html"></iframe>
-
-        <!-- Risk and Disease Progression -->
-        <h3 id="data-category">Risk and Disease Progression</h3>
-        <!-- Query 8 -->
-        <p class="sparql-question" style="margin-top: 0">
-          4. What are the risk factors associated with lung cancer?
-        </p>
-        <label>SPARQL Query:</label><br />
-        <textarea class="sparqlBox" readonly rows="1">
+              >
+              <p id="answerLabel">Example Answer:</p>
+              <iframe class="iframeBox" src="results/query2.html"></iframe>
+            </div>
+          </li>
+          <h3 id="data-category">Risk and Disease Progression</h3>
+          <li>
+            What are the risk factors associated with lung cancer?
+            <img
+              class="competency-questions-img"
+              src="images/out-5.png"
+              alt=""
+            />
+            <div class="query-button-container">
+              <button class="toggle-query-btn">Show SPARQL</button>
+            </div>
+            <div class="sparql-container" style="display: none">
+              <textarea class="sparqlBox" readonly rows="1">
 PREFIX COPE: <http://www.semanticweb.org/user/ontologies/2025/3/cope#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
@@ -395,17 +319,25 @@ SELECT DISTINCT ?RiskFactor WHERE {
 }
 ORDER BY ?RiskFactor
     </textarea
-        >
-        <p id="answerLabel">Example Answer:</p>
-        <iframe class="iframeBox" src="results/query8.html"></iframe>
-
-        <!-- Query 9 -->
-        <p class="sparql-question">
-          5. What diseases are patients at risk of, and what are the associated
-          disease outcomes and identifying symptoms?
-        </p>
-        <label>SPARQL Query:</label><br />
-        <textarea class="sparqlBox" readonly rows="1">
+              >
+              <p id="answerLabel">Example Answer:</p>
+              <iframe class="iframeBox" src="results/query8.html"></iframe>
+            </div>
+          </li>
+          <li>
+            What diseases are patients at risk of, and what are the associated
+            disease outcomes and identifying symptoms?
+            <img
+              class="competency-questions-img"
+              src="images/out-6.png"
+              alt=""
+              style="width: 28vw"
+            />
+            <div class="query-button-container">
+              <button class="toggle-query-btn">Show SPARQL</button>
+            </div>
+            <div class="sparql-container" style="display: none">
+              <textarea class="sparqlBox" readonly rows="1">
 PREFIX COPE: <http://www.semanticweb.org/user/ontologies/2025/3/cope#>
 PREFIX sio: <http://semanticscience.org/resource/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
@@ -429,18 +361,26 @@ SELECT DISTINCT ?diseaseName ?diseaseOutcomeName ?symptomName WHERE {
 }
 ORDER BY ?diseaseName ?diseaseOutcomeName ?symptomName
     </textarea
-        >
-        <p id="answerLabel">Example Answer:</p>
-        <iframe class="iframeBox" src="results/query9.html"></iframe>
-        <!-- AI/ML Techniques and Applications -->
-        <h3 id="data-category">AI/ML Techniques and Applications</h3>
-        <!-- Query 7 -->
-        <p class="sparql-question" style="margin-top: 0">
-          6. Which AI/ML techniques are most commonly used for modeling disease
-          progression?
-        </p>
-        <label>SPARQL Query:</label><br />
-        <textarea class="sparqlBox" readonly rows="1">
+              >
+              <p id="answerLabel">Example Answer:</p>
+              <iframe class="iframeBox" src="results/query9.html"></iframe>
+            </div>
+          </li>
+          <h3 id="data-category">AI/ML Techniques and Applications</h3>
+          <li>
+            Which AI/ML techniques are most commonly used for modeling disease
+            progression?
+            <img
+              class="competency-questions-img"
+              src="images/out-7.png"
+              alt=""
+              style="width: 41vw"
+            />
+            <div class="query-button-container">
+              <button class="toggle-query-btn">Show SPARQL</button>
+            </div>
+            <div class="sparql-container" style="display: none">
+              <textarea class="sparqlBox" readonly rows="1">
 PREFIX COPE: <http://www.semanticweb.org/user/ontologies/2025/3/cope#>
 
 SELECT ?AI_ML_Technique (STR(COUNT(?model)) AS ?Usage_Count) WHERE {
@@ -449,16 +389,25 @@ SELECT ?AI_ML_Technique (STR(COUNT(?model)) AS ?Usage_Count) WHERE {
 GROUP BY ?AI_ML_Technique
 ORDER BY DESC(?Usage_Count)
     </textarea
-        >
-        <p id="answerLabel">Example Answer:</p>
-        <iframe class="iframeBox" src="results/query7.html"></iframe>
-        <!-- Query 4 -->
-        <p class="sparql-question">
-          7. What machine learning models and input features are commonly used for
-          predicting diseases such as Diabetes Mellitus?
-        </p>
-        <label>SPARQL Query:</label><br />
-        <textarea class="sparqlBox" readonly rows="1">
+              >
+              <p id="answerLabel">Example Answer:</p>
+              <iframe class="iframeBox" src="results/query7.html"></iframe>
+            </div>
+          </li>
+          <li>
+            What machine learning models and input features are commonly used
+            for predicting diseases such as Diabetes Mellitus?
+            <img
+              class="competency-questions-img"
+              src="images/out-8.png"
+              alt=""
+              style="width: 36vw"
+            />
+            <div class="query-button-container">
+              <button class="toggle-query-btn">Show SPARQL</button>
+            </div>
+            <div class="sparql-container" style="display: none">
+              <textarea class="sparqlBox" readonly rows="1">
 PREFIX COPE: <http://www.semanticweb.org/user/ontologies/2025/3/cope#>
 PREFIX sio: <http://semanticscience.org/resource/>
 
@@ -481,16 +430,25 @@ WHERE {
 }
 GROUP BY ?AIModel ?disease
     </textarea
-        >
-        <p id="answerLabel">Example Answer:</p>
-        <iframe class="iframeBox" src="results/query4.html"></iframe>
-        <!-- Query 5 -->
-        <p class="sparql-question">
-          8. Which research articles focus on the detection or prediction of
-          chronic diseases using AI/ML methods?
-        </p>
-        <label>SPARQL Query:</label><br />
-        <textarea class="sparqlBox" readonly rows="1">
+              >
+              <p id="answerLabel">Example Answer:</p>
+              <iframe class="iframeBox" src="results/query4.html"></iframe>
+            </div>
+          </li>
+          <li>
+            Which research articles focus on the detection or prediction of
+            chronic diseases using AI/ML methods?
+            <img
+              class="competency-questions-img"
+              src="images/out-9.png"
+              alt=""
+              style="width: 29vw"
+            />
+            <div class="query-button-container">
+              <button class="toggle-query-btn">Show SPARQL</button>
+            </div>
+            <div class="sparql-container" style="display: none">
+              <textarea class="sparqlBox" readonly rows="1">
 PREFIX COPE: <http://www.semanticweb.org/user/ontologies/2025/3/cope#>
 PREFIX sio: <http://semanticscience.org/resource/>
 
@@ -507,16 +465,25 @@ SELECT DISTINCT ?article WHERE {
                COPE:contributesTo ?disease .
 }
     </textarea
-        >
-        <p id="answerLabel">Example Answer:</p>
-        <iframe class="iframeBox" src="results/query5.html"></iframe>
-        <!-- Query 3 -->
-        <p class="sparql-question">
-          9. For a given data source (ECG, EHR, wearable sensor data), which AI/ML
-          techniques are most frequently applied?
-        </p>
-        <label>SPARQL Query:</label><br />
-        <textarea class="sparqlBox" readonly rows="1">
+              >
+              <p id="answerLabel">Example Answer:</p>
+              <iframe class="iframeBox" src="results/query5.html"></iframe>
+            </div>
+          </li>
+          <li>
+            For a given data source (ECG, EHR, wearable sensor data), which
+            AI/ML techniques are most frequently applied?
+            <img
+              class="competency-questions-img"
+              src="images/out-10.png"
+              alt=""
+              style="width: 29.5vw"
+            />
+            <div class="query-button-container">
+              <button class="toggle-query-btn">Show SPARQL</button>
+            </div>
+            <div class="sparql-container" style="display: none">
+              <textarea class="sparqlBox" readonly rows="1">
 PREFIX COPE: <http://www.semanticweb.org/user/ontologies/2025/3/cope#>
 PREFIX sio: <http://semanticscience.org/resource/>
 
@@ -529,16 +496,24 @@ SELECT ?source ?AIModel (STR(COUNT(?AIModel)) AS ?count) WHERE {
 GROUP BY ?source ?AIModel
 ORDER BY DESC(?count)
     </textarea
-        >
-        <p id="answerLabel">Example Answer:</p>
-        <iframe class="iframeBox" src="results/query3.html"></iframe>
-        <!-- Query 10 -->
-        <p class="sparql-question">
-          10. Which AI/ML modeling approaches are most commonly used to model
-          disease progression in Hypertension?
-        </p>
-        <label>SPARQL Query:</label><br />
-        <textarea class="sparqlBox" readonly rows="1">
+              >
+              <p id="answerLabel">Example Answer:</p>
+              <iframe class="iframeBox" src="results/query3.html"></iframe>
+            </div>
+          </li>
+          <li>
+            Which AI/ML modeling approaches are most commonly used to model
+            disease progression in Hypertension?
+            <img
+              class="competency-questions-img"
+              src="images/out-11.png"
+              alt=""
+            />
+            <div class="query-button-container">
+              <button class="toggle-query-btn">Show SPARQL</button>
+            </div>
+            <div class="sparql-container" style="display: none">
+              <textarea class="sparqlBox" readonly rows="1">
 PREFIX COPE: <http://www.semanticweb.org/user/ontologies/2025/3/cope#>
 PREFIX sio: <http://semanticscience.org/resource/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
@@ -560,9 +535,12 @@ SELECT ?modellingApproach (STR(COUNT(DISTINCT ?model)) AS ?usageCount) WHERE {
 GROUP BY ?modellingApproach
 ORDER BY DESC(?usageCount)
     </textarea
-        >
-        <p id="answerLabel">Example Answer:</p>
-        <iframe class="iframeBox" src="results/query10.html"></iframe>
+              >
+              <p id="answerLabel">Example Answer:</p>
+              <iframe class="iframeBox" src="results/query10.html"></iframe>
+            </div>
+          </li>
+        </ol>
       </div>
       <div id="class-definition">
         <h2>Class Definitions</h2>
@@ -771,6 +749,25 @@ ORDER BY DESC(?usageCount)
 
       toggle.addEventListener("click", () => {
         navLinks.classList.toggle("active");
+      });
+
+      document.querySelectorAll(".toggle-query-btn").forEach((button) => {
+        button.addEventListener("click", () => {
+          const container = button.closest(
+            ".query-button-container"
+          ).nextElementSibling;
+          const textarea = container.querySelector(".sparqlBox");
+
+          const isVisible = container.style.display === "block";
+          container.style.display = isVisible ? "none" : "block";
+          button.textContent = isVisible ? "Show SPARQL" : "Hide SPARQL";
+
+          if (!isVisible) {
+            setTimeout(() => {
+              autoExpandTextarea(textarea);
+            }, 10);
+          }
+        });
       });
     </script>
   </body>
