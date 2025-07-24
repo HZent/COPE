@@ -277,7 +277,7 @@ PREFIX COPE: <http://www.semanticweb.org/user/ontologies/2025/3/cope#>
 PREFIX sio:  <http://semanticscience.org/resource/>
 PREFIX xsd:  <http://www.w3.org/2001/XMLSchema#>
 
-SELECT ?person ?disease WHERE {
+SELECT DISTINCT ?person ?disease WHERE {
   ?person rdf:type sio:SIO_000498 .
   ?person COPE:hasCharacteristic ?bio .
   ?bio   rdf:type COPE:Biological ;
@@ -486,8 +486,15 @@ SELECT DISTINCT ?article WHERE {
               <textarea class="sparqlBox" readonly rows="1">
 PREFIX COPE: <http://www.semanticweb.org/user/ontologies/2025/3/cope#>
 PREFIX sio: <http://semanticscience.org/resource/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 
-SELECT ?source ?AIModel (STR(COUNT(?AIModel)) AS ?count) WHERE {
+SELECT ?source 
+       ?AIModel 
+       (STR(COUNT(DISTINCT ?dataset)) AS ?count)
+WHERE {
+  ?article a COPE:ResearchArticle ;
+           COPE:proposes ?AIModel .
+
   ?AIModel a COPE:AIModel ;
            COPE:trainedOn ?dataset .
 
