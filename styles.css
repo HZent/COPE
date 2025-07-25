@@ -1,122 +1,71 @@
+/* Global styles */
 html {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
-  color: #333;
+  color: #2c3e50;
   scroll-padding-top: 5em;
   overflow-x: hidden;
-}
-
-textarea.sparqlBox {
-  font-family: "Fira Code", monospace;
-  white-space: pre;
-  resize: none;
-  overflow: hidden;
-  border: none;
-  background-color: #f9f9f9;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-textarea.sparqlBox:focus {
-  outline: none;
-  border: none;
-}
-
-#data-category {
-  color: rgb(25, 25, 196);
-  margin-bottom: 0;
-}
-
-iframe.iframeBox {
-  width: 100%;
-  height: 100%;
-}
-
-#answerLabel {
-  margin-bottom: 0px;
-  margin-top: 0px;
+  background-color: #f5f7fa;
 }
 
 body {
   margin: 0;
+  line-height: 1.6;
 }
 
+/* Container */
 .container {
-  max-width: 1200px; /* Sets a maximum width for the content */
-  margin: 0 auto; /* Centers the container horizontally */
-  padding: 20px; /* Adds space around the content */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
 }
 
-.competency-questions-list {
-  padding-left: 0px;
+.ontology-header {
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+  margin: 30px 0;
+  font-family: "Segoe UI", sans-serif;
+  color: #2c3e50;
 }
 
-.sparql-question {
-  margin-bottom: 0px;
-}
-
-img {
-  display: block;
-  width: 100vw;
-  height: 100vh;
-  object-fit: contain;
-}
-
-.class-definition-table {
-  border: black 1px solid;
-}
-
-.class-definition-table th,
-td {
-  border: 1px solid #ccc;
-  padding: 8px;
-  text-align: left;
-}
-
-/* there are hard coded widths in CopeDashboard.html*/
-.competency-questions-img {
-  width: 25vw;
-  height: auto;
-  max-height: 40vh;
-  object-fit: contain;
-  display: block;
-  padding-left: 1em;
-}
-
-/* navbar */
+/* Header/Navbar */
 nav {
-  background-color: #2e333c;
+  background-color: #34495e;
   color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1em 2em;
+  padding: 1rem 2rem;
   font-family: "Segoe UI", sans-serif;
   position: sticky;
   top: 0;
   z-index: 999;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
-nav .logo {
-  font-size: 1.5em;
+nav .logo a {
+  font-size: 1.5rem;
   font-weight: bold;
+  text-decoration: none;
+  color: white;
 }
 
 nav .nav-links {
   display: flex;
-  gap: 1em;
+  gap: 1.5rem;
 }
 
 nav .nav-links a {
   text-decoration: none;
   color: white;
-  padding: 0.5em;
+  padding: 0.5rem;
+  border-radius: 5px;
   transition: background-color 0.3s;
 }
 
 nav .nav-links a:hover {
-  background: #57606f;
-  border-radius: 5px;
+  background-color: #2c3e50;
 }
 
 nav .menu-toggle {
@@ -132,17 +81,94 @@ nav .menu-toggle span {
   margin: 4px 0;
 }
 
-.logo a {
-  text-decoration: none;
-  color: white;
+/* Typography */
+h1,
+h2,
+h3,
+h4 {
+  color: #2d3436;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
 }
 
+p {
+  margin-bottom: 1rem;
+}
+
+/* Images */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+/* Tables */
+.class-definition-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1.5rem;
+  background: white;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.class-definition-table th,
+.class-definition-table td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+.class-definition-table th {
+  background-color: #ecf0f1;
+  font-weight: 600;
+}
+
+.class-definition-table a {
+  display: inline-block;
+  margin-top: 0.5em;
+  color: #2980b9;
+  font-size: 0.9em;
+  word-break: break-all;
+}
+
+.class-definition-table a:hover {
+  text-decoration: underline;
+}
+
+/* SPARQL Box */
+textarea.sparqlBox {
+  font-family: "Fira Code", monospace;
+  white-space: pre;
+  resize: none;
+  overflow: hidden;
+  border: 1px solid #dcdde1;
+  background-color: #f9f9f9;
+  padding: 1rem;
+  width: 100%;
+  border-radius: 6px;
+  box-sizing: border-box;
+  min-height: 8rem;
+  transition: box-shadow 0.2s;
+}
+
+textarea.sparqlBox:focus {
+  outline: none;
+  border-color: #4c90d4;
+  box-shadow: 0 0 0 2px rgba(76, 144, 212, 0.2);
+}
+
+/* Buttons */
 .toggle-query-btn {
   background-color: transparent;
   color: #4c90d4;
   border: 1px solid #4c90d4;
   padding: 0.5rem 1rem;
-  font-size: 0.95rem;
+  font-size: 1rem;
   border-radius: 6px;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
@@ -155,18 +181,40 @@ nav .menu-toggle span {
 }
 
 .query-button-container {
+  padding-top: 1em;
   padding-left: 1.4em;
 }
 
+/* Lists */
 ol {
   list-style-position: inside;
+  margin-bottom: 1em;
 }
 
+/* iframe styling */
+iframe.iframeBox {
+  width: 100%;
+  height: 500px;
+  border: none;
+  border-radius: 8px;
+}
+
+/* Image block */
+.competency-questions-img {
+  width: 25vw;
+  max-height: 40vh;
+  object-fit: contain;
+  padding-left: 1em;
+  border-radius: 6px;
+}
+
+/* Responsive Navbar */
 @media (max-width: 768px) {
   nav .nav-links {
     display: none;
     flex-direction: column;
     width: 100%;
+    background-color: #34495e;
   }
 
   nav .nav-links.active {
@@ -176,10 +224,4 @@ ol {
   nav .menu-toggle {
     display: flex;
   }
-}
-
-#ontology img {
-  width: 100%;
-  height: auto;
-  display: block;
 }
