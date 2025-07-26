@@ -68,80 +68,12 @@
       <div id="introduction">
         <h2>Introduction</h2>
         <p>
-          Chronic diseases such as diabetes, cardiovascular conditions, and
-          respiratory illnesses represent a significant burden on global
-          healthcare systems, accounting for nearly 74% of all deaths worldwide
-          [1]. Early detection and effective intervention are critical to
-          managing these conditions and improving patient outcomes. In recent
-          years, Artificial Intelligence (AI) and Machine Learning (ML) have
-          emerged as powerful tools in this space, enabling prediction,
-          stratification, and personalized care planning [2, 3]. However,
-          despite the availability of increasingly rich datasets from sources
-          such as Electronic Health Records (EHRs), wearable devices, and
-          clinical imaging, the practical integration of AI/ML into chronic
-          disease management remains a challenge.
+          The Chronic Observation and Progression Events (COPE) Ontology is a structured, semantic framework designed to represent and reason about long-term health data with a focus on chronic disease progression. COPE offers a machine-actionable way to capture the nuanced, context-rich characteristics of individuals ranging from biological and behavioral traits to environmental and psychographic factors, alongside key events such as symptoms, risk factors, interventions, and disease outcomes.
+Developed as an evolving and extensible ontology, COPE supports the integration of diverse health-related data sources to facilitate research, AI-based analysis, and clinical decision-making. A future direction of COPE is to be used to model digital twins of individuals for the simulation and monitoring of health trajectories, enabling proactive and personalized healthcare approaches.
+COPE also includes support for describing datasets, AI models, and scholarly outputs, enabling its application not only in health analytics but also in reproducible research and knowledge sharing.
+We invite researchers, developers, and clinicians to explore the ontology, contribute to its development, and apply it in advancing chronic disease modelling and person-centred care.
         </p>
-        <p>
-          A key barrier lies in the lack of semantic frameworks that formally
-          connect patient characteristics, disease trajectories, risk factors,
-          and computational methods. Health informaticians often struggle to
-          navigate a fragmented landscape of data types, algorithms, and domain
-          knowledge when designing or interpreting AI driven health systems.
-          Ontologies, a formal and structured representation of knowl- edge [4],
-          offer a promising solution by capturing the complex interdependencies
-          among data, models in a machine interpretable way [5]. While several
-          biomedical ontologies exist, such as Systematized Nomenclature of
-          Medicine: Clinical Terms (SNOMED CT) [6], International Classification
-          of Diseases (ICD) [7], and Fast Healthcare Interoperability Resources
-          (FHIR) [8], they often lack support for repre- senting technical AI/ML
-          dimensions such as modelling approaches, explainability mechanisms, or
-          the evolving nature of wearable derived data [6].
-        </p>
-        <p>
-          To address this gap, we propose an ontology that provides a unified
-          representation of patient centered disease modelling and AI/ML
-          integration. This ontology is designed to support health
-          informaticians and data scientists in selecting appropriate modelling
-          techniques, identifying relevant data sources, and understanding the
-          implications of patient specific attributes on prediction outcomes. It
-          captures key elements such as biological, behavioral, psychographic,
-          demographic, and geographical characteristics of patients, disease
-          risk factors (including their modifiability), symptom profiles, and
-          outcomes. Impor- tantly, it also includes classes and properties for
-          AI/ML techniques (such as classification, regression, clustering),
-          data nature (such as structured, time series), data sources (such as
-          ECG, EHRs), and research outputs (such as datasets, papers, venues).
-        </p>
-        <p>
-          Crucially, the ontology introduces a temporal framework by modelling
-          timestamped clinical observa- tions. Through the ObservationEvent
-          class, it records the temporal context of symptoms, interventions, and
-          risk exposure, enabling the representation of dynamic disease
-          trajectories. This supports complex temporal queries such as: What
-          symptoms manifested following a particular intervention? or How did a
-          patient’s risk profile evolve across disease stages?
-        </p>
-        <p>
-          The ontology also supports traceable and interpretable AI by embedding
-          the provenance of compu- tational models including their training
-          datasets, algorithmic strategies, and contextual usage within the same
-          semantic space as clinical knowledge. AI models are connected to the
-          specific data they consume, the techniques they employ, and the
-          literature that supports their use, thereby aligning with the
-          principles of transparency, reproducibility, and explainability in
-          healthcare AI [9].
-        </p>
-        <p>
-          The proposed ontology aims to serve three purposes: (1) to support
-          trajectory modelling of chronic diseases using continuous or episodic
-          data from wearable devices, (2) to enable health informaticians and
-          data scientists to systematically explore how data science can
-          contribute to chronic disease prediction and management, and (3) to
-          guide the development and evaluation of AI/ML methods that are
-          interpretable, patient focused, and clinically actionable. We
-          demonstrate the applicability of the ontology through a set of
-          competency questions, use case examples, and exemplar queries.
-        </p>
+        
       </div>
       <div id="ontology">
         <h2>Ontology</h2>
