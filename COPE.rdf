@@ -20,6 +20,23 @@
      xmlns:resource="http://semanticscience.org/resource/">
     <owl:Ontology rdf:about="https://purl.archive.org/cope#">
         <owl:imports rdf:resource="http://semanticscience.org/ontology/sio/v1.59/sio-release.owl"/>
+        
+        <!-- Ontology Metadata -->
+        <dc:title>COPE - Comprehensive Ontology for Patient Health Trajectories and AI Models</dc:title>
+        <dc:description>An ontology for representing health trajectories, disease progression, risk factors, symptoms, and AI models used in healthcare applications. COPE provides a comprehensive framework for modeling patient health journeys, disease characteristics, and the AI models that analyze them.</dc:description>
+        <dc:creator>Oshani Seneviratne</dc:creator>
+        <dc:creator>Asara Senaratne</dc:creator>
+        <dc:creator>Hon Zent Lim</dc:creator>
+        <dc:creator>Leelanga Seneviratne</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-01-23</dc:date>
+        <owl:versionInfo>1.0.0</owl:versionInfo>
+        <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <terms:rights>This work is licensed under a Creative Commons Attribution 4.0 International License</terms:rights>
+        <vann:preferredNamespacePrefix>cope</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri>https://purl.archive.org/cope#</vann:preferredNamespaceUri>
+        
+        <!-- WIDOCO specific annotations -->
+        <rdfs:comment>COPE (Comprehensive Ontology for Patient Health Trajectories and AI Models) is designed to provide a standardized vocabulary for representing health trajectories, disease progression patterns, risk factors, symptoms, and AI models in healthcare applications. The ontology supports the modeling of complex health journeys, cycle of deconditioning patterns, and the evaluation of AI models through performance metrics.</rdfs:comment>
     </owl:Ontology>
     
 
@@ -117,7 +134,10 @@
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="https://purl.archive.org/cope#AIModel"/>
         <rdfs:range rdf:resource="https://purl.archive.org/cope#PerformanceMetric"/>
+        <rdfs:label>evaluated by</rdfs:label>
         <rdfs:comment>Ones validity is determined by the specifications of the other.</rdfs:comment>
+        <skos:definition>Relates an AI model to the performance metrics used to evaluate its effectiveness and accuracy.</skos:definition>
+        <skos:example>Random Forest model evaluated by F1-Score metric</skos:example>
     </owl:ObjectProperty>
     
 
@@ -162,7 +182,10 @@
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="http://semanticscience.org/resource/SIO_000498"/>
         <rdfs:range rdf:resource="https://purl.archive.org/cope#HealthTrajectory"/>
+        <rdfs:label>has health trajectory</rdfs:label>
         <rdfs:comment>Progression is only associated with single instance of the other.</rdfs:comment>
+        <skos:definition>Relates a person to their health trajectory, representing the chronological sequence of their health-related events and observations.</skos:definition>
+        <skos:example>John Paul has health trajectory DiabetesHealthTrajectory</skos:example>
     </owl:ObjectProperty>
     
 
@@ -566,6 +589,10 @@
     <owl:DatatypeProperty rdf:about="https://purl.archive.org/cope#hasStartDate">
         <rdfs:domain rdf:resource="https://purl.archive.org/cope#HealthTrajectory"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:label>has start date</rdfs:label>
+        <rdfs:comment>Specifies the start date and time of a health trajectory.</rdfs:comment>
+        <skos:definition>Indicates when a health trajectory begins, marking the start of a sequence of health-related events.</skos:definition>
+        <skos:example>2024-11-01T08:00:00</skos:example>
     </owl:DatatypeProperty>
     
 
@@ -587,6 +614,10 @@
     <owl:DatatypeProperty rdf:about="https://purl.archive.org/cope#observationTimestamp">
         <rdfs:domain rdf:resource="https://purl.archive.org/cope#ObservationEvent"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
+        <rdfs:label>observation timestamp</rdfs:label>
+        <rdfs:comment>Records the precise date and time when an observation event occurred.</rdfs:comment>
+        <skos:definition>Specifies the exact moment when a health observation or measurement was taken, providing temporal context for the event.</skos:definition>
+        <skos:example>2025-07-23T08:30:00Z</skos:example>
     </owl:DatatypeProperty>
     
 
@@ -613,7 +644,12 @@
 
     <!-- https://purl.archive.org/cope#AIModel -->
 
-    <owl:Class rdf:about="https://purl.archive.org/cope#AIModel"/>
+    <owl:Class rdf:about="https://purl.archive.org/cope#AIModel">
+        <rdfs:label>AI Model</rdfs:label>
+        <rdfs:comment>An artificial intelligence model used for healthcare applications, including machine learning models for disease prediction, risk assessment, and health trajectory analysis.</rdfs:comment>
+        <skos:definition>An artificial intelligence system designed to process healthcare data and provide predictions, classifications, or insights about patient health trajectories and disease progression.</skos:definition>
+        <skos:example>Random Forest model for diabetes prediction, CNN model for ECG anomaly detection</skos:example>
+    </owl:Class>
     
 
 
@@ -637,7 +673,10 @@
     <!-- https://purl.archive.org/cope#CycleOfDeconditioning -->
 
     <owl:Class rdf:about="https://purl.archive.org/cope#CycleOfDeconditioning">
+        <rdfs:label>Cycle of Deconditioning</rdfs:label>
         <rdfs:comment>Cycle of deconditioning is the stages of changes that occur in a person&apos;s body due to prolonged inactivity.</rdfs:comment>
+        <skos:definition>A progressive decline in physical function and health status that occurs when a person becomes less active, leading to a cascade of negative health effects that further reduce activity levels.</skos:definition>
+        <skos:example>Unhealthy lifestyle → Blood pressure increase → Cardiovascular risk → Reduced physical activity → Decline in lifestyle quality → Disease progression</skos:example>
     </owl:Class>
     
 
@@ -685,7 +724,10 @@
     <!-- https://purl.archive.org/cope#HealthTrajectory -->
 
     <owl:Class rdf:about="https://purl.archive.org/cope#HealthTrajectory">
+        <rdfs:label>Health Trajectory</rdfs:label>
         <rdfs:comment>A trajectory is a collection of sequentially linked temporal observer events that belong to a specific person and share the same membership.</rdfs:comment>
+        <skos:definition>A chronological sequence of health-related events and observations that represent a person's health journey over time, including disease progression, interventions, and outcomes.</skos:definition>
+        <skos:example>Diabetes progression from diagnosis through treatment to complications</skos:example>
     </owl:Class>
     
 
@@ -787,7 +829,10 @@
     <!-- https://purl.archive.org/cope#RiskFactor -->
 
     <owl:Class rdf:about="https://purl.archive.org/cope#RiskFactor">
+        <rdfs:label>Risk Factor</rdfs:label>
         <rdfs:comment>Risk factor is a condition of a personal charactoristic that recognizes a plausible disease.</rdfs:comment>
+        <skos:definition>A characteristic, condition, or behavior that increases the likelihood of developing a disease or health condition.</skos:definition>
+        <skos:example>Smoking, obesity, high blood pressure, family history of diabetes</skos:example>
     </owl:Class>
     
 
@@ -795,7 +840,10 @@
     <!-- https://purl.archive.org/cope#Symptom -->
 
     <owl:Class rdf:about="https://purl.archive.org/cope#Symptom">
+        <rdfs:label>Symptom</rdfs:label>
         <rdfs:comment>Symptom is a variation (range or a threshold) of a measurement that is functionally associated with a specific disease.</rdfs:comment>
+        <skos:definition>A physical or mental feature that indicates the presence of a disease or health condition, often measurable through clinical observations or patient reports.</skos:definition>
+        <skos:example>Chest pain, shortness of breath, blurred vision, fatigue</skos:example>
     </owl:Class>
     
 
