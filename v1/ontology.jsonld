@@ -1,0 +1,3328 @@
+[ {
+  "@id" : "http://purl.org/dc/elements/1.1/abstract",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/audience",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/context",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/coverage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/date",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/difficulty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/educationLevel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/format",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/instructionalLevel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/intendedEndUserRole",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/interactivityLevel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/interactivityType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/language",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/learningResourceType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/publisher",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/relation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/semanticDensity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/source",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/subject",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/typicalAgeRange",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/typicalLearningTime",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/abstract",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://semanticscience.org/resource/SIO_000068",
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_010299"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://purl.archive.org/cope#CycleOfDeconditioning"
+  } ]
+}, {
+  "@id" : "http://semanticscience.org/resource/SIO_000095",
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://purl.archive.org/cope#ObservationEvent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://purl.archive.org/cope#HealthTrajectory"
+  } ]
+}, {
+  "@id" : "http://semanticscience.org/resource/SIO_000248",
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://purl.archive.org/cope#ObservationEvent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://purl.archive.org/cope#ObservationEvent"
+  } ]
+}, {
+  "@id" : "http://semanticscience.org/resource/SIO_000253",
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_000089"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://purl.archive.org/cope#ObservationSource"
+  } ]
+}, {
+  "@id" : "http://semanticscience.org/resource/SIO_000563",
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://purl.archive.org/cope#ResearchArticle"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_001398"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#definition",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://purl.archive.org/cope#",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/elements/1.1/abstract" : [ {
+    "@value" : "COPE (Comprehensive Ontology for Patient Health Trajectories and AI Models) provides a standardized vocabulary for representing health trajectories, disease progression patterns, risk factors, symptoms, and AI models in healthcare applications. The ontology enables the modeling of complex health journeys, cycle of deconditioning patterns, and the evaluation of AI models through performance metrics, supporting comprehensive healthcare data analysis and AI model assessment."
+  } ],
+  "http://purl.org/dc/elements/1.1/audience" : [ {
+    "@value" : "Healthcare researchers, AI developers, medical professionals"
+  } ],
+  "http://purl.org/dc/elements/1.1/context" : [ {
+    "@value" : "Healthcare AI Research"
+  } ],
+  "http://purl.org/dc/elements/1.1/contributor" : [ {
+    "@value" : "Healthcare AI Research Community"
+  } ],
+  "http://purl.org/dc/elements/1.1/coverage" : [ {
+    "@value" : "Healthcare, Medical AI, Disease Modeling"
+  } ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@value" : "Asara Senaratne"
+  }, {
+    "@value" : "Hon Zent Lim"
+  }, {
+    "@value" : "Leelanga Seneviratne"
+  }, {
+    "@value" : "Oshani Seneviratne"
+  } ],
+  "http://purl.org/dc/elements/1.1/date" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2025-01-23"
+  } ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "An ontology for representing health trajectories, disease progression, risk factors, symptoms, and AI models used in healthcare applications. COPE provides a comprehensive framework for modeling patient health journeys, disease characteristics, and the AI models that analyze them."
+  }, {
+    "@value" : "Healthcare systems generate vast amounts of data that can be leveraged to improve patient outcomes through AI-driven insights. However, the lack of standardized vocabularies for representing health trajectories, disease progression, and AI model performance creates challenges in data interoperability and model evaluation. COPE addresses these challenges by providing a comprehensive ontology that captures the complex relationships between patient characteristics, health trajectories, disease progression patterns, risk factors, symptoms, and AI models. The ontology supports the modeling of cycle of deconditioning patterns, enables the evaluation of AI models through performance metrics, and facilitates the integration of diverse healthcare data sources for improved clinical decision-making and research applications."
+  }, {
+    "@value" : "This ontology provides a comprehensive framework for modeling patient health trajectories, disease progression patterns, and AI model evaluation in healthcare applications."
+  } ],
+  "http://purl.org/dc/elements/1.1/difficulty" : [ {
+    "@value" : "Advanced"
+  } ],
+  "http://purl.org/dc/elements/1.1/educationLevel" : [ {
+    "@value" : "Graduate"
+  } ],
+  "http://purl.org/dc/elements/1.1/format" : [ {
+    "@value" : "application/rdf+xml"
+  } ],
+  "http://purl.org/dc/elements/1.1/identifier" : [ {
+    "@value" : "https://purl.archive.org/cope#"
+  } ],
+  "http://purl.org/dc/elements/1.1/instructionalLevel" : [ {
+    "@value" : "Advanced"
+  } ],
+  "http://purl.org/dc/elements/1.1/intendedEndUserRole" : [ {
+    "@value" : "Researcher"
+  } ],
+  "http://purl.org/dc/elements/1.1/interactivityLevel" : [ {
+    "@value" : "High"
+  } ],
+  "http://purl.org/dc/elements/1.1/interactivityType" : [ {
+    "@value" : "Active"
+  } ],
+  "http://purl.org/dc/elements/1.1/language" : [ {
+    "@value" : "en"
+  } ],
+  "http://purl.org/dc/elements/1.1/learningResourceType" : [ {
+    "@value" : "Ontology"
+  } ],
+  "http://purl.org/dc/elements/1.1/publisher" : [ {
+    "@value" : "COPE Development Team"
+  } ],
+  "http://purl.org/dc/elements/1.1/relation" : [ {
+    "@value" : "Extends Semantic Science Ontology (SIO)"
+  } ],
+  "http://purl.org/dc/elements/1.1/semanticDensity" : [ {
+    "@value" : "High"
+  } ],
+  "http://purl.org/dc/elements/1.1/source" : [ {
+    "@value" : "COPE Ontology Development Project"
+  } ],
+  "http://purl.org/dc/elements/1.1/subject" : [ {
+    "@value" : "Health Trajectories, Disease Progression, AI Models, Healthcare Ontology"
+  } ],
+  "http://purl.org/dc/elements/1.1/title" : [ {
+    "@value" : "COPE - Comprehensive Ontology for Patient Health Trajectories and AI Models"
+  } ],
+  "http://purl.org/dc/elements/1.1/typicalAgeRange" : [ {
+    "@value" : "18+"
+  } ],
+  "http://purl.org/dc/elements/1.1/typicalLearningTime" : [ {
+    "@value" : "P1M"
+  } ],
+  "http://purl.org/dc/terms/abstract" : [ {
+    "@value" : "COPE (Comprehensive Ontology for Patient Health Trajectories and AI Models) provides a standardized vocabulary for representing health trajectories, disease progression patterns, risk factors, symptoms, and AI models in healthcare applications. The ontology enables the modeling of complex health journeys, cycle of deconditioning patterns, and the evaluation of AI models through performance metrics, supporting comprehensive healthcare data analysis and AI model assessment."
+  } ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@value" : "Healthcare systems generate vast amounts of data that can be leveraged to improve patient outcomes through AI-driven insights. However, the lack of standardized vocabularies for representing health trajectories, disease progression, and AI model performance creates challenges in data interoperability and model evaluation. COPE addresses these challenges by providing a comprehensive ontology that captures the complex relationships between patient characteristics, health trajectories, disease progression patterns, risk factors, symptoms, and AI models. The ontology supports the modeling of cycle of deconditioning patterns, enables the evaluation of AI models through performance metrics, and facilitates the integration of diverse healthcare data sources for improved clinical decision-making and research applications."
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@id" : "https://creativecommons.org/licenses/by/4.0/"
+  } ],
+  "http://purl.org/dc/terms/rights" : [ {
+    "@value" : "This work is licensed under a Creative Commons Attribution 4.0 International License"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
+    "@value" : "cope"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespaceUri" : [ {
+    "@value" : "https://purl.archive.org/cope#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "COPE (Comprehensive Ontology for Patient Health Trajectories and AI Models) is designed to provide a standardized vocabulary for representing health trajectories, disease progression patterns, risk factors, symptoms, and AI models in healthcare applications. The ontology supports the modeling of complex health journeys, cycle of deconditioning patterns, and the evaluation of AI models through performance metrics."
+  }, {
+    "@value" : "Healthcare systems generate vast amounts of data that can be leveraged to improve patient outcomes through AI-driven insights. However, the lack of standardized vocabularies for representing health trajectories, disease progression, and AI model performance creates challenges in data interoperability and model evaluation. COPE addresses these challenges by providing a comprehensive ontology that captures the complex relationships between patient characteristics, health trajectories, disease progression patterns, risk factors, symptoms, and AI models. The ontology supports the modeling of cycle of deconditioning patterns, enables the evaluation of AI models through performance metrics, and facilitates the integration of diverse healthcare data sources for improved clinical decision-making and research applications."
+  } ],
+  "http://www.w3.org/2002/07/owl#imports" : [ {
+    "@id" : "http://semanticscience.org/ontology/sio/v1.59/sio-release.owl"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@value" : "1.0.0"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#AIHAD",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.archive.org/cope#AIModel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Artificial Intelligence-based Hybrid Anomaly Detection (AIHAD)"
+  } ],
+  "https://purl.archive.org/cope#evaluatedBy" : [ {
+    "@id" : "https://purl.archive.org/cope#F1-Score"
+  }, {
+    "@id" : "https://purl.archive.org/cope#MSE"
+  } ],
+  "https://purl.archive.org/cope#hasAIModelName" : [ {
+    "@value" : "Artificial Intelligence-based Hybrid Anomaly Detection (AIHAD)"
+  } ],
+  "https://purl.archive.org/cope#hasExplanation" : [ {
+    "@id" : "https://purl.archive.org/cope#Explanation002"
+  } ],
+  "https://purl.archive.org/cope#includes" : [ {
+    "@id" : "https://purl.archive.org/cope#ECGSignalFeatures"
+  } ],
+  "https://purl.archive.org/cope#trainedOn" : [ {
+    "@id" : "https://purl.archive.org/cope#Dataset002"
+  } ],
+  "https://purl.archive.org/cope#usesApproach" : [ {
+    "@id" : "https://purl.archive.org/cope#CNN"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#AIModel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An artificial intelligence model used for healthcare applications, including machine learning models for disease prediction, risk assessment, and health trajectory analysis."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "AI Model"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "https://purl.archive.org/cope#AIHAD"
+  }, {
+    "@id" : "https://purl.archive.org/cope#ExplainableAI"
+  }, {
+    "@id" : "https://purl.archive.org/cope#RFEnhancedFeedForwardNetwork"
+  }, {
+    "@id" : "https://purl.archive.org/cope#RandomForest"
+  }, {
+    "@id" : "https://purl.archive.org/cope#TPOT-optimized_ensemble_model"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "An artificial intelligence system designed to process healthcare data and provide predictions, classifications, or insights about patient health trajectories and disease progression."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@value" : "Random Forest model for diabetes prediction, CNN model for ECG anomaly detection"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#AbnormalCSNA",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.archive.org/cope#RiskFactor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Abnormal CSNA"
+  } ],
+  "https://purl.archive.org/cope#contributesTo" : [ {
+    "@id" : "https://purl.archive.org/cope#CAD"
+  } ],
+  "https://purl.archive.org/cope#hasRiskFactorName" : [ {
+    "@value" : "Abnormal CSNA"
+  } ],
+  "https://purl.archive.org/cope#observedBy" : [ {
+    "@id" : "https://purl.archive.org/cope#CSNASignalFeatureSource"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#AbnormalCSNAObservationEvent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://semanticscience.org/resource/SIO_000095" : [ {
+    "@id" : "https://purl.archive.org/cope#CADHealthTrajectory"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.archive.org/cope#ObservationEvent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Abnormal CSNA Observation Event"
+  } ],
+  "https://purl.archive.org/cope#hasObservationEventName" : [ {
+    "@value" : "Abnormal CSNA Observation Event"
+  } ],
+  "https://purl.archive.org/cope#isPairedWith" : [ {
+    "@id" : "https://purl.archive.org/cope#MaryJane"
+  } ],
+  "https://purl.archive.org/cope#observationTimestamp" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTimeStamp",
+    "@value" : "2025-07-23T08:30:00Z"
+  } ],
+  "https://purl.archive.org/cope#observationValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "75"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#AbuBakar",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://semanticscience.org/resource/SIO_000498" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Abu Bakar"
+  } ],
+  "https://purl.archive.org/cope#hasCharacteristic" : [ {
+    "@id" : "https://purl.archive.org/cope#BehavAbuBakar"
+  }, {
+    "@id" : "https://purl.archive.org/cope#BioAbuBakar"
+  }, {
+    "@id" : "https://purl.archive.org/cope#DemoAbuBakar"
+  }, {
+    "@id" : "https://purl.archive.org/cope#GeoAbuBakar"
+  }, {
+    "@id" : "https://purl.archive.org/cope#PsychAbuBakar"
+  } ],
+  "https://purl.archive.org/cope#hasFullName" : [ {
+    "@value" : "Abu Bakar"
+  } ],
+  "https://purl.archive.org/cope#hasHealthTrajectory" : [ {
+    "@id" : "https://purl.archive.org/cope#LungCancerHealthTrajectory"
+  } ],
+  "https://purl.archive.org/cope#hasRiskFactor" : [ {
+    "@id" : "https://purl.archive.org/cope#Smoking"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#AnthonyPatel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://semanticscience.org/resource/SIO_000498" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Anthony Patel"
+  } ],
+  "https://purl.archive.org/cope#hasCharacteristic" : [ {
+    "@id" : "https://purl.archive.org/cope#BehavAnthonyPatel"
+  }, {
+    "@id" : "https://purl.archive.org/cope#BioAnthonyPatel"
+  }, {
+    "@id" : "https://purl.archive.org/cope#DemoAnthonyPatel"
+  }, {
+    "@id" : "https://purl.archive.org/cope#GeoAnthonyPatel"
+  }, {
+    "@id" : "https://purl.archive.org/cope#PsychAnthonyPatel"
+  } ],
+  "https://purl.archive.org/cope#hasFullName" : [ {
+    "@value" : "Anthony Patel"
+  } ],
+  "https://purl.archive.org/cope#hasHealthTrajectory" : [ {
+    "@id" : "https://purl.archive.org/cope#CKDHealthTrajectory"
+  }, {
+    "@id" : "https://purl.archive.org/cope#HypertensionHealthTrajectory"
+  } ],
+  "https://purl.archive.org/cope#hasRiskFactor" : [ {
+    "@id" : "https://purl.archive.org/cope#Hypertension"
+  }, {
+    "@id" : "https://purl.archive.org/cope#Obesity"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#Atherosclerosis",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.archive.org/cope#DiseaseCharacteristic"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Atherosclerosis"
+  } ],
+  "https://purl.archive.org/cope#hasDiseaseCharacteristicName" : [ {
+    "@value" : "Atherosclerosis"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#BMI",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.archive.org/cope#InputDataNature"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Body Mass Index"
+  } ],
+  "https://purl.archive.org/cope#hasInputDataNatureName" : [ {
+    "@value" : "Body Mass Index"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#BMIObservationEvent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.archive.org/cope#ObservationEvent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "BMI Observation Event"
+  } ],
+  "https://purl.archive.org/cope#hasObservationEventName" : [ {
+    "@value" : "BMI Observation Event"
+  } ],
+  "https://purl.archive.org/cope#observationTimestamp" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTimeStamp",
+    "@value" : "2025-07-23T08:30:00Z"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#BehavAbuBakar",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.archive.org/cope#Behavioral"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Abu Bakar Behavioral"
+  } ],
+  "https://purl.archive.org/cope#alcoholConsumption" : [ {
+    "@value" : "Non-Drinker"
+  } ],
+  "https://purl.archive.org/cope#hasExerciseFrequency" : [ {
+    "@value" : "3 times a week"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#BehavAnthonyPatel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.archive.org/cope#Behavioral"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Anthony Patel Behavioral"
+  } ],
+  "https://purl.archive.org/cope#alcoholConsumption" : [ {
+    "@value" : "Regularly"
+  } ],
+  "https://purl.archive.org/cope#hasExerciseFrequency" : [ {
+    "@value" : "Rarely"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#BehavJohnPaul",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.archive.org/cope#Behavioral"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "John Paul Behavioral"
+  } ],
+  "https://purl.archive.org/cope#alcoholConsumption" : [ {
+    "@value" : "Alcoholic"
+  } ],
+  "https://purl.archive.org/cope#hasExerciseFrequency" : [ {
+    "@value" : "5 times a week"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#BehavMaryJane",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.archive.org/cope#Behavioral"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Mary Jane Behavioral"
+  } ],
+  "https://purl.archive.org/cope#alcoholConsumption" : [ {
+    "@value" : "Former Drinker"
+  } ],
+  "https://purl.archive.org/cope#hasExerciseFrequency" : [ {
+    "@value" : "1 time a week"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#Behavioral",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_001398"
+  }, {
+    "@id" : "https://purl.archive.org/cope#PersonCharacteristic"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#BioAbuBakar",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.archive.org/cope#Biological"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Abu Bakar Biological"
+  } ],
+  "https://purl.archive.org/cope#hasAge" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "42"
+  } ],
+  "https://purl.archive.org/cope#hasGender" : [ {
+    "@value" : "Male"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#BioAnthonyPatel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.archive.org/cope#Biological"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Anthony Patel Biological"
+  } ],
+  "https://purl.archive.org/cope#hasAge" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "65"
+  } ],
+  "https://purl.archive.org/cope#hasGender" : [ {
+    "@value" : "Male"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#BioJohnPaul",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.archive.org/cope#Biological"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "John Paul Biological"
+  } ],
+  "https://purl.archive.org/cope#hasAge" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "55"
+  } ],
+  "https://purl.archive.org/cope#hasGender" : [ {
+    "@value" : "Male"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#BioMaryJane",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.archive.org/cope#Biological"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Mary Jane Biological"
+  } ],
+  "https://purl.archive.org/cope#hasAge" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "67"
+  } ],
+  "https://purl.archive.org/cope#hasGender" : [ {
+    "@value" : "Female"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#Biological",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://purl.archive.org/cope#PersonCharacteristic"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#BloodGlucoseMeters",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://semanticscience.org/resource/SIO_001236" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Blood Glucose Meters"
+  } ],
+  "https://purl.archive.org/cope#hasDeviceName" : [ {
+    "@value" : "Blood Glucose Meters"
+  } ],
+  "https://purl.archive.org/cope#hasMeasurementUnit" : [ {
+    "@id" : "https://purl.archive.org/cope#mmol/L"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#BloodPressureMonitor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://semanticscience.org/resource/SIO_001236" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Blood Pressure Monitor"
+  } ],
+  "https://purl.archive.org/cope#hasDeviceName" : [ {
+    "@value" : "Blood Pressure Monitor"
+  } ],
+  "https://purl.archive.org/cope#hasMeasurementUnit" : [ {
+    "@id" : "https://purl.archive.org/cope#mmHg"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#BloodSugar",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.archive.org/cope#RiskFactor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Blood Sugar"
+  } ],
+  "https://purl.archive.org/cope#hasRiskFactorName" : [ {
+    "@value" : "Blood Sugar"
+  } ],
+  "https://purl.archive.org/cope#observedBy" : [ {
+    "@id" : "https://purl.archive.org/cope#BloodSugarLevelSource"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#BloodSugarLevel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.archive.org/cope#InputDataNature"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Blood Sugar Level"
+  } ],
+  "https://purl.archive.org/cope#hasInputDataNatureName" : [ {
+    "@value" : "Blood Sugar Level"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#BloodSugarLevelSource",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.archive.org/cope#ObservationSource"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Blood Sugar Level Source"
+  } ],
+  "https://purl.archive.org/cope#hasObservationSourceName" : [ {
+    "@value" : "Blood Sugar Level Source"
+  } ],
+  "https://purl.archive.org/cope#includes" : [ {
+    "@id" : "https://purl.archive.org/cope#BloodGlucoseMeters"
+  } ],
+  "https://purl.archive.org/cope#triggers" : [ {
+    "@id" : "https://purl.archive.org/cope#FastingBloodGlucoseObservationEvent"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#BlurredVision",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.archive.org/cope#Symptom"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Blurred Vision"
+  } ],
+  "https://purl.archive.org/cope#getSymptom" : [ {
+    "@id" : "https://purl.archive.org/cope#JohnPaul"
+  } ],
+  "https://purl.archive.org/cope#hasSymptomName" : [ {
+    "@value" : "Bliurred Vision"
+  } ],
+  "https://purl.archive.org/cope#observedBy" : [ {
+    "@id" : "https://purl.archive.org/cope#SystolicBPSource"
+  } ],
+  "https://purl.archive.org/cope#observedIn" : [ {
+    "@id" : "https://purl.archive.org/cope#HypertensionObservationEvent"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#CAD",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://semanticscience.org/resource/SIO_010299" ],
+  "http://semanticscience.org/resource/SIO_000068" : [ {
+    "@id" : "https://purl.archive.org/cope#COD2"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Coronary Artery Disease (CAD)"
+  } ],
+  "https://purl.archive.org/cope#hasCharacteristic" : [ {
+    "@id" : "https://purl.archive.org/cope#Atherosclerosis"
+  } ],
+  "https://purl.archive.org/cope#hasDiseaseName" : [ {
+    "@value" : "Coronary Artery Disease (CAD)"
+  } ],
+  "https://purl.archive.org/cope#isIdentifiedBy" : [ {
+    "@id" : "https://purl.archive.org/cope#ChestPain"
+  }, {
+    "@id" : "https://purl.archive.org/cope#ShortnessOfBreath"
+  } ],
+  "https://purl.archive.org/cope#leadsTo" : [ {
+    "@id" : "https://purl.archive.org/cope#SuddenCardiacDeath"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#CADHealthTrajectory",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.archive.org/cope#HealthTrajectory"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "CAD Health Trajectory"
+  } ],
+  "https://purl.archive.org/cope#hasEndDate" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2025-07-04T11:15:00"
+  } ],
+  "https://purl.archive.org/cope#hasHealthTrajectoryName" : [ {
+    "@value" : "CAD Health Trajectory"
+  } ],
+  "https://purl.archive.org/cope#hasParticipationRank" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "0"
+  } ],
+  "https://purl.archive.org/cope#hasPhase" : [ {
+    "@id" : "https://purl.archive.org/cope#VerifiedTrajectoryPhase"
+  } ],
+  "https://purl.archive.org/cope#hasStartDate" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2025-06-15T08:00:00"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#CKDHealthTrajectory",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.archive.org/cope#HealthTrajectory"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Chronic Kidney Disease Health Trajectory"
+  } ],
+  "https://purl.archive.org/cope#hasEndDate" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2025-07-04T11:45:00"
+  } ],
+  "https://purl.archive.org/cope#hasHealthTrajectoryName" : [ {
+    "@value" : "Chronic Kidney Disease Health Trajectory"
+  } ],
+  "https://purl.archive.org/cope#hasParticipationRank" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "0"
+  } ],
+  "https://purl.archive.org/cope#hasPhase" : [ {
+    "@id" : "https://purl.archive.org/cope#VerifiedTrajectoryPhase"
+  } ],
+  "https://purl.archive.org/cope#hasStartDate" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2025-01-15T08:00:00"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#CNN",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.archive.org/cope#ModellingApproach"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Convolutional Neural Networks (CNN)"
+  } ],
+  "https://purl.archive.org/cope#hasModellingApproachName" : [ {
+    "@value" : "Convolutional Neural Networks (CNN)"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#COD1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.archive.org/cope#CycleOfDeconditioning"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Unhealthy lifestyle > Blood pressure increase > Increases cardiovascular risk > Reduced physical activity > Decline in lifestyle quality > Disease progression"
+  } ],
+  "https://purl.archive.org/cope#hasCODDetails" : [ {
+    "@value" : "Unhealthy lifestyle > Blood pressure increase > Increases cardiovascular risk > Reduced physical activity > Decline in lifestyle quality > Disease progression"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#COD2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.archive.org/cope#CycleOfDeconditioning"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ECG Anomalies Detected > Decreased Cardiac Efficiency > Reduced Physical Activity > Increased Hypertension > Chronic Disease Progression"
+  } ],
+  "https://purl.archive.org/cope#hasCODDetails" : [ {
+    "@value" : "ECG Anomalies Detected > Decreased Cardiac Efficiency > Reduced Physical Activity > Increased Hypertension > Chronic Disease Progression"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#COD3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.archive.org/cope#CycleOfDeconditioning"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Increased Hypertension > Reduced Kidney Function > Reduced Physical Activity > Metabolic Deterioration > Worsen CKD > Chronic Disease Progression"
+  } ],
+  "https://purl.archive.org/cope#hasCODDetails" : [ {
+    "@value" : "Increased Hypertension > Reduced Kidney Function > Reduced Physical Activity > Metabolic Deterioration > Worsen CKD > Chronic Disease Progression"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#COD4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.archive.org/cope#CycleOfDeconditioning"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Obesity > Insulin Resistance and Inflammation > Type 2 Diabetes > Hypertension > Vascular Dysfunction > Reduction in Exercise > Worsen Insuin Resistance and Inflammation > Worsen Hypertension"
+  } ],
+  "https://purl.archive.org/cope#hasCODDetails" : [ {
+    "@value" : "Obesity > Insulin Resistance and Inflammation > Type 2 Diabetes > Hypertension > Vascular Dysfunction > Reduction in Exercise > Worsen Insuin Resistance and Inflammation > Worsen Hypertension"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#COD5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.archive.org/cope#CycleOfDeconditioning"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Smoking > Lung Damage > Fatigue > Reduced Exercise > Increased Disability > Further Reduction in Exercise > Cycle Worsen"
+  } ],
+  "https://purl.archive.org/cope#hasCODDetails" : [ {
+    "@value" : "Smoking > Lung Damage > Fatigue > Reduced Exercise > Increased Disability > Further Reduction in Exercise > Cycle Worsen"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#CSNASignalFeatureSource",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.archive.org/cope#ObservationSource"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "CSNA Signal Feature Source"
+  } ],
+  "https://purl.archive.org/cope#hasObservationSourceName" : [ {
+    "@value" : "CSNA Signal Feature Source"
+  } ],
+  "https://purl.archive.org/cope#includes" : [ {
+    "@id" : "https://purl.archive.org/cope#MicroneurographySystem"
+  } ],
+  "https://purl.archive.org/cope#triggers" : [ {
+    "@id" : "https://purl.archive.org/cope#AbnormalCSNAObservationEvent"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#CardiacRehab",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.archive.org/cope#Preventive"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Cardiac Exercise Rehabilitation"
+  } ],
+  "https://purl.archive.org/cope#appliedIn" : [ {
+    "@id" : "https://purl.archive.org/cope#ECGAnomalyObservationEvent"
+  } ],
+  "https://purl.archive.org/cope#appliedTo" : [ {
+    "@id" : "https://purl.archive.org/cope#CAD"
+  } ],
+  "https://purl.archive.org/cope#hasInterventionName" : [ {
+    "@value" : "Cardiac Exercise Rehabilitation"
+  } ],
+  "https://purl.archive.org/cope#targets" : [ {
+    "@id" : "https://purl.archive.org/cope#ECGAnomalies"
+  }, {
+    "@id" : "https://purl.archive.org/cope#ShortnessOfBreath"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#ChestPain",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.archive.org/cope#Symptom"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Chest Pain"
+  } ],
+  "https://purl.archive.org/cope#getSymptom" : [ {
+    "@id" : "https://purl.archive.org/cope#MaryJane"
+  } ],
+  "https://purl.archive.org/cope#hasSymptomName" : [ {
+    "@value" : "Chest Pain"
+  } ],
+  "https://purl.archive.org/cope#observedBy" : [ {
+    "@id" : "https://purl.archive.org/cope#CSNASignalFeatureSource"
+  } ],
+  "https://purl.archive.org/cope#observedIn" : [ {
+    "@id" : "https://purl.archive.org/cope#AbnormalCSNAObservationEvent"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#ChronicKidneyDisease",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://semanticscience.org/resource/SIO_010299" ],
+  "http://semanticscience.org/resource/SIO_000068" : [ {
+    "@id" : "https://purl.archive.org/cope#COD3"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Chronic Kidney Disease"
+  } ],
+  "https://purl.archive.org/cope#hasCharacteristic" : [ {
+    "@id" : "https://purl.archive.org/cope#ReducedGFR"
+  } ],
+  "https://purl.archive.org/cope#hasDiseaseName" : [ {
+    "@value" : "Chronic Kidney Disease"
+  } ],
+  "https://purl.archive.org/cope#isIdentifiedBy" : [ {
+    "@id" : "https://purl.archive.org/cope#ShortnessOfBreath"
+  }, {
+    "@id" : "https://purl.archive.org/cope#Swelling"
+  } ],
+  "https://purl.archive.org/cope#leadsTo" : [ {
+    "@id" : "https://purl.archive.org/cope#HighCVDRisk"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#CycleOfDeconditioning",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Cycle of deconditioning is the stages of changes that occur in a person's body due to prolonged inactivity."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Cycle of Deconditioning"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "A progressive decline in physical function and health status that occurs when a person becomes less active, leading to a cascade of negative health effects that further reduce activity levels."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@value" : "Unhealthy lifestyle → Blood pressure increase → Cardiovascular risk → Reduced physical activity → Decline in lifestyle quality → Disease progression"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#Dataset001",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://semanticscience.org/resource/SIO_000089" ],
+  "http://semanticscience.org/resource/SIO_000253" : [ {
+    "@id" : "https://purl.archive.org/cope#BloodSugarLevelSource"
+  }, {
+    "@id" : "https://purl.archive.org/cope#DiastolicBPSource"
+  }, {
+    "@id" : "https://purl.archive.org/cope#HeightMeasurementSource"
+  }, {
+    "@id" : "https://purl.archive.org/cope#SystolicBPSource"
+  }, {
+    "@id" : "https://purl.archive.org/cope#WeightMeasurementSource"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Secondary surveillance data from Puskesmas Johar Baru, Jakarta, in 2019, 2020, and 2021"
+  } ],
+  "https://purl.archive.org/cope#hasDataset" : [ {
+    "@value" : "Secondary surveillance data from Puskesmas Johar Baru, Jakarta, in 2019, 2020, and 2021"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#Dataset002",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://semanticscience.org/resource/SIO_000089" ],
+  "http://semanticscience.org/resource/SIO_000253" : [ {
+    "@id" : "https://purl.archive.org/cope#CSNASignalFeatureSource"
+  }, {
+    "@id" : "https://purl.archive.org/cope#ECGSignalFeatureSource"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Fully labeled STAFF III and PTBD databases, which contain the 12-lead wideband raw recordings non-invasively acquired from 260 subjects"
+  } ],
+  "https://purl.archive.org/cope#hasDataset" : [ {
+    "@value" : "Fully labeled STAFF III and PTBD databases, which contain the 12-lead wideband raw recordings non-invasively acquired from 260 subjects"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#Dataset003",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://semanticscience.org/resource/SIO_000089" ],
+  "http://semanticscience.org/resource/SIO_000253" : [ {
+    "@id" : "https://purl.archive.org/cope#DiastolicBPSource"
+  }, {
+    "@id" : "https://purl.archive.org/cope#SystolicBPSource"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Mashhad Stroke and Heart Atherosclerotic Disorders (MASHAD) Study database"
+  } ],
+  "https://purl.archive.org/cope#hasDataset" : [ {
+    "@value" : "Mashhad Stroke and Heart Atherosclerotic Disorders (MASHAD) Study database"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#Dataset004",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://semanticscience.org/resource/SIO_000089" ],
+  "http://semanticscience.org/resource/SIO_000253" : [ {
+    "@id" : "https://purl.archive.org/cope#HeightMeasurementSource"
+  }, {
+    "@id" : "https://purl.archive.org/cope#WeightMeasurementSource"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Blood Pressure Data for Disease Prediction from Kaggle"
+  } ],
+  "https://purl.archive.org/cope#hasDataset" : [ {
+    "@value" : "Blood Pressure Data for Disease Prediction from Kaggle"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#Dataset005",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://semanticscience.org/resource/SIO_000089" ],
+  "http://semanticscience.org/resource/SIO_000253" : [ {
+    "@id" : "https://purl.archive.org/cope#SelfReportedSmokingSource"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Electronic Medical Records and chest CT scans"
+  } ],
+  "https://purl.archive.org/cope#hasDataset" : [ {
+    "@value" : "Electronic Medical Records and chest CT scans"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#DemoAbuBakar",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.archive.org/cope#Demographic"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Abu Bakar Demographic"
+  } ],
+  "https://purl.archive.org/cope#hasEthnicity" : [ {
+    "@value" : "Malay"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#DemoAnthonyPatel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.archive.org/cope#Demographic"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Anthony Patel Demographic"
+  } ],
+  "https://purl.archive.org/cope#hasEthnicity" : [ {
+    "@value" : "South Asian"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#DemoJohnPaul",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.archive.org/cope#Demographic"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "John Paul Demographic"
+  } ],
+  "https://purl.archive.org/cope#hasEthnicity" : [ {
+    "@value" : "Caucasian"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#DemoMaryJane",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.archive.org/cope#Demographic"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Mary Jane Demographic"
+  } ],
+  "https://purl.archive.org/cope#hasEthnicity" : [ {
+    "@value" : "Caucasian"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#Demographic",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://purl.archive.org/cope#PersonCharacteristic"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#DiabetesHealthTrajectory",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.archive.org/cope#HealthTrajectory"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Diabetes Health Trajectory"
+  } ],
+  "https://purl.archive.org/cope#hasEndDate" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2025-07-04T10:15:00"
+  } ],
+  "https://purl.archive.org/cope#hasHealthTrajectoryName" : [ {
+    "@value" : "Diabetes Health Trajectory"
+  } ],
+  "https://purl.archive.org/cope#hasParticipationRank" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "0"
+  } ],
+  "https://purl.archive.org/cope#hasPhase" : [ {
+    "@id" : "https://purl.archive.org/cope#VerifiedTrajectoryPhase"
+  } ],
+  "https://purl.archive.org/cope#hasStartDate" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2024-11-01T08:00:00"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#DiabetesMellitus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://semanticscience.org/resource/SIO_010299" ],
+  "http://semanticscience.org/resource/SIO_000068" : [ {
+    "@id" : "https://purl.archive.org/cope#COD1"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Diabetes Mellitus"
+  } ],
+  "https://purl.archive.org/cope#hasCharacteristic" : [ {
+    "@id" : "https://purl.archive.org/cope#InsulinDysfunction"
+  } ],
+  "https://purl.archive.org/cope#hasDiseaseName" : [ {
+    "@value" : "Diabetes Mellitus"
+  } ],
+  "https://purl.archive.org/cope#isIdentifiedBy" : [ {
+    "@id" : "https://purl.archive.org/cope#BlurredVision"
+  }, {
+    "@id" : "https://purl.archive.org/cope#SlowWoundHealing"
+  } ],
+  "https://purl.archive.org/cope#leadsTo" : [ {
+    "@id" : "https://purl.archive.org/cope#KidneyFailure"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#DiastolicBP",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.archive.org/cope#InputDataNature"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Diastolic BP"
+  } ],
+  "https://purl.archive.org/cope#hasInputDataNatureName" : [ {
+    "@value" : "Diastolic BP"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#DiastolicBPSource",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.archive.org/cope#ObservationSource"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Diastolic BP Source"
+  } ],
+  "https://purl.archive.org/cope#hasObservationSourceName" : [ {
+    "@value" : "Diastolic BP Source"
+  } ],
+  "https://purl.archive.org/cope#includes" : [ {
+    "@id" : "https://purl.archive.org/cope#BloodPressureMonitor"
+  } ],
+  "https://purl.archive.org/cope#triggers" : [ {
+    "@id" : "https://purl.archive.org/cope#HypertensionObservationEvent"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#DietEducation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.archive.org/cope#Preventive"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Diet Education"
+  } ],
+  "https://purl.archive.org/cope#appliedTo" : [ {
+    "@id" : "https://purl.archive.org/cope#DiabetesMellitus"
+  } ],
+  "https://purl.archive.org/cope#hasInterventionName" : [ {
+    "@value" : "Diet Education"
+  } ],
+  "https://purl.archive.org/cope#targets" : [ {
+    "@id" : "https://purl.archive.org/cope#BlurredVision"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#DiseaseCharacteristic",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Disease characteristic is a collection of disease aspects that describe the profile of a disease."
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#DiseaseOutcome",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Disease outcome is a specific resulting state that a person is forced to be in."
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#ECGAnomalies",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.archive.org/cope#RiskFactor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ECG Anomalies"
+  } ],
+  "https://purl.archive.org/cope#contributesTo" : [ {
+    "@id" : "https://purl.archive.org/cope#CAD"
+  } ],
+  "https://purl.archive.org/cope#hasRiskFactorName" : [ {
+    "@value" : "ECG Anomalies"
+  } ],
+  "https://purl.archive.org/cope#observedBy" : [ {
+    "@id" : "https://purl.archive.org/cope#ECGSignalFeatureSource"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#ECGAnomalyObservationEvent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://semanticscience.org/resource/SIO_000095" : [ {
+    "@id" : "https://purl.archive.org/cope#CADHealthTrajectory"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.archive.org/cope#ObservationEvent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ECG Anomaly Observation Event"
+  } ],
+  "https://purl.archive.org/cope#hasObservationEventName" : [ {
+    "@value" : "ECG Anomaly Observation Event"
+  } ],
+  "https://purl.archive.org/cope#isPairedWith" : [ {
+    "@id" : "https://purl.archive.org/cope#MaryJane"
+  } ],
+  "https://purl.archive.org/cope#observationTimestamp" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2025-07-23T08:30:00Z"
+  } ],
+  "https://purl.archive.org/cope#observationValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "18"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#ECGMachine",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://semanticscience.org/resource/SIO_001236" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ECG Machine"
+  } ],
+  "https://purl.archive.org/cope#hasDeviceName" : [ {
+    "@value" : "ECG Machine"
+  } ],
+  "https://purl.archive.org/cope#hasMeasurementUnit" : [ {
+    "@id" : "https://purl.archive.org/cope#mV"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#ECGSignalFeatureSource",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.archive.org/cope#ObservationSource"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ECG Signal Feature Source"
+  } ],
+  "https://purl.archive.org/cope#hasObservationSourceName" : [ {
+    "@value" : "ECG Signal Feature Source"
+  } ],
+  "https://purl.archive.org/cope#includes" : [ {
+    "@id" : "https://purl.archive.org/cope#ECGMachine"
+  } ],
+  "https://purl.archive.org/cope#triggers" : [ {
+    "@id" : "https://purl.archive.org/cope#ECGAnomalyObservationEvent"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#ECGSignalFeatures",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.archive.org/cope#InputDataNature"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ECG signal features"
+  } ],
+  "https://purl.archive.org/cope#hasInputDataNatureName" : [ {
+    "@value" : "ECG signal features"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#ElevatedBloodPressure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.archive.org/cope#DiseaseCharacteristic"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Elevated Blood Pressure"
+  } ],
+  "https://purl.archive.org/cope#hasDiseaseCharacteristicName" : [ {
+    "@value" : "Elevated Blood Pressure"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#EnsembleLearning",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.archive.org/cope#ModellingApproach"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Ensemble Learning"
+  } ],
+  "https://purl.archive.org/cope#hasModellingApproachName" : [ {
+    "@value" : "Ensmeble Learning"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#ExplainableAI",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.archive.org/cope#AIModel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Explainable AI"
+  } ],
+  "https://purl.archive.org/cope#evaluatedBy" : [ {
+    "@id" : "https://purl.archive.org/cope#F1-Score"
+  } ],
+  "https://purl.archive.org/cope#hasAIModelName" : [ {
+    "@value" : "Explainable AI"
+  } ],
+  "https://purl.archive.org/cope#hasExplanation" : [ {
+    "@id" : "https://purl.archive.org/cope#Explanation004"
+  } ],
+  "https://purl.archive.org/cope#includes" : [ {
+    "@id" : "https://purl.archive.org/cope#BMI"
+  } ],
+  "https://purl.archive.org/cope#trainedOn" : [ {
+    "@id" : "https://purl.archive.org/cope#Dataset004"
+  } ],
+  "https://purl.archive.org/cope#usesApproach" : [ {
+    "@id" : "https://purl.archive.org/cope#StackedEnsembleWithSHAP"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#Explanation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Explanation is the associated reasoning of the used AI model."
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#Explanation001",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.archive.org/cope#Explanation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Explanation 1 here"
+  } ],
+  "https://purl.archive.org/cope#hasExplanationDetails" : [ {
+    "@value" : "Explanation 1 here"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#Explanation002",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.archive.org/cope#Explanation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Explanation 2 here"
+  } ],
+  "https://purl.archive.org/cope#hasExplanationDetails" : [ {
+    "@value" : "Explanation 2 here"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#Explanation003",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.archive.org/cope#Explanation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Explanation 3 here"
+  } ],
+  "https://purl.archive.org/cope#hasExplanationDetails" : [ {
+    "@value" : "Explanation 3 here"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#Explanation004",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.archive.org/cope#Explanation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Explanation 4 here"
+  } ],
+  "https://purl.archive.org/cope#hasExplanationDetails" : [ {
+    "@value" : "Explanation 4 here"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#Explanation5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.archive.org/cope#Explanation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Explanation 5 here"
+  } ],
+  "https://purl.archive.org/cope#hasExplanationDetails" : [ {
+    "@value" : "Explanation here 5"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#F1-Score",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.archive.org/cope#PerformanceMetric"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "F1-Score"
+  } ],
+  "https://purl.archive.org/cope#hasPerformanceMetricName" : [ {
+    "@value" : "F1-Score"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#FastingBloodGlucoseObservationEvent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://semanticscience.org/resource/SIO_000095" : [ {
+    "@id" : "https://purl.archive.org/cope#DiabetesHealthTrajectory"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.archive.org/cope#ObservationEvent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Fasting Blood Glucose Observation Event"
+  } ],
+  "https://purl.archive.org/cope#hasObservationEventName" : [ {
+    "@value" : "Fasting Blood Glucose Observation Event"
+  } ],
+  "https://purl.archive.org/cope#isPairedWith" : [ {
+    "@id" : "https://purl.archive.org/cope#JohnPaul"
+  } ],
+  "https://purl.archive.org/cope#observationValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTimeStamp",
+    "@value" : "2025-07-13T09:30:00Z"
+  }, {
+    "@value" : "7.8 mmol/L"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#Fatigue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.archive.org/cope#Symptom"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Fatigue"
+  } ],
+  "https://purl.archive.org/cope#getSymptom" : [ {
+    "@id" : "https://purl.archive.org/cope#AnthonyPatel"
+  } ],
+  "https://purl.archive.org/cope#hasSymptomName" : [ {
+    "@value" : "Fatigue"
+  } ],
+  "https://purl.archive.org/cope#observedBy" : [ {
+    "@id" : "https://purl.archive.org/cope#HeightMeasurementSource"
+  }, {
+    "@id" : "https://purl.archive.org/cope#WeightMeasurementSource"
+  } ],
+  "https://purl.archive.org/cope#observedIn" : [ {
+    "@id" : "https://purl.archive.org/cope#BMIObservationEvent"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#GeoAbuBakar",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.archive.org/cope#Geographical"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Abu Bakar Geographical"
+  } ],
+  "https://purl.archive.org/cope#hasCity" : [ {
+    "@value" : "Kuala Lumpur"
+  } ],
+  "https://purl.archive.org/cope#hasCountry" : [ {
+    "@value" : "Malaysia"
+  } ],
+  "https://purl.archive.org/cope#hasPostalCode" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "50450"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#GeoAnthonyPatel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.archive.org/cope#Geographical"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Anthony Patel Geographical"
+  } ],
+  "https://purl.archive.org/cope#hasCity" : [ {
+    "@value" : "Austin"
+  } ],
+  "https://purl.archive.org/cope#hasCountry" : [ {
+    "@value" : "United States"
+  } ],
+  "https://purl.archive.org/cope#hasPostalCode" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "78701"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#GeoJohnPaul",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.archive.org/cope#Geographical"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "John Paul Geographical"
+  } ],
+  "https://purl.archive.org/cope#hasCity" : [ {
+    "@value" : "Adelaide"
+  } ],
+  "https://purl.archive.org/cope#hasCountry" : [ {
+    "@value" : "Australia"
+  } ],
+  "https://purl.archive.org/cope#hasPostalCode" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "5000"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#GeoMaryJane",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.archive.org/cope#Geographical"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Mary Jane Geographical"
+  } ],
+  "https://purl.archive.org/cope#hasCity" : [ {
+    "@value" : "Melbourne"
+  } ],
+  "https://purl.archive.org/cope#hasCountry" : [ {
+    "@value" : "Australia"
+  } ],
+  "https://purl.archive.org/cope#hasPostalCode" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "3004"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#Geographical",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://purl.archive.org/cope#PersonCharacteristic"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#HealthTrajectory",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A trajectory is a collection of sequentially linked temporal observer events that belong to a specific person and share the same membership."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://purl.archive.org/cope#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Health Trajectory"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "https://purl.archive.org/cope#CADHealthTrajectory"
+  }, {
+    "@id" : "https://purl.archive.org/cope#CKDHealthTrajectory"
+  }, {
+    "@id" : "https://purl.archive.org/cope#DiabetesHealthTrajectory"
+  }, {
+    "@id" : "https://purl.archive.org/cope#HypertensionHealthTrajectory"
+  }, {
+    "@id" : "https://purl.archive.org/cope#LungCancerHealthTrajectory"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@value" : "1.0.0"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "A chronological sequence of health-related events and observations that represent a person's health journey over time, including disease progression, interventions, and outcomes."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@value" : "Diabetes progression from diagnosis through treatment to complications"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#HeightMeasurementSource",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.archive.org/cope#ObservationSource"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Height Measurement Source"
+  } ],
+  "https://purl.archive.org/cope#hasObservationSourceName" : [ {
+    "@value" : "Height Measurement Source"
+  } ],
+  "https://purl.archive.org/cope#includes" : [ {
+    "@id" : "https://purl.archive.org/cope#WearableDevice"
+  } ],
+  "https://purl.archive.org/cope#triggers" : [ {
+    "@id" : "https://purl.archive.org/cope#BMIObservationEvent"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#HighCVDRisk",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.archive.org/cope#DiseaseOutcome"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Increase Cardiovascular Events"
+  } ],
+  "https://purl.archive.org/cope#hasDiseaseOutcomeName" : [ {
+    "@value" : "Increase Cardiovascular Events"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#Hypertension",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://semanticscience.org/resource/SIO_010299" ],
+  "http://semanticscience.org/resource/SIO_000068" : [ {
+    "@id" : "https://purl.archive.org/cope#COD4"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.archive.org/cope#RiskFactor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Hypertension"
+  } ],
+  "https://purl.archive.org/cope#contributesTo" : [ {
+    "@id" : "https://purl.archive.org/cope#ChronicKidneyDisease"
+  }, {
+    "@id" : "https://purl.archive.org/cope#DiabetesMellitus"
+  } ],
+  "https://purl.archive.org/cope#hasCharacteristic" : [ {
+    "@id" : "https://purl.archive.org/cope#ElevatedBloodPressure"
+  } ],
+  "https://purl.archive.org/cope#hasDiseaseName" : [ {
+    "@value" : "Hypertension"
+  } ],
+  "https://purl.archive.org/cope#hasRiskFactorName" : [ {
+    "@value" : "Hypertension"
+  } ],
+  "https://purl.archive.org/cope#isIdentifiedBy" : [ {
+    "@id" : "https://purl.archive.org/cope#Fatigue"
+  } ],
+  "https://purl.archive.org/cope#leadsTo" : [ {
+    "@id" : "https://purl.archive.org/cope#Stroke"
+  } ],
+  "https://purl.archive.org/cope#observedBy" : [ {
+    "@id" : "https://purl.archive.org/cope#DiastolicBPSource"
+  }, {
+    "@id" : "https://purl.archive.org/cope#SystolicBPSource"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#HypertensionHealthTrajectory",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.archive.org/cope#HealthTrajectory"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Hypertension Health Trajectory"
+  } ],
+  "https://purl.archive.org/cope#hasEndDate" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2025-11-01T12:00:00"
+  } ],
+  "https://purl.archive.org/cope#hasHealthTrajectoryName" : [ {
+    "@value" : "Hypertension Health Trajectory"
+  } ],
+  "https://purl.archive.org/cope#hasParticipationRank" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "0"
+  } ],
+  "https://purl.archive.org/cope#hasPhase" : [ {
+    "@id" : "https://purl.archive.org/cope#VerifiedTrajectoryPhase"
+  } ],
+  "https://purl.archive.org/cope#hasStartDate" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2024-11-01T09:00:00"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#HypertensionObservationEvent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://semanticscience.org/resource/SIO_000095" : [ {
+    "@id" : "https://purl.archive.org/cope#CKDHealthTrajectory"
+  }, {
+    "@id" : "https://purl.archive.org/cope#DiabetesHealthTrajectory"
+  }, {
+    "@id" : "https://purl.archive.org/cope#HypertensionHealthTrajectory"
+  } ],
+  "http://semanticscience.org/resource/SIO_000248" : [ {
+    "@id" : "https://purl.archive.org/cope#FastingBloodGlucoseObservationEvent"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.archive.org/cope#ObservationEvent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Hypertension Observation Event"
+  } ],
+  "https://purl.archive.org/cope#hasObservationEventName" : [ {
+    "@value" : "Hypertension Observation Event"
+  } ],
+  "https://purl.archive.org/cope#isPairedWith" : [ {
+    "@id" : "https://purl.archive.org/cope#AnthonyPatel"
+  }, {
+    "@id" : "https://purl.archive.org/cope#JohnPaul"
+  } ],
+  "https://purl.archive.org/cope#observationTimestamp" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTimeStamp",
+    "@value" : "2025-07-03T08:30:00Z"
+  } ],
+  "https://purl.archive.org/cope#observationValue" : [ {
+    "@value" : "Systolic_145_Diastolic_95"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#IncreasePhysicalActivity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.archive.org/cope#Behavioral"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Increase Physical Activity"
+  } ],
+  "https://purl.archive.org/cope#appliedIn" : [ {
+    "@id" : "https://purl.archive.org/cope#HypertensionObservationEvent"
+  } ],
+  "https://purl.archive.org/cope#appliedTo" : [ {
+    "@id" : "https://purl.archive.org/cope#DiabetesMellitus"
+  } ],
+  "https://purl.archive.org/cope#hasInterventionName" : [ {
+    "@value" : "Increase Physical Activity"
+  } ],
+  "https://purl.archive.org/cope#targets" : [ {
+    "@id" : "https://purl.archive.org/cope#Hypertension"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#InputDataNature",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://purl.archive.org/cope#InsulinDysfunction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.archive.org/cope#DiseaseCharacteristic"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Insulin Dysfunction"
+  } ],
+  "https://purl.archive.org/cope#hasDiseaseCharacteristicName" : [ {
+    "@value" : "Insulin Dysfunction"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#JohnPaul",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://semanticscience.org/resource/SIO_000498" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "John Paul"
+  } ],
+  "https://purl.archive.org/cope#hasCharacteristic" : [ {
+    "@id" : "https://purl.archive.org/cope#BehavJohnPaul"
+  }, {
+    "@id" : "https://purl.archive.org/cope#BioJohnPaul"
+  }, {
+    "@id" : "https://purl.archive.org/cope#DemoJohnPaul"
+  }, {
+    "@id" : "https://purl.archive.org/cope#GeoJohnPaul"
+  }, {
+    "@id" : "https://purl.archive.org/cope#PsychJohnPaul"
+  } ],
+  "https://purl.archive.org/cope#hasFullName" : [ {
+    "@value" : "John Paul"
+  } ],
+  "https://purl.archive.org/cope#hasRiskFactor" : [ {
+    "@id" : "https://purl.archive.org/cope#Hypertension"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#KidneyFailure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.archive.org/cope#DiseaseOutcome"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Kidney Failure"
+  } ],
+  "https://purl.archive.org/cope#hasDiseaseOutcomeName" : [ {
+    "@value" : "Kidney Failure"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#LifestyleImprovementPlan",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.archive.org/cope#Behavioral"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Lifestyle Improvement Plan"
+  } ],
+  "https://purl.archive.org/cope#appliedIn" : [ {
+    "@id" : "https://purl.archive.org/cope#BMIObservationEvent"
+  }, {
+    "@id" : "https://purl.archive.org/cope#FastingBloodGlucoseObservationEvent"
+  } ],
+  "https://purl.archive.org/cope#appliedTo" : [ {
+    "@id" : "https://purl.archive.org/cope#DiabetesMellitus"
+  }, {
+    "@id" : "https://purl.archive.org/cope#Hypertension"
+  } ],
+  "https://purl.archive.org/cope#hasInterventionName" : [ {
+    "@value" : "Lifestyle Improvement Plan"
+  } ],
+  "https://purl.archive.org/cope#targets" : [ {
+    "@id" : "https://purl.archive.org/cope#BloodSugar"
+  }, {
+    "@id" : "https://purl.archive.org/cope#Fatigue"
+  }, {
+    "@id" : "https://purl.archive.org/cope#Obesity"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#LungCancer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://semanticscience.org/resource/SIO_010299" ],
+  "http://semanticscience.org/resource/SIO_000068" : [ {
+    "@id" : "https://purl.archive.org/cope#COD5"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Lung Cancer"
+  } ],
+  "https://purl.archive.org/cope#hasCharacteristic" : [ {
+    "@id" : "https://purl.archive.org/cope#UncontrolledCellGrowth"
+  } ],
+  "https://purl.archive.org/cope#hasDiseaseName" : [ {
+    "@value" : "Lung Cancer"
+  } ],
+  "https://purl.archive.org/cope#isIdentifiedBy" : [ {
+    "@id" : "https://purl.archive.org/cope#PersistentCough"
+  }, {
+    "@id" : "https://purl.archive.org/cope#ShortnessOfBreath"
+  } ],
+  "https://purl.archive.org/cope#leadsTo" : [ {
+    "@id" : "https://purl.archive.org/cope#RespiratoryFailure"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#LungCancerHealthTrajectory",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.archive.org/cope#HealthTrajectory"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Lung Cancer Health Trajectory"
+  } ],
+  "https://purl.archive.org/cope#hasEndDate" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2025-12-01T12:20:00"
+  } ],
+  "https://purl.archive.org/cope#hasHealthTrajectoryName" : [ {
+    "@value" : "Lung Cancer Health Trajectory"
+  } ],
+  "https://purl.archive.org/cope#hasParticipationRank" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "0"
+  } ],
+  "https://purl.archive.org/cope#hasPhase" : [ {
+    "@id" : "https://purl.archive.org/cope#VerifiedTrajectoryPhase"
+  } ],
+  "https://purl.archive.org/cope#hasStartDate" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2025-06-01T09:00:00"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#MSE",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.archive.org/cope#PerformanceMetric"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Mean Squared Error (MSE)"
+  } ],
+  "https://purl.archive.org/cope#hasPerformanceMetricName" : [ {
+    "@value" : "Mean Squared Error (MSE)"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#MaryJane",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://semanticscience.org/resource/SIO_000498" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Mary Jane"
+  } ],
+  "https://purl.archive.org/cope#hasCharacteristic" : [ {
+    "@id" : "https://purl.archive.org/cope#BehavMaryJane"
+  }, {
+    "@id" : "https://purl.archive.org/cope#BioMaryJane"
+  }, {
+    "@id" : "https://purl.archive.org/cope#DemoMaryJane"
+  }, {
+    "@id" : "https://purl.archive.org/cope#GeoMaryJane"
+  }, {
+    "@id" : "https://purl.archive.org/cope#PsychMaryJane"
+  } ],
+  "https://purl.archive.org/cope#hasFullName" : [ {
+    "@value" : "Mary Jane"
+  } ],
+  "https://purl.archive.org/cope#hasHealthTrajectory" : [ {
+    "@id" : "https://purl.archive.org/cope#DiabetesHealthTrajectory"
+  } ],
+  "https://purl.archive.org/cope#hasRiskFactor" : [ {
+    "@id" : "https://purl.archive.org/cope#AbnormalCSNA"
+  }, {
+    "@id" : "https://purl.archive.org/cope#ECGAnomalies"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#MeasurementUnit",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Measurement unit is a set of variations observed for a purpose. E.g. ECG"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#MicroneurographySystem",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://semanticscience.org/resource/SIO_001236" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Microneurography System"
+  } ],
+  "https://purl.archive.org/cope#hasDeviceName" : [ {
+    "@value" : "Microneurography System"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#MobileAppSurvey",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://semanticscience.org/resource/SIO_001236" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Mobile App Survey"
+  } ],
+  "https://purl.archive.org/cope#hasDeviceName" : [ {
+    "@value" : "Mobile App Survey"
+  } ],
+  "https://purl.archive.org/cope#hasMeasurementUnit" : [ {
+    "@id" : "https://purl.archive.org/cope#SmokingStatusCategory"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#ModellingApproach",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Modeling Approach is the utilized machine learning approach for a given Artificial Intelligence model."
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#Obesity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.archive.org/cope#RiskFactor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Obesity"
+  } ],
+  "https://purl.archive.org/cope#contributesTo" : [ {
+    "@id" : "https://purl.archive.org/cope#DiabetesMellitus"
+  }, {
+    "@id" : "https://purl.archive.org/cope#Hypertension"
+  } ],
+  "https://purl.archive.org/cope#hasRiskFactorName" : [ {
+    "@value" : "Obesity"
+  } ],
+  "https://purl.archive.org/cope#observedBy" : [ {
+    "@id" : "https://purl.archive.org/cope#HeightMeasurementSource"
+  }, {
+    "@id" : "https://purl.archive.org/cope#WeightMeasurementSource"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#ObservationEvent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An observation event is a temporal trigger for processing information."
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#ObservationSource",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Observation source is a manifestation of an anchor that collates a variety of measurements."
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#ParticipationRank",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Participation rank is a numerical representation indicating the unitary distance of a trajectory from the participation. [0,n] where 0 represents the current trajectory."
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#PerformanceMetric",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A performance metric is the collection of quantifiable measurements that validates the performance of a model."
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#PersistentCough",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.archive.org/cope#Symptom"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Persistent Cough"
+  } ],
+  "https://purl.archive.org/cope#hasSymptomName" : [ {
+    "@value" : "Persistent Cough"
+  } ],
+  "https://purl.archive.org/cope#observedBy" : [ {
+    "@id" : "https://purl.archive.org/cope#SelfReportedSmokingSource"
+  } ],
+  "https://purl.archive.org/cope#observedIn" : [ {
+    "@id" : "https://purl.archive.org/cope#SmokingStatusObservationEvent"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#PersonCharacteristic",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Personal characteristic is a collection of personal aspects that describe the profile of a person."
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#Pharmalogical",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_001398"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#PredictedTrajectoryPhase",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.archive.org/cope#TrajectoryPhase"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Predicted"
+  } ],
+  "https://purl.archive.org/cope#hasTrajectoryPhaseName" : [ {
+    "@value" : "Predicted"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#Preventive",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_001398"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#PsychAbuBakar",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.archive.org/cope#Psychographic"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Abu Bakar Psychographic"
+  } ],
+  "https://purl.archive.org/cope#hasHealthAttitude" : [ {
+    "@value" : "Proactive"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#PsychAnthonyPatel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.archive.org/cope#Psychographic"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Anthony Patel Psychographic"
+  } ],
+  "https://purl.archive.org/cope#hasHealthAttitude" : [ {
+    "@value" : "Proactive"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#PsychJohnPaul",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.archive.org/cope#Psychographic"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "John Paul Psychographic"
+  } ],
+  "https://purl.archive.org/cope#hasHealthAttitude" : [ {
+    "@value" : "Proactive"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#PsychMaryJane",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.archive.org/cope#Psychographic"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Mary Jane Psychographic"
+  } ],
+  "https://purl.archive.org/cope#hasHealthAttitude" : [ {
+    "@value" : "Committed"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#Psychographic",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://purl.archive.org/cope#PersonCharacteristic"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#QuitSmoking",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.archive.org/cope#Behavioral"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Quit Smoking"
+  } ],
+  "https://purl.archive.org/cope#appliedTo" : [ {
+    "@id" : "https://purl.archive.org/cope#DiabetesMellitus"
+  } ],
+  "https://purl.archive.org/cope#hasInterventionName" : [ {
+    "@value" : "Quit Smoking"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#RFEnhancedFeedForwardNetwork",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.archive.org/cope#AIModel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "RF Enhanced Feed Forward Network"
+  } ],
+  "https://purl.archive.org/cope#evaluatedBy" : [ {
+    "@id" : "https://purl.archive.org/cope#F1-Score"
+  } ],
+  "https://purl.archive.org/cope#hasAIModelName" : [ {
+    "@value" : "RF Enhanced Feed Forward Network"
+  } ],
+  "https://purl.archive.org/cope#hasExplanation" : [ {
+    "@id" : "https://purl.archive.org/cope#Explanation003"
+  } ],
+  "https://purl.archive.org/cope#includes" : [ {
+    "@id" : "https://purl.archive.org/cope#DiastolicBP"
+  }, {
+    "@id" : "https://purl.archive.org/cope#SystolicBP"
+  } ],
+  "https://purl.archive.org/cope#trainedOn" : [ {
+    "@id" : "https://purl.archive.org/cope#Dataset003"
+  } ],
+  "https://purl.archive.org/cope#usesApproach" : [ {
+    "@id" : "https://purl.archive.org/cope#EnsembleLearning"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#RandomForest",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.archive.org/cope#AIModel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Random Forest"
+  } ],
+  "https://purl.archive.org/cope#evaluatedBy" : [ {
+    "@id" : "https://purl.archive.org/cope#F1-Score"
+  } ],
+  "https://purl.archive.org/cope#hasAIModelName" : [ {
+    "@value" : "Random Forest"
+  } ],
+  "https://purl.archive.org/cope#hasExplanation" : [ {
+    "@id" : "https://purl.archive.org/cope#Explanation001"
+  } ],
+  "https://purl.archive.org/cope#includes" : [ {
+    "@id" : "https://purl.archive.org/cope#BMI"
+  }, {
+    "@id" : "https://purl.archive.org/cope#BloodSugarLevel"
+  }, {
+    "@id" : "https://purl.archive.org/cope#DiastolicBP"
+  }, {
+    "@id" : "https://purl.archive.org/cope#SystolicBP"
+  } ],
+  "https://purl.archive.org/cope#trainedOn" : [ {
+    "@id" : "https://purl.archive.org/cope#Dataset001"
+  } ],
+  "https://purl.archive.org/cope#usesApproach" : [ {
+    "@id" : "https://purl.archive.org/cope#EnsembleLearning"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#RandomForest+XGBoost",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.archive.org/cope#ModellingApproach"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Random Forest + XGBoost"
+  } ],
+  "https://purl.archive.org/cope#hasModellingApproachName" : [ {
+    "@value" : "Random Forest + XGBoost"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#ReducedGFR",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.archive.org/cope#DiseaseCharacteristic"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Reduced Glomerular Filtration Rate"
+  } ],
+  "https://purl.archive.org/cope#hasDiseaseCharacteristicName" : [ {
+    "@value" : "Reduced Glomerular Filtration Rate"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#ResearchArticle",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Research article is a published research source for a specific health context."
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#ResearchArticle001",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://semanticscience.org/resource/SIO_000563" : [ {
+    "@id" : "https://purl.archive.org/cope#DietEducation"
+  }, {
+    "@id" : "https://purl.archive.org/cope#IncreasePhysicalActivity"
+  }, {
+    "@id" : "https://purl.archive.org/cope#QuitSmoking"
+  }, {
+    "@id" : "https://purl.archive.org/cope#Self-ManagementEducation"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.archive.org/cope#ResearchArticle"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Ginting, J., Suci, T., Ginting, C., & Girsang, E. (2023). Early detection system of risk factors for diabetes mellitus type 2 utilization of machine learning-random forest. Journal of Family & Community Medicine, 30(3), 171–179. https://doi.org/10.4103/jfcm.jfcm_33_23"
+  } ],
+  "https://purl.archive.org/cope#hasResearchArticleName" : [ {
+    "@value" : "Ginting, J., Suci, T., Ginting, C., & Girsang, E. (2023). Early detection system of risk factors for diabetes mellitus type 2 utilization of machine learning-random forest. Journal of Family & Community Medicine, 30(3), 171–179. https://doi.org/10.4103/jfcm.jfcm_33_23"
+  } ],
+  "https://purl.archive.org/cope#proposes" : [ {
+    "@id" : "https://purl.archive.org/cope#RandomForest"
+  } ],
+  "https://purl.archive.org/cope#uses" : [ {
+    "@id" : "https://purl.archive.org/cope#Dataset001"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#ResearchArticle2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://semanticscience.org/resource/SIO_000563" : [ {
+    "@id" : "https://purl.archive.org/cope#CardiacRehab"
+  }, {
+    "@id" : "https://purl.archive.org/cope#StatinTreatment"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.archive.org/cope#ResearchArticle"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Terzi, M. B., & Arikan, O. (2024). Machine learning based hybrid anomaly detection technique for automatic diagnosis of cardiovascular diseases using cardiac sympathetic nerve activity and electrocardiogram. Biomedizinische Technik, 69(1), 79–109. https://doi.org/10.1515/bmt-2022-0406"
+  } ],
+  "https://purl.archive.org/cope#hasResearchArticleName" : [ {
+    "@value" : "Terzi, M. B., & Arikan, O. (2024). Machine learning based hybrid anomaly detection technique for automatic diagnosis of cardiovascular diseases using cardiac sympathetic nerve activity and electrocardiogram. Biomedizinische Technik, 69(1), 79–109. https://doi.org/10.1515/bmt-2022-0406"
+  } ],
+  "https://purl.archive.org/cope#proposes" : [ {
+    "@id" : "https://purl.archive.org/cope#AIHAD"
+  } ],
+  "https://purl.archive.org/cope#uses" : [ {
+    "@id" : "https://purl.archive.org/cope#Dataset002"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#ResearchArticle3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.archive.org/cope#ResearchArticle"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Bahrami, P., Tanbakuchi, D., Afzalaghaee, M., Ghayour-Mobarhan, M., & Esmaily, H. (2024). Development of risk models for early detection and prediction of chronic kidney disease in clinical settings. Scientific Reports, 14(1), 32136–10. https://doi.org/10.1038/s41598-024-83973-5"
+  } ],
+  "https://purl.archive.org/cope#hasResearchArticleName" : [ {
+    "@value" : "Bahrami, P., Tanbakuchi, D., Afzalaghaee, M., Ghayour-Mobarhan, M., & Esmaily, H. (2024). Development of risk models for early detection and prediction of chronic kidney disease in clinical settings. Scientific Reports, 14(1), 32136–10. https://doi.org/10.1038/s41598-024-83973-5"
+  } ],
+  "https://purl.archive.org/cope#proposes" : [ {
+    "@id" : "https://purl.archive.org/cope#RFEnhancedFeedForwardNetwork"
+  } ],
+  "https://purl.archive.org/cope#uses" : [ {
+    "@id" : "https://purl.archive.org/cope#Dataset003"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#ResearchArticle4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://semanticscience.org/resource/SIO_000563" : [ {
+    "@id" : "https://purl.archive.org/cope#LifestyleImprovementPlan"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.archive.org/cope#ResearchArticle"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Islam, H., Iqbal, Md. S., & Hossain, M. M. (2025). Blood pressure abnormality detection and interpretation utilizing explainable artificial intelligence. Intelligent Medicine, 5(1), 54–65. https://doi.org/10.1016/j.imed.2024.09.005"
+  } ],
+  "https://purl.archive.org/cope#hasResearchArticleName" : [ {
+    "@value" : "Islam, H., Iqbal, Md. S., & Hossain, M. M. (2025). Blood pressure abnormality detection and interpretation utilizing explainable artificial intelligence. Intelligent Medicine, 5(1), 54–65. https://doi.org/10.1016/j.imed.2024.09.005"
+  } ],
+  "https://purl.archive.org/cope#proposes" : [ {
+    "@id" : "https://purl.archive.org/cope#ExplainableAI"
+  } ],
+  "https://purl.archive.org/cope#uses" : [ {
+    "@id" : "https://purl.archive.org/cope#Dataset004"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#ResearchArticle5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.archive.org/cope#ResearchArticle"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Levi, M., Lazebnik, T., Kushnir, S., Yosef, N., & Shlomi, D. (2024). Machine learning computational model to predict lung cancer using electronic medical records. Cancer Epidemiology, 92, 102631-. https://doi.org/10.1016/j.canep.2024.102631"
+  } ],
+  "https://purl.archive.org/cope#hasResearchArticleName" : [ {
+    "@value" : "Levi, M., Lazebnik, T., Kushnir, S., Yosef, N., & Shlomi, D. (2024). Machine learning computational model to predict lung cancer using electronic medical records. Cancer Epidemiology, 92, 102631-. https://doi.org/10.1016/j.canep.2024.102631"
+  } ],
+  "https://purl.archive.org/cope#proposes" : [ {
+    "@id" : "https://purl.archive.org/cope#TPOT-optimized_ensemble_model"
+  } ],
+  "https://purl.archive.org/cope#uses" : [ {
+    "@id" : "https://purl.archive.org/cope#Dataset005"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#RespiratoryFailure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.archive.org/cope#DiseaseOutcome"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Respiratory Failure"
+  } ],
+  "https://purl.archive.org/cope#hasDiseaseOutcomeName" : [ {
+    "@value" : "Respiratory Failure"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#RiskFactor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Risk factor is a condition of a personal charactoristic that recognizes a plausible disease."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Risk Factor"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "A characteristic, condition, or behavior that increases the likelihood of developing a disease or health condition."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@value" : "Smoking, obesity, high blood pressure, family history of diabetes"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#Self-ManagementEducation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.archive.org/cope#Therapeutic"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Self-Management Education"
+  } ],
+  "https://purl.archive.org/cope#appliedTo" : [ {
+    "@id" : "https://purl.archive.org/cope#DiabetesMellitus"
+  } ],
+  "https://purl.archive.org/cope#hasInterventionName" : [ {
+    "@value" : "Self-Management Education"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#SelfReportedSmokingSource",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://semanticscience.org/resource/SIO_000095" : [ {
+    "@id" : "https://purl.archive.org/cope#LungCancerHealthTrajectory"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.archive.org/cope#ObservationSource"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Self Reported Smoking Source"
+  } ],
+  "https://purl.archive.org/cope#hasObservationSourceName" : [ {
+    "@value" : "Self Reported Smoking Source"
+  } ],
+  "https://purl.archive.org/cope#includes" : [ {
+    "@id" : "https://purl.archive.org/cope#MobileAppSurvey"
+  } ],
+  "https://purl.archive.org/cope#triggers" : [ {
+    "@id" : "https://purl.archive.org/cope#SmokingStatusObservationEvent"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#ShortnessOfBreath",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.archive.org/cope#Symptom"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Shortness Of Breath"
+  } ],
+  "https://purl.archive.org/cope#getSymptom" : [ {
+    "@id" : "https://purl.archive.org/cope#AbuBakar"
+  }, {
+    "@id" : "https://purl.archive.org/cope#MaryJane"
+  } ],
+  "https://purl.archive.org/cope#hasSymptomName" : [ {
+    "@value" : "Shortness Of Breath"
+  } ],
+  "https://purl.archive.org/cope#observedIn" : [ {
+    "@id" : "https://purl.archive.org/cope#ECGAnomalyObservationEvent"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#SlowWoundHealing",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.archive.org/cope#Symptom"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Slow Wound Healing"
+  } ],
+  "https://purl.archive.org/cope#hasSymptomName" : [ {
+    "@value" : "Slow Wound Healing"
+  } ],
+  "https://purl.archive.org/cope#observedBy" : [ {
+    "@id" : "https://purl.archive.org/cope#BloodSugarLevelSource"
+  } ],
+  "https://purl.archive.org/cope#observedIn" : [ {
+    "@id" : "https://purl.archive.org/cope#FastingBloodGlucoseObservationEvent"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#Smoking",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.archive.org/cope#RiskFactor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Smoking"
+  } ],
+  "https://purl.archive.org/cope#contributesTo" : [ {
+    "@id" : "https://purl.archive.org/cope#LungCancer"
+  } ],
+  "https://purl.archive.org/cope#hasRiskFactorName" : [ {
+    "@value" : "Smoking"
+  } ],
+  "https://purl.archive.org/cope#observedBy" : [ {
+    "@id" : "https://purl.archive.org/cope#SelfReportedSmokingSource"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#SmokingCessationPrograms",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.archive.org/cope#Behavioral"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Smoking Cessation Programs"
+  } ],
+  "https://purl.archive.org/cope#appliedIn" : [ {
+    "@id" : "https://purl.archive.org/cope#SmokingStatusObservationEvent"
+  } ],
+  "https://purl.archive.org/cope#appliedTo" : [ {
+    "@id" : "https://purl.archive.org/cope#LungCancer"
+  } ],
+  "https://purl.archive.org/cope#hasInterventionName" : [ {
+    "@value" : "Smoking Cessation Programs"
+  } ],
+  "https://purl.archive.org/cope#targets" : [ {
+    "@id" : "https://purl.archive.org/cope#PersistentCough"
+  }, {
+    "@id" : "https://purl.archive.org/cope#Smoking"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#SmokingStatus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.archive.org/cope#InputDataNature"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Smoking Status"
+  } ],
+  "https://purl.archive.org/cope#hasInputDataNatureName" : [ {
+    "@value" : "Smoking Status"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#SmokingStatusCategory",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.archive.org/cope#MeasurementUnit"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Smoking Status Category"
+  } ],
+  "https://purl.archive.org/cope#hasMeasurementUnitName" : [ {
+    "@value" : "Smoking Status Category"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#SmokingStatusObservationEvent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.archive.org/cope#ObservationEvent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Smoking Status Observation Event"
+  } ],
+  "https://purl.archive.org/cope#hasObservationEventName" : [ {
+    "@value" : "Smoking Status Observation Event"
+  } ],
+  "https://purl.archive.org/cope#isPairedWith" : [ {
+    "@id" : "https://purl.archive.org/cope#AbuBakar"
+  } ],
+  "https://purl.archive.org/cope#observationTimestamp" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2025-07-04T13:15:00"
+  } ],
+  "https://purl.archive.org/cope#observationValue" : [ {
+    "@value" : "Current Smoker"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#StackedEnsembleWithSHAP",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.archive.org/cope#ModellingApproach"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Stacked Ensemble + SHAP"
+  } ],
+  "https://purl.archive.org/cope#hasModellingApproachName" : [ {
+    "@value" : "Stacked Ensemble + SHAP"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#StatinTreatment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.archive.org/cope#Pharmalogical"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Statin Treatment"
+  } ],
+  "https://purl.archive.org/cope#appliedIn" : [ {
+    "@id" : "https://purl.archive.org/cope#AbnormalCSNAObservationEvent"
+  } ],
+  "https://purl.archive.org/cope#appliedTo" : [ {
+    "@id" : "https://purl.archive.org/cope#CAD"
+  } ],
+  "https://purl.archive.org/cope#hasInterventionName" : [ {
+    "@value" : "Statin Treatment"
+  } ],
+  "https://purl.archive.org/cope#targets" : [ {
+    "@id" : "https://purl.archive.org/cope#AbnormalCSNA"
+  }, {
+    "@id" : "https://purl.archive.org/cope#ChestPain"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#Stroke",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.archive.org/cope#DiseaseOutcome"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Stroke"
+  } ],
+  "https://purl.archive.org/cope#hasDiseaseOutcomeName" : [ {
+    "@value" : "Stroke"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#SuddenCardiacDeath",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.archive.org/cope#DiseaseOutcome"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Sudden Cardiac Death"
+  } ],
+  "https://purl.archive.org/cope#hasDiseaseOutcomeName" : [ {
+    "@value" : "Sudden Cardiac Death"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#Swelling",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.archive.org/cope#Symptom"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Swelling"
+  } ],
+  "https://purl.archive.org/cope#getSymptom" : [ {
+    "@id" : "https://purl.archive.org/cope#AnthonyPatel"
+  } ],
+  "https://purl.archive.org/cope#hasSymptomName" : [ {
+    "@value" : "Swelling"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#Symptom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Symptom is a variation (range or a threshold) of a measurement that is functionally associated with a specific disease."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Symptom"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "A physical or mental feature that indicates the presence of a disease or health condition, often measurable through clinical observations or patient reports."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@value" : "Chest pain, shortness of breath, blurred vision, fatigue"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#SystolicBP",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.archive.org/cope#InputDataNature"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Systolic BP"
+  } ],
+  "https://purl.archive.org/cope#hasInputDataNatureName" : [ {
+    "@value" : "Systolic BP"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#SystolicBPSource",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.archive.org/cope#ObservationSource"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Systolic BP Source"
+  } ],
+  "https://purl.archive.org/cope#hasObservationSourceName" : [ {
+    "@value" : "Systolic BP Source"
+  } ],
+  "https://purl.archive.org/cope#includes" : [ {
+    "@id" : "https://purl.archive.org/cope#BloodPressureMonitor"
+  } ],
+  "https://purl.archive.org/cope#triggers" : [ {
+    "@id" : "https://purl.archive.org/cope#HypertensionObservationEvent"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#TPOT-optimized_ensemble_model",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.archive.org/cope#AIModel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "TPOT-optimized ensemble model"
+  } ],
+  "https://purl.archive.org/cope#evaluatedBy" : [ {
+    "@id" : "https://purl.archive.org/cope#F1-Score"
+  } ],
+  "https://purl.archive.org/cope#hasAIModelName" : [ {
+    "@value" : "TPOT-optimized ensemble model"
+  } ],
+  "https://purl.archive.org/cope#hasExplanation" : [ {
+    "@id" : "https://purl.archive.org/cope#Explanation5"
+  } ],
+  "https://purl.archive.org/cope#includes" : [ {
+    "@id" : "https://purl.archive.org/cope#SmokingStatus"
+  } ],
+  "https://purl.archive.org/cope#trainedOn" : [ {
+    "@id" : "https://purl.archive.org/cope#Dataset005"
+  } ],
+  "https://purl.archive.org/cope#usesApproach" : [ {
+    "@id" : "https://purl.archive.org/cope#RandomForest+XGBoost"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#Therapeutic",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_001398"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#TrajectoryPhase",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Trajectory phase is a lifecycle stage of a trajectory. {predicted, verified, remission}"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#UncontrolledCellGrowth",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.archive.org/cope#DiseaseCharacteristic"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Uncontrolled Cell Growth"
+  } ],
+  "https://purl.archive.org/cope#getSymptom" : [ {
+    "@id" : "https://purl.archive.org/cope#AbuBakar"
+  } ],
+  "https://purl.archive.org/cope#hasDiseaseCharacteristicName" : [ {
+    "@value" : "Uncontrolled Cell Growth"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#VerifiedTrajectoryPhase",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.archive.org/cope#TrajectoryPhase"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Verified"
+  } ],
+  "https://purl.archive.org/cope#hasTrajectoryPhaseName" : [ {
+    "@value" : "Verified"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#WearableDevice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://semanticscience.org/resource/SIO_001236" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Wearable Device"
+  } ],
+  "https://purl.archive.org/cope#hasDeviceName" : [ {
+    "@value" : "Wearable Device"
+  } ],
+  "https://purl.archive.org/cope#hasMeasurementUnit" : [ {
+    "@id" : "https://purl.archive.org/cope#cm"
+  }, {
+    "@id" : "https://purl.archive.org/cope#kg"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#WeightMeasurementSource",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.archive.org/cope#ObservationSource"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Weight Measurement Source"
+  } ],
+  "https://purl.archive.org/cope#hasObservationSourceName" : [ {
+    "@value" : "Weight Measurement Source"
+  } ],
+  "https://purl.archive.org/cope#includes" : [ {
+    "@id" : "https://purl.archive.org/cope#WearableDevice"
+  } ],
+  "https://purl.archive.org/cope#triggers" : [ {
+    "@id" : "https://purl.archive.org/cope#BMIObservationEvent"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#alcoholConsumption",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "https://purl.archive.org/cope#appliedIn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The administering process is initiated in a specific temporal observation event."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_001398"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://purl.archive.org/cope#ObservationEvent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#appliedTo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_001398"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_010299"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#burstsPerMin",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.archive.org/cope#MeasurementUnit"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "bursts/min"
+  } ],
+  "https://purl.archive.org/cope#hasMeasurementUnitName" : [ {
+    "@value" : "bursts/min"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#cm",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.archive.org/cope#MeasurementUnit"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "cm"
+  } ],
+  "https://purl.archive.org/cope#hasMeasurementUnitName" : [ {
+    "@value" : "cm"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#contributesTo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://purl.archive.org/cope#RiskFactor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_010299"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#evaluatedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Ones validity is determined by the specifications of the other."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://purl.archive.org/cope#AIModel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://purl.archive.org/cope#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "evaluated by"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://purl.archive.org/cope#PerformanceMetric"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "https://purl.archive.org/cope#AIHAD"
+  }, {
+    "@id" : "https://purl.archive.org/cope#ExplainableAI"
+  }, {
+    "@id" : "https://purl.archive.org/cope#F1-Score"
+  }, {
+    "@id" : "https://purl.archive.org/cope#MSE"
+  }, {
+    "@id" : "https://purl.archive.org/cope#RandomForest"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@value" : "1.0.0"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Relates an AI model to the performance metrics used to evaluate its effectiveness and accuracy."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@value" : "Random Forest model evaluated by F1-Score metric"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#getSymptom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://purl.archive.org/cope#Symptom"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_000498"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#hasAIModelName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "https://purl.archive.org/cope#hasAge",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "https://purl.archive.org/cope#hasCODDetails",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "https://purl.archive.org/cope#hasCharacteristic",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An instance constitutes an instance of an aspect of a person."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_000498"
+  }, {
+    "@id" : "http://semanticscience.org/resource/SIO_010299"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://purl.archive.org/cope#DiseaseCharacteristic"
+  }, {
+    "@id" : "https://purl.archive.org/cope#PersonCharacteristic"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#hasCity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "https://purl.archive.org/cope#hasCountry",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "https://purl.archive.org/cope#hasDataset",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "https://purl.archive.org/cope#hasDatasetName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Unhealthy lifestyle > Blood pressure increase > Increases cardiovascular risk > Reduced physical activity > Decline in lifestyle quality > Disease"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#hasDeviceName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "https://purl.archive.org/cope#hasDiseaseCharacteristicName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "https://purl.archive.org/cope#hasDiseaseName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "https://purl.archive.org/cope#hasDiseaseOutcomeName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "https://purl.archive.org/cope#hasEndDate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://purl.archive.org/cope#HealthTrajectory"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#hasEthnicity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "https://purl.archive.org/cope#hasExerciseFrequency",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "https://purl.archive.org/cope#hasExplanation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A model instance extends an instance of an explanation."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://purl.archive.org/cope#AIModel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://purl.archive.org/cope#Explanation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#hasExplanationDetails",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "https://purl.archive.org/cope#hasFullName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "https://purl.archive.org/cope#hasGender",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "https://purl.archive.org/cope#hasHealthAttitude",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "https://purl.archive.org/cope#hasHealthTrajectory",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Progression is only associated with single instance of the other."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_000498"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://purl.archive.org/cope#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has health trajectory"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://purl.archive.org/cope#HealthTrajectory"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "https://purl.archive.org/cope#AbuBakar"
+  }, {
+    "@id" : "https://purl.archive.org/cope#AnthonyPatel"
+  }, {
+    "@id" : "https://purl.archive.org/cope#JohnPaul"
+  }, {
+    "@id" : "https://purl.archive.org/cope#MaryJane"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@value" : "1.0.0"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Relates a person to their health trajectory, representing the chronological sequence of their health-related events and observations."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@value" : "John Paul has health trajectory DiabetesHealthTrajectory"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#hasHealthTrajectoryName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "https://purl.archive.org/cope#hasInputDataNatureName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "https://purl.archive.org/cope#hasInterventionName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "https://purl.archive.org/cope#hasMeasurementUnit",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Collecting information is described in a unit."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_001236"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://purl.archive.org/cope#MeasurementUnit"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#hasMeasurementUnitName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "https://purl.archive.org/cope#hasModellingApproachName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "https://purl.archive.org/cope#hasObservationEventName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "https://purl.archive.org/cope#hasObservationSourceName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "https://purl.archive.org/cope#hasParticipationRank",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Representative of a specific level of inclination towards being a part of."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://purl.archive.org/cope#HealthTrajectory"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://purl.archive.org/cope#ParticipationRank"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#hasPerformanceMetricName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "https://purl.archive.org/cope#hasPhase",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Is indicative of a distinct state of a progressive entity."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://purl.archive.org/cope#HealthTrajectory"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://purl.archive.org/cope#TrajectoryPhase"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#hasPostalCode",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "https://purl.archive.org/cope#hasResearchArticleName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#hasRiskFactor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An instance constitutes an instance of riskFactor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_000498"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://purl.archive.org/cope#RiskFactor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#hasRiskFactorName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "https://purl.archive.org/cope#hasStartDate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Specifies the start date and time of a health trajectory."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://purl.archive.org/cope#HealthTrajectory"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://purl.archive.org/cope#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has start date"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "https://purl.archive.org/cope#CADHealthTrajectory"
+  }, {
+    "@id" : "https://purl.archive.org/cope#CKDHealthTrajectory"
+  }, {
+    "@id" : "https://purl.archive.org/cope#DiabetesHealthTrajectory"
+  }, {
+    "@id" : "https://purl.archive.org/cope#HypertensionHealthTrajectory"
+  }, {
+    "@id" : "https://purl.archive.org/cope#LungCancerHealthTrajectory"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@value" : "1.0.0"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Indicates when a health trajectory begins, marking the start of a sequence of health-related events."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@value" : "2024-11-01T08:00:00"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#hasSymptomName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "https://purl.archive.org/cope#hasTrajectoryPhaseName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "https://purl.archive.org/cope#includes",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An instance of a source comprises of an instance that capture variations."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://purl.archive.org/cope#AIModel"
+  }, {
+    "@id" : "https://purl.archive.org/cope#ObservationSource"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_001236"
+  }, {
+    "@id" : "https://purl.archive.org/cope#InputDataNature"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#isIdentifiedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "isIdentifiedBy is a reflective relationship in which the variation of one is reflected in the other."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_010299"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://purl.archive.org/cope#Symptom"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#isPairedWith",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Occurrence of which is exclusively associated with a specific entity."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://purl.archive.org/cope#ObservationEvent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_000498"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#kg",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.archive.org/cope#MeasurementUnit"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "kg"
+  } ],
+  "https://purl.archive.org/cope#hasMeasurementUnitName" : [ {
+    "@value" : "kg"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#leadsTo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Resulting state or a collection of states due to a change in disease entity."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_010299"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://purl.archive.org/cope#DiseaseOutcome"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#mV",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.archive.org/cope#MeasurementUnit"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "mV"
+  } ],
+  "https://purl.archive.org/cope#hasMeasurementUnitName" : [ {
+    "@value" : "mV"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#mmHg",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "mmHg"
+  } ],
+  "https://purl.archive.org/cope#hasMeasurementUnitName" : [ {
+    "@value" : "mmHg"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#mmol/L",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.archive.org/cope#MeasurementUnit"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "mmol/L"
+  } ],
+  "https://purl.archive.org/cope#hasMeasurementUnitName" : [ {
+    "@value" : "mmol/L"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#observationTimestamp",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Records the precise date and time when an observation event occurred."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://purl.archive.org/cope#ObservationEvent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://purl.archive.org/cope#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "observation timestamp"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#dateTimeStamp"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "https://purl.archive.org/cope#AbnormalCSNAObservationEvent"
+  }, {
+    "@id" : "https://purl.archive.org/cope#BMIObservationEvent"
+  }, {
+    "@id" : "https://purl.archive.org/cope#ECGAnomalyObservationEvent"
+  }, {
+    "@id" : "https://purl.archive.org/cope#FastingBloodGlucoseObservationEvent"
+  }, {
+    "@id" : "https://purl.archive.org/cope#HypertensionObservationEvent"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@value" : "1.0.0"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Specifies the exact moment when a health observation or measurement was taken, providing temporal context for the event."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@value" : "2025-07-23T08:30:00Z"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#observationValue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://purl.archive.org/cope#ObservationEvent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#observedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Is accessible through a collated set of variations"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://purl.archive.org/cope#RiskFactor"
+  }, {
+    "@id" : "https://purl.archive.org/cope#Symptom"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://purl.archive.org/cope#ObservationSource"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#observedIn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://purl.archive.org/cope#Symptom"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://purl.archive.org/cope#ObservationEvent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#proposes",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "One entity suggestive of an application of another."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://purl.archive.org/cope#ResearchArticle"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://purl.archive.org/cope#AIModel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#pullsFromTrajectory",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The progression in place is shifted from the a progress of a similar instance."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://purl.archive.org/cope#HealthTrajectory"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://purl.archive.org/cope#HealthTrajectory"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#targets",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Intends to minimize or to elemeinate an existence of another."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_001398"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://purl.archive.org/cope#RiskFactor"
+  }, {
+    "@id" : "https://purl.archive.org/cope#Symptom"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#trainedOn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The estimates are drawn from a collection of variations."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://purl.archive.org/cope#AIModel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_000089"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#triggers",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A change in one cases an initiation of another."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://purl.archive.org/cope#ObservationSource"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://purl.archive.org/cope#ObservationEvent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#uses",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "One referrs another in the process of existence."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://purl.archive.org/cope#ResearchArticle"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_000089"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cope#usesApproach",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A model instance adopts a specific instance of an approach."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://purl.archive.org/cope#AIModel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://purl.archive.org/cope#ModellingApproach"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+} ]

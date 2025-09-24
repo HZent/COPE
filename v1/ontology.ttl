@@ -1,0 +1,1921 @@
+@prefix : <https://purl.archive.org/cope#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://purl.archive.org/cope#> .
+
+<https://purl.archive.org/cope#> rdf:type owl:Ontology ;
+                                  owl:imports <http://semanticscience.org/ontology/sio/v1.59/sio-release.owl> ;
+                                  <http://purl.org/dc/elements/1.1/abstract> "COPE (Comprehensive Ontology for Patient Health Trajectories and AI Models) provides a standardized vocabulary for representing health trajectories, disease progression patterns, risk factors, symptoms, and AI models in healthcare applications. The ontology enables the modeling of complex health journeys, cycle of deconditioning patterns, and the evaluation of AI models through performance metrics, supporting comprehensive healthcare data analysis and AI model assessment." ;
+                                  <http://purl.org/dc/elements/1.1/audience> "Healthcare researchers, AI developers, medical professionals" ;
+                                  <http://purl.org/dc/elements/1.1/context> "Healthcare AI Research" ;
+                                  <http://purl.org/dc/elements/1.1/contributor> "Healthcare AI Research Community" ;
+                                  <http://purl.org/dc/elements/1.1/coverage> "Healthcare, Medical AI, Disease Modeling" ;
+                                  <http://purl.org/dc/elements/1.1/creator> "Asara Senaratne" ,
+                                                                            "Hon Zent Lim" ,
+                                                                            "Leelanga Seneviratne" ,
+                                                                            "Oshani Seneviratne" ;
+                                  <http://purl.org/dc/elements/1.1/date> "2025-01-23"^^xsd:date ;
+                                  <http://purl.org/dc/elements/1.1/description> "An ontology for representing health trajectories, disease progression, risk factors, symptoms, and AI models used in healthcare applications. COPE provides a comprehensive framework for modeling patient health journeys, disease characteristics, and the AI models that analyze them." ,
+                                                                                "Healthcare systems generate vast amounts of data that can be leveraged to improve patient outcomes through AI-driven insights. However, the lack of standardized vocabularies for representing health trajectories, disease progression, and AI model performance creates challenges in data interoperability and model evaluation. COPE addresses these challenges by providing a comprehensive ontology that captures the complex relationships between patient characteristics, health trajectories, disease progression patterns, risk factors, symptoms, and AI models. The ontology supports the modeling of cycle of deconditioning patterns, enables the evaluation of AI models through performance metrics, and facilitates the integration of diverse healthcare data sources for improved clinical decision-making and research applications." ,
+                                                                                "This ontology provides a comprehensive framework for modeling patient health trajectories, disease progression patterns, and AI model evaluation in healthcare applications." ;
+                                  <http://purl.org/dc/elements/1.1/difficulty> "Advanced" ;
+                                  <http://purl.org/dc/elements/1.1/educationLevel> "Graduate" ;
+                                  <http://purl.org/dc/elements/1.1/format> "application/rdf+xml" ;
+                                  <http://purl.org/dc/elements/1.1/identifier> "https://purl.archive.org/cope#" ;
+                                  <http://purl.org/dc/elements/1.1/instructionalLevel> "Advanced" ;
+                                  <http://purl.org/dc/elements/1.1/intendedEndUserRole> "Researcher" ;
+                                  <http://purl.org/dc/elements/1.1/interactivityLevel> "High" ;
+                                  <http://purl.org/dc/elements/1.1/interactivityType> "Active" ;
+                                  <http://purl.org/dc/elements/1.1/language> "en" ;
+                                  <http://purl.org/dc/elements/1.1/learningResourceType> "Ontology" ;
+                                  <http://purl.org/dc/elements/1.1/publisher> "COPE Development Team" ;
+                                  <http://purl.org/dc/elements/1.1/relation> "Extends Semantic Science Ontology (SIO)" ;
+                                  <http://purl.org/dc/elements/1.1/semanticDensity> "High" ;
+                                  <http://purl.org/dc/elements/1.1/source> "COPE Ontology Development Project" ;
+                                  <http://purl.org/dc/elements/1.1/subject> "Health Trajectories, Disease Progression, AI Models, Healthcare Ontology" ;
+                                  <http://purl.org/dc/elements/1.1/title> "COPE - Comprehensive Ontology for Patient Health Trajectories and AI Models" ;
+                                  <http://purl.org/dc/elements/1.1/typicalAgeRange> "18+" ;
+                                  <http://purl.org/dc/elements/1.1/typicalLearningTime> "P1M" ;
+                                  <http://purl.org/dc/terms/abstract> "COPE (Comprehensive Ontology for Patient Health Trajectories and AI Models) provides a standardized vocabulary for representing health trajectories, disease progression patterns, risk factors, symptoms, and AI models in healthcare applications. The ontology enables the modeling of complex health journeys, cycle of deconditioning patterns, and the evaluation of AI models through performance metrics, supporting comprehensive healthcare data analysis and AI model assessment." ;
+                                  <http://purl.org/dc/terms/description> "Healthcare systems generate vast amounts of data that can be leveraged to improve patient outcomes through AI-driven insights. However, the lack of standardized vocabularies for representing health trajectories, disease progression, and AI model performance creates challenges in data interoperability and model evaluation. COPE addresses these challenges by providing a comprehensive ontology that captures the complex relationships between patient characteristics, health trajectories, disease progression patterns, risk factors, symptoms, and AI models. The ontology supports the modeling of cycle of deconditioning patterns, enables the evaluation of AI models through performance metrics, and facilitates the integration of diverse healthcare data sources for improved clinical decision-making and research applications." ;
+                                  <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> ;
+                                  <http://purl.org/dc/terms/rights> "This work is licensed under a Creative Commons Attribution 4.0 International License" ;
+                                  <http://purl.org/vocab/vann/preferredNamespacePrefix> "cope" ;
+                                  <http://purl.org/vocab/vann/preferredNamespaceUri> "https://purl.archive.org/cope#" ;
+                                  rdfs:comment "COPE (Comprehensive Ontology for Patient Health Trajectories and AI Models) is designed to provide a standardized vocabulary for representing health trajectories, disease progression patterns, risk factors, symptoms, and AI models in healthcare applications. The ontology supports the modeling of complex health journeys, cycle of deconditioning patterns, and the evaluation of AI models through performance metrics." ,
+                                               "Healthcare systems generate vast amounts of data that can be leveraged to improve patient outcomes through AI-driven insights. However, the lack of standardized vocabularies for representing health trajectories, disease progression, and AI model performance creates challenges in data interoperability and model evaluation. COPE addresses these challenges by providing a comprehensive ontology that captures the complex relationships between patient characteristics, health trajectories, disease progression patterns, risk factors, symptoms, and AI models. The ontology supports the modeling of cycle of deconditioning patterns, enables the evaluation of AI models through performance metrics, and facilitates the integration of diverse healthcare data sources for improved clinical decision-making and research applications." ;
+                                  owl:versionInfo "1.0.0" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/abstract
+<http://purl.org/dc/elements/1.1/abstract> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/audience
+<http://purl.org/dc/elements/1.1/audience> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/context
+<http://purl.org/dc/elements/1.1/context> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/coverage
+<http://purl.org/dc/elements/1.1/coverage> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/date
+<http://purl.org/dc/elements/1.1/date> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/difficulty
+<http://purl.org/dc/elements/1.1/difficulty> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/educationLevel
+<http://purl.org/dc/elements/1.1/educationLevel> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/format
+<http://purl.org/dc/elements/1.1/format> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/instructionalLevel
+<http://purl.org/dc/elements/1.1/instructionalLevel> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/intendedEndUserRole
+<http://purl.org/dc/elements/1.1/intendedEndUserRole> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/interactivityLevel
+<http://purl.org/dc/elements/1.1/interactivityLevel> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/interactivityType
+<http://purl.org/dc/elements/1.1/interactivityType> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/language
+<http://purl.org/dc/elements/1.1/language> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/learningResourceType
+<http://purl.org/dc/elements/1.1/learningResourceType> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/publisher
+<http://purl.org/dc/elements/1.1/publisher> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/relation
+<http://purl.org/dc/elements/1.1/relation> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/semanticDensity
+<http://purl.org/dc/elements/1.1/semanticDensity> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/source
+<http://purl.org/dc/elements/1.1/source> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/subject
+<http://purl.org/dc/elements/1.1/subject> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/typicalAgeRange
+<http://purl.org/dc/elements/1.1/typicalAgeRange> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/typicalLearningTime
+<http://purl.org/dc/elements/1.1/typicalLearningTime> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/abstract
+<http://purl.org/dc/terms/abstract> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#definition
+<http://www.w3.org/2004/02/skos/core#definition> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://semanticscience.org/resource/SIO_000068
+<http://semanticscience.org/resource/SIO_000068> rdfs:domain <http://semanticscience.org/resource/SIO_010299> ;
+                                                 rdfs:range :CycleOfDeconditioning .
+
+
+###  http://semanticscience.org/resource/SIO_000095
+<http://semanticscience.org/resource/SIO_000095> rdfs:domain :ObservationEvent ;
+                                                 rdfs:range :HealthTrajectory .
+
+
+###  http://semanticscience.org/resource/SIO_000248
+<http://semanticscience.org/resource/SIO_000248> rdfs:domain :ObservationEvent ;
+                                                 rdfs:range :ObservationEvent .
+
+
+###  http://semanticscience.org/resource/SIO_000253
+<http://semanticscience.org/resource/SIO_000253> rdfs:domain <http://semanticscience.org/resource/SIO_000089> ;
+                                                 rdfs:range :ObservationSource .
+
+
+###  http://semanticscience.org/resource/SIO_000563
+<http://semanticscience.org/resource/SIO_000563> rdfs:domain :ResearchArticle ;
+                                                 rdfs:range <http://semanticscience.org/resource/SIO_001398> .
+
+
+###  https://purl.archive.org/cope#appliedIn
+:appliedIn rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf owl:topObjectProperty ;
+           rdfs:domain <http://semanticscience.org/resource/SIO_001398> ;
+           rdfs:range :ObservationEvent ;
+           rdfs:comment "The administering process is initiated in a specific temporal observation event." .
+
+
+###  https://purl.archive.org/cope#appliedTo
+:appliedTo rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf owl:topObjectProperty ;
+           rdfs:domain <http://semanticscience.org/resource/SIO_001398> ;
+           rdfs:range <http://semanticscience.org/resource/SIO_010299> .
+
+
+###  https://purl.archive.org/cope#contributesTo
+:contributesTo rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf owl:topObjectProperty ;
+               rdfs:domain :RiskFactor ;
+               rdfs:range <http://semanticscience.org/resource/SIO_010299> .
+
+
+###  https://purl.archive.org/cope#evaluatedBy
+:evaluatedBy rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf owl:topObjectProperty ;
+             rdfs:domain :AIModel ;
+             rdfs:range :PerformanceMetric ;
+             rdfs:comment "Ones validity is determined by the specifications of the other." ;
+             rdfs:isDefinedBy <https://purl.archive.org/cope#> ;
+             rdfs:label "evaluated by" ;
+             rdfs:seeAlso :AIHAD ,
+                          :ExplainableAI ,
+                          :F1-Score ,
+                          :MSE ,
+                          :RandomForest ;
+             owl:versionInfo "1.0.0" ;
+             <http://www.w3.org/2004/02/skos/core#definition> "Relates an AI model to the performance metrics used to evaluate its effectiveness and accuracy." ;
+             <http://www.w3.org/2004/02/skos/core#example> "Random Forest model evaluated by F1-Score metric" .
+
+
+###  https://purl.archive.org/cope#getSymptom
+:getSymptom rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf owl:topObjectProperty ;
+            rdfs:domain :Symptom ;
+            rdfs:range <http://semanticscience.org/resource/SIO_000498> .
+
+
+###  https://purl.archive.org/cope#hasCharacteristic
+:hasCharacteristic rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf owl:topObjectProperty ;
+                   rdfs:domain <http://semanticscience.org/resource/SIO_000498> ,
+                               <http://semanticscience.org/resource/SIO_010299> ;
+                   rdfs:range :DiseaseCharacteristic ,
+                              :PersonCharacteristic ;
+                   rdfs:comment "An instance constitutes an instance of an aspect of a person." .
+
+
+###  https://purl.archive.org/cope#hasExplanation
+:hasExplanation rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf owl:topObjectProperty ;
+                rdfs:domain :AIModel ;
+                rdfs:range :Explanation ;
+                rdfs:comment "A model instance extends an instance of an explanation." .
+
+
+###  https://purl.archive.org/cope#hasHealthTrajectory
+:hasHealthTrajectory rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf owl:topObjectProperty ;
+                     rdfs:domain <http://semanticscience.org/resource/SIO_000498> ;
+                     rdfs:range :HealthTrajectory ;
+                     rdfs:comment "Progression is only associated with single instance of the other." ;
+                     rdfs:isDefinedBy <https://purl.archive.org/cope#> ;
+                     rdfs:label "has health trajectory" ;
+                     rdfs:seeAlso :AbuBakar ,
+                                  :AnthonyPatel ,
+                                  :JohnPaul ,
+                                  :MaryJane ;
+                     owl:versionInfo "1.0.0" ;
+                     <http://www.w3.org/2004/02/skos/core#definition> "Relates a person to their health trajectory, representing the chronological sequence of their health-related events and observations." ;
+                     <http://www.w3.org/2004/02/skos/core#example> "John Paul has health trajectory DiabetesHealthTrajectory" .
+
+
+###  https://purl.archive.org/cope#hasMeasurementUnit
+:hasMeasurementUnit rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf owl:topObjectProperty ;
+                    rdfs:domain <http://semanticscience.org/resource/SIO_001236> ;
+                    rdfs:range :MeasurementUnit ;
+                    rdfs:comment "Collecting information is described in a unit." .
+
+
+###  https://purl.archive.org/cope#hasParticipationRank
+:hasParticipationRank rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf owl:topObjectProperty ;
+                      rdfs:domain :HealthTrajectory ;
+                      rdfs:range :ParticipationRank .
+
+
+###  https://purl.archive.org/cope#hasPhase
+:hasPhase rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf owl:topObjectProperty ;
+          rdfs:domain :HealthTrajectory ;
+          rdfs:range :TrajectoryPhase ;
+          rdfs:comment "Is indicative of a distinct state of a progressive entity." .
+
+
+###  https://purl.archive.org/cope#hasRiskFactor
+:hasRiskFactor rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf owl:topObjectProperty ;
+               rdfs:domain <http://semanticscience.org/resource/SIO_000498> ;
+               rdfs:range :RiskFactor ;
+               rdfs:comment "An instance constitutes an instance of riskFactor" .
+
+
+###  https://purl.archive.org/cope#includes
+:includes rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf owl:topObjectProperty ;
+          rdfs:domain :AIModel ,
+                      :ObservationSource ;
+          rdfs:range <http://semanticscience.org/resource/SIO_001236> ,
+                     :InputDataNature ;
+          rdfs:comment "An instance of a source comprises of an instance that capture variations." .
+
+
+###  https://purl.archive.org/cope#isIdentifiedBy
+:isIdentifiedBy rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf owl:topObjectProperty ;
+                rdfs:domain <http://semanticscience.org/resource/SIO_010299> ;
+                rdfs:range :Symptom ;
+                rdfs:comment "isIdentifiedBy is a reflective relationship in which the variation of one is reflected in the other." .
+
+
+###  https://purl.archive.org/cope#isPairedWith
+:isPairedWith rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf owl:topObjectProperty ;
+              rdfs:domain :ObservationEvent ;
+              rdfs:range <http://semanticscience.org/resource/SIO_000498> ;
+              rdfs:comment "Occurrence of which is exclusively associated with a specific entity." .
+
+
+###  https://purl.archive.org/cope#leadsTo
+:leadsTo rdf:type owl:ObjectProperty ;
+         rdfs:subPropertyOf owl:topObjectProperty ;
+         rdfs:domain <http://semanticscience.org/resource/SIO_010299> ;
+         rdfs:range :DiseaseOutcome ;
+         rdfs:comment "Resulting state or a collection of states due to a change in disease entity." .
+
+
+###  https://purl.archive.org/cope#observedBy
+:observedBy rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf owl:topObjectProperty ;
+            rdfs:domain :RiskFactor ,
+                        :Symptom ;
+            rdfs:range :ObservationSource ;
+            rdfs:comment "Is accessible through a collated set of variations" .
+
+
+###  https://purl.archive.org/cope#observedIn
+:observedIn rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf owl:topObjectProperty ;
+            rdfs:domain :Symptom ;
+            rdfs:range :ObservationEvent .
+
+
+###  https://purl.archive.org/cope#proposes
+:proposes rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf owl:topObjectProperty ;
+          rdfs:domain :ResearchArticle ;
+          rdfs:range :AIModel ;
+          rdfs:comment "One entity suggestive of an application of another." .
+
+
+###  https://purl.archive.org/cope#pullsFromTrajectory
+:pullsFromTrajectory rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf owl:topObjectProperty ;
+                     rdfs:domain :HealthTrajectory ;
+                     rdfs:range :HealthTrajectory ;
+                     rdfs:comment "The progression in place is shifted from the a progress of a similar instance." .
+
+
+###  https://purl.archive.org/cope#targets
+:targets rdf:type owl:ObjectProperty ;
+         rdfs:subPropertyOf owl:topObjectProperty ;
+         rdfs:domain <http://semanticscience.org/resource/SIO_001398> ;
+         rdfs:range :RiskFactor ,
+                    :Symptom ;
+         rdfs:comment "Intends to minimize or to elemeinate an existence of another." .
+
+
+###  https://purl.archive.org/cope#trainedOn
+:trainedOn rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf owl:topObjectProperty ;
+           rdfs:domain :AIModel ;
+           rdfs:range <http://semanticscience.org/resource/SIO_000089> ;
+           rdfs:comment "The estimates are drawn from a collection of variations." .
+
+
+###  https://purl.archive.org/cope#triggers
+:triggers rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf owl:topObjectProperty ;
+          rdfs:domain :ObservationSource ;
+          rdfs:range :ObservationEvent ;
+          rdfs:comment "A change in one cases an initiation of another." .
+
+
+###  https://purl.archive.org/cope#uses
+:uses rdf:type owl:ObjectProperty ;
+      rdfs:subPropertyOf owl:topObjectProperty ;
+      rdfs:domain :ResearchArticle ;
+      rdfs:range <http://semanticscience.org/resource/SIO_000089> ;
+      rdfs:comment "One referrs another in the process of existence." .
+
+
+###  https://purl.archive.org/cope#usesApproach
+:usesApproach rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf owl:topObjectProperty ;
+              rdfs:domain :AIModel ;
+              rdfs:range :ModellingApproach ;
+              rdfs:comment "A model instance adopts a specific instance of an approach." .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://purl.archive.org/cope#alcoholConsumption
+:alcoholConsumption rdf:type owl:DatatypeProperty .
+
+
+###  https://purl.archive.org/cope#hasAIModelName
+:hasAIModelName rdf:type owl:DatatypeProperty .
+
+
+###  https://purl.archive.org/cope#hasAge
+:hasAge rdf:type owl:DatatypeProperty .
+
+
+###  https://purl.archive.org/cope#hasCODDetails
+:hasCODDetails rdf:type owl:DatatypeProperty .
+
+
+###  https://purl.archive.org/cope#hasCity
+:hasCity rdf:type owl:DatatypeProperty .
+
+
+###  https://purl.archive.org/cope#hasCountry
+:hasCountry rdf:type owl:DatatypeProperty .
+
+
+###  https://purl.archive.org/cope#hasDataset
+:hasDataset rdf:type owl:DatatypeProperty .
+
+
+###  https://purl.archive.org/cope#hasDatasetName
+:hasDatasetName rdf:type owl:DatatypeProperty ;
+                rdfs:range xsd:string ;
+                rdfs:label "Unhealthy lifestyle > Blood pressure increase > Increases cardiovascular risk > Reduced physical activity > Decline in lifestyle quality > Disease" .
+
+
+###  https://purl.archive.org/cope#hasDeviceName
+:hasDeviceName rdf:type owl:DatatypeProperty .
+
+
+###  https://purl.archive.org/cope#hasDiseaseCharacteristicName
+:hasDiseaseCharacteristicName rdf:type owl:DatatypeProperty .
+
+
+###  https://purl.archive.org/cope#hasDiseaseName
+:hasDiseaseName rdf:type owl:DatatypeProperty .
+
+
+###  https://purl.archive.org/cope#hasDiseaseOutcomeName
+:hasDiseaseOutcomeName rdf:type owl:DatatypeProperty .
+
+
+###  https://purl.archive.org/cope#hasEndDate
+:hasEndDate rdf:type owl:DatatypeProperty ;
+            rdfs:domain :HealthTrajectory ;
+            rdfs:range xsd:dateTime .
+
+
+###  https://purl.archive.org/cope#hasEthnicity
+:hasEthnicity rdf:type owl:DatatypeProperty .
+
+
+###  https://purl.archive.org/cope#hasExerciseFrequency
+:hasExerciseFrequency rdf:type owl:DatatypeProperty .
+
+
+###  https://purl.archive.org/cope#hasExplanationDetails
+:hasExplanationDetails rdf:type owl:DatatypeProperty .
+
+
+###  https://purl.archive.org/cope#hasFullName
+:hasFullName rdf:type owl:DatatypeProperty .
+
+
+###  https://purl.archive.org/cope#hasGender
+:hasGender rdf:type owl:DatatypeProperty .
+
+
+###  https://purl.archive.org/cope#hasHealthAttitude
+:hasHealthAttitude rdf:type owl:DatatypeProperty .
+
+
+###  https://purl.archive.org/cope#hasHealthTrajectoryName
+:hasHealthTrajectoryName rdf:type owl:DatatypeProperty .
+
+
+###  https://purl.archive.org/cope#hasInputDataNatureName
+:hasInputDataNatureName rdf:type owl:DatatypeProperty .
+
+
+###  https://purl.archive.org/cope#hasInterventionName
+:hasInterventionName rdf:type owl:DatatypeProperty .
+
+
+###  https://purl.archive.org/cope#hasMeasurementUnitName
+:hasMeasurementUnitName rdf:type owl:DatatypeProperty .
+
+
+###  https://purl.archive.org/cope#hasModellingApproachName
+:hasModellingApproachName rdf:type owl:DatatypeProperty .
+
+
+###  https://purl.archive.org/cope#hasObservationEventName
+:hasObservationEventName rdf:type owl:DatatypeProperty .
+
+
+###  https://purl.archive.org/cope#hasObservationSourceName
+:hasObservationSourceName rdf:type owl:DatatypeProperty .
+
+
+###  https://purl.archive.org/cope#hasParticipationRank
+:hasParticipationRank rdf:type owl:DatatypeProperty .
+
+
+###  https://purl.archive.org/cope#hasPerformanceMetricName
+:hasPerformanceMetricName rdf:type owl:DatatypeProperty .
+
+
+###  https://purl.archive.org/cope#hasPostalCode
+:hasPostalCode rdf:type owl:DatatypeProperty .
+
+
+###  https://purl.archive.org/cope#hasResearchArticleName
+:hasResearchArticleName rdf:type owl:DatatypeProperty ;
+                        rdfs:subPropertyOf owl:topDataProperty .
+
+
+###  https://purl.archive.org/cope#hasRiskFactorName
+:hasRiskFactorName rdf:type owl:DatatypeProperty .
+
+
+###  https://purl.archive.org/cope#hasStartDate
+:hasStartDate rdf:type owl:DatatypeProperty ;
+              rdfs:domain :HealthTrajectory ;
+              rdfs:range xsd:dateTime ;
+              rdfs:comment "Specifies the start date and time of a health trajectory." ;
+              rdfs:isDefinedBy <https://purl.archive.org/cope#> ;
+              rdfs:label "has start date" ;
+              rdfs:seeAlso :CADHealthTrajectory ,
+                           :CKDHealthTrajectory ,
+                           :DiabetesHealthTrajectory ,
+                           :HypertensionHealthTrajectory ,
+                           :LungCancerHealthTrajectory ;
+              owl:versionInfo "1.0.0" ;
+              <http://www.w3.org/2004/02/skos/core#definition> "Indicates when a health trajectory begins, marking the start of a sequence of health-related events." ;
+              <http://www.w3.org/2004/02/skos/core#example> "2024-11-01T08:00:00" .
+
+
+###  https://purl.archive.org/cope#hasSymptomName
+:hasSymptomName rdf:type owl:DatatypeProperty .
+
+
+###  https://purl.archive.org/cope#hasTrajectoryPhaseName
+:hasTrajectoryPhaseName rdf:type owl:DatatypeProperty .
+
+
+###  https://purl.archive.org/cope#observationTimestamp
+:observationTimestamp rdf:type owl:DatatypeProperty ;
+                      rdfs:domain :ObservationEvent ;
+                      rdfs:range xsd:dateTimeStamp ;
+                      rdfs:comment "Records the precise date and time when an observation event occurred." ;
+                      rdfs:isDefinedBy <https://purl.archive.org/cope#> ;
+                      rdfs:label "observation timestamp" ;
+                      rdfs:seeAlso :AbnormalCSNAObservationEvent ,
+                                   :BMIObservationEvent ,
+                                   :ECGAnomalyObservationEvent ,
+                                   :FastingBloodGlucoseObservationEvent ,
+                                   :HypertensionObservationEvent ;
+                      owl:versionInfo "1.0.0" ;
+                      <http://www.w3.org/2004/02/skos/core#definition> "Specifies the exact moment when a health observation or measurement was taken, providing temporal context for the event." ;
+                      <http://www.w3.org/2004/02/skos/core#example> "2025-07-23T08:30:00Z" .
+
+
+###  https://purl.archive.org/cope#observationValue
+:observationValue rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :ObservationEvent ;
+                  rdfs:range xsd:integer .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://purl.archive.org/cope#AIModel
+:AIModel rdf:type owl:Class ;
+         rdfs:comment "An artificial intelligence model used for healthcare applications, including machine learning models for disease prediction, risk assessment, and health trajectory analysis." ;
+         rdfs:label "AI Model" ;
+         rdfs:seeAlso :AIHAD ,
+                      :ExplainableAI ,
+                      :RFEnhancedFeedForwardNetwork ,
+                      :RandomForest ,
+                      :TPOT-optimized_ensemble_model ;
+         <http://www.w3.org/2004/02/skos/core#definition> "An artificial intelligence system designed to process healthcare data and provide predictions, classifications, or insights about patient health trajectories and disease progression." ;
+         <http://www.w3.org/2004/02/skos/core#example> "Random Forest model for diabetes prediction, CNN model for ECG anomaly detection" .
+
+
+###  https://purl.archive.org/cope#Behavioral
+:Behavioral rdf:type owl:Class ;
+            rdfs:subClassOf <http://semanticscience.org/resource/SIO_001398> ,
+                            :PersonCharacteristic .
+
+
+###  https://purl.archive.org/cope#Biological
+:Biological rdf:type owl:Class ;
+            rdfs:subClassOf :PersonCharacteristic .
+
+
+###  https://purl.archive.org/cope#CycleOfDeconditioning
+:CycleOfDeconditioning rdf:type owl:Class ;
+                       rdfs:comment "Cycle of deconditioning is the stages of changes that occur in a person's body due to prolonged inactivity." ;
+                       rdfs:label "Cycle of Deconditioning" ;
+                       <http://www.w3.org/2004/02/skos/core#definition> "A progressive decline in physical function and health status that occurs when a person becomes less active, leading to a cascade of negative health effects that further reduce activity levels." ;
+                       <http://www.w3.org/2004/02/skos/core#example> "Unhealthy lifestyle → Blood pressure increase → Cardiovascular risk → Reduced physical activity → Decline in lifestyle quality → Disease progression" .
+
+
+###  https://purl.archive.org/cope#Demographic
+:Demographic rdf:type owl:Class ;
+             rdfs:subClassOf :PersonCharacteristic .
+
+
+###  https://purl.archive.org/cope#DiseaseCharacteristic
+:DiseaseCharacteristic rdf:type owl:Class ;
+                       rdfs:comment "Disease characteristic is a collection of disease aspects that describe the profile of a disease." .
+
+
+###  https://purl.archive.org/cope#DiseaseOutcome
+:DiseaseOutcome rdf:type owl:Class ;
+                rdfs:comment "Disease outcome is a specific resulting state that a person is forced to be in." .
+
+
+###  https://purl.archive.org/cope#Explanation
+:Explanation rdf:type owl:Class ;
+             rdfs:comment "Explanation is the associated reasoning of the used AI model." .
+
+
+###  https://purl.archive.org/cope#Geographical
+:Geographical rdf:type owl:Class ;
+              rdfs:subClassOf :PersonCharacteristic .
+
+
+###  https://purl.archive.org/cope#HealthTrajectory
+:HealthTrajectory rdf:type owl:Class ;
+                  rdfs:comment "A trajectory is a collection of sequentially linked temporal observer events that belong to a specific person and share the same membership." ;
+                  rdfs:isDefinedBy <https://purl.archive.org/cope#> ;
+                  rdfs:label "Health Trajectory" ;
+                  rdfs:seeAlso :CADHealthTrajectory ,
+                               :CKDHealthTrajectory ,
+                               :DiabetesHealthTrajectory ,
+                               :HypertensionHealthTrajectory ,
+                               :LungCancerHealthTrajectory ;
+                  owl:versionInfo "1.0.0" ;
+                  <http://www.w3.org/2004/02/skos/core#definition> "A chronological sequence of health-related events and observations that represent a person's health journey over time, including disease progression, interventions, and outcomes." ;
+                  <http://www.w3.org/2004/02/skos/core#example> "Diabetes progression from diagnosis through treatment to complications" .
+
+
+###  https://purl.archive.org/cope#InputDataNature
+:InputDataNature rdf:type owl:Class .
+
+
+###  https://purl.archive.org/cope#MeasurementUnit
+:MeasurementUnit rdf:type owl:Class ;
+                 rdfs:comment "Measurement unit is a set of variations observed for a purpose. E.g. ECG" .
+
+
+###  https://purl.archive.org/cope#ModellingApproach
+:ModellingApproach rdf:type owl:Class ;
+                   rdfs:comment "Modeling Approach is the utilized machine learning approach for a given Artificial Intelligence model." .
+
+
+###  https://purl.archive.org/cope#ObservationEvent
+:ObservationEvent rdf:type owl:Class ;
+                  rdfs:comment "An observation event is a temporal trigger for processing information." .
+
+
+###  https://purl.archive.org/cope#ObservationSource
+:ObservationSource rdf:type owl:Class ;
+                   rdfs:comment "Observation source is a manifestation of an anchor that collates a variety of measurements." .
+
+
+###  https://purl.archive.org/cope#ParticipationRank
+:ParticipationRank rdf:type owl:Class ;
+                   rdfs:comment "Participation rank is a numerical representation indicating the unitary distance of a trajectory from the participation. [0,n] where 0 represents the current trajectory." .
+
+
+###  https://purl.archive.org/cope#PerformanceMetric
+:PerformanceMetric rdf:type owl:Class ;
+                   rdfs:comment "A performance metric is the collection of quantifiable measurements that validates the performance of a model." .
+
+
+###  https://purl.archive.org/cope#PersonCharacteristic
+:PersonCharacteristic rdf:type owl:Class ;
+                      rdfs:comment "Personal characteristic is a collection of personal aspects that describe the profile of a person." .
+
+
+###  https://purl.archive.org/cope#Pharmalogical
+:Pharmalogical rdf:type owl:Class ;
+               rdfs:subClassOf <http://semanticscience.org/resource/SIO_001398> .
+
+
+###  https://purl.archive.org/cope#Preventive
+:Preventive rdf:type owl:Class ;
+            rdfs:subClassOf <http://semanticscience.org/resource/SIO_001398> .
+
+
+###  https://purl.archive.org/cope#Psychographic
+:Psychographic rdf:type owl:Class ;
+               rdfs:subClassOf :PersonCharacteristic .
+
+
+###  https://purl.archive.org/cope#ResearchArticle
+:ResearchArticle rdf:type owl:Class ;
+                 rdfs:comment "Research article is a published research source for a specific health context." .
+
+
+###  https://purl.archive.org/cope#RiskFactor
+:RiskFactor rdf:type owl:Class ;
+            rdfs:comment "Risk factor is a condition of a personal charactoristic that recognizes a plausible disease." ;
+            rdfs:label "Risk Factor" ;
+            <http://www.w3.org/2004/02/skos/core#definition> "A characteristic, condition, or behavior that increases the likelihood of developing a disease or health condition." ;
+            <http://www.w3.org/2004/02/skos/core#example> "Smoking, obesity, high blood pressure, family history of diabetes" .
+
+
+###  https://purl.archive.org/cope#Symptom
+:Symptom rdf:type owl:Class ;
+         rdfs:comment "Symptom is a variation (range or a threshold) of a measurement that is functionally associated with a specific disease." ;
+         rdfs:label "Symptom" ;
+         <http://www.w3.org/2004/02/skos/core#definition> "A physical or mental feature that indicates the presence of a disease or health condition, often measurable through clinical observations or patient reports." ;
+         <http://www.w3.org/2004/02/skos/core#example> "Chest pain, shortness of breath, blurred vision, fatigue" .
+
+
+###  https://purl.archive.org/cope#Therapeutic
+:Therapeutic rdf:type owl:Class ;
+             rdfs:subClassOf <http://semanticscience.org/resource/SIO_001398> .
+
+
+###  https://purl.archive.org/cope#TrajectoryPhase
+:TrajectoryPhase rdf:type owl:Class ;
+                 rdfs:comment "Trajectory phase is a lifecycle stage of a trajectory. {predicted, verified, remission}" .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://purl.archive.org/cope#AIHAD
+:AIHAD rdf:type owl:NamedIndividual ,
+                :AIModel ;
+       :evaluatedBy :F1-Score ,
+                    :MSE ;
+       :hasExplanation :Explanation002 ;
+       :includes :ECGSignalFeatures ;
+       :trainedOn :Dataset002 ;
+       :usesApproach :CNN ;
+       :hasAIModelName "Artificial Intelligence-based Hybrid Anomaly Detection (AIHAD)" ;
+       rdfs:label "Artificial Intelligence-based Hybrid Anomaly Detection (AIHAD)" .
+
+
+###  https://purl.archive.org/cope#AbnormalCSNA
+:AbnormalCSNA rdf:type owl:NamedIndividual ,
+                       :RiskFactor ;
+              :contributesTo :CAD ;
+              :observedBy :CSNASignalFeatureSource ;
+              :hasRiskFactorName "Abnormal CSNA" ;
+              rdfs:label "Abnormal CSNA" .
+
+
+###  https://purl.archive.org/cope#AbnormalCSNAObservationEvent
+:AbnormalCSNAObservationEvent rdf:type owl:NamedIndividual ,
+                                       :ObservationEvent ;
+                              <http://semanticscience.org/resource/SIO_000095> :CADHealthTrajectory ;
+                              :isPairedWith :MaryJane ;
+                              :hasObservationEventName "Abnormal CSNA Observation Event" ;
+                              :observationTimestamp "2025-07-23T08:30:00Z"^^xsd:dateTimeStamp ;
+                              :observationValue 75 ;
+                              rdfs:label "Abnormal CSNA Observation Event" .
+
+
+###  https://purl.archive.org/cope#AbuBakar
+:AbuBakar rdf:type owl:NamedIndividual ,
+                   <http://semanticscience.org/resource/SIO_000498> ;
+          :hasCharacteristic :BehavAbuBakar ,
+                             :BioAbuBakar ,
+                             :DemoAbuBakar ,
+                             :GeoAbuBakar ,
+                             :PsychAbuBakar ;
+          :hasHealthTrajectory :LungCancerHealthTrajectory ;
+          :hasRiskFactor :Smoking ;
+          :hasFullName "Abu Bakar" ;
+          rdfs:label "Abu Bakar" .
+
+
+###  https://purl.archive.org/cope#AnthonyPatel
+:AnthonyPatel rdf:type owl:NamedIndividual ,
+                       <http://semanticscience.org/resource/SIO_000498> ;
+              :hasCharacteristic :BehavAnthonyPatel ,
+                                 :BioAnthonyPatel ,
+                                 :DemoAnthonyPatel ,
+                                 :GeoAnthonyPatel ,
+                                 :PsychAnthonyPatel ;
+              :hasHealthTrajectory :CKDHealthTrajectory ,
+                                   :HypertensionHealthTrajectory ;
+              :hasRiskFactor :Hypertension ,
+                             :Obesity ;
+              :hasFullName "Anthony Patel" ;
+              rdfs:label "Anthony Patel" .
+
+
+###  https://purl.archive.org/cope#Atherosclerosis
+:Atherosclerosis rdf:type owl:NamedIndividual ,
+                          :DiseaseCharacteristic ;
+                 :hasDiseaseCharacteristicName "Atherosclerosis" ;
+                 rdfs:label "Atherosclerosis" .
+
+
+###  https://purl.archive.org/cope#BMI
+:BMI rdf:type owl:NamedIndividual ,
+              :InputDataNature ;
+     :hasInputDataNatureName "Body Mass Index" ;
+     rdfs:label "Body Mass Index" .
+
+
+###  https://purl.archive.org/cope#BMIObservationEvent
+:BMIObservationEvent rdf:type owl:NamedIndividual ,
+                              :ObservationEvent ;
+                     :hasObservationEventName "BMI Observation Event" ;
+                     :observationTimestamp "2025-07-23T08:30:00Z"^^xsd:dateTimeStamp ;
+                     rdfs:label "BMI Observation Event" .
+
+
+###  https://purl.archive.org/cope#BehavAbuBakar
+:BehavAbuBakar rdf:type owl:NamedIndividual ,
+                        :Behavioral ;
+               :alcoholConsumption "Non-Drinker" ;
+               :hasExerciseFrequency "3 times a week" ;
+               rdfs:label "Abu Bakar Behavioral" .
+
+
+###  https://purl.archive.org/cope#BehavAnthonyPatel
+:BehavAnthonyPatel rdf:type owl:NamedIndividual ,
+                            :Behavioral ;
+                   :alcoholConsumption "Regularly" ;
+                   :hasExerciseFrequency "Rarely" ;
+                   rdfs:label "Anthony Patel Behavioral" .
+
+
+###  https://purl.archive.org/cope#BehavJohnPaul
+:BehavJohnPaul rdf:type owl:NamedIndividual ,
+                        :Behavioral ;
+               :alcoholConsumption "Alcoholic" ;
+               :hasExerciseFrequency "5 times a week" ;
+               rdfs:label "John Paul Behavioral" .
+
+
+###  https://purl.archive.org/cope#BehavMaryJane
+:BehavMaryJane rdf:type owl:NamedIndividual ,
+                        :Behavioral ;
+               :alcoholConsumption "Former Drinker" ;
+               :hasExerciseFrequency "1 time a week" ;
+               rdfs:label "Mary Jane Behavioral" .
+
+
+###  https://purl.archive.org/cope#BioAbuBakar
+:BioAbuBakar rdf:type owl:NamedIndividual ,
+                      :Biological ;
+             :hasAge 42 ;
+             :hasGender "Male" ;
+             rdfs:label "Abu Bakar Biological" .
+
+
+###  https://purl.archive.org/cope#BioAnthonyPatel
+:BioAnthonyPatel rdf:type owl:NamedIndividual ,
+                          :Biological ;
+                 :hasAge 65 ;
+                 :hasGender "Male" ;
+                 rdfs:label "Anthony Patel Biological" .
+
+
+###  https://purl.archive.org/cope#BioJohnPaul
+:BioJohnPaul rdf:type owl:NamedIndividual ,
+                      :Biological ;
+             :hasAge 55 ;
+             :hasGender "Male" ;
+             rdfs:label "John Paul Biological" .
+
+
+###  https://purl.archive.org/cope#BioMaryJane
+:BioMaryJane rdf:type owl:NamedIndividual ,
+                      :Biological ;
+             :hasAge 67 ;
+             :hasGender "Female" ;
+             rdfs:label "Mary Jane Biological" .
+
+
+###  https://purl.archive.org/cope#BloodGlucoseMeters
+:BloodGlucoseMeters rdf:type owl:NamedIndividual ,
+                             <http://semanticscience.org/resource/SIO_001236> ;
+                    :hasMeasurementUnit <https://purl.archive.org/cope#mmol/L> ;
+                    :hasDeviceName "Blood Glucose Meters" ;
+                    rdfs:label "Blood Glucose Meters" .
+
+
+###  https://purl.archive.org/cope#BloodPressureMonitor
+:BloodPressureMonitor rdf:type owl:NamedIndividual ,
+                               <http://semanticscience.org/resource/SIO_001236> ;
+                      :hasMeasurementUnit :mmHg ;
+                      :hasDeviceName "Blood Pressure Monitor" ;
+                      rdfs:label "Blood Pressure Monitor" .
+
+
+###  https://purl.archive.org/cope#BloodSugar
+:BloodSugar rdf:type owl:NamedIndividual ,
+                     :RiskFactor ;
+            :observedBy :BloodSugarLevelSource ;
+            :hasRiskFactorName "Blood Sugar" ;
+            rdfs:label "Blood Sugar" .
+
+
+###  https://purl.archive.org/cope#BloodSugarLevel
+:BloodSugarLevel rdf:type owl:NamedIndividual ,
+                          :InputDataNature ;
+                 :hasInputDataNatureName "Blood Sugar Level" ;
+                 rdfs:label "Blood Sugar Level" .
+
+
+###  https://purl.archive.org/cope#BloodSugarLevelSource
+:BloodSugarLevelSource rdf:type owl:NamedIndividual ,
+                                :ObservationSource ;
+                       :includes :BloodGlucoseMeters ;
+                       :triggers :FastingBloodGlucoseObservationEvent ;
+                       :hasObservationSourceName "Blood Sugar Level Source" ;
+                       rdfs:label "Blood Sugar Level Source" .
+
+
+###  https://purl.archive.org/cope#BlurredVision
+:BlurredVision rdf:type owl:NamedIndividual ,
+                        :Symptom ;
+               :getSymptom :JohnPaul ;
+               :observedBy :SystolicBPSource ;
+               :observedIn :HypertensionObservationEvent ;
+               :hasSymptomName "Bliurred Vision" ;
+               rdfs:label "Blurred Vision" .
+
+
+###  https://purl.archive.org/cope#CAD
+:CAD rdf:type owl:NamedIndividual ,
+              <http://semanticscience.org/resource/SIO_010299> ;
+     <http://semanticscience.org/resource/SIO_000068> :COD2 ;
+     :hasCharacteristic :Atherosclerosis ;
+     :isIdentifiedBy :ChestPain ,
+                     :ShortnessOfBreath ;
+     :leadsTo :SuddenCardiacDeath ;
+     :hasDiseaseName "Coronary Artery Disease (CAD)" ;
+     rdfs:label "Coronary Artery Disease (CAD)" .
+
+
+###  https://purl.archive.org/cope#CADHealthTrajectory
+:CADHealthTrajectory rdf:type owl:NamedIndividual ,
+                              :HealthTrajectory ;
+                     :hasPhase :VerifiedTrajectoryPhase ;
+                     :hasEndDate "2025-07-04T11:15:00"^^xsd:dateTime ;
+                     :hasHealthTrajectoryName "CAD Health Trajectory" ;
+                     :hasParticipationRank 0 ;
+                     :hasStartDate "2025-06-15T08:00:00"^^xsd:dateTime ;
+                     rdfs:label "CAD Health Trajectory" .
+
+
+###  https://purl.archive.org/cope#CKDHealthTrajectory
+:CKDHealthTrajectory rdf:type owl:NamedIndividual ,
+                              :HealthTrajectory ;
+                     :hasPhase :VerifiedTrajectoryPhase ;
+                     :hasEndDate "2025-07-04T11:45:00"^^xsd:dateTime ;
+                     :hasHealthTrajectoryName "Chronic Kidney Disease Health Trajectory" ;
+                     :hasParticipationRank 0 ;
+                     :hasStartDate "2025-01-15T08:00:00"^^xsd:dateTime ;
+                     rdfs:label "Chronic Kidney Disease Health Trajectory" .
+
+
+###  https://purl.archive.org/cope#CNN
+:CNN rdf:type owl:NamedIndividual ,
+              :ModellingApproach ;
+     :hasModellingApproachName "Convolutional Neural Networks (CNN)" ;
+     rdfs:label "Convolutional Neural Networks (CNN)" .
+
+
+###  https://purl.archive.org/cope#COD1
+:COD1 rdf:type owl:NamedIndividual ,
+               :CycleOfDeconditioning ;
+      :hasCODDetails "Unhealthy lifestyle > Blood pressure increase > Increases cardiovascular risk > Reduced physical activity > Decline in lifestyle quality > Disease progression" ;
+      rdfs:label "Unhealthy lifestyle > Blood pressure increase > Increases cardiovascular risk > Reduced physical activity > Decline in lifestyle quality > Disease progression" .
+
+
+###  https://purl.archive.org/cope#COD2
+:COD2 rdf:type owl:NamedIndividual ,
+               :CycleOfDeconditioning ;
+      :hasCODDetails "ECG Anomalies Detected > Decreased Cardiac Efficiency > Reduced Physical Activity > Increased Hypertension > Chronic Disease Progression" ;
+      rdfs:label "ECG Anomalies Detected > Decreased Cardiac Efficiency > Reduced Physical Activity > Increased Hypertension > Chronic Disease Progression" .
+
+
+###  https://purl.archive.org/cope#COD3
+:COD3 rdf:type owl:NamedIndividual ,
+               :CycleOfDeconditioning ;
+      :hasCODDetails "Increased Hypertension > Reduced Kidney Function > Reduced Physical Activity > Metabolic Deterioration > Worsen CKD > Chronic Disease Progression" ;
+      rdfs:label "Increased Hypertension > Reduced Kidney Function > Reduced Physical Activity > Metabolic Deterioration > Worsen CKD > Chronic Disease Progression" .
+
+
+###  https://purl.archive.org/cope#COD4
+:COD4 rdf:type owl:NamedIndividual ,
+               :CycleOfDeconditioning ;
+      :hasCODDetails "Obesity > Insulin Resistance and Inflammation > Type 2 Diabetes > Hypertension > Vascular Dysfunction > Reduction in Exercise > Worsen Insuin Resistance and Inflammation > Worsen Hypertension" ;
+      rdfs:label "Obesity > Insulin Resistance and Inflammation > Type 2 Diabetes > Hypertension > Vascular Dysfunction > Reduction in Exercise > Worsen Insuin Resistance and Inflammation > Worsen Hypertension" .
+
+
+###  https://purl.archive.org/cope#COD5
+:COD5 rdf:type owl:NamedIndividual ,
+               :CycleOfDeconditioning ;
+      :hasCODDetails "Smoking > Lung Damage > Fatigue > Reduced Exercise > Increased Disability > Further Reduction in Exercise > Cycle Worsen" ;
+      rdfs:label "Smoking > Lung Damage > Fatigue > Reduced Exercise > Increased Disability > Further Reduction in Exercise > Cycle Worsen" .
+
+
+###  https://purl.archive.org/cope#CSNASignalFeatureSource
+:CSNASignalFeatureSource rdf:type owl:NamedIndividual ,
+                                  :ObservationSource ;
+                         :includes :MicroneurographySystem ;
+                         :triggers :AbnormalCSNAObservationEvent ;
+                         :hasObservationSourceName "CSNA Signal Feature Source" ;
+                         rdfs:label "CSNA Signal Feature Source" .
+
+
+###  https://purl.archive.org/cope#CardiacRehab
+:CardiacRehab rdf:type owl:NamedIndividual ,
+                       :Preventive ;
+              :appliedIn :ECGAnomalyObservationEvent ;
+              :appliedTo :CAD ;
+              :targets :ECGAnomalies ,
+                       :ShortnessOfBreath ;
+              :hasInterventionName "Cardiac Exercise Rehabilitation" ;
+              rdfs:label "Cardiac Exercise Rehabilitation" .
+
+
+###  https://purl.archive.org/cope#ChestPain
+:ChestPain rdf:type owl:NamedIndividual ,
+                    :Symptom ;
+           :getSymptom :MaryJane ;
+           :observedBy :CSNASignalFeatureSource ;
+           :observedIn :AbnormalCSNAObservationEvent ;
+           :hasSymptomName "Chest Pain" ;
+           rdfs:label "Chest Pain" .
+
+
+###  https://purl.archive.org/cope#ChronicKidneyDisease
+:ChronicKidneyDisease rdf:type owl:NamedIndividual ,
+                               <http://semanticscience.org/resource/SIO_010299> ;
+                      <http://semanticscience.org/resource/SIO_000068> :COD3 ;
+                      :hasCharacteristic :ReducedGFR ;
+                      :isIdentifiedBy :ShortnessOfBreath ,
+                                      :Swelling ;
+                      :leadsTo :HighCVDRisk ;
+                      :hasDiseaseName "Chronic Kidney Disease" ;
+                      rdfs:label "Chronic Kidney Disease" .
+
+
+###  https://purl.archive.org/cope#Dataset001
+:Dataset001 rdf:type owl:NamedIndividual ,
+                     <http://semanticscience.org/resource/SIO_000089> ;
+            <http://semanticscience.org/resource/SIO_000253> :BloodSugarLevelSource ,
+                                                             :DiastolicBPSource ,
+                                                             :HeightMeasurementSource ,
+                                                             :SystolicBPSource ,
+                                                             :WeightMeasurementSource ;
+            :hasDataset "Secondary surveillance data from Puskesmas Johar Baru, Jakarta, in 2019, 2020, and 2021" ;
+            rdfs:label "Secondary surveillance data from Puskesmas Johar Baru, Jakarta, in 2019, 2020, and 2021" .
+
+
+###  https://purl.archive.org/cope#Dataset002
+:Dataset002 rdf:type owl:NamedIndividual ,
+                     <http://semanticscience.org/resource/SIO_000089> ;
+            <http://semanticscience.org/resource/SIO_000253> :CSNASignalFeatureSource ,
+                                                             :ECGSignalFeatureSource ;
+            :hasDataset "Fully labeled STAFF III and PTBD databases, which contain the 12-lead wideband raw recordings non-invasively acquired from 260 subjects" ;
+            rdfs:label "Fully labeled STAFF III and PTBD databases, which contain the 12-lead wideband raw recordings non-invasively acquired from 260 subjects" .
+
+
+###  https://purl.archive.org/cope#Dataset003
+:Dataset003 rdf:type owl:NamedIndividual ,
+                     <http://semanticscience.org/resource/SIO_000089> ;
+            <http://semanticscience.org/resource/SIO_000253> :DiastolicBPSource ,
+                                                             :SystolicBPSource ;
+            :hasDataset "Mashhad Stroke and Heart Atherosclerotic Disorders (MASHAD) Study database" ;
+            rdfs:label "Mashhad Stroke and Heart Atherosclerotic Disorders (MASHAD) Study database" .
+
+
+###  https://purl.archive.org/cope#Dataset004
+:Dataset004 rdf:type owl:NamedIndividual ,
+                     <http://semanticscience.org/resource/SIO_000089> ;
+            <http://semanticscience.org/resource/SIO_000253> :HeightMeasurementSource ,
+                                                             :WeightMeasurementSource ;
+            :hasDataset "Blood Pressure Data for Disease Prediction from Kaggle" ;
+            rdfs:label "Blood Pressure Data for Disease Prediction from Kaggle" .
+
+
+###  https://purl.archive.org/cope#Dataset005
+:Dataset005 rdf:type owl:NamedIndividual ,
+                     <http://semanticscience.org/resource/SIO_000089> ;
+            <http://semanticscience.org/resource/SIO_000253> :SelfReportedSmokingSource ;
+            :hasDataset "Electronic Medical Records and chest CT scans" ;
+            rdfs:label "Electronic Medical Records and chest CT scans" .
+
+
+###  https://purl.archive.org/cope#DemoAbuBakar
+:DemoAbuBakar rdf:type owl:NamedIndividual ,
+                       :Demographic ;
+              :hasEthnicity "Malay" ;
+              rdfs:label "Abu Bakar Demographic" .
+
+
+###  https://purl.archive.org/cope#DemoAnthonyPatel
+:DemoAnthonyPatel rdf:type owl:NamedIndividual ,
+                           :Demographic ;
+                  :hasEthnicity "South Asian" ;
+                  rdfs:label "Anthony Patel Demographic" .
+
+
+###  https://purl.archive.org/cope#DemoJohnPaul
+:DemoJohnPaul rdf:type owl:NamedIndividual ,
+                       :Demographic ;
+              :hasEthnicity "Caucasian" ;
+              rdfs:label "John Paul Demographic" .
+
+
+###  https://purl.archive.org/cope#DemoMaryJane
+:DemoMaryJane rdf:type owl:NamedIndividual ,
+                       :Demographic ;
+              :hasEthnicity "Caucasian" ;
+              rdfs:label "Mary Jane Demographic" .
+
+
+###  https://purl.archive.org/cope#DiabetesHealthTrajectory
+:DiabetesHealthTrajectory rdf:type owl:NamedIndividual ,
+                                   :HealthTrajectory ;
+                          :hasPhase :VerifiedTrajectoryPhase ;
+                          :hasEndDate "2025-07-04T10:15:00"^^xsd:dateTime ;
+                          :hasHealthTrajectoryName "Diabetes Health Trajectory" ;
+                          :hasParticipationRank 0 ;
+                          :hasStartDate "2024-11-01T08:00:00"^^xsd:dateTime ;
+                          rdfs:label "Diabetes Health Trajectory" .
+
+
+###  https://purl.archive.org/cope#DiabetesMellitus
+:DiabetesMellitus rdf:type owl:NamedIndividual ,
+                           <http://semanticscience.org/resource/SIO_010299> ;
+                  <http://semanticscience.org/resource/SIO_000068> :COD1 ;
+                  :hasCharacteristic :InsulinDysfunction ;
+                  :isIdentifiedBy :BlurredVision ,
+                                  :SlowWoundHealing ;
+                  :leadsTo :KidneyFailure ;
+                  :hasDiseaseName "Diabetes Mellitus" ;
+                  rdfs:label "Diabetes Mellitus" .
+
+
+###  https://purl.archive.org/cope#DiastolicBP
+:DiastolicBP rdf:type owl:NamedIndividual ,
+                      :InputDataNature ;
+             :hasInputDataNatureName "Diastolic BP" ;
+             rdfs:label "Diastolic BP" .
+
+
+###  https://purl.archive.org/cope#DiastolicBPSource
+:DiastolicBPSource rdf:type owl:NamedIndividual ,
+                            :ObservationSource ;
+                   :includes :BloodPressureMonitor ;
+                   :triggers :HypertensionObservationEvent ;
+                   :hasObservationSourceName "Diastolic BP Source" ;
+                   rdfs:label "Diastolic BP Source" .
+
+
+###  https://purl.archive.org/cope#DietEducation
+:DietEducation rdf:type owl:NamedIndividual ,
+                        :Preventive ;
+               :appliedTo :DiabetesMellitus ;
+               :targets :BlurredVision ;
+               :hasInterventionName "Diet Education" ;
+               rdfs:label "Diet Education" .
+
+
+###  https://purl.archive.org/cope#ECGAnomalies
+:ECGAnomalies rdf:type owl:NamedIndividual ,
+                       :RiskFactor ;
+              :contributesTo :CAD ;
+              :observedBy :ECGSignalFeatureSource ;
+              :hasRiskFactorName "ECG Anomalies" ;
+              rdfs:label "ECG Anomalies" .
+
+
+###  https://purl.archive.org/cope#ECGAnomalyObservationEvent
+:ECGAnomalyObservationEvent rdf:type owl:NamedIndividual ,
+                                     :ObservationEvent ;
+                            <http://semanticscience.org/resource/SIO_000095> :CADHealthTrajectory ;
+                            :isPairedWith :MaryJane ;
+                            :hasObservationEventName "ECG Anomaly Observation Event" ;
+                            :observationTimestamp "2025-07-23T08:30:00Z"^^xsd:dateTime ;
+                            :observationValue 18 ;
+                            rdfs:label "ECG Anomaly Observation Event" .
+
+
+###  https://purl.archive.org/cope#ECGMachine
+:ECGMachine rdf:type owl:NamedIndividual ,
+                     <http://semanticscience.org/resource/SIO_001236> ;
+            :hasMeasurementUnit :mV ;
+            :hasDeviceName "ECG Machine" ;
+            rdfs:label "ECG Machine" .
+
+
+###  https://purl.archive.org/cope#ECGSignalFeatureSource
+:ECGSignalFeatureSource rdf:type owl:NamedIndividual ,
+                                 :ObservationSource ;
+                        :includes :ECGMachine ;
+                        :triggers :ECGAnomalyObservationEvent ;
+                        :hasObservationSourceName "ECG Signal Feature Source" ;
+                        rdfs:label "ECG Signal Feature Source" .
+
+
+###  https://purl.archive.org/cope#ECGSignalFeatures
+:ECGSignalFeatures rdf:type owl:NamedIndividual ,
+                            :InputDataNature ;
+                   :hasInputDataNatureName "ECG signal features" ;
+                   rdfs:label "ECG signal features" .
+
+
+###  https://purl.archive.org/cope#ElevatedBloodPressure
+:ElevatedBloodPressure rdf:type owl:NamedIndividual ,
+                                :DiseaseCharacteristic ;
+                       :hasDiseaseCharacteristicName "Elevated Blood Pressure" ;
+                       rdfs:label "Elevated Blood Pressure" .
+
+
+###  https://purl.archive.org/cope#EnsembleLearning
+:EnsembleLearning rdf:type owl:NamedIndividual ,
+                           :ModellingApproach ;
+                  :hasModellingApproachName "Ensmeble Learning" ;
+                  rdfs:label "Ensemble Learning" .
+
+
+###  https://purl.archive.org/cope#ExplainableAI
+:ExplainableAI rdf:type owl:NamedIndividual ,
+                        :AIModel ;
+               :evaluatedBy :F1-Score ;
+               :hasExplanation :Explanation004 ;
+               :includes :BMI ;
+               :trainedOn :Dataset004 ;
+               :usesApproach :StackedEnsembleWithSHAP ;
+               :hasAIModelName "Explainable AI" ;
+               rdfs:label "Explainable AI" .
+
+
+###  https://purl.archive.org/cope#Explanation001
+:Explanation001 rdf:type owl:NamedIndividual ,
+                         :Explanation ;
+                :hasExplanationDetails "Explanation 1 here" ;
+                rdfs:label "Explanation 1 here" .
+
+
+###  https://purl.archive.org/cope#Explanation002
+:Explanation002 rdf:type owl:NamedIndividual ,
+                         :Explanation ;
+                :hasExplanationDetails "Explanation 2 here" ;
+                rdfs:label "Explanation 2 here" .
+
+
+###  https://purl.archive.org/cope#Explanation003
+:Explanation003 rdf:type owl:NamedIndividual ,
+                         :Explanation ;
+                :hasExplanationDetails "Explanation 3 here" ;
+                rdfs:label "Explanation 3 here" .
+
+
+###  https://purl.archive.org/cope#Explanation004
+:Explanation004 rdf:type owl:NamedIndividual ,
+                         :Explanation ;
+                :hasExplanationDetails "Explanation 4 here" ;
+                rdfs:label "Explanation 4 here" .
+
+
+###  https://purl.archive.org/cope#Explanation5
+:Explanation5 rdf:type owl:NamedIndividual ,
+                       :Explanation ;
+              :hasExplanationDetails "Explanation here 5" ;
+              rdfs:label "Explanation 5 here" .
+
+
+###  https://purl.archive.org/cope#F1-Score
+:F1-Score rdf:type owl:NamedIndividual ,
+                   :PerformanceMetric ;
+          :hasPerformanceMetricName "F1-Score" ;
+          rdfs:label "F1-Score" .
+
+
+###  https://purl.archive.org/cope#FastingBloodGlucoseObservationEvent
+:FastingBloodGlucoseObservationEvent rdf:type owl:NamedIndividual ,
+                                              :ObservationEvent ;
+                                     <http://semanticscience.org/resource/SIO_000095> :DiabetesHealthTrajectory ;
+                                     :isPairedWith :JohnPaul ;
+                                     :hasObservationEventName "Fasting Blood Glucose Observation Event" ;
+                                     :observationValue "2025-07-13T09:30:00Z"^^xsd:dateTimeStamp ,
+                                                       "7.8 mmol/L" ;
+                                     rdfs:label "Fasting Blood Glucose Observation Event" .
+
+
+###  https://purl.archive.org/cope#Fatigue
+:Fatigue rdf:type owl:NamedIndividual ,
+                  :Symptom ;
+         :getSymptom :AnthonyPatel ;
+         :observedBy :HeightMeasurementSource ,
+                     :WeightMeasurementSource ;
+         :observedIn :BMIObservationEvent ;
+         :hasSymptomName "Fatigue" ;
+         rdfs:label "Fatigue" .
+
+
+###  https://purl.archive.org/cope#GeoAbuBakar
+:GeoAbuBakar rdf:type owl:NamedIndividual ,
+                      :Geographical ;
+             :hasCity "Kuala Lumpur" ;
+             :hasCountry "Malaysia" ;
+             :hasPostalCode 50450 ;
+             rdfs:label "Abu Bakar Geographical" .
+
+
+###  https://purl.archive.org/cope#GeoAnthonyPatel
+:GeoAnthonyPatel rdf:type owl:NamedIndividual ,
+                          :Geographical ;
+                 :hasCity "Austin" ;
+                 :hasCountry "United States" ;
+                 :hasPostalCode 78701 ;
+                 rdfs:label "Anthony Patel Geographical" .
+
+
+###  https://purl.archive.org/cope#GeoJohnPaul
+:GeoJohnPaul rdf:type owl:NamedIndividual ,
+                      :Geographical ;
+             :hasCity "Adelaide" ;
+             :hasCountry "Australia" ;
+             :hasPostalCode 5000 ;
+             rdfs:label "John Paul Geographical" .
+
+
+###  https://purl.archive.org/cope#GeoMaryJane
+:GeoMaryJane rdf:type owl:NamedIndividual ,
+                      :Geographical ;
+             :hasCity "Melbourne" ;
+             :hasCountry "Australia" ;
+             :hasPostalCode 3004 ;
+             rdfs:label "Mary Jane Geographical" .
+
+
+###  https://purl.archive.org/cope#HeightMeasurementSource
+:HeightMeasurementSource rdf:type owl:NamedIndividual ,
+                                  :ObservationSource ;
+                         :includes :WearableDevice ;
+                         :triggers :BMIObservationEvent ;
+                         :hasObservationSourceName "Height Measurement Source" ;
+                         rdfs:label "Height Measurement Source" .
+
+
+###  https://purl.archive.org/cope#HighCVDRisk
+:HighCVDRisk rdf:type owl:NamedIndividual ,
+                      :DiseaseOutcome ;
+             :hasDiseaseOutcomeName "Increase Cardiovascular Events" ;
+             rdfs:label "Increase Cardiovascular Events" .
+
+
+###  https://purl.archive.org/cope#Hypertension
+:Hypertension rdf:type owl:NamedIndividual ,
+                       <http://semanticscience.org/resource/SIO_010299> ,
+                       :RiskFactor ;
+              <http://semanticscience.org/resource/SIO_000068> :COD4 ;
+              :contributesTo :ChronicKidneyDisease ,
+                             :DiabetesMellitus ;
+              :hasCharacteristic :ElevatedBloodPressure ;
+              :isIdentifiedBy :Fatigue ;
+              :leadsTo :Stroke ;
+              :observedBy :DiastolicBPSource ,
+                          :SystolicBPSource ;
+              :hasDiseaseName "Hypertension" ;
+              :hasRiskFactorName "Hypertension" ;
+              rdfs:label "Hypertension" .
+
+
+###  https://purl.archive.org/cope#HypertensionHealthTrajectory
+:HypertensionHealthTrajectory rdf:type owl:NamedIndividual ,
+                                       :HealthTrajectory ;
+                              :hasPhase :VerifiedTrajectoryPhase ;
+                              :hasEndDate "2025-11-01T12:00:00"^^xsd:dateTime ;
+                              :hasHealthTrajectoryName "Hypertension Health Trajectory" ;
+                              :hasParticipationRank 0 ;
+                              :hasStartDate "2024-11-01T09:00:00"^^xsd:dateTime ;
+                              rdfs:label "Hypertension Health Trajectory" .
+
+
+###  https://purl.archive.org/cope#HypertensionObservationEvent
+:HypertensionObservationEvent rdf:type owl:NamedIndividual ,
+                                       :ObservationEvent ;
+                              <http://semanticscience.org/resource/SIO_000095> :CKDHealthTrajectory ,
+                                                                               :DiabetesHealthTrajectory ,
+                                                                               :HypertensionHealthTrajectory ;
+                              <http://semanticscience.org/resource/SIO_000248> :FastingBloodGlucoseObservationEvent ;
+                              :isPairedWith :AnthonyPatel ,
+                                            :JohnPaul ;
+                              :hasObservationEventName "Hypertension Observation Event" ;
+                              :observationTimestamp "2025-07-03T08:30:00Z"^^xsd:dateTimeStamp ;
+                              :observationValue "Systolic_145_Diastolic_95" ;
+                              rdfs:label "Hypertension Observation Event" .
+
+
+###  https://purl.archive.org/cope#IncreasePhysicalActivity
+:IncreasePhysicalActivity rdf:type owl:NamedIndividual ,
+                                   :Behavioral ;
+                          :appliedIn :HypertensionObservationEvent ;
+                          :appliedTo :DiabetesMellitus ;
+                          :targets :Hypertension ;
+                          :hasInterventionName "Increase Physical Activity" ;
+                          rdfs:label "Increase Physical Activity" .
+
+
+###  https://purl.archive.org/cope#InsulinDysfunction
+:InsulinDysfunction rdf:type owl:NamedIndividual ,
+                             :DiseaseCharacteristic ;
+                    :hasDiseaseCharacteristicName "Insulin Dysfunction" ;
+                    rdfs:label "Insulin Dysfunction" .
+
+
+###  https://purl.archive.org/cope#JohnPaul
+:JohnPaul rdf:type owl:NamedIndividual ,
+                   <http://semanticscience.org/resource/SIO_000498> ;
+          :hasCharacteristic :BehavJohnPaul ,
+                             :BioJohnPaul ,
+                             :DemoJohnPaul ,
+                             :GeoJohnPaul ,
+                             :PsychJohnPaul ;
+          :hasRiskFactor :Hypertension ;
+          :hasFullName "John Paul" ;
+          rdfs:label "John Paul" .
+
+
+###  https://purl.archive.org/cope#KidneyFailure
+:KidneyFailure rdf:type owl:NamedIndividual ,
+                        :DiseaseOutcome ;
+               :hasDiseaseOutcomeName "Kidney Failure" ;
+               rdfs:label "Kidney Failure" .
+
+
+###  https://purl.archive.org/cope#LifestyleImprovementPlan
+:LifestyleImprovementPlan rdf:type owl:NamedIndividual ,
+                                   :Behavioral ;
+                          :appliedIn :BMIObservationEvent ,
+                                     :FastingBloodGlucoseObservationEvent ;
+                          :appliedTo :DiabetesMellitus ,
+                                     :Hypertension ;
+                          :targets :BloodSugar ,
+                                   :Fatigue ,
+                                   :Obesity ;
+                          :hasInterventionName "Lifestyle Improvement Plan" ;
+                          rdfs:label "Lifestyle Improvement Plan" .
+
+
+###  https://purl.archive.org/cope#LungCancer
+:LungCancer rdf:type owl:NamedIndividual ,
+                     <http://semanticscience.org/resource/SIO_010299> ;
+            <http://semanticscience.org/resource/SIO_000068> :COD5 ;
+            :hasCharacteristic :UncontrolledCellGrowth ;
+            :isIdentifiedBy :PersistentCough ,
+                            :ShortnessOfBreath ;
+            :leadsTo :RespiratoryFailure ;
+            :hasDiseaseName "Lung Cancer" ;
+            rdfs:label "Lung Cancer" .
+
+
+###  https://purl.archive.org/cope#LungCancerHealthTrajectory
+:LungCancerHealthTrajectory rdf:type owl:NamedIndividual ,
+                                     :HealthTrajectory ;
+                            :hasPhase :VerifiedTrajectoryPhase ;
+                            :hasEndDate "2025-12-01T12:20:00"^^xsd:dateTime ;
+                            :hasHealthTrajectoryName "Lung Cancer Health Trajectory" ;
+                            :hasParticipationRank 0 ;
+                            :hasStartDate "2025-06-01T09:00:00"^^xsd:dateTime ;
+                            rdfs:label "Lung Cancer Health Trajectory" .
+
+
+###  https://purl.archive.org/cope#MSE
+:MSE rdf:type owl:NamedIndividual ,
+              :PerformanceMetric ;
+     :hasPerformanceMetricName "Mean Squared Error (MSE)" ;
+     rdfs:label "Mean Squared Error (MSE)" .
+
+
+###  https://purl.archive.org/cope#MaryJane
+:MaryJane rdf:type owl:NamedIndividual ,
+                   <http://semanticscience.org/resource/SIO_000498> ;
+          :hasCharacteristic :BehavMaryJane ,
+                             :BioMaryJane ,
+                             :DemoMaryJane ,
+                             :GeoMaryJane ,
+                             :PsychMaryJane ;
+          :hasHealthTrajectory :DiabetesHealthTrajectory ;
+          :hasRiskFactor :AbnormalCSNA ,
+                         :ECGAnomalies ;
+          :hasFullName "Mary Jane" ;
+          rdfs:label "Mary Jane" .
+
+
+###  https://purl.archive.org/cope#MicroneurographySystem
+:MicroneurographySystem rdf:type owl:NamedIndividual ,
+                                 <http://semanticscience.org/resource/SIO_001236> ;
+                        :hasDeviceName "Microneurography System" ;
+                        rdfs:label "Microneurography System" .
+
+
+###  https://purl.archive.org/cope#MobileAppSurvey
+:MobileAppSurvey rdf:type owl:NamedIndividual ,
+                          <http://semanticscience.org/resource/SIO_001236> ;
+                 :hasMeasurementUnit :SmokingStatusCategory ;
+                 :hasDeviceName "Mobile App Survey" ;
+                 rdfs:label "Mobile App Survey" .
+
+
+###  https://purl.archive.org/cope#Obesity
+:Obesity rdf:type owl:NamedIndividual ,
+                  :RiskFactor ;
+         :contributesTo :DiabetesMellitus ,
+                        :Hypertension ;
+         :observedBy :HeightMeasurementSource ,
+                     :WeightMeasurementSource ;
+         :hasRiskFactorName "Obesity" ;
+         rdfs:label "Obesity" .
+
+
+###  https://purl.archive.org/cope#PersistentCough
+:PersistentCough rdf:type owl:NamedIndividual ,
+                          :Symptom ;
+                 :observedBy :SelfReportedSmokingSource ;
+                 :observedIn :SmokingStatusObservationEvent ;
+                 :hasSymptomName "Persistent Cough" ;
+                 rdfs:label "Persistent Cough" .
+
+
+###  https://purl.archive.org/cope#PredictedTrajectoryPhase
+:PredictedTrajectoryPhase rdf:type owl:NamedIndividual ,
+                                   :TrajectoryPhase ;
+                          :hasTrajectoryPhaseName "Predicted" ;
+                          rdfs:label "Predicted" .
+
+
+###  https://purl.archive.org/cope#PsychAbuBakar
+:PsychAbuBakar rdf:type owl:NamedIndividual ,
+                        :Psychographic ;
+               :hasHealthAttitude "Proactive" ;
+               rdfs:label "Abu Bakar Psychographic" .
+
+
+###  https://purl.archive.org/cope#PsychAnthonyPatel
+:PsychAnthonyPatel rdf:type owl:NamedIndividual ,
+                            :Psychographic ;
+                   :hasHealthAttitude "Proactive" ;
+                   rdfs:label "Anthony Patel Psychographic" .
+
+
+###  https://purl.archive.org/cope#PsychJohnPaul
+:PsychJohnPaul rdf:type owl:NamedIndividual ,
+                        :Psychographic ;
+               :hasHealthAttitude "Proactive" ;
+               rdfs:label "John Paul Psychographic" .
+
+
+###  https://purl.archive.org/cope#PsychMaryJane
+:PsychMaryJane rdf:type owl:NamedIndividual ,
+                        :Psychographic ;
+               :hasHealthAttitude "Committed" ;
+               rdfs:label "Mary Jane Psychographic" .
+
+
+###  https://purl.archive.org/cope#QuitSmoking
+:QuitSmoking rdf:type owl:NamedIndividual ,
+                      :Behavioral ;
+             :appliedTo :DiabetesMellitus ;
+             :hasInterventionName "Quit Smoking" ;
+             rdfs:label "Quit Smoking" .
+
+
+###  https://purl.archive.org/cope#RFEnhancedFeedForwardNetwork
+:RFEnhancedFeedForwardNetwork rdf:type owl:NamedIndividual ,
+                                       :AIModel ;
+                              :evaluatedBy :F1-Score ;
+                              :hasExplanation :Explanation003 ;
+                              :includes :DiastolicBP ,
+                                        :SystolicBP ;
+                              :trainedOn :Dataset003 ;
+                              :usesApproach :EnsembleLearning ;
+                              :hasAIModelName "RF Enhanced Feed Forward Network" ;
+                              rdfs:label "RF Enhanced Feed Forward Network" .
+
+
+###  https://purl.archive.org/cope#RandomForest
+:RandomForest rdf:type owl:NamedIndividual ,
+                       :AIModel ;
+              :evaluatedBy :F1-Score ;
+              :hasExplanation :Explanation001 ;
+              :includes :BMI ,
+                        :BloodSugarLevel ,
+                        :DiastolicBP ,
+                        :SystolicBP ;
+              :trainedOn :Dataset001 ;
+              :usesApproach :EnsembleLearning ;
+              :hasAIModelName "Random Forest" ;
+              rdfs:label "Random Forest" .
+
+
+###  https://purl.archive.org/cope#ReducedGFR
+:ReducedGFR rdf:type owl:NamedIndividual ,
+                     :DiseaseCharacteristic ;
+            :hasDiseaseCharacteristicName "Reduced Glomerular Filtration Rate" ;
+            rdfs:label "Reduced Glomerular Filtration Rate" .
+
+
+###  https://purl.archive.org/cope#ResearchArticle001
+:ResearchArticle001 rdf:type owl:NamedIndividual ,
+                             :ResearchArticle ;
+                    <http://semanticscience.org/resource/SIO_000563> :DietEducation ,
+                                                                     :IncreasePhysicalActivity ,
+                                                                     :QuitSmoking ,
+                                                                     :Self-ManagementEducation ;
+                    :proposes :RandomForest ;
+                    :uses :Dataset001 ;
+                    :hasResearchArticleName "Ginting, J., Suci, T., Ginting, C., & Girsang, E. (2023). Early detection system of risk factors for diabetes mellitus type 2 utilization of machine learning-random forest. Journal of Family & Community Medicine, 30(3), 171–179. https://doi.org/10.4103/jfcm.jfcm_33_23" ;
+                    rdfs:label "Ginting, J., Suci, T., Ginting, C., & Girsang, E. (2023). Early detection system of risk factors for diabetes mellitus type 2 utilization of machine learning-random forest. Journal of Family & Community Medicine, 30(3), 171–179. https://doi.org/10.4103/jfcm.jfcm_33_23" .
+
+
+###  https://purl.archive.org/cope#ResearchArticle2
+:ResearchArticle2 rdf:type owl:NamedIndividual ,
+                           :ResearchArticle ;
+                  <http://semanticscience.org/resource/SIO_000563> :CardiacRehab ,
+                                                                   :StatinTreatment ;
+                  :proposes :AIHAD ;
+                  :uses :Dataset002 ;
+                  :hasResearchArticleName "Terzi, M. B., & Arikan, O. (2024). Machine learning based hybrid anomaly detection technique for automatic diagnosis of cardiovascular diseases using cardiac sympathetic nerve activity and electrocardiogram. Biomedizinische Technik, 69(1), 79–109. https://doi.org/10.1515/bmt-2022-0406" ;
+                  rdfs:label "Terzi, M. B., & Arikan, O. (2024). Machine learning based hybrid anomaly detection technique for automatic diagnosis of cardiovascular diseases using cardiac sympathetic nerve activity and electrocardiogram. Biomedizinische Technik, 69(1), 79–109. https://doi.org/10.1515/bmt-2022-0406" .
+
+
+###  https://purl.archive.org/cope#ResearchArticle3
+:ResearchArticle3 rdf:type owl:NamedIndividual ,
+                           :ResearchArticle ;
+                  :proposes :RFEnhancedFeedForwardNetwork ;
+                  :uses :Dataset003 ;
+                  :hasResearchArticleName "Bahrami, P., Tanbakuchi, D., Afzalaghaee, M., Ghayour-Mobarhan, M., & Esmaily, H. (2024). Development of risk models for early detection and prediction of chronic kidney disease in clinical settings. Scientific Reports, 14(1), 32136–10. https://doi.org/10.1038/s41598-024-83973-5" ;
+                  rdfs:label "Bahrami, P., Tanbakuchi, D., Afzalaghaee, M., Ghayour-Mobarhan, M., & Esmaily, H. (2024). Development of risk models for early detection and prediction of chronic kidney disease in clinical settings. Scientific Reports, 14(1), 32136–10. https://doi.org/10.1038/s41598-024-83973-5" .
+
+
+###  https://purl.archive.org/cope#ResearchArticle4
+:ResearchArticle4 rdf:type owl:NamedIndividual ,
+                           :ResearchArticle ;
+                  <http://semanticscience.org/resource/SIO_000563> :LifestyleImprovementPlan ;
+                  :proposes :ExplainableAI ;
+                  :uses :Dataset004 ;
+                  :hasResearchArticleName "Islam, H., Iqbal, Md. S., & Hossain, M. M. (2025). Blood pressure abnormality detection and interpretation utilizing explainable artificial intelligence. Intelligent Medicine, 5(1), 54–65. https://doi.org/10.1016/j.imed.2024.09.005" ;
+                  rdfs:label "Islam, H., Iqbal, Md. S., & Hossain, M. M. (2025). Blood pressure abnormality detection and interpretation utilizing explainable artificial intelligence. Intelligent Medicine, 5(1), 54–65. https://doi.org/10.1016/j.imed.2024.09.005" .
+
+
+###  https://purl.archive.org/cope#ResearchArticle5
+:ResearchArticle5 rdf:type owl:NamedIndividual ,
+                           :ResearchArticle ;
+                  :proposes :TPOT-optimized_ensemble_model ;
+                  :uses :Dataset005 ;
+                  :hasResearchArticleName "Levi, M., Lazebnik, T., Kushnir, S., Yosef, N., & Shlomi, D. (2024). Machine learning computational model to predict lung cancer using electronic medical records. Cancer Epidemiology, 92, 102631-. https://doi.org/10.1016/j.canep.2024.102631" ;
+                  rdfs:label "Levi, M., Lazebnik, T., Kushnir, S., Yosef, N., & Shlomi, D. (2024). Machine learning computational model to predict lung cancer using electronic medical records. Cancer Epidemiology, 92, 102631-. https://doi.org/10.1016/j.canep.2024.102631" .
+
+
+###  https://purl.archive.org/cope#RespiratoryFailure
+:RespiratoryFailure rdf:type owl:NamedIndividual ,
+                             :DiseaseOutcome ;
+                    :hasDiseaseOutcomeName "Respiratory Failure" ;
+                    rdfs:label "Respiratory Failure" .
+
+
+###  https://purl.archive.org/cope#Self-ManagementEducation
+:Self-ManagementEducation rdf:type owl:NamedIndividual ,
+                                   :Therapeutic ;
+                          :appliedTo :DiabetesMellitus ;
+                          :hasInterventionName "Self-Management Education" ;
+                          rdfs:label "Self-Management Education" .
+
+
+###  https://purl.archive.org/cope#SelfReportedSmokingSource
+:SelfReportedSmokingSource rdf:type owl:NamedIndividual ,
+                                    :ObservationSource ;
+                           <http://semanticscience.org/resource/SIO_000095> :LungCancerHealthTrajectory ;
+                           :includes :MobileAppSurvey ;
+                           :triggers :SmokingStatusObservationEvent ;
+                           :hasObservationSourceName "Self Reported Smoking Source" ;
+                           rdfs:label "Self Reported Smoking Source" .
+
+
+###  https://purl.archive.org/cope#ShortnessOfBreath
+:ShortnessOfBreath rdf:type owl:NamedIndividual ,
+                            :Symptom ;
+                   :getSymptom :AbuBakar ,
+                               :MaryJane ;
+                   :observedIn :ECGAnomalyObservationEvent ;
+                   :hasSymptomName "Shortness Of Breath" ;
+                   rdfs:label "Shortness Of Breath" .
+
+
+###  https://purl.archive.org/cope#SlowWoundHealing
+:SlowWoundHealing rdf:type owl:NamedIndividual ,
+                           :Symptom ;
+                  :observedBy :BloodSugarLevelSource ;
+                  :observedIn :FastingBloodGlucoseObservationEvent ;
+                  :hasSymptomName "Slow Wound Healing" ;
+                  rdfs:label "Slow Wound Healing" .
+
+
+###  https://purl.archive.org/cope#Smoking
+:Smoking rdf:type owl:NamedIndividual ,
+                  :RiskFactor ;
+         :contributesTo :LungCancer ;
+         :observedBy :SelfReportedSmokingSource ;
+         :hasRiskFactorName "Smoking" ;
+         rdfs:label "Smoking" .
+
+
+###  https://purl.archive.org/cope#SmokingCessationPrograms
+:SmokingCessationPrograms rdf:type owl:NamedIndividual ,
+                                   :Behavioral ;
+                          :appliedIn :SmokingStatusObservationEvent ;
+                          :appliedTo :LungCancer ;
+                          :targets :PersistentCough ,
+                                   :Smoking ;
+                          :hasInterventionName "Smoking Cessation Programs" ;
+                          rdfs:label "Smoking Cessation Programs" .
+
+
+###  https://purl.archive.org/cope#SmokingStatus
+:SmokingStatus rdf:type owl:NamedIndividual ,
+                        :InputDataNature ;
+               :hasInputDataNatureName "Smoking Status" ;
+               rdfs:label "Smoking Status" .
+
+
+###  https://purl.archive.org/cope#SmokingStatusCategory
+:SmokingStatusCategory rdf:type owl:NamedIndividual ,
+                                :MeasurementUnit ;
+                       :hasMeasurementUnitName "Smoking Status Category" ;
+                       rdfs:label "Smoking Status Category" .
+
+
+###  https://purl.archive.org/cope#SmokingStatusObservationEvent
+:SmokingStatusObservationEvent rdf:type owl:NamedIndividual ,
+                                        :ObservationEvent ;
+                               :isPairedWith :AbuBakar ;
+                               :hasObservationEventName "Smoking Status Observation Event" ;
+                               :observationTimestamp "2025-07-04T13:15:00"^^xsd:dateTime ;
+                               :observationValue "Current Smoker" ;
+                               rdfs:label "Smoking Status Observation Event" .
+
+
+###  https://purl.archive.org/cope#StackedEnsembleWithSHAP
+:StackedEnsembleWithSHAP rdf:type owl:NamedIndividual ,
+                                  :ModellingApproach ;
+                         :hasModellingApproachName "Stacked Ensemble + SHAP" ;
+                         rdfs:label "Stacked Ensemble + SHAP" .
+
+
+###  https://purl.archive.org/cope#StatinTreatment
+:StatinTreatment rdf:type owl:NamedIndividual ,
+                          :Pharmalogical ;
+                 :appliedIn :AbnormalCSNAObservationEvent ;
+                 :appliedTo :CAD ;
+                 :targets :AbnormalCSNA ,
+                          :ChestPain ;
+                 :hasInterventionName "Statin Treatment" ;
+                 rdfs:label "Statin Treatment" .
+
+
+###  https://purl.archive.org/cope#Stroke
+:Stroke rdf:type owl:NamedIndividual ,
+                 :DiseaseOutcome ;
+        :hasDiseaseOutcomeName "Stroke" ;
+        rdfs:label "Stroke" .
+
+
+###  https://purl.archive.org/cope#SuddenCardiacDeath
+:SuddenCardiacDeath rdf:type owl:NamedIndividual ,
+                             :DiseaseOutcome ;
+                    :hasDiseaseOutcomeName "Sudden Cardiac Death" ;
+                    rdfs:label "Sudden Cardiac Death" .
+
+
+###  https://purl.archive.org/cope#Swelling
+:Swelling rdf:type owl:NamedIndividual ,
+                   :Symptom ;
+          :getSymptom :AnthonyPatel ;
+          :hasSymptomName "Swelling" ;
+          rdfs:label "Swelling" .
+
+
+###  https://purl.archive.org/cope#SystolicBP
+:SystolicBP rdf:type owl:NamedIndividual ,
+                     :InputDataNature ;
+            :hasInputDataNatureName "Systolic BP" ;
+            rdfs:label "Systolic BP" .
+
+
+###  https://purl.archive.org/cope#SystolicBPSource
+:SystolicBPSource rdf:type owl:NamedIndividual ,
+                           :ObservationSource ;
+                  :includes :BloodPressureMonitor ;
+                  :triggers :HypertensionObservationEvent ;
+                  :hasObservationSourceName "Systolic BP Source" ;
+                  rdfs:label "Systolic BP Source" .
+
+
+###  https://purl.archive.org/cope#TPOT-optimized_ensemble_model
+:TPOT-optimized_ensemble_model rdf:type owl:NamedIndividual ,
+                                        :AIModel ;
+                               :evaluatedBy :F1-Score ;
+                               :hasExplanation :Explanation5 ;
+                               :includes :SmokingStatus ;
+                               :trainedOn :Dataset005 ;
+                               :usesApproach <https://purl.archive.org/cope#RandomForest+XGBoost> ;
+                               :hasAIModelName "TPOT-optimized ensemble model" ;
+                               rdfs:label "TPOT-optimized ensemble model" .
+
+
+###  https://purl.archive.org/cope#UncontrolledCellGrowth
+:UncontrolledCellGrowth rdf:type owl:NamedIndividual ,
+                                 :DiseaseCharacteristic ;
+                        :getSymptom :AbuBakar ;
+                        :hasDiseaseCharacteristicName "Uncontrolled Cell Growth" ;
+                        rdfs:label "Uncontrolled Cell Growth" .
+
+
+###  https://purl.archive.org/cope#VerifiedTrajectoryPhase
+:VerifiedTrajectoryPhase rdf:type owl:NamedIndividual ,
+                                  :TrajectoryPhase ;
+                         :hasTrajectoryPhaseName "Verified" ;
+                         rdfs:label "Verified" .
+
+
+###  https://purl.archive.org/cope#WearableDevice
+:WearableDevice rdf:type owl:NamedIndividual ,
+                         <http://semanticscience.org/resource/SIO_001236> ;
+                :hasMeasurementUnit :cm ,
+                                    :kg ;
+                :hasDeviceName "Wearable Device" ;
+                rdfs:label "Wearable Device" .
+
+
+###  https://purl.archive.org/cope#WeightMeasurementSource
+:WeightMeasurementSource rdf:type owl:NamedIndividual ,
+                                  :ObservationSource ;
+                         :includes :WearableDevice ;
+                         :triggers :BMIObservationEvent ;
+                         :hasObservationSourceName "Weight Measurement Source" ;
+                         rdfs:label "Weight Measurement Source" .
+
+
+###  https://purl.archive.org/cope#burstsPerMin
+:burstsPerMin rdf:type owl:NamedIndividual ,
+                       :MeasurementUnit ;
+              :hasMeasurementUnitName "bursts/min" ;
+              rdfs:label "bursts/min" .
+
+
+###  https://purl.archive.org/cope#cm
+:cm rdf:type owl:NamedIndividual ,
+             :MeasurementUnit ;
+    :hasMeasurementUnitName "cm" ;
+    rdfs:label "cm" .
+
+
+###  https://purl.archive.org/cope#kg
+:kg rdf:type owl:NamedIndividual ,
+             :MeasurementUnit ;
+    :hasMeasurementUnitName "kg" ;
+    rdfs:label "kg" .
+
+
+###  https://purl.archive.org/cope#mV
+:mV rdf:type owl:NamedIndividual ,
+             :MeasurementUnit ;
+    :hasMeasurementUnitName "mV" ;
+    rdfs:label "mV" .
+
+
+###  https://purl.archive.org/cope#mmHg
+:mmHg rdf:type owl:NamedIndividual ;
+      :hasMeasurementUnitName "mmHg" ;
+      rdfs:label "mmHg" .
+
+
+###  https://purl.archive.org/cope#RandomForest+XGBoost
+<https://purl.archive.org/cope#RandomForest+XGBoost> rdf:type owl:NamedIndividual ,
+                                                              :ModellingApproach ;
+                                                     :hasModellingApproachName "Random Forest + XGBoost" ;
+                                                     rdfs:label "Random Forest + XGBoost" .
+
+
+###  https://purl.archive.org/cope#mmol/L
+<https://purl.archive.org/cope#mmol/L> rdf:type owl:NamedIndividual ,
+                                                :MeasurementUnit ;
+                                       :hasMeasurementUnitName "mmol/L" ;
+                                       rdfs:label "mmol/L" .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+:hasParticipationRank rdfs:comment "Representative of a specific level of inclination towards being a part of." .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
