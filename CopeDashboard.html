@@ -122,7 +122,7 @@
             </div>
             <div class="sparql-container" style="display: none">
               <textarea class="sparqlBox" readonly rows="1">
-PREFIX COPE: <http://www.semanticweb.org/user/ontologies/2025/3/cope#>
+PREFIX COPE: <https://purl.archive.org/cope#>
 PREFIX sio: <http://semanticscience.org/resource/>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
@@ -177,7 +177,7 @@ ORDER BY DESC(?patient_count)
             </div>
             <div class="sparql-container" style="display: none">
               <textarea class="sparqlBox" readonly rows="1">
-PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX xsd: <https://purl.archive.org/cope#>
 PREFIX COPE: <http://www.semanticweb.org/user/ontologies/2025/3/cope#>
 PREFIX sio: <http://semanticscience.org/resource/>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -232,7 +232,7 @@ ORDER BY DESC(?patient_count)
             </div>
             <div class="sparql-container" style="display: none">
               <textarea class="sparqlBox" readonly rows="1">
-PREFIX COPE: <http://www.semanticweb.org/user/ontologies/2025/3/cope#>
+PREFIX COPE: <https://purl.archive.org/cope#>
 PREFIX sio:  <http://semanticscience.org/resource/>
 PREFIX xsd:  <http://www.w3.org/2001/XMLSchema#>
 
@@ -265,7 +265,7 @@ SELECT DISTINCT ?person ?disease WHERE {
             </div>
             <div class="sparql-container" style="display: none">
               <textarea class="sparqlBox" readonly rows="1">
-PREFIX COPE: <http://www.semanticweb.org/user/ontologies/2025/3/cope#>
+PREFIX COPE: <https://purl.archive.org/cope#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
 SELECT DISTINCT ?RiskFactor WHERE {
@@ -297,7 +297,7 @@ ORDER BY ?RiskFactor
             </div>
             <div class="sparql-container" style="display: none">
               <textarea class="sparqlBox" readonly rows="1">
-PREFIX COPE: <http://www.semanticweb.org/user/ontologies/2025/3/cope#>
+PREFIX COPE: <https://purl.archive.org/cope#>
 PREFIX sio: <http://semanticscience.org/resource/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
@@ -340,7 +340,7 @@ ORDER BY ?diseaseName ?diseaseOutcomeName ?symptomName
             </div>
             <div class="sparql-container" style="display: none">
               <textarea class="sparqlBox" readonly rows="1">
-PREFIX COPE: <http://www.semanticweb.org/user/ontologies/2025/3/cope#>
+PREFIX COPE: <https://purl.archive.org/cope#>
 
 SELECT ?AI_ML_Technique (STR(COUNT(?model)) AS ?Usage_Count) WHERE {
   ?model COPE:usesApproach ?AI_ML_Technique .
@@ -367,7 +367,7 @@ ORDER BY DESC(?Usage_Count)
             </div>
             <div class="sparql-container" style="display: none">
               <textarea class="sparqlBox" readonly rows="1">
-PREFIX COPE: <http://www.semanticweb.org/user/ontologies/2025/3/cope#>
+PREFIX COPE: <https://purl.archive.org/cope#>
 PREFIX sio: <http://semanticscience.org/resource/>
 
 SELECT DISTINCT ?AIModel ?disease (GROUP_CONCAT(DISTINCT ?inputName; separator=", ") AS ?InputDataNatures)
@@ -408,7 +408,7 @@ GROUP BY ?AIModel ?disease
             </div>
             <div class="sparql-container" style="display: none">
               <textarea class="sparqlBox" readonly rows="1">
-PREFIX COPE: <http://www.semanticweb.org/user/ontologies/2025/3/cope#>
+PREFIX COPE: <https://purl.archive.org/cope#>
 PREFIX sio: <http://semanticscience.org/resource/>
 
 SELECT DISTINCT ?article WHERE {
@@ -443,7 +443,7 @@ SELECT DISTINCT ?article WHERE {
             </div>
             <div class="sparql-container" style="display: none">
               <textarea class="sparqlBox" readonly rows="1">
-PREFIX COPE: <http://www.semanticweb.org/user/ontologies/2025/3/cope#>
+PREFIX COPE: <https://purl.archive.org/cope#>
 PREFIX sio: <http://semanticscience.org/resource/>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 
@@ -480,7 +480,7 @@ ORDER BY DESC(?count)
             </div>
             <div class="sparql-container" style="display: none">
               <textarea class="sparqlBox" readonly rows="1">
-PREFIX COPE: <http://www.semanticweb.org/user/ontologies/2025/3/cope#>
+PREFIX COPE: <https://purl.archive.org/cope#>
 PREFIX sio: <http://semanticscience.org/resource/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -506,6 +506,85 @@ ORDER BY DESC(?usageCount)
               <iframe class="iframeBox" src="results/query10.html"></iframe>
             </div>
           </li>
+
+<li>
+           Which trajectory does the person participate in at a specific observation event? 
+            <img
+              class="competency-questions-img"
+              src="images/out-12.png"
+              alt=""
+            />
+            <div class="query-button-container">
+              <button class="toggle-query-btn">Show SPARQL</button>
+            </div>
+            <div class="sparql-container" style="display: none">
+              <textarea class="sparqlBox" readonly rows="1">
+PREFIX COPE: <https://purl.archive.org/cope#>
+PREFIX sio: <http://semanticscience.org/resource/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+SELECT ?modellingApproach (STR(COUNT(DISTINCT ?model)) AS ?usageCount) WHERE {
+  COPE:Hypertension a sio:SIO_010299 .
+
+  ?riskFactor COPE:contributesTo COPE:Hypertension ;
+              COPE:observedBy ?obsSource .
+
+  ?dataset sio:SIO_000253 ?obsSource ;
+           rdfs:label ?datasetLabel .
+
+  ?model rdf:type COPE:AIModel ;
+         COPE:trainedOn ?dataset ;
+         COPE:usesApproach ?modellingApproach .
+}
+GROUP BY ?modellingApproach
+ORDER BY DESC(?usageCount)
+    </textarea
+              >
+              <p id="answerLabel">Example Answer:</p>
+              <iframe class="iframeBox" src="results/query10.html"></iframe>
+            </div>
+          </li>
+
+<li>
+          Which disease are the symptoms observed in within the current participating trajectory? 
+            <img
+              class="competency-questions-img"
+              src="images/out-13.png"
+              alt=""
+            />
+            <div class="query-button-container">
+              <button class="toggle-query-btn">Show SPARQL</button>
+            </div>
+            <div class="sparql-container" style="display: none">
+              <textarea class="sparqlBox" readonly rows="1">
+PREFIX COPE: <https://purl.archive.org/cope#>
+PREFIX sio: <http://semanticscience.org/resource/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+SELECT ?modellingApproach (STR(COUNT(DISTINCT ?model)) AS ?usageCount) WHERE {
+  COPE:Hypertension a sio:SIO_010299 .
+
+  ?riskFactor COPE:contributesTo COPE:Hypertension ;
+              COPE:observedBy ?obsSource .
+
+  ?dataset sio:SIO_000253 ?obsSource ;
+           rdfs:label ?datasetLabel .
+
+  ?model rdf:type COPE:AIModel ;
+         COPE:trainedOn ?dataset ;
+         COPE:usesApproach ?modellingApproach .
+}
+GROUP BY ?modellingApproach
+ORDER BY DESC(?usageCount)
+    </textarea
+              >
+              <p id="answerLabel">Example Answer:</p>
+              <iframe class="iframeBox" src="results/query10.html"></iframe>
+            </div>
+          </li>
+          
         </ol>
       </div>
       <div id="class-definition">
