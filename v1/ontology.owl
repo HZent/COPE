@@ -1,14 +1,13 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="https://purl.archive.org/cope#"
-     xml:base="https://purl.archive.org/cope#"
-     xmlns:A="http://www.semanticweb.org/user/ontologies/2025/3/9710A#"
+     xml:base="https://purl.archive.org/cope"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:COPE="https://purl.archive.org/cope#"
      xmlns:cito="http://purl.org/spar/cito/"
+     xmlns:cope="https://purl.archive.org/cope#"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
@@ -20,63 +19,227 @@
      xmlns:resource="http://semanticscience.org/resource/">
     <owl:Ontology rdf:about="https://purl.archive.org/cope#">
         <owl:imports rdf:resource="http://semanticscience.org/ontology/sio/v1.59/sio-release.owl"/>
-        
-        <!-- Ontology Metadata -->
-        <dc:title>COPE - Comprehensive Ontology for Patient Health Trajectories and AI Models</dc:title>
-        <dc:description>An ontology for representing health trajectories, disease progression, risk factors, symptoms, and AI models used in healthcare applications. COPE provides a comprehensive framework for modeling patient health journeys, disease characteristics, and the AI models that analyze them.</dc:description>
-        <dc:creator>Oshani Seneviratne</dc:creator>
+        <dc:abstract>COPE (Comprehensive Ontology for Patient Health Trajectories and AI Models) provides a standardized vocabulary for representing health trajectories, disease progression patterns, risk factors, symptoms, and AI models in healthcare applications. The ontology enables the modeling of complex health journeys, cycle of deconditioning patterns, and the evaluation of AI models through performance metrics, supporting comprehensive healthcare data analysis and AI model assessment.</dc:abstract>
+        <dc:audience>Healthcare researchers, AI developers, medical professionals</dc:audience>
+        <dc:context>Healthcare AI Research</dc:context>
+        <dc:contributor>Healthcare AI Research Community</dc:contributor>
+        <dc:coverage>Healthcare, Medical AI, Disease Modeling</dc:coverage>
         <dc:creator>Asara Senaratne</dc:creator>
         <dc:creator>Hon Zent Lim</dc:creator>
         <dc:creator>Leelanga Seneviratne</dc:creator>
+        <dc:creator>Oshani Seneviratne</dc:creator>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-01-23</dc:date>
-        <owl:versionInfo>1.0.0</owl:versionInfo>
+        <dc:description>An ontology for representing health trajectories, disease progression, risk factors, symptoms, and AI models used in healthcare applications. COPE provides a comprehensive framework for modeling patient health journeys, disease characteristics, and the AI models that analyze them.</dc:description>
+        <dc:description>Healthcare systems generate vast amounts of data that can be leveraged to improve patient outcomes through AI-driven insights. However, the lack of standardized vocabularies for representing health trajectories, disease progression, and AI model performance creates challenges in data interoperability and model evaluation. COPE addresses these challenges by providing a comprehensive ontology that captures the complex relationships between patient characteristics, health trajectories, disease progression patterns, risk factors, symptoms, and AI models. The ontology supports the modeling of cycle of deconditioning patterns, enables the evaluation of AI models through performance metrics, and facilitates the integration of diverse healthcare data sources for improved clinical decision-making and research applications.</dc:description>
+        <dc:description>This ontology provides a comprehensive framework for modeling patient health trajectories, disease progression patterns, and AI model evaluation in healthcare applications.</dc:description>
+        <dc:difficulty>Advanced</dc:difficulty>
+        <dc:educationLevel>Graduate</dc:educationLevel>
+        <dc:format>application/rdf+xml</dc:format>
+        <dc:identifier>https://purl.archive.org/cope#</dc:identifier>
+        <dc:instructionalLevel>Advanced</dc:instructionalLevel>
+        <dc:intendedEndUserRole>Researcher</dc:intendedEndUserRole>
+        <dc:interactivityLevel>High</dc:interactivityLevel>
+        <dc:interactivityType>Active</dc:interactivityType>
+        <dc:language>en</dc:language>
+        <dc:learningResourceType>Ontology</dc:learningResourceType>
+        <dc:publisher>COPE Development Team</dc:publisher>
+        <dc:relation>Extends Semantic Science Ontology (SIO)</dc:relation>
+        <dc:semanticDensity>High</dc:semanticDensity>
+        <dc:source>COPE Ontology Development Project</dc:source>
+        <dc:subject>Health Trajectories, Disease Progression, AI Models, Healthcare Ontology</dc:subject>
+        <dc:title>COPE - Comprehensive Ontology for Patient Health Trajectories and AI Models</dc:title>
+        <dc:typicalAgeRange>18+</dc:typicalAgeRange>
+        <dc:typicalLearningTime>P1M</dc:typicalLearningTime>
+        <terms:abstract>COPE (Comprehensive Ontology for Patient Health Trajectories and AI Models) provides a standardized vocabulary for representing health trajectories, disease progression patterns, risk factors, symptoms, and AI models in healthcare applications. The ontology enables the modeling of complex health journeys, cycle of deconditioning patterns, and the evaluation of AI models through performance metrics, supporting comprehensive healthcare data analysis and AI model assessment.</terms:abstract>
+        <terms:description>Healthcare systems generate vast amounts of data that can be leveraged to improve patient outcomes through AI-driven insights. However, the lack of standardized vocabularies for representing health trajectories, disease progression, and AI model performance creates challenges in data interoperability and model evaluation. COPE addresses these challenges by providing a comprehensive ontology that captures the complex relationships between patient characteristics, health trajectories, disease progression patterns, risk factors, symptoms, and AI models. The ontology supports the modeling of cycle of deconditioning patterns, enables the evaluation of AI models through performance metrics, and facilitates the integration of diverse healthcare data sources for improved clinical decision-making and research applications.</terms:description>
         <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
         <terms:rights>This work is licensed under a Creative Commons Attribution 4.0 International License</terms:rights>
         <vann:preferredNamespacePrefix>cope</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri>https://purl.archive.org/cope#</vann:preferredNamespaceUri>
-        
-        <!-- WIDOCO specific annotations -->
         <rdfs:comment>COPE (Comprehensive Ontology for Patient Health Trajectories and AI Models) is designed to provide a standardized vocabulary for representing health trajectories, disease progression patterns, risk factors, symptoms, and AI models in healthcare applications. The ontology supports the modeling of complex health journeys, cycle of deconditioning patterns, and the evaluation of AI models through performance metrics.</rdfs:comment>
-        
-        <!-- Abstract for WIDOCO -->
-        <dc:abstract>COPE (Comprehensive Ontology for Patient Health Trajectories and AI Models) provides a standardized vocabulary for representing health trajectories, disease progression patterns, risk factors, symptoms, and AI models in healthcare applications. The ontology enables the modeling of complex health journeys, cycle of deconditioning patterns, and the evaluation of AI models through performance metrics, supporting comprehensive healthcare data analysis and AI model assessment.</dc:abstract>
-        
-        <!-- Introduction for WIDOCO -->
-        <dc:description>Healthcare systems generate vast amounts of data that can be leveraged to improve patient outcomes through AI-driven insights. However, the lack of standardized vocabularies for representing health trajectories, disease progression, and AI model performance creates challenges in data interoperability and model evaluation. COPE addresses these challenges by providing a comprehensive ontology that captures the complex relationships between patient characteristics, health trajectories, disease progression patterns, risk factors, symptoms, and AI models. The ontology supports the modeling of cycle of deconditioning patterns, enables the evaluation of AI models through performance metrics, and facilitates the integration of diverse healthcare data sources for improved clinical decision-making and research applications.</dc:description>
-        
-        <!-- Introduction section for WIDOCO -->
-        <terms:description>Healthcare systems generate vast amounts of data that can be leveraged to improve patient outcomes through AI-driven insights. However, the lack of standardized vocabularies for representing health trajectories, disease progression, and AI model performance creates challenges in data interoperability and model evaluation. COPE addresses these challenges by providing a comprehensive ontology that captures the complex relationships between patient characteristics, health trajectories, disease progression patterns, risk factors, symptoms, and AI models. The ontology supports the modeling of cycle of deconditioning patterns, enables the evaluation of AI models through performance metrics, and facilitates the integration of diverse healthcare data sources for improved clinical decision-making and research applications.</terms:description>
-        
-        <!-- WIDOCO specific properties -->
-        <terms:abstract>COPE (Comprehensive Ontology for Patient Health Trajectories and AI Models) provides a standardized vocabulary for representing health trajectories, disease progression patterns, risk factors, symptoms, and AI models in healthcare applications. The ontology enables the modeling of complex health journeys, cycle of deconditioning patterns, and the evaluation of AI models through performance metrics, supporting comprehensive healthcare data analysis and AI model assessment.</terms:abstract>
-        
-        <!-- Introduction content -->
         <rdfs:comment>Healthcare systems generate vast amounts of data that can be leveraged to improve patient outcomes through AI-driven insights. However, the lack of standardized vocabularies for representing health trajectories, disease progression, and AI model performance creates challenges in data interoperability and model evaluation. COPE addresses these challenges by providing a comprehensive ontology that captures the complex relationships between patient characteristics, health trajectories, disease progression patterns, risk factors, symptoms, and AI models. The ontology supports the modeling of cycle of deconditioning patterns, enables the evaluation of AI models through performance metrics, and facilitates the integration of diverse healthcare data sources for improved clinical decision-making and research applications.</rdfs:comment>
-        
-        <!-- Additional WIDOCO metadata -->
-        <dc:publisher>COPE Development Team</dc:publisher>
-        <dc:contributor>Healthcare AI Research Community</dc:contributor>
-        <dc:subject>Health Trajectories, Disease Progression, AI Models, Healthcare Ontology</dc:subject>
-        <dc:language>en</dc:language>
-        <dc:format>application/rdf+xml</dc:format>
-        <dc:identifier>https://purl.archive.org/cope#</dc:identifier>
-        <dc:source>COPE Ontology Development Project</dc:source>
-        <dc:coverage>Healthcare, Medical AI, Disease Modeling</dc:coverage>
-        <dc:relation>Extends Semantic Science Ontology (SIO)</dc:relation>
-        <dc:audience>Healthcare researchers, AI developers, medical professionals</dc:audience>
-        <dc:educationLevel>Graduate</dc:educationLevel>
-        <dc:instructionalLevel>Advanced</dc:instructionalLevel>
-        <dc:typicalAgeRange>18+</dc:typicalAgeRange>
-        <dc:interactivityType>Active</dc:interactivityType>
-        <dc:learningResourceType>Ontology</dc:learningResourceType>
-        <dc:interactivityLevel>High</dc:interactivityLevel>
-        <dc:semanticDensity>High</dc:semanticDensity>
-        <dc:intendedEndUserRole>Researcher</dc:intendedEndUserRole>
-        <dc:context>Healthcare AI Research</dc:context>
-        <dc:difficulty>Advanced</dc:difficulty>
-        <dc:typicalLearningTime>P1M</dc:typicalLearningTime>
-        <dc:description>This ontology provides a comprehensive framework for modeling patient health trajectories, disease progression patterns, and AI model evaluation in healthcare applications.</dc:description>
+        <owl:versionInfo>1.0.0</owl:versionInfo>
     </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/abstract -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/abstract"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/audience -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/audience"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/context -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/context"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/coverage -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/coverage"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/date -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/date"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/difficulty -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/difficulty"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/educationLevel -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/educationLevel"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/format -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/format"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/instructionalLevel -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/instructionalLevel"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/intendedEndUserRole -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/intendedEndUserRole"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/interactivityLevel -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/interactivityLevel"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/interactivityType -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/interactivityType"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/language -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/language"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/learningResourceType -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/learningResourceType"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/publisher -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/publisher"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/relation -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/relation"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/semanticDensity -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/semanticDensity"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/source -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/source"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/subject -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/subject"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/typicalAgeRange -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/typicalAgeRange"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/typicalLearningTime -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/typicalLearningTime"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/abstract -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/abstract"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#definition -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#definition"/>
     
 
 
@@ -88,10 +251,12 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+
     
 
 
     <!-- http://semanticscience.org/resource/SIO_000068 -->
+
 
     <rdf:Description rdf:about="http://semanticscience.org/resource/SIO_000068">
         <rdfs:domain rdf:resource="http://semanticscience.org/resource/SIO_010299"/>
@@ -102,6 +267,7 @@
 
     <!-- http://semanticscience.org/resource/SIO_000095 -->
 
+
     <rdf:Description rdf:about="http://semanticscience.org/resource/SIO_000095">
         <rdfs:domain rdf:resource="https://purl.archive.org/cope#ObservationEvent"/>
         <rdfs:range rdf:resource="https://purl.archive.org/cope#HealthTrajectory"/>
@@ -110,6 +276,7 @@
 
 
     <!-- http://semanticscience.org/resource/SIO_000248 -->
+
 
     <rdf:Description rdf:about="http://semanticscience.org/resource/SIO_000248">
         <rdfs:domain rdf:resource="https://purl.archive.org/cope#ObservationEvent"/>
@@ -120,6 +287,7 @@
 
     <!-- http://semanticscience.org/resource/SIO_000253 -->
 
+
     <rdf:Description rdf:about="http://semanticscience.org/resource/SIO_000253">
         <rdfs:domain rdf:resource="http://semanticscience.org/resource/SIO_000089"/>
         <rdfs:range rdf:resource="https://purl.archive.org/cope#ObservationSource"/>
@@ -129,6 +297,7 @@
 
     <!-- http://semanticscience.org/resource/SIO_000563 -->
 
+
     <rdf:Description rdf:about="http://semanticscience.org/resource/SIO_000563">
         <rdfs:domain rdf:resource="https://purl.archive.org/cope#ResearchArticle"/>
         <rdfs:range rdf:resource="http://semanticscience.org/resource/SIO_001398"/>
@@ -137,6 +306,7 @@
 
 
     <!-- https://purl.archive.org/cope#appliedIn -->
+
 
     <owl:ObjectProperty rdf:about="https://purl.archive.org/cope#appliedIn">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
@@ -149,6 +319,7 @@
 
     <!-- https://purl.archive.org/cope#appliedTo -->
 
+
     <owl:ObjectProperty rdf:about="https://purl.archive.org/cope#appliedTo">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="http://semanticscience.org/resource/SIO_001398"/>
@@ -158,6 +329,7 @@
 
 
     <!-- https://purl.archive.org/cope#contributesTo -->
+
 
     <owl:ObjectProperty rdf:about="https://purl.archive.org/cope#contributesTo">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
@@ -169,26 +341,28 @@
 
     <!-- https://purl.archive.org/cope#evaluatedBy -->
 
+
     <owl:ObjectProperty rdf:about="https://purl.archive.org/cope#evaluatedBy">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="https://purl.archive.org/cope#AIModel"/>
         <rdfs:range rdf:resource="https://purl.archive.org/cope#PerformanceMetric"/>
-        <rdfs:label>evaluated by</rdfs:label>
         <rdfs:comment>Ones validity is determined by the specifications of the other.</rdfs:comment>
-        <skos:definition>Relates an AI model to the performance metrics used to evaluate its effectiveness and accuracy.</skos:definition>
-        <skos:example>Random Forest model evaluated by F1-Score metric</skos:example>
         <rdfs:isDefinedBy rdf:resource="https://purl.archive.org/cope#"/>
-        <owl:versionInfo>1.0.0</owl:versionInfo>
+        <rdfs:label>evaluated by</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://purl.archive.org/cope#AIHAD"/>
+        <rdfs:seeAlso rdf:resource="https://purl.archive.org/cope#ExplainableAI"/>
         <rdfs:seeAlso rdf:resource="https://purl.archive.org/cope#F1-Score"/>
         <rdfs:seeAlso rdf:resource="https://purl.archive.org/cope#MSE"/>
         <rdfs:seeAlso rdf:resource="https://purl.archive.org/cope#RandomForest"/>
-        <rdfs:seeAlso rdf:resource="https://purl.archive.org/cope#AIHAD"/>
-        <rdfs:seeAlso rdf:resource="https://purl.archive.org/cope#ExplainableAI"/>
+        <owl:versionInfo>1.0.0</owl:versionInfo>
+        <skos:definition>Relates an AI model to the performance metrics used to evaluate its effectiveness and accuracy.</skos:definition>
+        <skos:example>Random Forest model evaluated by F1-Score metric</skos:example>
     </owl:ObjectProperty>
     
 
 
     <!-- https://purl.archive.org/cope#getSymptom -->
+
 
     <owl:ObjectProperty rdf:about="https://purl.archive.org/cope#getSymptom">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
@@ -199,6 +373,7 @@
 
 
     <!-- https://purl.archive.org/cope#hasCharacteristic -->
+
 
     <owl:ObjectProperty rdf:about="https://purl.archive.org/cope#hasCharacteristic">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
@@ -213,6 +388,7 @@
 
     <!-- https://purl.archive.org/cope#hasExplanation -->
 
+
     <owl:ObjectProperty rdf:about="https://purl.archive.org/cope#hasExplanation">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="https://purl.archive.org/cope#AIModel"/>
@@ -224,25 +400,27 @@
 
     <!-- https://purl.archive.org/cope#hasHealthTrajectory -->
 
+
     <owl:ObjectProperty rdf:about="https://purl.archive.org/cope#hasHealthTrajectory">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="http://semanticscience.org/resource/SIO_000498"/>
         <rdfs:range rdf:resource="https://purl.archive.org/cope#HealthTrajectory"/>
-        <rdfs:label>has health trajectory</rdfs:label>
         <rdfs:comment>Progression is only associated with single instance of the other.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://purl.archive.org/cope#"/>
+        <rdfs:label>has health trajectory</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://purl.archive.org/cope#AbuBakar"/>
+        <rdfs:seeAlso rdf:resource="https://purl.archive.org/cope#AnthonyPatel"/>
+        <rdfs:seeAlso rdf:resource="https://purl.archive.org/cope#JohnPaul"/>
+        <rdfs:seeAlso rdf:resource="https://purl.archive.org/cope#MaryJane"/>
+        <owl:versionInfo>1.0.0</owl:versionInfo>
         <skos:definition>Relates a person to their health trajectory, representing the chronological sequence of their health-related events and observations.</skos:definition>
         <skos:example>John Paul has health trajectory DiabetesHealthTrajectory</skos:example>
-        <rdfs:isDefinedBy rdf:resource="https://purl.archive.org/cope#"/>
-        <owl:versionInfo>1.0.0</owl:versionInfo>
-        <rdfs:seeAlso rdf:resource="https://purl.archive.org/cope#JohnPaul"/>
-        <rdfs:seeAlso rdf:resource="https://purl.archive.org/cope#AnthonyPatel"/>
-        <rdfs:seeAlso rdf:resource="https://purl.archive.org/cope#AbuBakar"/>
-        <rdfs:seeAlso rdf:resource="https://purl.archive.org/cope#MaryJane"/>
     </owl:ObjectProperty>
     
 
 
     <!-- https://purl.archive.org/cope#hasMeasurementUnit -->
+
 
     <owl:ObjectProperty rdf:about="https://purl.archive.org/cope#hasMeasurementUnit">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
@@ -255,6 +433,7 @@
 
     <!-- https://purl.archive.org/cope#hasParticipationRank -->
 
+
     <owl:ObjectProperty rdf:about="https://purl.archive.org/cope#hasParticipationRank">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="https://purl.archive.org/cope#HealthTrajectory"/>
@@ -264,6 +443,7 @@
 
 
     <!-- https://purl.archive.org/cope#hasPhase -->
+
 
     <owl:ObjectProperty rdf:about="https://purl.archive.org/cope#hasPhase">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
@@ -276,6 +456,7 @@
 
     <!-- https://purl.archive.org/cope#hasRiskFactor -->
 
+
     <owl:ObjectProperty rdf:about="https://purl.archive.org/cope#hasRiskFactor">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="http://semanticscience.org/resource/SIO_000498"/>
@@ -286,6 +467,7 @@
 
 
     <!-- https://purl.archive.org/cope#includes -->
+
 
     <owl:ObjectProperty rdf:about="https://purl.archive.org/cope#includes">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
@@ -300,6 +482,7 @@
 
     <!-- https://purl.archive.org/cope#isIdentifiedBy -->
 
+
     <owl:ObjectProperty rdf:about="https://purl.archive.org/cope#isIdentifiedBy">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="http://semanticscience.org/resource/SIO_010299"/>
@@ -310,6 +493,7 @@
 
 
     <!-- https://purl.archive.org/cope#isPairedWith -->
+
 
     <owl:ObjectProperty rdf:about="https://purl.archive.org/cope#isPairedWith">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
@@ -322,6 +506,7 @@
 
     <!-- https://purl.archive.org/cope#leadsTo -->
 
+
     <owl:ObjectProperty rdf:about="https://purl.archive.org/cope#leadsTo">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="http://semanticscience.org/resource/SIO_010299"/>
@@ -332,6 +517,7 @@
 
 
     <!-- https://purl.archive.org/cope#observedBy -->
+
 
     <owl:ObjectProperty rdf:about="https://purl.archive.org/cope#observedBy">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
@@ -345,6 +531,7 @@
 
     <!-- https://purl.archive.org/cope#observedIn -->
 
+
     <owl:ObjectProperty rdf:about="https://purl.archive.org/cope#observedIn">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="https://purl.archive.org/cope#Symptom"/>
@@ -354,6 +541,7 @@
 
 
     <!-- https://purl.archive.org/cope#proposes -->
+
 
     <owl:ObjectProperty rdf:about="https://purl.archive.org/cope#proposes">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
@@ -366,6 +554,7 @@
 
     <!-- https://purl.archive.org/cope#pullsFromTrajectory -->
 
+
     <owl:ObjectProperty rdf:about="https://purl.archive.org/cope#pullsFromTrajectory">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="https://purl.archive.org/cope#HealthTrajectory"/>
@@ -376,6 +565,7 @@
 
 
     <!-- https://purl.archive.org/cope#targets -->
+
 
     <owl:ObjectProperty rdf:about="https://purl.archive.org/cope#targets">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
@@ -389,6 +579,7 @@
 
     <!-- https://purl.archive.org/cope#trainedOn -->
 
+
     <owl:ObjectProperty rdf:about="https://purl.archive.org/cope#trainedOn">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="https://purl.archive.org/cope#AIModel"/>
@@ -399,6 +590,7 @@
 
 
     <!-- https://purl.archive.org/cope#triggers -->
+
 
     <owl:ObjectProperty rdf:about="https://purl.archive.org/cope#triggers">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
@@ -411,6 +603,7 @@
 
     <!-- https://purl.archive.org/cope#uses -->
 
+
     <owl:ObjectProperty rdf:about="https://purl.archive.org/cope#uses">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="https://purl.archive.org/cope#ResearchArticle"/>
@@ -421,6 +614,7 @@
 
 
     <!-- https://purl.archive.org/cope#usesApproach -->
+
 
     <owl:ObjectProperty rdf:about="https://purl.archive.org/cope#usesApproach">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
@@ -439,10 +633,12 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+
     
 
 
     <!-- https://purl.archive.org/cope#alcoholConsumption -->
+
 
     <owl:DatatypeProperty rdf:about="https://purl.archive.org/cope#alcoholConsumption"/>
     
@@ -450,11 +646,13 @@
 
     <!-- https://purl.archive.org/cope#hasAIModelName -->
 
+
     <owl:DatatypeProperty rdf:about="https://purl.archive.org/cope#hasAIModelName"/>
     
 
 
     <!-- https://purl.archive.org/cope#hasAge -->
+
 
     <owl:DatatypeProperty rdf:about="https://purl.archive.org/cope#hasAge"/>
     
@@ -462,11 +660,13 @@
 
     <!-- https://purl.archive.org/cope#hasCODDetails -->
 
+
     <owl:DatatypeProperty rdf:about="https://purl.archive.org/cope#hasCODDetails"/>
     
 
 
     <!-- https://purl.archive.org/cope#hasCity -->
+
 
     <owl:DatatypeProperty rdf:about="https://purl.archive.org/cope#hasCity"/>
     
@@ -474,17 +674,20 @@
 
     <!-- https://purl.archive.org/cope#hasCountry -->
 
+
     <owl:DatatypeProperty rdf:about="https://purl.archive.org/cope#hasCountry"/>
     
 
 
     <!-- https://purl.archive.org/cope#hasDataset -->
 
+
     <owl:DatatypeProperty rdf:about="https://purl.archive.org/cope#hasDataset"/>
     
 
 
     <!-- https://purl.archive.org/cope#hasDatasetName -->
+
 
     <owl:DatatypeProperty rdf:about="https://purl.archive.org/cope#hasDatasetName">
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
@@ -495,11 +698,13 @@
 
     <!-- https://purl.archive.org/cope#hasDeviceName -->
 
+
     <owl:DatatypeProperty rdf:about="https://purl.archive.org/cope#hasDeviceName"/>
     
 
 
     <!-- https://purl.archive.org/cope#hasDiseaseCharacteristicName -->
+
 
     <owl:DatatypeProperty rdf:about="https://purl.archive.org/cope#hasDiseaseCharacteristicName"/>
     
@@ -507,17 +712,20 @@
 
     <!-- https://purl.archive.org/cope#hasDiseaseName -->
 
+
     <owl:DatatypeProperty rdf:about="https://purl.archive.org/cope#hasDiseaseName"/>
     
 
 
     <!-- https://purl.archive.org/cope#hasDiseaseOutcomeName -->
 
+
     <owl:DatatypeProperty rdf:about="https://purl.archive.org/cope#hasDiseaseOutcomeName"/>
     
 
 
     <!-- https://purl.archive.org/cope#hasEndDate -->
+
 
     <owl:DatatypeProperty rdf:about="https://purl.archive.org/cope#hasEndDate">
         <rdfs:domain rdf:resource="https://purl.archive.org/cope#HealthTrajectory"/>
@@ -528,11 +736,13 @@
 
     <!-- https://purl.archive.org/cope#hasEthnicity -->
 
+
     <owl:DatatypeProperty rdf:about="https://purl.archive.org/cope#hasEthnicity"/>
     
 
 
     <!-- https://purl.archive.org/cope#hasExerciseFrequency -->
+
 
     <owl:DatatypeProperty rdf:about="https://purl.archive.org/cope#hasExerciseFrequency"/>
     
@@ -540,11 +750,13 @@
 
     <!-- https://purl.archive.org/cope#hasExplanationDetails -->
 
+
     <owl:DatatypeProperty rdf:about="https://purl.archive.org/cope#hasExplanationDetails"/>
     
 
 
     <!-- https://purl.archive.org/cope#hasFullName -->
+
 
     <owl:DatatypeProperty rdf:about="https://purl.archive.org/cope#hasFullName"/>
     
@@ -552,11 +764,13 @@
 
     <!-- https://purl.archive.org/cope#hasGender -->
 
+
     <owl:DatatypeProperty rdf:about="https://purl.archive.org/cope#hasGender"/>
     
 
 
     <!-- https://purl.archive.org/cope#hasHealthAttitude -->
+
 
     <owl:DatatypeProperty rdf:about="https://purl.archive.org/cope#hasHealthAttitude"/>
     
@@ -564,11 +778,13 @@
 
     <!-- https://purl.archive.org/cope#hasHealthTrajectoryName -->
 
+
     <owl:DatatypeProperty rdf:about="https://purl.archive.org/cope#hasHealthTrajectoryName"/>
     
 
 
     <!-- https://purl.archive.org/cope#hasInputDataNatureName -->
+
 
     <owl:DatatypeProperty rdf:about="https://purl.archive.org/cope#hasInputDataNatureName"/>
     
@@ -576,11 +792,13 @@
 
     <!-- https://purl.archive.org/cope#hasInterventionName -->
 
+
     <owl:DatatypeProperty rdf:about="https://purl.archive.org/cope#hasInterventionName"/>
     
 
 
     <!-- https://purl.archive.org/cope#hasMeasurementUnitName -->
+
 
     <owl:DatatypeProperty rdf:about="https://purl.archive.org/cope#hasMeasurementUnitName"/>
     
@@ -588,11 +806,13 @@
 
     <!-- https://purl.archive.org/cope#hasModellingApproachName -->
 
+
     <owl:DatatypeProperty rdf:about="https://purl.archive.org/cope#hasModellingApproachName"/>
     
 
 
     <!-- https://purl.archive.org/cope#hasObservationEventName -->
+
 
     <owl:DatatypeProperty rdf:about="https://purl.archive.org/cope#hasObservationEventName"/>
     
@@ -600,11 +820,13 @@
 
     <!-- https://purl.archive.org/cope#hasObservationSourceName -->
 
+
     <owl:DatatypeProperty rdf:about="https://purl.archive.org/cope#hasObservationSourceName"/>
     
 
 
     <!-- https://purl.archive.org/cope#hasParticipationRank -->
+
 
     <owl:DatatypeProperty rdf:about="https://purl.archive.org/cope#hasParticipationRank"/>
     
@@ -612,17 +834,20 @@
 
     <!-- https://purl.archive.org/cope#hasPerformanceMetricName -->
 
+
     <owl:DatatypeProperty rdf:about="https://purl.archive.org/cope#hasPerformanceMetricName"/>
     
 
 
     <!-- https://purl.archive.org/cope#hasPostalCode -->
 
+
     <owl:DatatypeProperty rdf:about="https://purl.archive.org/cope#hasPostalCode"/>
     
 
 
     <!-- https://purl.archive.org/cope#hasResearchArticleName -->
+
 
     <owl:DatatypeProperty rdf:about="https://purl.archive.org/cope#hasResearchArticleName">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
@@ -632,31 +857,34 @@
 
     <!-- https://purl.archive.org/cope#hasRiskFactorName -->
 
+
     <owl:DatatypeProperty rdf:about="https://purl.archive.org/cope#hasRiskFactorName"/>
     
 
 
     <!-- https://purl.archive.org/cope#hasStartDate -->
 
+
     <owl:DatatypeProperty rdf:about="https://purl.archive.org/cope#hasStartDate">
         <rdfs:domain rdf:resource="https://purl.archive.org/cope#HealthTrajectory"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
-        <rdfs:label>has start date</rdfs:label>
         <rdfs:comment>Specifies the start date and time of a health trajectory.</rdfs:comment>
-        <skos:definition>Indicates when a health trajectory begins, marking the start of a sequence of health-related events.</skos:definition>
-        <skos:example>2024-11-01T08:00:00</skos:example>
         <rdfs:isDefinedBy rdf:resource="https://purl.archive.org/cope#"/>
-        <owl:versionInfo>1.0.0</owl:versionInfo>
-        <rdfs:seeAlso rdf:resource="https://purl.archive.org/cope#DiabetesHealthTrajectory"/>
+        <rdfs:label>has start date</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://purl.archive.org/cope#CADHealthTrajectory"/>
         <rdfs:seeAlso rdf:resource="https://purl.archive.org/cope#CKDHealthTrajectory"/>
+        <rdfs:seeAlso rdf:resource="https://purl.archive.org/cope#DiabetesHealthTrajectory"/>
         <rdfs:seeAlso rdf:resource="https://purl.archive.org/cope#HypertensionHealthTrajectory"/>
         <rdfs:seeAlso rdf:resource="https://purl.archive.org/cope#LungCancerHealthTrajectory"/>
+        <owl:versionInfo>1.0.0</owl:versionInfo>
+        <skos:definition>Indicates when a health trajectory begins, marking the start of a sequence of health-related events.</skos:definition>
+        <skos:example>2024-11-01T08:00:00</skos:example>
     </owl:DatatypeProperty>
     
 
 
     <!-- https://purl.archive.org/cope#hasSymptomName -->
+
 
     <owl:DatatypeProperty rdf:about="https://purl.archive.org/cope#hasSymptomName"/>
     
@@ -664,31 +892,34 @@
 
     <!-- https://purl.archive.org/cope#hasTrajectoryPhaseName -->
 
+
     <owl:DatatypeProperty rdf:about="https://purl.archive.org/cope#hasTrajectoryPhaseName"/>
     
 
 
     <!-- https://purl.archive.org/cope#observationTimestamp -->
 
+
     <owl:DatatypeProperty rdf:about="https://purl.archive.org/cope#observationTimestamp">
         <rdfs:domain rdf:resource="https://purl.archive.org/cope#ObservationEvent"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
-        <rdfs:label>observation timestamp</rdfs:label>
         <rdfs:comment>Records the precise date and time when an observation event occurred.</rdfs:comment>
-        <skos:definition>Specifies the exact moment when a health observation or measurement was taken, providing temporal context for the event.</skos:definition>
-        <skos:example>2025-07-23T08:30:00Z</skos:example>
         <rdfs:isDefinedBy rdf:resource="https://purl.archive.org/cope#"/>
-        <owl:versionInfo>1.0.0</owl:versionInfo>
-        <rdfs:seeAlso rdf:resource="https://purl.archive.org/cope#HypertensionObservationEvent"/>
-        <rdfs:seeAlso rdf:resource="https://purl.archive.org/cope#FastingBloodGlucoseObservationEvent"/>
-        <rdfs:seeAlso rdf:resource="https://purl.archive.org/cope#ECGAnomalyObservationEvent"/>
+        <rdfs:label>observation timestamp</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://purl.archive.org/cope#AbnormalCSNAObservationEvent"/>
         <rdfs:seeAlso rdf:resource="https://purl.archive.org/cope#BMIObservationEvent"/>
+        <rdfs:seeAlso rdf:resource="https://purl.archive.org/cope#ECGAnomalyObservationEvent"/>
+        <rdfs:seeAlso rdf:resource="https://purl.archive.org/cope#FastingBloodGlucoseObservationEvent"/>
+        <rdfs:seeAlso rdf:resource="https://purl.archive.org/cope#HypertensionObservationEvent"/>
+        <owl:versionInfo>1.0.0</owl:versionInfo>
+        <skos:definition>Specifies the exact moment when a health observation or measurement was taken, providing temporal context for the event.</skos:definition>
+        <skos:example>2025-07-23T08:30:00Z</skos:example>
     </owl:DatatypeProperty>
     
 
 
     <!-- https://purl.archive.org/cope#observationValue -->
+
 
     <owl:DatatypeProperty rdf:about="https://purl.archive.org/cope#observationValue">
         <rdfs:domain rdf:resource="https://purl.archive.org/cope#ObservationEvent"/>
@@ -705,26 +936,29 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+
     
 
 
     <!-- https://purl.archive.org/cope#AIModel -->
 
+
     <owl:Class rdf:about="https://purl.archive.org/cope#AIModel">
-        <rdfs:label>AI Model</rdfs:label>
         <rdfs:comment>An artificial intelligence model used for healthcare applications, including machine learning models for disease prediction, risk assessment, and health trajectory analysis.</rdfs:comment>
-        <skos:definition>An artificial intelligence system designed to process healthcare data and provide predictions, classifications, or insights about patient health trajectories and disease progression.</skos:definition>
-        <skos:example>Random Forest model for diabetes prediction, CNN model for ECG anomaly detection</skos:example>
-        <rdfs:seeAlso rdf:resource="https://purl.archive.org/cope#RandomForest"/>
+        <rdfs:label>AI Model</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://purl.archive.org/cope#AIHAD"/>
         <rdfs:seeAlso rdf:resource="https://purl.archive.org/cope#ExplainableAI"/>
         <rdfs:seeAlso rdf:resource="https://purl.archive.org/cope#RFEnhancedFeedForwardNetwork"/>
+        <rdfs:seeAlso rdf:resource="https://purl.archive.org/cope#RandomForest"/>
         <rdfs:seeAlso rdf:resource="https://purl.archive.org/cope#TPOT-optimized_ensemble_model"/>
+        <skos:definition>An artificial intelligence system designed to process healthcare data and provide predictions, classifications, or insights about patient health trajectories and disease progression.</skos:definition>
+        <skos:example>Random Forest model for diabetes prediction, CNN model for ECG anomaly detection</skos:example>
     </owl:Class>
     
 
 
     <!-- https://purl.archive.org/cope#Behavioral -->
+
 
     <owl:Class rdf:about="https://purl.archive.org/cope#Behavioral">
         <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_001398"/>
@@ -735,6 +969,7 @@
 
     <!-- https://purl.archive.org/cope#Biological -->
 
+
     <owl:Class rdf:about="https://purl.archive.org/cope#Biological">
         <rdfs:subClassOf rdf:resource="https://purl.archive.org/cope#PersonCharacteristic"/>
     </owl:Class>
@@ -743,9 +978,10 @@
 
     <!-- https://purl.archive.org/cope#CycleOfDeconditioning -->
 
+
     <owl:Class rdf:about="https://purl.archive.org/cope#CycleOfDeconditioning">
-        <rdfs:label>Cycle of Deconditioning</rdfs:label>
         <rdfs:comment>Cycle of deconditioning is the stages of changes that occur in a person&apos;s body due to prolonged inactivity.</rdfs:comment>
+        <rdfs:label>Cycle of Deconditioning</rdfs:label>
         <skos:definition>A progressive decline in physical function and health status that occurs when a person becomes less active, leading to a cascade of negative health effects that further reduce activity levels.</skos:definition>
         <skos:example>Unhealthy lifestyle → Blood pressure increase → Cardiovascular risk → Reduced physical activity → Decline in lifestyle quality → Disease progression</skos:example>
     </owl:Class>
@@ -753,6 +989,7 @@
 
 
     <!-- https://purl.archive.org/cope#Demographic -->
+
 
     <owl:Class rdf:about="https://purl.archive.org/cope#Demographic">
         <rdfs:subClassOf rdf:resource="https://purl.archive.org/cope#PersonCharacteristic"/>
@@ -762,6 +999,7 @@
 
     <!-- https://purl.archive.org/cope#DiseaseCharacteristic -->
 
+
     <owl:Class rdf:about="https://purl.archive.org/cope#DiseaseCharacteristic">
         <rdfs:comment>Disease characteristic is a collection of disease aspects that describe the profile of a disease.</rdfs:comment>
     </owl:Class>
@@ -769,6 +1007,7 @@
 
 
     <!-- https://purl.archive.org/cope#DiseaseOutcome -->
+
 
     <owl:Class rdf:about="https://purl.archive.org/cope#DiseaseOutcome">
         <rdfs:comment>Disease outcome is a specific resulting state that a person is forced to be in.</rdfs:comment>
@@ -778,6 +1017,7 @@
 
     <!-- https://purl.archive.org/cope#Explanation -->
 
+
     <owl:Class rdf:about="https://purl.archive.org/cope#Explanation">
         <rdfs:comment>Explanation is the associated reasoning of the used AI model.</rdfs:comment>
     </owl:Class>
@@ -785,6 +1025,7 @@
 
 
     <!-- https://purl.archive.org/cope#Geographical -->
+
 
     <owl:Class rdf:about="https://purl.archive.org/cope#Geographical">
         <rdfs:subClassOf rdf:resource="https://purl.archive.org/cope#PersonCharacteristic"/>
@@ -794,29 +1035,32 @@
 
     <!-- https://purl.archive.org/cope#HealthTrajectory -->
 
+
     <owl:Class rdf:about="https://purl.archive.org/cope#HealthTrajectory">
-        <rdfs:label>Health Trajectory</rdfs:label>
         <rdfs:comment>A trajectory is a collection of sequentially linked temporal observer events that belong to a specific person and share the same membership.</rdfs:comment>
-        <skos:definition>A chronological sequence of health-related events and observations that represent a person's health journey over time, including disease progression, interventions, and outcomes.</skos:definition>
-        <skos:example>Diabetes progression from diagnosis through treatment to complications</skos:example>
-        <rdfs:seeAlso rdf:resource="https://purl.archive.org/cope#DiabetesHealthTrajectory"/>
+        <rdfs:isDefinedBy rdf:resource="https://purl.archive.org/cope#"/>
+        <rdfs:label>Health Trajectory</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://purl.archive.org/cope#CADHealthTrajectory"/>
         <rdfs:seeAlso rdf:resource="https://purl.archive.org/cope#CKDHealthTrajectory"/>
+        <rdfs:seeAlso rdf:resource="https://purl.archive.org/cope#DiabetesHealthTrajectory"/>
         <rdfs:seeAlso rdf:resource="https://purl.archive.org/cope#HypertensionHealthTrajectory"/>
         <rdfs:seeAlso rdf:resource="https://purl.archive.org/cope#LungCancerHealthTrajectory"/>
-        <rdfs:isDefinedBy rdf:resource="https://purl.archive.org/cope#"/>
         <owl:versionInfo>1.0.0</owl:versionInfo>
+        <skos:definition>A chronological sequence of health-related events and observations that represent a person&apos;s health journey over time, including disease progression, interventions, and outcomes.</skos:definition>
+        <skos:example>Diabetes progression from diagnosis through treatment to complications</skos:example>
     </owl:Class>
     
 
 
     <!-- https://purl.archive.org/cope#InputDataNature -->
 
+
     <owl:Class rdf:about="https://purl.archive.org/cope#InputDataNature"/>
     
 
 
     <!-- https://purl.archive.org/cope#MeasurementUnit -->
+
 
     <owl:Class rdf:about="https://purl.archive.org/cope#MeasurementUnit">
         <rdfs:comment>Measurement unit is a set of variations observed for a purpose. E.g. ECG</rdfs:comment>
@@ -826,6 +1070,7 @@
 
     <!-- https://purl.archive.org/cope#ModellingApproach -->
 
+
     <owl:Class rdf:about="https://purl.archive.org/cope#ModellingApproach">
         <rdfs:comment>Modeling Approach is the utilized machine learning approach for a given Artificial Intelligence model.</rdfs:comment>
     </owl:Class>
@@ -833,6 +1078,7 @@
 
 
     <!-- https://purl.archive.org/cope#ObservationEvent -->
+
 
     <owl:Class rdf:about="https://purl.archive.org/cope#ObservationEvent">
         <rdfs:comment>An observation event is a temporal trigger for processing information.</rdfs:comment>
@@ -842,6 +1088,7 @@
 
     <!-- https://purl.archive.org/cope#ObservationSource -->
 
+
     <owl:Class rdf:about="https://purl.archive.org/cope#ObservationSource">
         <rdfs:comment>Observation source is a manifestation of an anchor that collates a variety of measurements.</rdfs:comment>
     </owl:Class>
@@ -849,6 +1096,7 @@
 
 
     <!-- https://purl.archive.org/cope#ParticipationRank -->
+
 
     <owl:Class rdf:about="https://purl.archive.org/cope#ParticipationRank">
         <rdfs:comment>Participation rank is a numerical representation indicating the unitary distance of a trajectory from the participation. [0,n] where 0 represents the current trajectory.</rdfs:comment>
@@ -858,6 +1106,7 @@
 
     <!-- https://purl.archive.org/cope#PerformanceMetric -->
 
+
     <owl:Class rdf:about="https://purl.archive.org/cope#PerformanceMetric">
         <rdfs:comment>A performance metric is the collection of quantifiable measurements that validates the performance of a model.</rdfs:comment>
     </owl:Class>
@@ -865,6 +1114,7 @@
 
 
     <!-- https://purl.archive.org/cope#PersonCharacteristic -->
+
 
     <owl:Class rdf:about="https://purl.archive.org/cope#PersonCharacteristic">
         <rdfs:comment>Personal characteristic is a collection of personal aspects that describe the profile of a person.</rdfs:comment>
@@ -874,6 +1124,7 @@
 
     <!-- https://purl.archive.org/cope#Pharmalogical -->
 
+
     <owl:Class rdf:about="https://purl.archive.org/cope#Pharmalogical">
         <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_001398"/>
     </owl:Class>
@@ -881,6 +1132,7 @@
 
 
     <!-- https://purl.archive.org/cope#Preventive -->
+
 
     <owl:Class rdf:about="https://purl.archive.org/cope#Preventive">
         <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_001398"/>
@@ -890,6 +1142,7 @@
 
     <!-- https://purl.archive.org/cope#Psychographic -->
 
+
     <owl:Class rdf:about="https://purl.archive.org/cope#Psychographic">
         <rdfs:subClassOf rdf:resource="https://purl.archive.org/cope#PersonCharacteristic"/>
     </owl:Class>
@@ -897,6 +1150,7 @@
 
 
     <!-- https://purl.archive.org/cope#ResearchArticle -->
+
 
     <owl:Class rdf:about="https://purl.archive.org/cope#ResearchArticle">
         <rdfs:comment>Research article is a published research source for a specific health context.</rdfs:comment>
@@ -906,9 +1160,10 @@
 
     <!-- https://purl.archive.org/cope#RiskFactor -->
 
+
     <owl:Class rdf:about="https://purl.archive.org/cope#RiskFactor">
-        <rdfs:label>Risk Factor</rdfs:label>
         <rdfs:comment>Risk factor is a condition of a personal charactoristic that recognizes a plausible disease.</rdfs:comment>
+        <rdfs:label>Risk Factor</rdfs:label>
         <skos:definition>A characteristic, condition, or behavior that increases the likelihood of developing a disease or health condition.</skos:definition>
         <skos:example>Smoking, obesity, high blood pressure, family history of diabetes</skos:example>
     </owl:Class>
@@ -917,9 +1172,10 @@
 
     <!-- https://purl.archive.org/cope#Symptom -->
 
+
     <owl:Class rdf:about="https://purl.archive.org/cope#Symptom">
-        <rdfs:label>Symptom</rdfs:label>
         <rdfs:comment>Symptom is a variation (range or a threshold) of a measurement that is functionally associated with a specific disease.</rdfs:comment>
+        <rdfs:label>Symptom</rdfs:label>
         <skos:definition>A physical or mental feature that indicates the presence of a disease or health condition, often measurable through clinical observations or patient reports.</skos:definition>
         <skos:example>Chest pain, shortness of breath, blurred vision, fatigue</skos:example>
     </owl:Class>
@@ -928,6 +1184,7 @@
 
     <!-- https://purl.archive.org/cope#Therapeutic -->
 
+
     <owl:Class rdf:about="https://purl.archive.org/cope#Therapeutic">
         <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_001398"/>
     </owl:Class>
@@ -935,6 +1192,7 @@
 
 
     <!-- https://purl.archive.org/cope#TrajectoryPhase -->
+
 
     <owl:Class rdf:about="https://purl.archive.org/cope#TrajectoryPhase">
         <rdfs:comment>Trajectory phase is a lifecycle stage of a trajectory. {predicted, verified, remission}</rdfs:comment>
@@ -950,20 +1208,22 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+
     
 
 
     <!-- https://purl.archive.org/cope#AIHAD -->
 
+
     <owl:NamedIndividual rdf:about="https://purl.archive.org/cope#AIHAD">
         <rdf:type rdf:resource="https://purl.archive.org/cope#AIModel"/>
-        <COPE:evaluatedBy rdf:resource="https://purl.archive.org/cope#F1-Score"/>
-        <COPE:evaluatedBy rdf:resource="https://purl.archive.org/cope#MSE"/>
-        <COPE:hasExplanation rdf:resource="https://purl.archive.org/cope#Explanation002"/>
-        <COPE:includes rdf:resource="https://purl.archive.org/cope#ECGSignalFeatures"/>
-        <COPE:trainedOn rdf:resource="https://purl.archive.org/cope#Dataset002"/>
-        <COPE:usesApproach rdf:resource="https://purl.archive.org/cope#CNN"/>
-        <COPE:hasAIModelName>Artificial Intelligence-based Hybrid Anomaly Detection (AIHAD)</COPE:hasAIModelName>
+        <evaluatedBy rdf:resource="https://purl.archive.org/cope#F1-Score"/>
+        <evaluatedBy rdf:resource="https://purl.archive.org/cope#MSE"/>
+        <hasExplanation rdf:resource="https://purl.archive.org/cope#Explanation002"/>
+        <includes rdf:resource="https://purl.archive.org/cope#ECGSignalFeatures"/>
+        <trainedOn rdf:resource="https://purl.archive.org/cope#Dataset002"/>
+        <usesApproach rdf:resource="https://purl.archive.org/cope#CNN"/>
+        <hasAIModelName>Artificial Intelligence-based Hybrid Anomaly Detection (AIHAD)</hasAIModelName>
         <rdfs:label>Artificial Intelligence-based Hybrid Anomaly Detection (AIHAD)</rdfs:label>
     </owl:NamedIndividual>
     
@@ -971,11 +1231,12 @@
 
     <!-- https://purl.archive.org/cope#AbnormalCSNA -->
 
+
     <owl:NamedIndividual rdf:about="https://purl.archive.org/cope#AbnormalCSNA">
         <rdf:type rdf:resource="https://purl.archive.org/cope#RiskFactor"/>
-        <COPE:contributesTo rdf:resource="https://purl.archive.org/cope#CAD"/>
-        <COPE:observedBy rdf:resource="https://purl.archive.org/cope#CSNASignalFeatureSource"/>
-        <COPE:hasRiskFactorName>Abnormal CSNA</COPE:hasRiskFactorName>
+        <contributesTo rdf:resource="https://purl.archive.org/cope#CAD"/>
+        <observedBy rdf:resource="https://purl.archive.org/cope#CSNASignalFeatureSource"/>
+        <hasRiskFactorName>Abnormal CSNA</hasRiskFactorName>
         <rdfs:label>Abnormal CSNA</rdfs:label>
     </owl:NamedIndividual>
     
@@ -983,13 +1244,14 @@
 
     <!-- https://purl.archive.org/cope#AbnormalCSNAObservationEvent -->
 
+
     <owl:NamedIndividual rdf:about="https://purl.archive.org/cope#AbnormalCSNAObservationEvent">
         <rdf:type rdf:resource="https://purl.archive.org/cope#ObservationEvent"/>
         <resource:SIO_000095 rdf:resource="https://purl.archive.org/cope#CADHealthTrajectory"/>
-        <COPE:isPairedWith rdf:resource="https://purl.archive.org/cope#MaryJane"/>
-        <COPE:hasObservationEventName>Abnormal CSNA Observation Event</COPE:hasObservationEventName>
-        <COPE:observationTimestamp rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTimeStamp">2025-07-23T08:30:00Z</COPE:observationTimestamp>
-        <COPE:observationValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">75</COPE:observationValue>
+        <isPairedWith rdf:resource="https://purl.archive.org/cope#MaryJane"/>
+        <hasObservationEventName>Abnormal CSNA Observation Event</hasObservationEventName>
+        <observationTimestamp rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTimeStamp">2025-07-23T08:30:00Z</observationTimestamp>
+        <observationValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">75</observationValue>
         <rdfs:label>Abnormal CSNA Observation Event</rdfs:label>
     </owl:NamedIndividual>
     
@@ -997,16 +1259,17 @@
 
     <!-- https://purl.archive.org/cope#AbuBakar -->
 
+
     <owl:NamedIndividual rdf:about="https://purl.archive.org/cope#AbuBakar">
         <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000498"/>
-        <COPE:hasCharacteristic rdf:resource="https://purl.archive.org/cope#BehavAbuBakar"/>
-        <COPE:hasCharacteristic rdf:resource="https://purl.archive.org/cope#BioAbuBakar"/>
-        <COPE:hasCharacteristic rdf:resource="https://purl.archive.org/cope#DemoAbuBakar"/>
-        <COPE:hasCharacteristic rdf:resource="https://purl.archive.org/cope#GeoAbuBakar"/>
-        <COPE:hasCharacteristic rdf:resource="https://purl.archive.org/cope#PsychAbuBakar"/>
-        <COPE:hasHealthTrajectory rdf:resource="https://purl.archive.org/cope#LungCancerHealthTrajectory"/>
-        <COPE:hasRiskFactor rdf:resource="https://purl.archive.org/cope#Smoking"/>
-        <COPE:hasFullName>Abu Bakar</COPE:hasFullName>
+        <hasCharacteristic rdf:resource="https://purl.archive.org/cope#BehavAbuBakar"/>
+        <hasCharacteristic rdf:resource="https://purl.archive.org/cope#BioAbuBakar"/>
+        <hasCharacteristic rdf:resource="https://purl.archive.org/cope#DemoAbuBakar"/>
+        <hasCharacteristic rdf:resource="https://purl.archive.org/cope#GeoAbuBakar"/>
+        <hasCharacteristic rdf:resource="https://purl.archive.org/cope#PsychAbuBakar"/>
+        <hasHealthTrajectory rdf:resource="https://purl.archive.org/cope#LungCancerHealthTrajectory"/>
+        <hasRiskFactor rdf:resource="https://purl.archive.org/cope#Smoking"/>
+        <hasFullName>Abu Bakar</hasFullName>
         <rdfs:label>Abu Bakar</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1014,18 +1277,19 @@
 
     <!-- https://purl.archive.org/cope#AnthonyPatel -->
 
+
     <owl:NamedIndividual rdf:about="https://purl.archive.org/cope#AnthonyPatel">
         <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000498"/>
-        <COPE:hasCharacteristic rdf:resource="https://purl.archive.org/cope#BehavAnthonyPatel"/>
-        <COPE:hasCharacteristic rdf:resource="https://purl.archive.org/cope#BioAnthonyPatel"/>
-        <COPE:hasCharacteristic rdf:resource="https://purl.archive.org/cope#DemoAnthonyPatel"/>
-        <COPE:hasCharacteristic rdf:resource="https://purl.archive.org/cope#GeoAnthonyPatel"/>
-        <COPE:hasCharacteristic rdf:resource="https://purl.archive.org/cope#PsychAnthonyPatel"/>
-        <COPE:hasHealthTrajectory rdf:resource="https://purl.archive.org/cope#CKDHealthTrajectory"/>
-        <COPE:hasHealthTrajectory rdf:resource="https://purl.archive.org/cope#HypertensionHealthTrajectory"/>
-        <COPE:hasRiskFactor rdf:resource="https://purl.archive.org/cope#Hypertension"/>
-        <COPE:hasRiskFactor rdf:resource="https://purl.archive.org/cope#Obesity"/>
-        <COPE:hasFullName>Anthony Patel</COPE:hasFullName>
+        <hasCharacteristic rdf:resource="https://purl.archive.org/cope#BehavAnthonyPatel"/>
+        <hasCharacteristic rdf:resource="https://purl.archive.org/cope#BioAnthonyPatel"/>
+        <hasCharacteristic rdf:resource="https://purl.archive.org/cope#DemoAnthonyPatel"/>
+        <hasCharacteristic rdf:resource="https://purl.archive.org/cope#GeoAnthonyPatel"/>
+        <hasCharacteristic rdf:resource="https://purl.archive.org/cope#PsychAnthonyPatel"/>
+        <hasHealthTrajectory rdf:resource="https://purl.archive.org/cope#CKDHealthTrajectory"/>
+        <hasHealthTrajectory rdf:resource="https://purl.archive.org/cope#HypertensionHealthTrajectory"/>
+        <hasRiskFactor rdf:resource="https://purl.archive.org/cope#Hypertension"/>
+        <hasRiskFactor rdf:resource="https://purl.archive.org/cope#Obesity"/>
+        <hasFullName>Anthony Patel</hasFullName>
         <rdfs:label>Anthony Patel</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1033,9 +1297,10 @@
 
     <!-- https://purl.archive.org/cope#Atherosclerosis -->
 
+
     <owl:NamedIndividual rdf:about="https://purl.archive.org/cope#Atherosclerosis">
         <rdf:type rdf:resource="https://purl.archive.org/cope#DiseaseCharacteristic"/>
-        <COPE:hasDiseaseCharacteristicName>Atherosclerosis</COPE:hasDiseaseCharacteristicName>
+        <hasDiseaseCharacteristicName>Atherosclerosis</hasDiseaseCharacteristicName>
         <rdfs:label>Atherosclerosis</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1043,9 +1308,10 @@
 
     <!-- https://purl.archive.org/cope#BMI -->
 
+
     <owl:NamedIndividual rdf:about="https://purl.archive.org/cope#BMI">
         <rdf:type rdf:resource="https://purl.archive.org/cope#InputDataNature"/>
-        <COPE:hasInputDataNatureName>Body Mass Index</COPE:hasInputDataNatureName>
+        <hasInputDataNatureName>Body Mass Index</hasInputDataNatureName>
         <rdfs:label>Body Mass Index</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1053,10 +1319,11 @@
 
     <!-- https://purl.archive.org/cope#BMIObservationEvent -->
 
+
     <owl:NamedIndividual rdf:about="https://purl.archive.org/cope#BMIObservationEvent">
         <rdf:type rdf:resource="https://purl.archive.org/cope#ObservationEvent"/>
-        <COPE:hasObservationEventName>BMI Observation Event</COPE:hasObservationEventName>
-        <COPE:observationTimestamp rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTimeStamp">2025-07-23T08:30:00Z</COPE:observationTimestamp>
+        <hasObservationEventName>BMI Observation Event</hasObservationEventName>
+        <observationTimestamp rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTimeStamp">2025-07-23T08:30:00Z</observationTimestamp>
         <rdfs:label>BMI Observation Event</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1064,10 +1331,11 @@
 
     <!-- https://purl.archive.org/cope#BehavAbuBakar -->
 
+
     <owl:NamedIndividual rdf:about="https://purl.archive.org/cope#BehavAbuBakar">
         <rdf:type rdf:resource="https://purl.archive.org/cope#Behavioral"/>
-        <COPE:alcoholConsumption>Non-Drinker</COPE:alcoholConsumption>
-        <COPE:hasExerciseFrequency>3 times a week</COPE:hasExerciseFrequency>
+        <alcoholConsumption>Non-Drinker</alcoholConsumption>
+        <hasExerciseFrequency>3 times a week</hasExerciseFrequency>
         <rdfs:label>Abu Bakar Behavioral</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1075,10 +1343,11 @@
 
     <!-- https://purl.archive.org/cope#BehavAnthonyPatel -->
 
+
     <owl:NamedIndividual rdf:about="https://purl.archive.org/cope#BehavAnthonyPatel">
         <rdf:type rdf:resource="https://purl.archive.org/cope#Behavioral"/>
-        <COPE:alcoholConsumption>Regularly</COPE:alcoholConsumption>
-        <COPE:hasExerciseFrequency>Rarely</COPE:hasExerciseFrequency>
+        <alcoholConsumption>Regularly</alcoholConsumption>
+        <hasExerciseFrequency>Rarely</hasExerciseFrequency>
         <rdfs:label>Anthony Patel Behavioral</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1086,10 +1355,11 @@
 
     <!-- https://purl.archive.org/cope#BehavJohnPaul -->
 
+
     <owl:NamedIndividual rdf:about="https://purl.archive.org/cope#BehavJohnPaul">
         <rdf:type rdf:resource="https://purl.archive.org/cope#Behavioral"/>
-        <COPE:alcoholConsumption>Alcoholic</COPE:alcoholConsumption>
-        <COPE:hasExerciseFrequency>5 times a week</COPE:hasExerciseFrequency>
+        <alcoholConsumption>Alcoholic</alcoholConsumption>
+        <hasExerciseFrequency>5 times a week</hasExerciseFrequency>
         <rdfs:label>John Paul Behavioral</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1097,10 +1367,11 @@
 
     <!-- https://purl.archive.org/cope#BehavMaryJane -->
 
+
     <owl:NamedIndividual rdf:about="https://purl.archive.org/cope#BehavMaryJane">
         <rdf:type rdf:resource="https://purl.archive.org/cope#Behavioral"/>
-        <COPE:alcoholConsumption>Former Drinker</COPE:alcoholConsumption>
-        <COPE:hasExerciseFrequency>1 time a week</COPE:hasExerciseFrequency>
+        <alcoholConsumption>Former Drinker</alcoholConsumption>
+        <hasExerciseFrequency>1 time a week</hasExerciseFrequency>
         <rdfs:label>Mary Jane Behavioral</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1108,10 +1379,11 @@
 
     <!-- https://purl.archive.org/cope#BioAbuBakar -->
 
+
     <owl:NamedIndividual rdf:about="https://purl.archive.org/cope#BioAbuBakar">
         <rdf:type rdf:resource="https://purl.archive.org/cope#Biological"/>
-        <COPE:hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">42</COPE:hasAge>
-        <COPE:hasGender>Male</COPE:hasGender>
+        <hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">42</hasAge>
+        <hasGender>Male</hasGender>
         <rdfs:label>Abu Bakar Biological</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1119,10 +1391,11 @@
 
     <!-- https://purl.archive.org/cope#BioAnthonyPatel -->
 
+
     <owl:NamedIndividual rdf:about="https://purl.archive.org/cope#BioAnthonyPatel">
         <rdf:type rdf:resource="https://purl.archive.org/cope#Biological"/>
-        <COPE:hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">65</COPE:hasAge>
-        <COPE:hasGender>Male</COPE:hasGender>
+        <hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">65</hasAge>
+        <hasGender>Male</hasGender>
         <rdfs:label>Anthony Patel Biological</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1130,10 +1403,11 @@
 
     <!-- https://purl.archive.org/cope#BioJohnPaul -->
 
+
     <owl:NamedIndividual rdf:about="https://purl.archive.org/cope#BioJohnPaul">
         <rdf:type rdf:resource="https://purl.archive.org/cope#Biological"/>
-        <COPE:hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">55</COPE:hasAge>
-        <COPE:hasGender>Male</COPE:hasGender>
+        <hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">55</hasAge>
+        <hasGender>Male</hasGender>
         <rdfs:label>John Paul Biological</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1141,10 +1415,11 @@
 
     <!-- https://purl.archive.org/cope#BioMaryJane -->
 
+
     <owl:NamedIndividual rdf:about="https://purl.archive.org/cope#BioMaryJane">
         <rdf:type rdf:resource="https://purl.archive.org/cope#Biological"/>
-        <COPE:hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">67</COPE:hasAge>
-        <COPE:hasGender>Female</COPE:hasGender>
+        <hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">67</hasAge>
+        <hasGender>Female</hasGender>
         <rdfs:label>Mary Jane Biological</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1152,10 +1427,11 @@
 
     <!-- https://purl.archive.org/cope#BloodGlucoseMeters -->
 
+
     <owl:NamedIndividual rdf:about="https://purl.archive.org/cope#BloodGlucoseMeters">
         <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_001236"/>
-        <COPE:hasMeasurementUnit rdf:resource="https://purl.archive.org/cope#mmol/L"/>
-        <COPE:hasDeviceName>Blood Glucose Meters</COPE:hasDeviceName>
+        <hasMeasurementUnit rdf:resource="https://purl.archive.org/cope#mmol/L"/>
+        <hasDeviceName>Blood Glucose Meters</hasDeviceName>
         <rdfs:label>Blood Glucose Meters</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1163,10 +1439,11 @@
 
     <!-- https://purl.archive.org/cope#BloodPressureMonitor -->
 
+
     <owl:NamedIndividual rdf:about="https://purl.archive.org/cope#BloodPressureMonitor">
         <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_001236"/>
-        <COPE:hasMeasurementUnit rdf:resource="https://purl.archive.org/cope#mmHg"/>
-        <COPE:hasDeviceName>Blood Pressure Monitor</COPE:hasDeviceName>
+        <hasMeasurementUnit rdf:resource="https://purl.archive.org/cope#mmHg"/>
+        <hasDeviceName>Blood Pressure Monitor</hasDeviceName>
         <rdfs:label>Blood Pressure Monitor</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1174,10 +1451,11 @@
 
     <!-- https://purl.archive.org/cope#BloodSugar -->
 
+
     <owl:NamedIndividual rdf:about="https://purl.archive.org/cope#BloodSugar">
         <rdf:type rdf:resource="https://purl.archive.org/cope#RiskFactor"/>
-        <COPE:observedBy rdf:resource="https://purl.archive.org/cope#BloodSugarLevelSource"/>
-        <COPE:hasRiskFactorName>Blood Sugar</COPE:hasRiskFactorName>
+        <observedBy rdf:resource="https://purl.archive.org/cope#BloodSugarLevelSource"/>
+        <hasRiskFactorName>Blood Sugar</hasRiskFactorName>
         <rdfs:label>Blood Sugar</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1185,9 +1463,10 @@
 
     <!-- https://purl.archive.org/cope#BloodSugarLevel -->
 
+
     <owl:NamedIndividual rdf:about="https://purl.archive.org/cope#BloodSugarLevel">
         <rdf:type rdf:resource="https://purl.archive.org/cope#InputDataNature"/>
-        <COPE:hasInputDataNatureName>Blood Sugar Level</COPE:hasInputDataNatureName>
+        <hasInputDataNatureName>Blood Sugar Level</hasInputDataNatureName>
         <rdfs:label>Blood Sugar Level</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1195,11 +1474,12 @@
 
     <!-- https://purl.archive.org/cope#BloodSugarLevelSource -->
 
+
     <owl:NamedIndividual rdf:about="https://purl.archive.org/cope#BloodSugarLevelSource">
         <rdf:type rdf:resource="https://purl.archive.org/cope#ObservationSource"/>
-        <COPE:includes rdf:resource="https://purl.archive.org/cope#BloodGlucoseMeters"/>
-        <COPE:triggers rdf:resource="https://purl.archive.org/cope#FastingBloodGlucoseObservationEvent"/>
-        <COPE:hasObservationSourceName>Blood Sugar Level Source</COPE:hasObservationSourceName>
+        <includes rdf:resource="https://purl.archive.org/cope#BloodGlucoseMeters"/>
+        <triggers rdf:resource="https://purl.archive.org/cope#FastingBloodGlucoseObservationEvent"/>
+        <hasObservationSourceName>Blood Sugar Level Source</hasObservationSourceName>
         <rdfs:label>Blood Sugar Level Source</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1207,12 +1487,13 @@
 
     <!-- https://purl.archive.org/cope#BlurredVision -->
 
+
     <owl:NamedIndividual rdf:about="https://purl.archive.org/cope#BlurredVision">
         <rdf:type rdf:resource="https://purl.archive.org/cope#Symptom"/>
-        <COPE:getSymptom rdf:resource="https://purl.archive.org/cope#JohnPaul"/>
-        <COPE:observedBy rdf:resource="https://purl.archive.org/cope#SystolicBPSource"/>
-        <COPE:observedIn rdf:resource="https://purl.archive.org/cope#HypertensionObservationEvent"/>
-        <COPE:hasSymptomName>Bliurred Vision</COPE:hasSymptomName>
+        <getSymptom rdf:resource="https://purl.archive.org/cope#JohnPaul"/>
+        <observedBy rdf:resource="https://purl.archive.org/cope#SystolicBPSource"/>
+        <observedIn rdf:resource="https://purl.archive.org/cope#HypertensionObservationEvent"/>
+        <hasSymptomName>Bliurred Vision</hasSymptomName>
         <rdfs:label>Blurred Vision</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1220,14 +1501,15 @@
 
     <!-- https://purl.archive.org/cope#CAD -->
 
+
     <owl:NamedIndividual rdf:about="https://purl.archive.org/cope#CAD">
         <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_010299"/>
         <resource:SIO_000068 rdf:resource="https://purl.archive.org/cope#COD2"/>
-        <COPE:hasCharacteristic rdf:resource="https://purl.archive.org/cope#Atherosclerosis"/>
-        <COPE:isIdentifiedBy rdf:resource="https://purl.archive.org/cope#ChestPain"/>
-        <COPE:isIdentifiedBy rdf:resource="https://purl.archive.org/cope#ShortnessOfBreath"/>
-        <COPE:leadsTo rdf:resource="https://purl.archive.org/cope#SuddenCardiacDeath"/>
-        <COPE:hasDiseaseName>Coronary Artery Disease (CAD)</COPE:hasDiseaseName>
+        <hasCharacteristic rdf:resource="https://purl.archive.org/cope#Atherosclerosis"/>
+        <isIdentifiedBy rdf:resource="https://purl.archive.org/cope#ChestPain"/>
+        <isIdentifiedBy rdf:resource="https://purl.archive.org/cope#ShortnessOfBreath"/>
+        <leadsTo rdf:resource="https://purl.archive.org/cope#SuddenCardiacDeath"/>
+        <hasDiseaseName>Coronary Artery Disease (CAD)</hasDiseaseName>
         <rdfs:label>Coronary Artery Disease (CAD)</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1235,13 +1517,14 @@
 
     <!-- https://purl.archive.org/cope#CADHealthTrajectory -->
 
+
     <owl:NamedIndividual rdf:about="https://purl.archive.org/cope#CADHealthTrajectory">
         <rdf:type rdf:resource="https://purl.archive.org/cope#HealthTrajectory"/>
-        <COPE:hasPhase rdf:resource="https://purl.archive.org/cope#VerifiedTrajectoryPhase"/>
-        <COPE:hasEndDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-04T11:15:00</COPE:hasEndDate>
-        <COPE:hasHealthTrajectoryName>CAD Health Trajectory</COPE:hasHealthTrajectoryName>
-        <COPE:hasParticipationRank rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</COPE:hasParticipationRank>
-        <COPE:hasStartDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-15T08:00:00</COPE:hasStartDate>
+        <hasPhase rdf:resource="https://purl.archive.org/cope#VerifiedTrajectoryPhase"/>
+        <hasEndDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-04T11:15:00</hasEndDate>
+        <hasHealthTrajectoryName>CAD Health Trajectory</hasHealthTrajectoryName>
+        <hasParticipationRank rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</hasParticipationRank>
+        <hasStartDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-15T08:00:00</hasStartDate>
         <rdfs:label>CAD Health Trajectory</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1249,13 +1532,14 @@
 
     <!-- https://purl.archive.org/cope#CKDHealthTrajectory -->
 
+
     <owl:NamedIndividual rdf:about="https://purl.archive.org/cope#CKDHealthTrajectory">
         <rdf:type rdf:resource="https://purl.archive.org/cope#HealthTrajectory"/>
-        <COPE:hasPhase rdf:resource="https://purl.archive.org/cope#VerifiedTrajectoryPhase"/>
-        <COPE:hasEndDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-04T11:45:00</COPE:hasEndDate>
-        <COPE:hasHealthTrajectoryName>Chronic Kidney Disease Health Trajectory</COPE:hasHealthTrajectoryName>
-        <COPE:hasParticipationRank rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</COPE:hasParticipationRank>
-        <COPE:hasStartDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-01-15T08:00:00</COPE:hasStartDate>
+        <hasPhase rdf:resource="https://purl.archive.org/cope#VerifiedTrajectoryPhase"/>
+        <hasEndDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-04T11:45:00</hasEndDate>
+        <hasHealthTrajectoryName>Chronic Kidney Disease Health Trajectory</hasHealthTrajectoryName>
+        <hasParticipationRank rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</hasParticipationRank>
+        <hasStartDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-01-15T08:00:00</hasStartDate>
         <rdfs:label>Chronic Kidney Disease Health Trajectory</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1263,9 +1547,10 @@
 
     <!-- https://purl.archive.org/cope#CNN -->
 
+
     <owl:NamedIndividual rdf:about="https://purl.archive.org/cope#CNN">
         <rdf:type rdf:resource="https://purl.archive.org/cope#ModellingApproach"/>
-        <COPE:hasModellingApproachName>Convolutional Neural Networks (CNN)</COPE:hasModellingApproachName>
+        <hasModellingApproachName>Convolutional Neural Networks (CNN)</hasModellingApproachName>
         <rdfs:label>Convolutional Neural Networks (CNN)</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1273,9 +1558,10 @@
 
     <!-- https://purl.archive.org/cope#COD1 -->
 
+
     <owl:NamedIndividual rdf:about="https://purl.archive.org/cope#COD1">
         <rdf:type rdf:resource="https://purl.archive.org/cope#CycleOfDeconditioning"/>
-        <COPE:hasCODDetails>Unhealthy lifestyle &gt; Blood pressure increase &gt; Increases cardiovascular risk &gt; Reduced physical activity &gt; Decline in lifestyle quality &gt; Disease progression</COPE:hasCODDetails>
+        <hasCODDetails>Unhealthy lifestyle &gt; Blood pressure increase &gt; Increases cardiovascular risk &gt; Reduced physical activity &gt; Decline in lifestyle quality &gt; Disease progression</hasCODDetails>
         <rdfs:label>Unhealthy lifestyle &gt; Blood pressure increase &gt; Increases cardiovascular risk &gt; Reduced physical activity &gt; Decline in lifestyle quality &gt; Disease progression</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1283,9 +1569,10 @@
 
     <!-- https://purl.archive.org/cope#COD2 -->
 
+
     <owl:NamedIndividual rdf:about="https://purl.archive.org/cope#COD2">
         <rdf:type rdf:resource="https://purl.archive.org/cope#CycleOfDeconditioning"/>
-        <COPE:hasCODDetails>ECG Anomalies Detected &gt; Decreased Cardiac Efficiency &gt; Reduced Physical Activity &gt; Increased Hypertension &gt; Chronic Disease Progression</COPE:hasCODDetails>
+        <hasCODDetails>ECG Anomalies Detected &gt; Decreased Cardiac Efficiency &gt; Reduced Physical Activity &gt; Increased Hypertension &gt; Chronic Disease Progression</hasCODDetails>
         <rdfs:label>ECG Anomalies Detected &gt; Decreased Cardiac Efficiency &gt; Reduced Physical Activity &gt; Increased Hypertension &gt; Chronic Disease Progression</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1293,9 +1580,10 @@
 
     <!-- https://purl.archive.org/cope#COD3 -->
 
+
     <owl:NamedIndividual rdf:about="https://purl.archive.org/cope#COD3">
         <rdf:type rdf:resource="https://purl.archive.org/cope#CycleOfDeconditioning"/>
-        <COPE:hasCODDetails>Increased Hypertension &gt; Reduced Kidney Function &gt; Reduced Physical Activity &gt; Metabolic Deterioration &gt; Worsen CKD &gt; Chronic Disease Progression</COPE:hasCODDetails>
+        <hasCODDetails>Increased Hypertension &gt; Reduced Kidney Function &gt; Reduced Physical Activity &gt; Metabolic Deterioration &gt; Worsen CKD &gt; Chronic Disease Progression</hasCODDetails>
         <rdfs:label>Increased Hypertension &gt; Reduced Kidney Function &gt; Reduced Physical Activity &gt; Metabolic Deterioration &gt; Worsen CKD &gt; Chronic Disease Progression</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1303,9 +1591,10 @@
 
     <!-- https://purl.archive.org/cope#COD4 -->
 
+
     <owl:NamedIndividual rdf:about="https://purl.archive.org/cope#COD4">
         <rdf:type rdf:resource="https://purl.archive.org/cope#CycleOfDeconditioning"/>
-        <COPE:hasCODDetails>Obesity &gt; Insulin Resistance and Inflammation &gt; Type 2 Diabetes &gt; Hypertension &gt; Vascular Dysfunction &gt; Reduction in Exercise &gt; Worsen Insuin Resistance and Inflammation &gt; Worsen Hypertension</COPE:hasCODDetails>
+        <hasCODDetails>Obesity &gt; Insulin Resistance and Inflammation &gt; Type 2 Diabetes &gt; Hypertension &gt; Vascular Dysfunction &gt; Reduction in Exercise &gt; Worsen Insuin Resistance and Inflammation &gt; Worsen Hypertension</hasCODDetails>
         <rdfs:label>Obesity &gt; Insulin Resistance and Inflammation &gt; Type 2 Diabetes &gt; Hypertension &gt; Vascular Dysfunction &gt; Reduction in Exercise &gt; Worsen Insuin Resistance and Inflammation &gt; Worsen Hypertension</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1313,9 +1602,10 @@
 
     <!-- https://purl.archive.org/cope#COD5 -->
 
+
     <owl:NamedIndividual rdf:about="https://purl.archive.org/cope#COD5">
         <rdf:type rdf:resource="https://purl.archive.org/cope#CycleOfDeconditioning"/>
-        <COPE:hasCODDetails>Smoking &gt; Lung Damage &gt; Fatigue &gt; Reduced Exercise &gt; Increased Disability &gt; Further Reduction in Exercise &gt; Cycle Worsen</COPE:hasCODDetails>
+        <hasCODDetails>Smoking &gt; Lung Damage &gt; Fatigue &gt; Reduced Exercise &gt; Increased Disability &gt; Further Reduction in Exercise &gt; Cycle Worsen</hasCODDetails>
         <rdfs:label>Smoking &gt; Lung Damage &gt; Fatigue &gt; Reduced Exercise &gt; Increased Disability &gt; Further Reduction in Exercise &gt; Cycle Worsen</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1323,11 +1613,12 @@
 
     <!-- https://purl.archive.org/cope#CSNASignalFeatureSource -->
 
+
     <owl:NamedIndividual rdf:about="https://purl.archive.org/cope#CSNASignalFeatureSource">
         <rdf:type rdf:resource="https://purl.archive.org/cope#ObservationSource"/>
-        <COPE:includes rdf:resource="https://purl.archive.org/cope#MicroneurographySystem"/>
-        <COPE:triggers rdf:resource="https://purl.archive.org/cope#AbnormalCSNAObservationEvent"/>
-        <COPE:hasObservationSourceName>CSNA Signal Feature Source</COPE:hasObservationSourceName>
+        <includes rdf:resource="https://purl.archive.org/cope#MicroneurographySystem"/>
+        <triggers rdf:resource="https://purl.archive.org/cope#AbnormalCSNAObservationEvent"/>
+        <hasObservationSourceName>CSNA Signal Feature Source</hasObservationSourceName>
         <rdfs:label>CSNA Signal Feature Source</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1335,13 +1626,14 @@
 
     <!-- https://purl.archive.org/cope#CardiacRehab -->
 
+
     <owl:NamedIndividual rdf:about="https://purl.archive.org/cope#CardiacRehab">
         <rdf:type rdf:resource="https://purl.archive.org/cope#Preventive"/>
-        <COPE:appliedIn rdf:resource="https://purl.archive.org/cope#ECGAnomalyObservationEvent"/>
-        <COPE:appliedTo rdf:resource="https://purl.archive.org/cope#CAD"/>
-        <COPE:targets rdf:resource="https://purl.archive.org/cope#ECGAnomalies"/>
-        <COPE:targets rdf:resource="https://purl.archive.org/cope#ShortnessOfBreath"/>
-        <COPE:hasInterventionName>Cardiac Exercise Rehabilitation</COPE:hasInterventionName>
+        <appliedIn rdf:resource="https://purl.archive.org/cope#ECGAnomalyObservationEvent"/>
+        <appliedTo rdf:resource="https://purl.archive.org/cope#CAD"/>
+        <targets rdf:resource="https://purl.archive.org/cope#ECGAnomalies"/>
+        <targets rdf:resource="https://purl.archive.org/cope#ShortnessOfBreath"/>
+        <hasInterventionName>Cardiac Exercise Rehabilitation</hasInterventionName>
         <rdfs:label>Cardiac Exercise Rehabilitation</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1349,12 +1641,13 @@
 
     <!-- https://purl.archive.org/cope#ChestPain -->
 
+
     <owl:NamedIndividual rdf:about="https://purl.archive.org/cope#ChestPain">
         <rdf:type rdf:resource="https://purl.archive.org/cope#Symptom"/>
-        <COPE:getSymptom rdf:resource="https://purl.archive.org/cope#MaryJane"/>
-        <COPE:observedBy rdf:resource="https://purl.archive.org/cope#CSNASignalFeatureSource"/>
-        <COPE:observedIn rdf:resource="https://purl.archive.org/cope#AbnormalCSNAObservationEvent"/>
-        <COPE:hasSymptomName>Chest Pain</COPE:hasSymptomName>
+        <getSymptom rdf:resource="https://purl.archive.org/cope#MaryJane"/>
+        <observedBy rdf:resource="https://purl.archive.org/cope#CSNASignalFeatureSource"/>
+        <observedIn rdf:resource="https://purl.archive.org/cope#AbnormalCSNAObservationEvent"/>
+        <hasSymptomName>Chest Pain</hasSymptomName>
         <rdfs:label>Chest Pain</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1362,20 +1655,22 @@
 
     <!-- https://purl.archive.org/cope#ChronicKidneyDisease -->
 
+
     <owl:NamedIndividual rdf:about="https://purl.archive.org/cope#ChronicKidneyDisease">
         <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_010299"/>
         <resource:SIO_000068 rdf:resource="https://purl.archive.org/cope#COD3"/>
-        <COPE:hasCharacteristic rdf:resource="https://purl.archive.org/cope#ReducedGFR"/>
-        <COPE:isIdentifiedBy rdf:resource="https://purl.archive.org/cope#ShortnessOfBreath"/>
-        <COPE:isIdentifiedBy rdf:resource="https://purl.archive.org/cope#Swelling"/>
-        <COPE:leadsTo rdf:resource="https://purl.archive.org/cope#HighCVDRisk"/>
-        <COPE:hasDiseaseName>Chronic Kidney Disease</COPE:hasDiseaseName>
+        <hasCharacteristic rdf:resource="https://purl.archive.org/cope#ReducedGFR"/>
+        <isIdentifiedBy rdf:resource="https://purl.archive.org/cope#ShortnessOfBreath"/>
+        <isIdentifiedBy rdf:resource="https://purl.archive.org/cope#Swelling"/>
+        <leadsTo rdf:resource="https://purl.archive.org/cope#HighCVDRisk"/>
+        <hasDiseaseName>Chronic Kidney Disease</hasDiseaseName>
         <rdfs:label>Chronic Kidney Disease</rdfs:label>
     </owl:NamedIndividual>
     
 
 
     <!-- https://purl.archive.org/cope#Dataset001 -->
+
 
     <owl:NamedIndividual rdf:about="https://purl.archive.org/cope#Dataset001">
         <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000089"/>
@@ -1384,7 +1679,7 @@
         <resource:SIO_000253 rdf:resource="https://purl.archive.org/cope#HeightMeasurementSource"/>
         <resource:SIO_000253 rdf:resource="https://purl.archive.org/cope#SystolicBPSource"/>
         <resource:SIO_000253 rdf:resource="https://purl.archive.org/cope#WeightMeasurementSource"/>
-        <COPE:hasDataset>Secondary surveillance data from Puskesmas Johar Baru, Jakarta, in 2019, 2020, and 2021</COPE:hasDataset>
+        <hasDataset>Secondary surveillance data from Puskesmas Johar Baru, Jakarta, in 2019, 2020, and 2021</hasDataset>
         <rdfs:label>Secondary surveillance data from Puskesmas Johar Baru, Jakarta, in 2019, 2020, and 2021</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1392,11 +1687,12 @@
 
     <!-- https://purl.archive.org/cope#Dataset002 -->
 
+
     <owl:NamedIndividual rdf:about="https://purl.archive.org/cope#Dataset002">
         <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000089"/>
         <resource:SIO_000253 rdf:resource="https://purl.archive.org/cope#CSNASignalFeatureSource"/>
         <resource:SIO_000253 rdf:resource="https://purl.archive.org/cope#ECGSignalFeatureSource"/>
-        <COPE:hasDataset>Fully labeled STAFF III and PTBD databases, which contain the 12-lead wideband raw recordings non-invasively acquired from 260 subjects</COPE:hasDataset>
+        <hasDataset>Fully labeled STAFF III and PTBD databases, which contain the 12-lead wideband raw recordings non-invasively acquired from 260 subjects</hasDataset>
         <rdfs:label>Fully labeled STAFF III and PTBD databases, which contain the 12-lead wideband raw recordings non-invasively acquired from 260 subjects</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1404,11 +1700,12 @@
 
     <!-- https://purl.archive.org/cope#Dataset003 -->
 
+
     <owl:NamedIndividual rdf:about="https://purl.archive.org/cope#Dataset003">
         <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000089"/>
         <resource:SIO_000253 rdf:resource="https://purl.archive.org/cope#DiastolicBPSource"/>
         <resource:SIO_000253 rdf:resource="https://purl.archive.org/cope#SystolicBPSource"/>
-        <COPE:hasDataset>Mashhad Stroke and Heart Atherosclerotic Disorders (MASHAD) Study database</COPE:hasDataset>
+        <hasDataset>Mashhad Stroke and Heart Atherosclerotic Disorders (MASHAD) Study database</hasDataset>
         <rdfs:label>Mashhad Stroke and Heart Atherosclerotic Disorders (MASHAD) Study database</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1416,11 +1713,12 @@
 
     <!-- https://purl.archive.org/cope#Dataset004 -->
 
+
     <owl:NamedIndividual rdf:about="https://purl.archive.org/cope#Dataset004">
         <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000089"/>
         <resource:SIO_000253 rdf:resource="https://purl.archive.org/cope#HeightMeasurementSource"/>
         <resource:SIO_000253 rdf:resource="https://purl.archive.org/cope#WeightMeasurementSource"/>
-        <COPE:hasDataset>Blood Pressure Data for Disease Prediction from Kaggle</COPE:hasDataset>
+        <hasDataset>Blood Pressure Data for Disease Prediction from Kaggle</hasDataset>
         <rdfs:label>Blood Pressure Data for Disease Prediction from Kaggle</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1428,10 +1726,11 @@
 
     <!-- https://purl.archive.org/cope#Dataset005 -->
 
+
     <owl:NamedIndividual rdf:about="https://purl.archive.org/cope#Dataset005">
         <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000089"/>
         <resource:SIO_000253 rdf:resource="https://purl.archive.org/cope#SelfReportedSmokingSource"/>
-        <COPE:hasDataset>Electronic Medical Records and chest CT scans</COPE:hasDataset>
+        <hasDataset>Electronic Medical Records and chest CT scans</hasDataset>
         <rdfs:label>Electronic Medical Records and chest CT scans</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1439,9 +1738,10 @@
 
     <!-- https://purl.archive.org/cope#DemoAbuBakar -->
 
+
     <owl:NamedIndividual rdf:about="https://purl.archive.org/cope#DemoAbuBakar">
         <rdf:type rdf:resource="https://purl.archive.org/cope#Demographic"/>
-        <COPE:hasEthnicity>Malay</COPE:hasEthnicity>
+        <hasEthnicity>Malay</hasEthnicity>
         <rdfs:label>Abu Bakar Demographic</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1449,9 +1749,10 @@
 
     <!-- https://purl.archive.org/cope#DemoAnthonyPatel -->
 
+
     <owl:NamedIndividual rdf:about="https://purl.archive.org/cope#DemoAnthonyPatel">
         <rdf:type rdf:resource="https://purl.archive.org/cope#Demographic"/>
-        <COPE:hasEthnicity>South Asian</COPE:hasEthnicity>
+        <hasEthnicity>South Asian</hasEthnicity>
         <rdfs:label>Anthony Patel Demographic</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1459,9 +1760,10 @@
 
     <!-- https://purl.archive.org/cope#DemoJohnPaul -->
 
+
     <owl:NamedIndividual rdf:about="https://purl.archive.org/cope#DemoJohnPaul">
         <rdf:type rdf:resource="https://purl.archive.org/cope#Demographic"/>
-        <COPE:hasEthnicity>Caucasian</COPE:hasEthnicity>
+        <hasEthnicity>Caucasian</hasEthnicity>
         <rdfs:label>John Paul Demographic</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1469,9 +1771,10 @@
 
     <!-- https://purl.archive.org/cope#DemoMaryJane -->
 
+
     <owl:NamedIndividual rdf:about="https://purl.archive.org/cope#DemoMaryJane">
         <rdf:type rdf:resource="https://purl.archive.org/cope#Demographic"/>
-        <COPE:hasEthnicity>Caucasian</COPE:hasEthnicity>
+        <hasEthnicity>Caucasian</hasEthnicity>
         <rdfs:label>Mary Jane Demographic</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1479,13 +1782,14 @@
 
     <!-- https://purl.archive.org/cope#DiabetesHealthTrajectory -->
 
+
     <owl:NamedIndividual rdf:about="https://purl.archive.org/cope#DiabetesHealthTrajectory">
         <rdf:type rdf:resource="https://purl.archive.org/cope#HealthTrajectory"/>
-        <COPE:hasPhase rdf:resource="https://purl.archive.org/cope#VerifiedTrajectoryPhase"/>
-        <COPE:hasEndDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-04T10:15:00</COPE:hasEndDate>
-        <COPE:hasHealthTrajectoryName>Diabetes Health Trajectory</COPE:hasHealthTrajectoryName>
-        <COPE:hasParticipationRank rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</COPE:hasParticipationRank>
-        <COPE:hasStartDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-11-01T08:00:00</COPE:hasStartDate>
+        <hasPhase rdf:resource="https://purl.archive.org/cope#VerifiedTrajectoryPhase"/>
+        <hasEndDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-04T10:15:00</hasEndDate>
+        <hasHealthTrajectoryName>Diabetes Health Trajectory</hasHealthTrajectoryName>
+        <hasParticipationRank rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</hasParticipationRank>
+        <hasStartDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-11-01T08:00:00</hasStartDate>
         <rdfs:label>Diabetes Health Trajectory</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1493,14 +1797,15 @@
 
     <!-- https://purl.archive.org/cope#DiabetesMellitus -->
 
+
     <owl:NamedIndividual rdf:about="https://purl.archive.org/cope#DiabetesMellitus">
         <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_010299"/>
         <resource:SIO_000068 rdf:resource="https://purl.archive.org/cope#COD1"/>
-        <COPE:hasCharacteristic rdf:resource="https://purl.archive.org/cope#InsulinDysfunction"/>
-        <COPE:isIdentifiedBy rdf:resource="https://purl.archive.org/cope#BlurredVision"/>
-        <COPE:isIdentifiedBy rdf:resource="https://purl.archive.org/cope#SlowWoundHealing"/>
-        <COPE:leadsTo rdf:resource="https://purl.archive.org/cope#KidneyFailure"/>
-        <COPE:hasDiseaseName>Diabetes Mellitus</COPE:hasDiseaseName>
+        <hasCharacteristic rdf:resource="https://purl.archive.org/cope#InsulinDysfunction"/>
+        <isIdentifiedBy rdf:resource="https://purl.archive.org/cope#BlurredVision"/>
+        <isIdentifiedBy rdf:resource="https://purl.archive.org/cope#SlowWoundHealing"/>
+        <leadsTo rdf:resource="https://purl.archive.org/cope#KidneyFailure"/>
+        <hasDiseaseName>Diabetes Mellitus</hasDiseaseName>
         <rdfs:label>Diabetes Mellitus</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1508,9 +1813,10 @@
 
     <!-- https://purl.archive.org/cope#DiastolicBP -->
 
+
     <owl:NamedIndividual rdf:about="https://purl.archive.org/cope#DiastolicBP">
         <rdf:type rdf:resource="https://purl.archive.org/cope#InputDataNature"/>
-        <COPE:hasInputDataNatureName>Diastolic BP</COPE:hasInputDataNatureName>
+        <hasInputDataNatureName>Diastolic BP</hasInputDataNatureName>
         <rdfs:label>Diastolic BP</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1518,11 +1824,12 @@
 
     <!-- https://purl.archive.org/cope#DiastolicBPSource -->
 
+
     <owl:NamedIndividual rdf:about="https://purl.archive.org/cope#DiastolicBPSource">
         <rdf:type rdf:resource="https://purl.archive.org/cope#ObservationSource"/>
-        <COPE:includes rdf:resource="https://purl.archive.org/cope#BloodPressureMonitor"/>
-        <COPE:triggers rdf:resource="https://purl.archive.org/cope#HypertensionObservationEvent"/>
-        <COPE:hasObservationSourceName>Diastolic BP Source</COPE:hasObservationSourceName>
+        <includes rdf:resource="https://purl.archive.org/cope#BloodPressureMonitor"/>
+        <triggers rdf:resource="https://purl.archive.org/cope#HypertensionObservationEvent"/>
+        <hasObservationSourceName>Diastolic BP Source</hasObservationSourceName>
         <rdfs:label>Diastolic BP Source</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1530,11 +1837,12 @@
 
     <!-- https://purl.archive.org/cope#DietEducation -->
 
+
     <owl:NamedIndividual rdf:about="https://purl.archive.org/cope#DietEducation">
         <rdf:type rdf:resource="https://purl.archive.org/cope#Preventive"/>
-        <COPE:appliedTo rdf:resource="https://purl.archive.org/cope#DiabetesMellitus"/>
-        <COPE:targets rdf:resource="https://purl.archive.org/cope#BlurredVision"/>
-        <COPE:hasInterventionName>Diet Education</COPE:hasInterventionName>
+        <appliedTo rdf:resource="https://purl.archive.org/cope#DiabetesMellitus"/>
+        <targets rdf:resource="https://purl.archive.org/cope#BlurredVision"/>
+        <hasInterventionName>Diet Education</hasInterventionName>
         <rdfs:label>Diet Education</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1542,11 +1850,12 @@
 
     <!-- https://purl.archive.org/cope#ECGAnomalies -->
 
+
     <owl:NamedIndividual rdf:about="https://purl.archive.org/cope#ECGAnomalies">
         <rdf:type rdf:resource="https://purl.archive.org/cope#RiskFactor"/>
-        <COPE:contributesTo rdf:resource="https://purl.archive.org/cope#CAD"/>
-        <COPE:observedBy rdf:resource="https://purl.archive.org/cope#ECGSignalFeatureSource"/>
-        <COPE:hasRiskFactorName>ECG Anomalies</COPE:hasRiskFactorName>
+        <contributesTo rdf:resource="https://purl.archive.org/cope#CAD"/>
+        <observedBy rdf:resource="https://purl.archive.org/cope#ECGSignalFeatureSource"/>
+        <hasRiskFactorName>ECG Anomalies</hasRiskFactorName>
         <rdfs:label>ECG Anomalies</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1554,13 +1863,14 @@
 
     <!-- https://purl.archive.org/cope#ECGAnomalyObservationEvent -->
 
+
     <owl:NamedIndividual rdf:about="https://purl.archive.org/cope#ECGAnomalyObservationEvent">
         <rdf:type rdf:resource="https://purl.archive.org/cope#ObservationEvent"/>
         <resource:SIO_000095 rdf:resource="https://purl.archive.org/cope#CADHealthTrajectory"/>
-        <COPE:isPairedWith rdf:resource="https://purl.archive.org/cope#MaryJane"/>
-        <COPE:hasObservationEventName>ECG Anomaly Observation Event</COPE:hasObservationEventName>
-        <COPE:observationTimestamp rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-23T08:30:00Z</COPE:observationTimestamp>
-        <COPE:observationValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">18</COPE:observationValue>
+        <isPairedWith rdf:resource="https://purl.archive.org/cope#MaryJane"/>
+        <hasObservationEventName>ECG Anomaly Observation Event</hasObservationEventName>
+        <observationTimestamp rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-23T08:30:00Z</observationTimestamp>
+        <observationValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">18</observationValue>
         <rdfs:label>ECG Anomaly Observation Event</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1568,10 +1878,11 @@
 
     <!-- https://purl.archive.org/cope#ECGMachine -->
 
+
     <owl:NamedIndividual rdf:about="https://purl.archive.org/cope#ECGMachine">
         <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_001236"/>
-        <COPE:hasMeasurementUnit rdf:resource="https://purl.archive.org/cope#mV"/>
-        <COPE:hasDeviceName>ECG Machine</COPE:hasDeviceName>
+        <hasMeasurementUnit rdf:resource="https://purl.archive.org/cope#mV"/>
+        <hasDeviceName>ECG Machine</hasDeviceName>
         <rdfs:label>ECG Machine</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1579,11 +1890,12 @@
 
     <!-- https://purl.archive.org/cope#ECGSignalFeatureSource -->
 
+
     <owl:NamedIndividual rdf:about="https://purl.archive.org/cope#ECGSignalFeatureSource">
         <rdf:type rdf:resource="https://purl.archive.org/cope#ObservationSource"/>
-        <COPE:includes rdf:resource="https://purl.archive.org/cope#ECGMachine"/>
-        <COPE:triggers rdf:resource="https://purl.archive.org/cope#ECGAnomalyObservationEvent"/>
-        <COPE:hasObservationSourceName>ECG Signal Feature Source</COPE:hasObservationSourceName>
+        <includes rdf:resource="https://purl.archive.org/cope#ECGMachine"/>
+        <triggers rdf:resource="https://purl.archive.org/cope#ECGAnomalyObservationEvent"/>
+        <hasObservationSourceName>ECG Signal Feature Source</hasObservationSourceName>
         <rdfs:label>ECG Signal Feature Source</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1591,9 +1903,10 @@
 
     <!-- https://purl.archive.org/cope#ECGSignalFeatures -->
 
+
     <owl:NamedIndividual rdf:about="https://purl.archive.org/cope#ECGSignalFeatures">
         <rdf:type rdf:resource="https://purl.archive.org/cope#InputDataNature"/>
-        <COPE:hasInputDataNatureName>ECG signal features</COPE:hasInputDataNatureName>
+        <hasInputDataNatureName>ECG signal features</hasInputDataNatureName>
         <rdfs:label>ECG signal features</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1601,9 +1914,10 @@
 
     <!-- https://purl.archive.org/cope#ElevatedBloodPressure -->
 
+
     <owl:NamedIndividual rdf:about="https://purl.archive.org/cope#ElevatedBloodPressure">
         <rdf:type rdf:resource="https://purl.archive.org/cope#DiseaseCharacteristic"/>
-        <COPE:hasDiseaseCharacteristicName>Elevated Blood Pressure</COPE:hasDiseaseCharacteristicName>
+        <hasDiseaseCharacteristicName>Elevated Blood Pressure</hasDiseaseCharacteristicName>
         <rdfs:label>Elevated Blood Pressure</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1611,9 +1925,10 @@
 
     <!-- https://purl.archive.org/cope#EnsembleLearning -->
 
+
     <owl:NamedIndividual rdf:about="https://purl.archive.org/cope#EnsembleLearning">
         <rdf:type rdf:resource="https://purl.archive.org/cope#ModellingApproach"/>
-        <COPE:hasModellingApproachName>Ensmeble Learning</COPE:hasModellingApproachName>
+        <hasModellingApproachName>Ensmeble Learning</hasModellingApproachName>
         <rdfs:label>Ensemble Learning</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1621,14 +1936,15 @@
 
     <!-- https://purl.archive.org/cope#ExplainableAI -->
 
+
     <owl:NamedIndividual rdf:about="https://purl.archive.org/cope#ExplainableAI">
         <rdf:type rdf:resource="https://purl.archive.org/cope#AIModel"/>
-        <COPE:evaluatedBy rdf:resource="https://purl.archive.org/cope#F1-Score"/>
-        <COPE:hasExplanation rdf:resource="https://purl.archive.org/cope#Explanation004"/>
-        <COPE:includes rdf:resource="https://purl.archive.org/cope#BMI"/>
-        <COPE:trainedOn rdf:resource="https://purl.archive.org/cope#Dataset004"/>
-        <COPE:usesApproach rdf:resource="https://purl.archive.org/cope#StackedEnsembleWithSHAP"/>
-        <COPE:hasAIModelName>Explainable AI</COPE:hasAIModelName>
+        <evaluatedBy rdf:resource="https://purl.archive.org/cope#F1-Score"/>
+        <hasExplanation rdf:resource="https://purl.archive.org/cope#Explanation004"/>
+        <includes rdf:resource="https://purl.archive.org/cope#BMI"/>
+        <trainedOn rdf:resource="https://purl.archive.org/cope#Dataset004"/>
+        <usesApproach rdf:resource="https://purl.archive.org/cope#StackedEnsembleWithSHAP"/>
+        <hasAIModelName>Explainable AI</hasAIModelName>
         <rdfs:label>Explainable AI</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1636,9 +1952,10 @@
 
     <!-- https://purl.archive.org/cope#Explanation001 -->
 
+
     <owl:NamedIndividual rdf:about="https://purl.archive.org/cope#Explanation001">
         <rdf:type rdf:resource="https://purl.archive.org/cope#Explanation"/>
-        <COPE:hasExplanationDetails>Explanation 1 here</COPE:hasExplanationDetails>
+        <hasExplanationDetails>Explanation 1 here</hasExplanationDetails>
         <rdfs:label>Explanation 1 here</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1646,9 +1963,10 @@
 
     <!-- https://purl.archive.org/cope#Explanation002 -->
 
+
     <owl:NamedIndividual rdf:about="https://purl.archive.org/cope#Explanation002">
         <rdf:type rdf:resource="https://purl.archive.org/cope#Explanation"/>
-        <COPE:hasExplanationDetails>Explanation 2 here</COPE:hasExplanationDetails>
+        <hasExplanationDetails>Explanation 2 here</hasExplanationDetails>
         <rdfs:label>Explanation 2 here</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1656,9 +1974,10 @@
 
     <!-- https://purl.archive.org/cope#Explanation003 -->
 
+
     <owl:NamedIndividual rdf:about="https://purl.archive.org/cope#Explanation003">
         <rdf:type rdf:resource="https://purl.archive.org/cope#Explanation"/>
-        <COPE:hasExplanationDetails>Explanation 3 here</COPE:hasExplanationDetails>
+        <hasExplanationDetails>Explanation 3 here</hasExplanationDetails>
         <rdfs:label>Explanation 3 here</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1666,9 +1985,10 @@
 
     <!-- https://purl.archive.org/cope#Explanation004 -->
 
+
     <owl:NamedIndividual rdf:about="https://purl.archive.org/cope#Explanation004">
         <rdf:type rdf:resource="https://purl.archive.org/cope#Explanation"/>
-        <COPE:hasExplanationDetails>Explanation 4 here</COPE:hasExplanationDetails>
+        <hasExplanationDetails>Explanation 4 here</hasExplanationDetails>
         <rdfs:label>Explanation 4 here</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1676,9 +1996,10 @@
 
     <!-- https://purl.archive.org/cope#Explanation5 -->
 
+
     <owl:NamedIndividual rdf:about="https://purl.archive.org/cope#Explanation5">
         <rdf:type rdf:resource="https://purl.archive.org/cope#Explanation"/>
-        <COPE:hasExplanationDetails>Explanation here 5</COPE:hasExplanationDetails>
+        <hasExplanationDetails>Explanation here 5</hasExplanationDetails>
         <rdfs:label>Explanation 5 here</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1686,9 +2007,10 @@
 
     <!-- https://purl.archive.org/cope#F1-Score -->
 
+
     <owl:NamedIndividual rdf:about="https://purl.archive.org/cope#F1-Score">
         <rdf:type rdf:resource="https://purl.archive.org/cope#PerformanceMetric"/>
-        <COPE:hasPerformanceMetricName>F1-Score</COPE:hasPerformanceMetricName>
+        <hasPerformanceMetricName>F1-Score</hasPerformanceMetricName>
         <rdfs:label>F1-Score</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1696,13 +2018,14 @@
 
     <!-- https://purl.archive.org/cope#FastingBloodGlucoseObservationEvent -->
 
+
     <owl:NamedIndividual rdf:about="https://purl.archive.org/cope#FastingBloodGlucoseObservationEvent">
         <rdf:type rdf:resource="https://purl.archive.org/cope#ObservationEvent"/>
         <resource:SIO_000095 rdf:resource="https://purl.archive.org/cope#DiabetesHealthTrajectory"/>
-        <COPE:isPairedWith rdf:resource="https://purl.archive.org/cope#JohnPaul"/>
-        <COPE:hasObservationEventName>Fasting Blood Glucose Observation Event</COPE:hasObservationEventName>
-        <COPE:observationValue>7.8 mmol/L</COPE:observationValue>
-        <COPE:observationValue rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTimeStamp">2025-07-13T09:30:00Z</COPE:observationValue>
+        <isPairedWith rdf:resource="https://purl.archive.org/cope#JohnPaul"/>
+        <hasObservationEventName>Fasting Blood Glucose Observation Event</hasObservationEventName>
+        <observationValue rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTimeStamp">2025-07-13T09:30:00Z</observationValue>
+        <observationValue>7.8 mmol/L</observationValue>
         <rdfs:label>Fasting Blood Glucose Observation Event</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1710,13 +2033,14 @@
 
     <!-- https://purl.archive.org/cope#Fatigue -->
 
+
     <owl:NamedIndividual rdf:about="https://purl.archive.org/cope#Fatigue">
         <rdf:type rdf:resource="https://purl.archive.org/cope#Symptom"/>
-        <COPE:getSymptom rdf:resource="https://purl.archive.org/cope#AnthonyPatel"/>
-        <COPE:observedBy rdf:resource="https://purl.archive.org/cope#HeightMeasurementSource"/>
-        <COPE:observedBy rdf:resource="https://purl.archive.org/cope#WeightMeasurementSource"/>
-        <COPE:observedIn rdf:resource="https://purl.archive.org/cope#BMIObservationEvent"/>
-        <COPE:hasSymptomName>Fatigue</COPE:hasSymptomName>
+        <getSymptom rdf:resource="https://purl.archive.org/cope#AnthonyPatel"/>
+        <observedBy rdf:resource="https://purl.archive.org/cope#HeightMeasurementSource"/>
+        <observedBy rdf:resource="https://purl.archive.org/cope#WeightMeasurementSource"/>
+        <observedIn rdf:resource="https://purl.archive.org/cope#BMIObservationEvent"/>
+        <hasSymptomName>Fatigue</hasSymptomName>
         <rdfs:label>Fatigue</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1724,11 +2048,12 @@
 
     <!-- https://purl.archive.org/cope#GeoAbuBakar -->
 
+
     <owl:NamedIndividual rdf:about="https://purl.archive.org/cope#GeoAbuBakar">
         <rdf:type rdf:resource="https://purl.archive.org/cope#Geographical"/>
-        <COPE:hasCity>Kuala Lumpur</COPE:hasCity>
-        <COPE:hasCountry>Malaysia</COPE:hasCountry>
-        <COPE:hasPostalCode rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">50450</COPE:hasPostalCode>
+        <hasCity>Kuala Lumpur</hasCity>
+        <hasCountry>Malaysia</hasCountry>
+        <hasPostalCode rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">50450</hasPostalCode>
         <rdfs:label>Abu Bakar Geographical</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1736,11 +2061,12 @@
 
     <!-- https://purl.archive.org/cope#GeoAnthonyPatel -->
 
+
     <owl:NamedIndividual rdf:about="https://purl.archive.org/cope#GeoAnthonyPatel">
         <rdf:type rdf:resource="https://purl.archive.org/cope#Geographical"/>
-        <COPE:hasCity>Austin</COPE:hasCity>
-        <COPE:hasCountry>United States</COPE:hasCountry>
-        <COPE:hasPostalCode rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">78701</COPE:hasPostalCode>
+        <hasCity>Austin</hasCity>
+        <hasCountry>United States</hasCountry>
+        <hasPostalCode rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">78701</hasPostalCode>
         <rdfs:label>Anthony Patel Geographical</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1748,11 +2074,12 @@
 
     <!-- https://purl.archive.org/cope#GeoJohnPaul -->
 
+
     <owl:NamedIndividual rdf:about="https://purl.archive.org/cope#GeoJohnPaul">
         <rdf:type rdf:resource="https://purl.archive.org/cope#Geographical"/>
-        <COPE:hasCity>Adelaide</COPE:hasCity>
-        <COPE:hasCountry>Australia</COPE:hasCountry>
-        <COPE:hasPostalCode rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5000</COPE:hasPostalCode>
+        <hasCity>Adelaide</hasCity>
+        <hasCountry>Australia</hasCountry>
+        <hasPostalCode rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5000</hasPostalCode>
         <rdfs:label>John Paul Geographical</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1760,11 +2087,12 @@
 
     <!-- https://purl.archive.org/cope#GeoMaryJane -->
 
+
     <owl:NamedIndividual rdf:about="https://purl.archive.org/cope#GeoMaryJane">
         <rdf:type rdf:resource="https://purl.archive.org/cope#Geographical"/>
-        <COPE:hasCity>Melbourne</COPE:hasCity>
-        <COPE:hasCountry>Australia</COPE:hasCountry>
-        <COPE:hasPostalCode rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3004</COPE:hasPostalCode>
+        <hasCity>Melbourne</hasCity>
+        <hasCountry>Australia</hasCountry>
+        <hasPostalCode rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3004</hasPostalCode>
         <rdfs:label>Mary Jane Geographical</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1772,11 +2100,12 @@
 
     <!-- https://purl.archive.org/cope#HeightMeasurementSource -->
 
+
     <owl:NamedIndividual rdf:about="https://purl.archive.org/cope#HeightMeasurementSource">
         <rdf:type rdf:resource="https://purl.archive.org/cope#ObservationSource"/>
-        <COPE:includes rdf:resource="https://purl.archive.org/cope#WearableDevice"/>
-        <COPE:triggers rdf:resource="https://purl.archive.org/cope#BMIObservationEvent"/>
-        <COPE:hasObservationSourceName>Height Measurement Source</COPE:hasObservationSourceName>
+        <includes rdf:resource="https://purl.archive.org/cope#WearableDevice"/>
+        <triggers rdf:resource="https://purl.archive.org/cope#BMIObservationEvent"/>
+        <hasObservationSourceName>Height Measurement Source</hasObservationSourceName>
         <rdfs:label>Height Measurement Source</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1784,9 +2113,10 @@
 
     <!-- https://purl.archive.org/cope#HighCVDRisk -->
 
+
     <owl:NamedIndividual rdf:about="https://purl.archive.org/cope#HighCVDRisk">
         <rdf:type rdf:resource="https://purl.archive.org/cope#DiseaseOutcome"/>
-        <COPE:hasDiseaseOutcomeName>Increase Cardiovascular Events</COPE:hasDiseaseOutcomeName>
+        <hasDiseaseOutcomeName>Increase Cardiovascular Events</hasDiseaseOutcomeName>
         <rdfs:label>Increase Cardiovascular Events</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1794,19 +2124,20 @@
 
     <!-- https://purl.archive.org/cope#Hypertension -->
 
+
     <owl:NamedIndividual rdf:about="https://purl.archive.org/cope#Hypertension">
         <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_010299"/>
         <rdf:type rdf:resource="https://purl.archive.org/cope#RiskFactor"/>
         <resource:SIO_000068 rdf:resource="https://purl.archive.org/cope#COD4"/>
-        <COPE:contributesTo rdf:resource="https://purl.archive.org/cope#ChronicKidneyDisease"/>
-        <COPE:contributesTo rdf:resource="https://purl.archive.org/cope#DiabetesMellitus"/>
-        <COPE:hasCharacteristic rdf:resource="https://purl.archive.org/cope#ElevatedBloodPressure"/>
-        <COPE:isIdentifiedBy rdf:resource="https://purl.archive.org/cope#Fatigue"/>
-        <COPE:leadsTo rdf:resource="https://purl.archive.org/cope#Stroke"/>
-        <COPE:observedBy rdf:resource="https://purl.archive.org/cope#DiastolicBPSource"/>
-        <COPE:observedBy rdf:resource="https://purl.archive.org/cope#SystolicBPSource"/>
-        <COPE:hasDiseaseName>Hypertension</COPE:hasDiseaseName>
-        <COPE:hasRiskFactorName>Hypertension</COPE:hasRiskFactorName>
+        <contributesTo rdf:resource="https://purl.archive.org/cope#ChronicKidneyDisease"/>
+        <contributesTo rdf:resource="https://purl.archive.org/cope#DiabetesMellitus"/>
+        <hasCharacteristic rdf:resource="https://purl.archive.org/cope#ElevatedBloodPressure"/>
+        <isIdentifiedBy rdf:resource="https://purl.archive.org/cope#Fatigue"/>
+        <leadsTo rdf:resource="https://purl.archive.org/cope#Stroke"/>
+        <observedBy rdf:resource="https://purl.archive.org/cope#DiastolicBPSource"/>
+        <observedBy rdf:resource="https://purl.archive.org/cope#SystolicBPSource"/>
+        <hasDiseaseName>Hypertension</hasDiseaseName>
+        <hasRiskFactorName>Hypertension</hasRiskFactorName>
         <rdfs:label>Hypertension</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1814,13 +2145,14 @@
 
     <!-- https://purl.archive.org/cope#HypertensionHealthTrajectory -->
 
+
     <owl:NamedIndividual rdf:about="https://purl.archive.org/cope#HypertensionHealthTrajectory">
         <rdf:type rdf:resource="https://purl.archive.org/cope#HealthTrajectory"/>
-        <COPE:hasPhase rdf:resource="https://purl.archive.org/cope#VerifiedTrajectoryPhase"/>
-        <COPE:hasEndDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-11-01T12:00:00</COPE:hasEndDate>
-        <COPE:hasHealthTrajectoryName>Hypertension Health Trajectory</COPE:hasHealthTrajectoryName>
-        <COPE:hasParticipationRank rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</COPE:hasParticipationRank>
-        <COPE:hasStartDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-11-01T09:00:00</COPE:hasStartDate>
+        <hasPhase rdf:resource="https://purl.archive.org/cope#VerifiedTrajectoryPhase"/>
+        <hasEndDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-11-01T12:00:00</hasEndDate>
+        <hasHealthTrajectoryName>Hypertension Health Trajectory</hasHealthTrajectoryName>
+        <hasParticipationRank rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</hasParticipationRank>
+        <hasStartDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-11-01T09:00:00</hasStartDate>
         <rdfs:label>Hypertension Health Trajectory</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1828,17 +2160,18 @@
 
     <!-- https://purl.archive.org/cope#HypertensionObservationEvent -->
 
+
     <owl:NamedIndividual rdf:about="https://purl.archive.org/cope#HypertensionObservationEvent">
         <rdf:type rdf:resource="https://purl.archive.org/cope#ObservationEvent"/>
         <resource:SIO_000095 rdf:resource="https://purl.archive.org/cope#CKDHealthTrajectory"/>
         <resource:SIO_000095 rdf:resource="https://purl.archive.org/cope#DiabetesHealthTrajectory"/>
         <resource:SIO_000095 rdf:resource="https://purl.archive.org/cope#HypertensionHealthTrajectory"/>
         <resource:SIO_000248 rdf:resource="https://purl.archive.org/cope#FastingBloodGlucoseObservationEvent"/>
-        <COPE:isPairedWith rdf:resource="https://purl.archive.org/cope#AnthonyPatel"/>
-        <COPE:isPairedWith rdf:resource="https://purl.archive.org/cope#JohnPaul"/>
-        <COPE:hasObservationEventName>Hypertension Observation Event</COPE:hasObservationEventName>
-        <COPE:observationTimestamp rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTimeStamp">2025-07-03T08:30:00Z</COPE:observationTimestamp>
-        <COPE:observationValue>Systolic_145_Diastolic_95</COPE:observationValue>
+        <isPairedWith rdf:resource="https://purl.archive.org/cope#AnthonyPatel"/>
+        <isPairedWith rdf:resource="https://purl.archive.org/cope#JohnPaul"/>
+        <hasObservationEventName>Hypertension Observation Event</hasObservationEventName>
+        <observationTimestamp rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTimeStamp">2025-07-03T08:30:00Z</observationTimestamp>
+        <observationValue>Systolic_145_Diastolic_95</observationValue>
         <rdfs:label>Hypertension Observation Event</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1846,12 +2179,13 @@
 
     <!-- https://purl.archive.org/cope#IncreasePhysicalActivity -->
 
+
     <owl:NamedIndividual rdf:about="https://purl.archive.org/cope#IncreasePhysicalActivity">
         <rdf:type rdf:resource="https://purl.archive.org/cope#Behavioral"/>
-        <COPE:appliedIn rdf:resource="https://purl.archive.org/cope#HypertensionObservationEvent"/>
-        <COPE:appliedTo rdf:resource="https://purl.archive.org/cope#DiabetesMellitus"/>
-        <COPE:targets rdf:resource="https://purl.archive.org/cope#Hypertension"/>
-        <COPE:hasInterventionName>Increase Physical Activity</COPE:hasInterventionName>
+        <appliedIn rdf:resource="https://purl.archive.org/cope#HypertensionObservationEvent"/>
+        <appliedTo rdf:resource="https://purl.archive.org/cope#DiabetesMellitus"/>
+        <targets rdf:resource="https://purl.archive.org/cope#Hypertension"/>
+        <hasInterventionName>Increase Physical Activity</hasInterventionName>
         <rdfs:label>Increase Physical Activity</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1859,9 +2193,10 @@
 
     <!-- https://purl.archive.org/cope#InsulinDysfunction -->
 
+
     <owl:NamedIndividual rdf:about="https://purl.archive.org/cope#InsulinDysfunction">
         <rdf:type rdf:resource="https://purl.archive.org/cope#DiseaseCharacteristic"/>
-        <COPE:hasDiseaseCharacteristicName>Insulin Dysfunction</COPE:hasDiseaseCharacteristicName>
+        <hasDiseaseCharacteristicName>Insulin Dysfunction</hasDiseaseCharacteristicName>
         <rdfs:label>Insulin Dysfunction</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1869,15 +2204,16 @@
 
     <!-- https://purl.archive.org/cope#JohnPaul -->
 
+
     <owl:NamedIndividual rdf:about="https://purl.archive.org/cope#JohnPaul">
         <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000498"/>
-        <COPE:hasCharacteristic rdf:resource="https://purl.archive.org/cope#BehavJohnPaul"/>
-        <COPE:hasCharacteristic rdf:resource="https://purl.archive.org/cope#BioJohnPaul"/>
-        <COPE:hasCharacteristic rdf:resource="https://purl.archive.org/cope#DemoJohnPaul"/>
-        <COPE:hasCharacteristic rdf:resource="https://purl.archive.org/cope#GeoJohnPaul"/>
-        <COPE:hasCharacteristic rdf:resource="https://purl.archive.org/cope#PsychJohnPaul"/>
-        <COPE:hasRiskFactor rdf:resource="https://purl.archive.org/cope#Hypertension"/>
-        <COPE:hasFullName>John Paul</COPE:hasFullName>
+        <hasCharacteristic rdf:resource="https://purl.archive.org/cope#BehavJohnPaul"/>
+        <hasCharacteristic rdf:resource="https://purl.archive.org/cope#BioJohnPaul"/>
+        <hasCharacteristic rdf:resource="https://purl.archive.org/cope#DemoJohnPaul"/>
+        <hasCharacteristic rdf:resource="https://purl.archive.org/cope#GeoJohnPaul"/>
+        <hasCharacteristic rdf:resource="https://purl.archive.org/cope#PsychJohnPaul"/>
+        <hasRiskFactor rdf:resource="https://purl.archive.org/cope#Hypertension"/>
+        <hasFullName>John Paul</hasFullName>
         <rdfs:label>John Paul</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1885,9 +2221,10 @@
 
     <!-- https://purl.archive.org/cope#KidneyFailure -->
 
+
     <owl:NamedIndividual rdf:about="https://purl.archive.org/cope#KidneyFailure">
         <rdf:type rdf:resource="https://purl.archive.org/cope#DiseaseOutcome"/>
-        <COPE:hasDiseaseOutcomeName>Kidney Failure</COPE:hasDiseaseOutcomeName>
+        <hasDiseaseOutcomeName>Kidney Failure</hasDiseaseOutcomeName>
         <rdfs:label>Kidney Failure</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1895,16 +2232,17 @@
 
     <!-- https://purl.archive.org/cope#LifestyleImprovementPlan -->
 
+
     <owl:NamedIndividual rdf:about="https://purl.archive.org/cope#LifestyleImprovementPlan">
         <rdf:type rdf:resource="https://purl.archive.org/cope#Behavioral"/>
-        <COPE:appliedIn rdf:resource="https://purl.archive.org/cope#BMIObservationEvent"/>
-        <COPE:appliedIn rdf:resource="https://purl.archive.org/cope#FastingBloodGlucoseObservationEvent"/>
-        <COPE:appliedTo rdf:resource="https://purl.archive.org/cope#DiabetesMellitus"/>
-        <COPE:appliedTo rdf:resource="https://purl.archive.org/cope#Hypertension"/>
-        <COPE:targets rdf:resource="https://purl.archive.org/cope#BloodSugar"/>
-        <COPE:targets rdf:resource="https://purl.archive.org/cope#Fatigue"/>
-        <COPE:targets rdf:resource="https://purl.archive.org/cope#Obesity"/>
-        <COPE:hasInterventionName>Lifestyle Improvement Plan</COPE:hasInterventionName>
+        <appliedIn rdf:resource="https://purl.archive.org/cope#BMIObservationEvent"/>
+        <appliedIn rdf:resource="https://purl.archive.org/cope#FastingBloodGlucoseObservationEvent"/>
+        <appliedTo rdf:resource="https://purl.archive.org/cope#DiabetesMellitus"/>
+        <appliedTo rdf:resource="https://purl.archive.org/cope#Hypertension"/>
+        <targets rdf:resource="https://purl.archive.org/cope#BloodSugar"/>
+        <targets rdf:resource="https://purl.archive.org/cope#Fatigue"/>
+        <targets rdf:resource="https://purl.archive.org/cope#Obesity"/>
+        <hasInterventionName>Lifestyle Improvement Plan</hasInterventionName>
         <rdfs:label>Lifestyle Improvement Plan</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1912,14 +2250,15 @@
 
     <!-- https://purl.archive.org/cope#LungCancer -->
 
+
     <owl:NamedIndividual rdf:about="https://purl.archive.org/cope#LungCancer">
         <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_010299"/>
         <resource:SIO_000068 rdf:resource="https://purl.archive.org/cope#COD5"/>
-        <COPE:hasCharacteristic rdf:resource="https://purl.archive.org/cope#UncontrolledCellGrowth"/>
-        <COPE:isIdentifiedBy rdf:resource="https://purl.archive.org/cope#PersistentCough"/>
-        <COPE:isIdentifiedBy rdf:resource="https://purl.archive.org/cope#ShortnessOfBreath"/>
-        <COPE:leadsTo rdf:resource="https://purl.archive.org/cope#RespiratoryFailure"/>
-        <COPE:hasDiseaseName>Lung Cancer</COPE:hasDiseaseName>
+        <hasCharacteristic rdf:resource="https://purl.archive.org/cope#UncontrolledCellGrowth"/>
+        <isIdentifiedBy rdf:resource="https://purl.archive.org/cope#PersistentCough"/>
+        <isIdentifiedBy rdf:resource="https://purl.archive.org/cope#ShortnessOfBreath"/>
+        <leadsTo rdf:resource="https://purl.archive.org/cope#RespiratoryFailure"/>
+        <hasDiseaseName>Lung Cancer</hasDiseaseName>
         <rdfs:label>Lung Cancer</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1927,13 +2266,14 @@
 
     <!-- https://purl.archive.org/cope#LungCancerHealthTrajectory -->
 
+
     <owl:NamedIndividual rdf:about="https://purl.archive.org/cope#LungCancerHealthTrajectory">
         <rdf:type rdf:resource="https://purl.archive.org/cope#HealthTrajectory"/>
-        <COPE:hasPhase rdf:resource="https://purl.archive.org/cope#VerifiedTrajectoryPhase"/>
-        <COPE:hasEndDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-12-01T12:20:00</COPE:hasEndDate>
-        <COPE:hasHealthTrajectoryName>Lung Cancer Health Trajectory</COPE:hasHealthTrajectoryName>
-        <COPE:hasParticipationRank rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</COPE:hasParticipationRank>
-        <COPE:hasStartDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-01T09:00:00</COPE:hasStartDate>
+        <hasPhase rdf:resource="https://purl.archive.org/cope#VerifiedTrajectoryPhase"/>
+        <hasEndDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-12-01T12:20:00</hasEndDate>
+        <hasHealthTrajectoryName>Lung Cancer Health Trajectory</hasHealthTrajectoryName>
+        <hasParticipationRank rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</hasParticipationRank>
+        <hasStartDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-01T09:00:00</hasStartDate>
         <rdfs:label>Lung Cancer Health Trajectory</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1941,9 +2281,10 @@
 
     <!-- https://purl.archive.org/cope#MSE -->
 
+
     <owl:NamedIndividual rdf:about="https://purl.archive.org/cope#MSE">
         <rdf:type rdf:resource="https://purl.archive.org/cope#PerformanceMetric"/>
-        <COPE:hasPerformanceMetricName>Mean Squared Error (MSE)</COPE:hasPerformanceMetricName>
+        <hasPerformanceMetricName>Mean Squared Error (MSE)</hasPerformanceMetricName>
         <rdfs:label>Mean Squared Error (MSE)</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1951,17 +2292,18 @@
 
     <!-- https://purl.archive.org/cope#MaryJane -->
 
+
     <owl:NamedIndividual rdf:about="https://purl.archive.org/cope#MaryJane">
         <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000498"/>
-        <COPE:hasCharacteristic rdf:resource="https://purl.archive.org/cope#BehavMaryJane"/>
-        <COPE:hasCharacteristic rdf:resource="https://purl.archive.org/cope#BioMaryJane"/>
-        <COPE:hasCharacteristic rdf:resource="https://purl.archive.org/cope#DemoMaryJane"/>
-        <COPE:hasCharacteristic rdf:resource="https://purl.archive.org/cope#GeoMaryJane"/>
-        <COPE:hasCharacteristic rdf:resource="https://purl.archive.org/cope#PsychMaryJane"/>
-        <COPE:hasHealthTrajectory rdf:resource="https://purl.archive.org/cope#DiabetesHealthTrajectory"/>
-        <COPE:hasRiskFactor rdf:resource="https://purl.archive.org/cope#AbnormalCSNA"/>
-        <COPE:hasRiskFactor rdf:resource="https://purl.archive.org/cope#ECGAnomalies"/>
-        <COPE:hasFullName>Mary Jane</COPE:hasFullName>
+        <hasCharacteristic rdf:resource="https://purl.archive.org/cope#BehavMaryJane"/>
+        <hasCharacteristic rdf:resource="https://purl.archive.org/cope#BioMaryJane"/>
+        <hasCharacteristic rdf:resource="https://purl.archive.org/cope#DemoMaryJane"/>
+        <hasCharacteristic rdf:resource="https://purl.archive.org/cope#GeoMaryJane"/>
+        <hasCharacteristic rdf:resource="https://purl.archive.org/cope#PsychMaryJane"/>
+        <hasHealthTrajectory rdf:resource="https://purl.archive.org/cope#DiabetesHealthTrajectory"/>
+        <hasRiskFactor rdf:resource="https://purl.archive.org/cope#AbnormalCSNA"/>
+        <hasRiskFactor rdf:resource="https://purl.archive.org/cope#ECGAnomalies"/>
+        <hasFullName>Mary Jane</hasFullName>
         <rdfs:label>Mary Jane</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1969,9 +2311,10 @@
 
     <!-- https://purl.archive.org/cope#MicroneurographySystem -->
 
+
     <owl:NamedIndividual rdf:about="https://purl.archive.org/cope#MicroneurographySystem">
         <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_001236"/>
-        <COPE:hasDeviceName>Microneurography System</COPE:hasDeviceName>
+        <hasDeviceName>Microneurography System</hasDeviceName>
         <rdfs:label>Microneurography System</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1979,10 +2322,11 @@
 
     <!-- https://purl.archive.org/cope#MobileAppSurvey -->
 
+
     <owl:NamedIndividual rdf:about="https://purl.archive.org/cope#MobileAppSurvey">
         <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_001236"/>
-        <COPE:hasMeasurementUnit rdf:resource="https://purl.archive.org/cope#SmokingStatusCategory"/>
-        <COPE:hasDeviceName>Mobile App Survey</COPE:hasDeviceName>
+        <hasMeasurementUnit rdf:resource="https://purl.archive.org/cope#SmokingStatusCategory"/>
+        <hasDeviceName>Mobile App Survey</hasDeviceName>
         <rdfs:label>Mobile App Survey</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1990,13 +2334,14 @@
 
     <!-- https://purl.archive.org/cope#Obesity -->
 
+
     <owl:NamedIndividual rdf:about="https://purl.archive.org/cope#Obesity">
         <rdf:type rdf:resource="https://purl.archive.org/cope#RiskFactor"/>
-        <COPE:contributesTo rdf:resource="https://purl.archive.org/cope#DiabetesMellitus"/>
-        <COPE:contributesTo rdf:resource="https://purl.archive.org/cope#Hypertension"/>
-        <COPE:observedBy rdf:resource="https://purl.archive.org/cope#HeightMeasurementSource"/>
-        <COPE:observedBy rdf:resource="https://purl.archive.org/cope#WeightMeasurementSource"/>
-        <COPE:hasRiskFactorName>Obesity</COPE:hasRiskFactorName>
+        <contributesTo rdf:resource="https://purl.archive.org/cope#DiabetesMellitus"/>
+        <contributesTo rdf:resource="https://purl.archive.org/cope#Hypertension"/>
+        <observedBy rdf:resource="https://purl.archive.org/cope#HeightMeasurementSource"/>
+        <observedBy rdf:resource="https://purl.archive.org/cope#WeightMeasurementSource"/>
+        <hasRiskFactorName>Obesity</hasRiskFactorName>
         <rdfs:label>Obesity</rdfs:label>
     </owl:NamedIndividual>
     
@@ -2004,11 +2349,12 @@
 
     <!-- https://purl.archive.org/cope#PersistentCough -->
 
+
     <owl:NamedIndividual rdf:about="https://purl.archive.org/cope#PersistentCough">
         <rdf:type rdf:resource="https://purl.archive.org/cope#Symptom"/>
-        <COPE:observedBy rdf:resource="https://purl.archive.org/cope#SelfReportedSmokingSource"/>
-        <COPE:observedIn rdf:resource="https://purl.archive.org/cope#SmokingStatusObservationEvent"/>
-        <COPE:hasSymptomName>Persistent Cough</COPE:hasSymptomName>
+        <observedBy rdf:resource="https://purl.archive.org/cope#SelfReportedSmokingSource"/>
+        <observedIn rdf:resource="https://purl.archive.org/cope#SmokingStatusObservationEvent"/>
+        <hasSymptomName>Persistent Cough</hasSymptomName>
         <rdfs:label>Persistent Cough</rdfs:label>
     </owl:NamedIndividual>
     
@@ -2016,9 +2362,10 @@
 
     <!-- https://purl.archive.org/cope#PredictedTrajectoryPhase -->
 
+
     <owl:NamedIndividual rdf:about="https://purl.archive.org/cope#PredictedTrajectoryPhase">
         <rdf:type rdf:resource="https://purl.archive.org/cope#TrajectoryPhase"/>
-        <COPE:hasTrajectoryPhaseName>Predicted</COPE:hasTrajectoryPhaseName>
+        <hasTrajectoryPhaseName>Predicted</hasTrajectoryPhaseName>
         <rdfs:label>Predicted</rdfs:label>
     </owl:NamedIndividual>
     
@@ -2026,9 +2373,10 @@
 
     <!-- https://purl.archive.org/cope#PsychAbuBakar -->
 
+
     <owl:NamedIndividual rdf:about="https://purl.archive.org/cope#PsychAbuBakar">
         <rdf:type rdf:resource="https://purl.archive.org/cope#Psychographic"/>
-        <COPE:hasHealthAttitude>Proactive</COPE:hasHealthAttitude>
+        <hasHealthAttitude>Proactive</hasHealthAttitude>
         <rdfs:label>Abu Bakar Psychographic</rdfs:label>
     </owl:NamedIndividual>
     
@@ -2036,9 +2384,10 @@
 
     <!-- https://purl.archive.org/cope#PsychAnthonyPatel -->
 
+
     <owl:NamedIndividual rdf:about="https://purl.archive.org/cope#PsychAnthonyPatel">
         <rdf:type rdf:resource="https://purl.archive.org/cope#Psychographic"/>
-        <COPE:hasHealthAttitude>Proactive</COPE:hasHealthAttitude>
+        <hasHealthAttitude>Proactive</hasHealthAttitude>
         <rdfs:label>Anthony Patel Psychographic</rdfs:label>
     </owl:NamedIndividual>
     
@@ -2046,9 +2395,10 @@
 
     <!-- https://purl.archive.org/cope#PsychJohnPaul -->
 
+
     <owl:NamedIndividual rdf:about="https://purl.archive.org/cope#PsychJohnPaul">
         <rdf:type rdf:resource="https://purl.archive.org/cope#Psychographic"/>
-        <COPE:hasHealthAttitude>Proactive</COPE:hasHealthAttitude>
+        <hasHealthAttitude>Proactive</hasHealthAttitude>
         <rdfs:label>John Paul Psychographic</rdfs:label>
     </owl:NamedIndividual>
     
@@ -2056,9 +2406,10 @@
 
     <!-- https://purl.archive.org/cope#PsychMaryJane -->
 
+
     <owl:NamedIndividual rdf:about="https://purl.archive.org/cope#PsychMaryJane">
         <rdf:type rdf:resource="https://purl.archive.org/cope#Psychographic"/>
-        <COPE:hasHealthAttitude>Committed</COPE:hasHealthAttitude>
+        <hasHealthAttitude>Committed</hasHealthAttitude>
         <rdfs:label>Mary Jane Psychographic</rdfs:label>
     </owl:NamedIndividual>
     
@@ -2066,10 +2417,11 @@
 
     <!-- https://purl.archive.org/cope#QuitSmoking -->
 
+
     <owl:NamedIndividual rdf:about="https://purl.archive.org/cope#QuitSmoking">
         <rdf:type rdf:resource="https://purl.archive.org/cope#Behavioral"/>
-        <COPE:appliedTo rdf:resource="https://purl.archive.org/cope#DiabetesMellitus"/>
-        <COPE:hasInterventionName>Quit Smoking</COPE:hasInterventionName>
+        <appliedTo rdf:resource="https://purl.archive.org/cope#DiabetesMellitus"/>
+        <hasInterventionName>Quit Smoking</hasInterventionName>
         <rdfs:label>Quit Smoking</rdfs:label>
     </owl:NamedIndividual>
     
@@ -2077,15 +2429,16 @@
 
     <!-- https://purl.archive.org/cope#RFEnhancedFeedForwardNetwork -->
 
+
     <owl:NamedIndividual rdf:about="https://purl.archive.org/cope#RFEnhancedFeedForwardNetwork">
         <rdf:type rdf:resource="https://purl.archive.org/cope#AIModel"/>
-        <COPE:evaluatedBy rdf:resource="https://purl.archive.org/cope#F1-Score"/>
-        <COPE:hasExplanation rdf:resource="https://purl.archive.org/cope#Explanation003"/>
-        <COPE:includes rdf:resource="https://purl.archive.org/cope#DiastolicBP"/>
-        <COPE:includes rdf:resource="https://purl.archive.org/cope#SystolicBP"/>
-        <COPE:trainedOn rdf:resource="https://purl.archive.org/cope#Dataset003"/>
-        <COPE:usesApproach rdf:resource="https://purl.archive.org/cope#EnsembleLearning"/>
-        <COPE:hasAIModelName>RF Enhanced Feed Forward Network</COPE:hasAIModelName>
+        <evaluatedBy rdf:resource="https://purl.archive.org/cope#F1-Score"/>
+        <hasExplanation rdf:resource="https://purl.archive.org/cope#Explanation003"/>
+        <includes rdf:resource="https://purl.archive.org/cope#DiastolicBP"/>
+        <includes rdf:resource="https://purl.archive.org/cope#SystolicBP"/>
+        <trainedOn rdf:resource="https://purl.archive.org/cope#Dataset003"/>
+        <usesApproach rdf:resource="https://purl.archive.org/cope#EnsembleLearning"/>
+        <hasAIModelName>RF Enhanced Feed Forward Network</hasAIModelName>
         <rdfs:label>RF Enhanced Feed Forward Network</rdfs:label>
     </owl:NamedIndividual>
     
@@ -2093,17 +2446,18 @@
 
     <!-- https://purl.archive.org/cope#RandomForest -->
 
+
     <owl:NamedIndividual rdf:about="https://purl.archive.org/cope#RandomForest">
         <rdf:type rdf:resource="https://purl.archive.org/cope#AIModel"/>
-        <COPE:evaluatedBy rdf:resource="https://purl.archive.org/cope#F1-Score"/>
-        <COPE:hasExplanation rdf:resource="https://purl.archive.org/cope#Explanation001"/>
-        <COPE:includes rdf:resource="https://purl.archive.org/cope#BMI"/>
-        <COPE:includes rdf:resource="https://purl.archive.org/cope#BloodSugarLevel"/>
-        <COPE:includes rdf:resource="https://purl.archive.org/cope#DiastolicBP"/>
-        <COPE:includes rdf:resource="https://purl.archive.org/cope#SystolicBP"/>
-        <COPE:trainedOn rdf:resource="https://purl.archive.org/cope#Dataset001"/>
-        <COPE:usesApproach rdf:resource="https://purl.archive.org/cope#EnsembleLearning"/>
-        <COPE:hasAIModelName>Random Forest</COPE:hasAIModelName>
+        <evaluatedBy rdf:resource="https://purl.archive.org/cope#F1-Score"/>
+        <hasExplanation rdf:resource="https://purl.archive.org/cope#Explanation001"/>
+        <includes rdf:resource="https://purl.archive.org/cope#BMI"/>
+        <includes rdf:resource="https://purl.archive.org/cope#BloodSugarLevel"/>
+        <includes rdf:resource="https://purl.archive.org/cope#DiastolicBP"/>
+        <includes rdf:resource="https://purl.archive.org/cope#SystolicBP"/>
+        <trainedOn rdf:resource="https://purl.archive.org/cope#Dataset001"/>
+        <usesApproach rdf:resource="https://purl.archive.org/cope#EnsembleLearning"/>
+        <hasAIModelName>Random Forest</hasAIModelName>
         <rdfs:label>Random Forest</rdfs:label>
     </owl:NamedIndividual>
     
@@ -2111,9 +2465,10 @@
 
     <!-- https://purl.archive.org/cope#ReducedGFR -->
 
+
     <owl:NamedIndividual rdf:about="https://purl.archive.org/cope#ReducedGFR">
         <rdf:type rdf:resource="https://purl.archive.org/cope#DiseaseCharacteristic"/>
-        <COPE:hasDiseaseCharacteristicName>Reduced Glomerular Filtration Rate</COPE:hasDiseaseCharacteristicName>
+        <hasDiseaseCharacteristicName>Reduced Glomerular Filtration Rate</hasDiseaseCharacteristicName>
         <rdfs:label>Reduced Glomerular Filtration Rate</rdfs:label>
     </owl:NamedIndividual>
     
@@ -2121,15 +2476,16 @@
 
     <!-- https://purl.archive.org/cope#ResearchArticle001 -->
 
+
     <owl:NamedIndividual rdf:about="https://purl.archive.org/cope#ResearchArticle001">
         <rdf:type rdf:resource="https://purl.archive.org/cope#ResearchArticle"/>
         <resource:SIO_000563 rdf:resource="https://purl.archive.org/cope#DietEducation"/>
         <resource:SIO_000563 rdf:resource="https://purl.archive.org/cope#IncreasePhysicalActivity"/>
         <resource:SIO_000563 rdf:resource="https://purl.archive.org/cope#QuitSmoking"/>
         <resource:SIO_000563 rdf:resource="https://purl.archive.org/cope#Self-ManagementEducation"/>
-        <COPE:proposes rdf:resource="https://purl.archive.org/cope#RandomForest"/>
-        <COPE:uses rdf:resource="https://purl.archive.org/cope#Dataset001"/>
-        <COPE:hasResearchArticleName>Ginting, J., Suci, T., Ginting, C., &amp; Girsang, E. (2023). Early detection system of risk factors for diabetes mellitus type 2 utilization of machine learning-random forest. Journal of Family &amp; Community Medicine, 30(3), 171–179. https://doi.org/10.4103/jfcm.jfcm_33_23</COPE:hasResearchArticleName>
+        <proposes rdf:resource="https://purl.archive.org/cope#RandomForest"/>
+        <uses rdf:resource="https://purl.archive.org/cope#Dataset001"/>
+        <hasResearchArticleName>Ginting, J., Suci, T., Ginting, C., &amp; Girsang, E. (2023). Early detection system of risk factors for diabetes mellitus type 2 utilization of machine learning-random forest. Journal of Family &amp; Community Medicine, 30(3), 171–179. https://doi.org/10.4103/jfcm.jfcm_33_23</hasResearchArticleName>
         <rdfs:label>Ginting, J., Suci, T., Ginting, C., &amp; Girsang, E. (2023). Early detection system of risk factors for diabetes mellitus type 2 utilization of machine learning-random forest. Journal of Family &amp; Community Medicine, 30(3), 171–179. https://doi.org/10.4103/jfcm.jfcm_33_23</rdfs:label>
     </owl:NamedIndividual>
     
@@ -2137,13 +2493,14 @@
 
     <!-- https://purl.archive.org/cope#ResearchArticle2 -->
 
+
     <owl:NamedIndividual rdf:about="https://purl.archive.org/cope#ResearchArticle2">
         <rdf:type rdf:resource="https://purl.archive.org/cope#ResearchArticle"/>
         <resource:SIO_000563 rdf:resource="https://purl.archive.org/cope#CardiacRehab"/>
         <resource:SIO_000563 rdf:resource="https://purl.archive.org/cope#StatinTreatment"/>
-        <COPE:proposes rdf:resource="https://purl.archive.org/cope#AIHAD"/>
-        <COPE:uses rdf:resource="https://purl.archive.org/cope#Dataset002"/>
-        <COPE:hasResearchArticleName>Terzi, M. B., &amp; Arikan, O. (2024). Machine learning based hybrid anomaly detection technique for automatic diagnosis of cardiovascular diseases using cardiac sympathetic nerve activity and electrocardiogram. Biomedizinische Technik, 69(1), 79–109. https://doi.org/10.1515/bmt-2022-0406</COPE:hasResearchArticleName>
+        <proposes rdf:resource="https://purl.archive.org/cope#AIHAD"/>
+        <uses rdf:resource="https://purl.archive.org/cope#Dataset002"/>
+        <hasResearchArticleName>Terzi, M. B., &amp; Arikan, O. (2024). Machine learning based hybrid anomaly detection technique for automatic diagnosis of cardiovascular diseases using cardiac sympathetic nerve activity and electrocardiogram. Biomedizinische Technik, 69(1), 79–109. https://doi.org/10.1515/bmt-2022-0406</hasResearchArticleName>
         <rdfs:label>Terzi, M. B., &amp; Arikan, O. (2024). Machine learning based hybrid anomaly detection technique for automatic diagnosis of cardiovascular diseases using cardiac sympathetic nerve activity and electrocardiogram. Biomedizinische Technik, 69(1), 79–109. https://doi.org/10.1515/bmt-2022-0406</rdfs:label>
     </owl:NamedIndividual>
     
@@ -2151,11 +2508,12 @@
 
     <!-- https://purl.archive.org/cope#ResearchArticle3 -->
 
+
     <owl:NamedIndividual rdf:about="https://purl.archive.org/cope#ResearchArticle3">
         <rdf:type rdf:resource="https://purl.archive.org/cope#ResearchArticle"/>
-        <COPE:proposes rdf:resource="https://purl.archive.org/cope#RFEnhancedFeedForwardNetwork"/>
-        <COPE:uses rdf:resource="https://purl.archive.org/cope#Dataset003"/>
-        <COPE:hasResearchArticleName>Bahrami, P., Tanbakuchi, D., Afzalaghaee, M., Ghayour-Mobarhan, M., &amp; Esmaily, H. (2024). Development of risk models for early detection and prediction of chronic kidney disease in clinical settings. Scientific Reports, 14(1), 32136–10. https://doi.org/10.1038/s41598-024-83973-5</COPE:hasResearchArticleName>
+        <proposes rdf:resource="https://purl.archive.org/cope#RFEnhancedFeedForwardNetwork"/>
+        <uses rdf:resource="https://purl.archive.org/cope#Dataset003"/>
+        <hasResearchArticleName>Bahrami, P., Tanbakuchi, D., Afzalaghaee, M., Ghayour-Mobarhan, M., &amp; Esmaily, H. (2024). Development of risk models for early detection and prediction of chronic kidney disease in clinical settings. Scientific Reports, 14(1), 32136–10. https://doi.org/10.1038/s41598-024-83973-5</hasResearchArticleName>
         <rdfs:label>Bahrami, P., Tanbakuchi, D., Afzalaghaee, M., Ghayour-Mobarhan, M., &amp; Esmaily, H. (2024). Development of risk models for early detection and prediction of chronic kidney disease in clinical settings. Scientific Reports, 14(1), 32136–10. https://doi.org/10.1038/s41598-024-83973-5</rdfs:label>
     </owl:NamedIndividual>
     
@@ -2163,12 +2521,13 @@
 
     <!-- https://purl.archive.org/cope#ResearchArticle4 -->
 
+
     <owl:NamedIndividual rdf:about="https://purl.archive.org/cope#ResearchArticle4">
         <rdf:type rdf:resource="https://purl.archive.org/cope#ResearchArticle"/>
         <resource:SIO_000563 rdf:resource="https://purl.archive.org/cope#LifestyleImprovementPlan"/>
-        <COPE:proposes rdf:resource="https://purl.archive.org/cope#ExplainableAI"/>
-        <COPE:uses rdf:resource="https://purl.archive.org/cope#Dataset004"/>
-        <COPE:hasResearchArticleName>Islam, H., Iqbal, Md. S., &amp; Hossain, M. M. (2025). Blood pressure abnormality detection and interpretation utilizing explainable artificial intelligence. Intelligent Medicine, 5(1), 54–65. https://doi.org/10.1016/j.imed.2024.09.005</COPE:hasResearchArticleName>
+        <proposes rdf:resource="https://purl.archive.org/cope#ExplainableAI"/>
+        <uses rdf:resource="https://purl.archive.org/cope#Dataset004"/>
+        <hasResearchArticleName>Islam, H., Iqbal, Md. S., &amp; Hossain, M. M. (2025). Blood pressure abnormality detection and interpretation utilizing explainable artificial intelligence. Intelligent Medicine, 5(1), 54–65. https://doi.org/10.1016/j.imed.2024.09.005</hasResearchArticleName>
         <rdfs:label>Islam, H., Iqbal, Md. S., &amp; Hossain, M. M. (2025). Blood pressure abnormality detection and interpretation utilizing explainable artificial intelligence. Intelligent Medicine, 5(1), 54–65. https://doi.org/10.1016/j.imed.2024.09.005</rdfs:label>
     </owl:NamedIndividual>
     
@@ -2176,11 +2535,12 @@
 
     <!-- https://purl.archive.org/cope#ResearchArticle5 -->
 
+
     <owl:NamedIndividual rdf:about="https://purl.archive.org/cope#ResearchArticle5">
         <rdf:type rdf:resource="https://purl.archive.org/cope#ResearchArticle"/>
-        <COPE:proposes rdf:resource="https://purl.archive.org/cope#TPOT-optimized_ensemble_model"/>
-        <COPE:uses rdf:resource="https://purl.archive.org/cope#Dataset005"/>
-        <COPE:hasResearchArticleName>Levi, M., Lazebnik, T., Kushnir, S., Yosef, N., &amp; Shlomi, D. (2024). Machine learning computational model to predict lung cancer using electronic medical records. Cancer Epidemiology, 92, 102631-. https://doi.org/10.1016/j.canep.2024.102631</COPE:hasResearchArticleName>
+        <proposes rdf:resource="https://purl.archive.org/cope#TPOT-optimized_ensemble_model"/>
+        <uses rdf:resource="https://purl.archive.org/cope#Dataset005"/>
+        <hasResearchArticleName>Levi, M., Lazebnik, T., Kushnir, S., Yosef, N., &amp; Shlomi, D. (2024). Machine learning computational model to predict lung cancer using electronic medical records. Cancer Epidemiology, 92, 102631-. https://doi.org/10.1016/j.canep.2024.102631</hasResearchArticleName>
         <rdfs:label>Levi, M., Lazebnik, T., Kushnir, S., Yosef, N., &amp; Shlomi, D. (2024). Machine learning computational model to predict lung cancer using electronic medical records. Cancer Epidemiology, 92, 102631-. https://doi.org/10.1016/j.canep.2024.102631</rdfs:label>
     </owl:NamedIndividual>
     
@@ -2188,9 +2548,10 @@
 
     <!-- https://purl.archive.org/cope#RespiratoryFailure -->
 
+
     <owl:NamedIndividual rdf:about="https://purl.archive.org/cope#RespiratoryFailure">
         <rdf:type rdf:resource="https://purl.archive.org/cope#DiseaseOutcome"/>
-        <COPE:hasDiseaseOutcomeName>Respiratory Failure</COPE:hasDiseaseOutcomeName>
+        <hasDiseaseOutcomeName>Respiratory Failure</hasDiseaseOutcomeName>
         <rdfs:label>Respiratory Failure</rdfs:label>
     </owl:NamedIndividual>
     
@@ -2198,10 +2559,11 @@
 
     <!-- https://purl.archive.org/cope#Self-ManagementEducation -->
 
+
     <owl:NamedIndividual rdf:about="https://purl.archive.org/cope#Self-ManagementEducation">
         <rdf:type rdf:resource="https://purl.archive.org/cope#Therapeutic"/>
-        <COPE:appliedTo rdf:resource="https://purl.archive.org/cope#DiabetesMellitus"/>
-        <COPE:hasInterventionName>Self-Management Education</COPE:hasInterventionName>
+        <appliedTo rdf:resource="https://purl.archive.org/cope#DiabetesMellitus"/>
+        <hasInterventionName>Self-Management Education</hasInterventionName>
         <rdfs:label>Self-Management Education</rdfs:label>
     </owl:NamedIndividual>
     
@@ -2209,12 +2571,13 @@
 
     <!-- https://purl.archive.org/cope#SelfReportedSmokingSource -->
 
+
     <owl:NamedIndividual rdf:about="https://purl.archive.org/cope#SelfReportedSmokingSource">
         <rdf:type rdf:resource="https://purl.archive.org/cope#ObservationSource"/>
         <resource:SIO_000095 rdf:resource="https://purl.archive.org/cope#LungCancerHealthTrajectory"/>
-        <COPE:includes rdf:resource="https://purl.archive.org/cope#MobileAppSurvey"/>
-        <COPE:triggers rdf:resource="https://purl.archive.org/cope#SmokingStatusObservationEvent"/>
-        <COPE:hasObservationSourceName>Self Reported Smoking Source</COPE:hasObservationSourceName>
+        <includes rdf:resource="https://purl.archive.org/cope#MobileAppSurvey"/>
+        <triggers rdf:resource="https://purl.archive.org/cope#SmokingStatusObservationEvent"/>
+        <hasObservationSourceName>Self Reported Smoking Source</hasObservationSourceName>
         <rdfs:label>Self Reported Smoking Source</rdfs:label>
     </owl:NamedIndividual>
     
@@ -2222,12 +2585,13 @@
 
     <!-- https://purl.archive.org/cope#ShortnessOfBreath -->
 
+
     <owl:NamedIndividual rdf:about="https://purl.archive.org/cope#ShortnessOfBreath">
         <rdf:type rdf:resource="https://purl.archive.org/cope#Symptom"/>
-        <COPE:getSymptom rdf:resource="https://purl.archive.org/cope#AbuBakar"/>
-        <COPE:getSymptom rdf:resource="https://purl.archive.org/cope#MaryJane"/>
-        <COPE:observedIn rdf:resource="https://purl.archive.org/cope#ECGAnomalyObservationEvent"/>
-        <COPE:hasSymptomName>Shortness Of Breath</COPE:hasSymptomName>
+        <getSymptom rdf:resource="https://purl.archive.org/cope#AbuBakar"/>
+        <getSymptom rdf:resource="https://purl.archive.org/cope#MaryJane"/>
+        <observedIn rdf:resource="https://purl.archive.org/cope#ECGAnomalyObservationEvent"/>
+        <hasSymptomName>Shortness Of Breath</hasSymptomName>
         <rdfs:label>Shortness Of Breath</rdfs:label>
     </owl:NamedIndividual>
     
@@ -2235,11 +2599,12 @@
 
     <!-- https://purl.archive.org/cope#SlowWoundHealing -->
 
+
     <owl:NamedIndividual rdf:about="https://purl.archive.org/cope#SlowWoundHealing">
         <rdf:type rdf:resource="https://purl.archive.org/cope#Symptom"/>
-        <COPE:observedBy rdf:resource="https://purl.archive.org/cope#BloodSugarLevelSource"/>
-        <COPE:observedIn rdf:resource="https://purl.archive.org/cope#FastingBloodGlucoseObservationEvent"/>
-        <COPE:hasSymptomName>Slow Wound Healing</COPE:hasSymptomName>
+        <observedBy rdf:resource="https://purl.archive.org/cope#BloodSugarLevelSource"/>
+        <observedIn rdf:resource="https://purl.archive.org/cope#FastingBloodGlucoseObservationEvent"/>
+        <hasSymptomName>Slow Wound Healing</hasSymptomName>
         <rdfs:label>Slow Wound Healing</rdfs:label>
     </owl:NamedIndividual>
     
@@ -2247,11 +2612,12 @@
 
     <!-- https://purl.archive.org/cope#Smoking -->
 
+
     <owl:NamedIndividual rdf:about="https://purl.archive.org/cope#Smoking">
         <rdf:type rdf:resource="https://purl.archive.org/cope#RiskFactor"/>
-        <COPE:contributesTo rdf:resource="https://purl.archive.org/cope#LungCancer"/>
-        <COPE:observedBy rdf:resource="https://purl.archive.org/cope#SelfReportedSmokingSource"/>
-        <COPE:hasRiskFactorName>Smoking</COPE:hasRiskFactorName>
+        <contributesTo rdf:resource="https://purl.archive.org/cope#LungCancer"/>
+        <observedBy rdf:resource="https://purl.archive.org/cope#SelfReportedSmokingSource"/>
+        <hasRiskFactorName>Smoking</hasRiskFactorName>
         <rdfs:label>Smoking</rdfs:label>
     </owl:NamedIndividual>
     
@@ -2259,13 +2625,14 @@
 
     <!-- https://purl.archive.org/cope#SmokingCessationPrograms -->
 
+
     <owl:NamedIndividual rdf:about="https://purl.archive.org/cope#SmokingCessationPrograms">
         <rdf:type rdf:resource="https://purl.archive.org/cope#Behavioral"/>
-        <COPE:appliedIn rdf:resource="https://purl.archive.org/cope#SmokingStatusObservationEvent"/>
-        <COPE:appliedTo rdf:resource="https://purl.archive.org/cope#LungCancer"/>
-        <COPE:targets rdf:resource="https://purl.archive.org/cope#PersistentCough"/>
-        <COPE:targets rdf:resource="https://purl.archive.org/cope#Smoking"/>
-        <COPE:hasInterventionName>Smoking Cessation Programs</COPE:hasInterventionName>
+        <appliedIn rdf:resource="https://purl.archive.org/cope#SmokingStatusObservationEvent"/>
+        <appliedTo rdf:resource="https://purl.archive.org/cope#LungCancer"/>
+        <targets rdf:resource="https://purl.archive.org/cope#PersistentCough"/>
+        <targets rdf:resource="https://purl.archive.org/cope#Smoking"/>
+        <hasInterventionName>Smoking Cessation Programs</hasInterventionName>
         <rdfs:label>Smoking Cessation Programs</rdfs:label>
     </owl:NamedIndividual>
     
@@ -2273,9 +2640,10 @@
 
     <!-- https://purl.archive.org/cope#SmokingStatus -->
 
+
     <owl:NamedIndividual rdf:about="https://purl.archive.org/cope#SmokingStatus">
         <rdf:type rdf:resource="https://purl.archive.org/cope#InputDataNature"/>
-        <COPE:hasInputDataNatureName>Smoking Status</COPE:hasInputDataNatureName>
+        <hasInputDataNatureName>Smoking Status</hasInputDataNatureName>
         <rdfs:label>Smoking Status</rdfs:label>
     </owl:NamedIndividual>
     
@@ -2283,9 +2651,10 @@
 
     <!-- https://purl.archive.org/cope#SmokingStatusCategory -->
 
+
     <owl:NamedIndividual rdf:about="https://purl.archive.org/cope#SmokingStatusCategory">
         <rdf:type rdf:resource="https://purl.archive.org/cope#MeasurementUnit"/>
-        <COPE:hasMeasurementUnitName>Smoking Status Category</COPE:hasMeasurementUnitName>
+        <hasMeasurementUnitName>Smoking Status Category</hasMeasurementUnitName>
         <rdfs:label>Smoking Status Category</rdfs:label>
     </owl:NamedIndividual>
     
@@ -2293,12 +2662,13 @@
 
     <!-- https://purl.archive.org/cope#SmokingStatusObservationEvent -->
 
+
     <owl:NamedIndividual rdf:about="https://purl.archive.org/cope#SmokingStatusObservationEvent">
         <rdf:type rdf:resource="https://purl.archive.org/cope#ObservationEvent"/>
-        <COPE:isPairedWith rdf:resource="https://purl.archive.org/cope#AbuBakar"/>
-        <COPE:hasObservationEventName>Smoking Status Observation Event</COPE:hasObservationEventName>
-        <COPE:observationTimestamp rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-04T13:15:00</COPE:observationTimestamp>
-        <COPE:observationValue>Current Smoker</COPE:observationValue>
+        <isPairedWith rdf:resource="https://purl.archive.org/cope#AbuBakar"/>
+        <hasObservationEventName>Smoking Status Observation Event</hasObservationEventName>
+        <observationTimestamp rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-04T13:15:00</observationTimestamp>
+        <observationValue>Current Smoker</observationValue>
         <rdfs:label>Smoking Status Observation Event</rdfs:label>
     </owl:NamedIndividual>
     
@@ -2306,9 +2676,10 @@
 
     <!-- https://purl.archive.org/cope#StackedEnsembleWithSHAP -->
 
+
     <owl:NamedIndividual rdf:about="https://purl.archive.org/cope#StackedEnsembleWithSHAP">
         <rdf:type rdf:resource="https://purl.archive.org/cope#ModellingApproach"/>
-        <COPE:hasModellingApproachName>Stacked Ensemble + SHAP</COPE:hasModellingApproachName>
+        <hasModellingApproachName>Stacked Ensemble + SHAP</hasModellingApproachName>
         <rdfs:label>Stacked Ensemble + SHAP</rdfs:label>
     </owl:NamedIndividual>
     
@@ -2316,13 +2687,14 @@
 
     <!-- https://purl.archive.org/cope#StatinTreatment -->
 
+
     <owl:NamedIndividual rdf:about="https://purl.archive.org/cope#StatinTreatment">
         <rdf:type rdf:resource="https://purl.archive.org/cope#Pharmalogical"/>
-        <COPE:appliedIn rdf:resource="https://purl.archive.org/cope#AbnormalCSNAObservationEvent"/>
-        <COPE:appliedTo rdf:resource="https://purl.archive.org/cope#CAD"/>
-        <COPE:targets rdf:resource="https://purl.archive.org/cope#AbnormalCSNA"/>
-        <COPE:targets rdf:resource="https://purl.archive.org/cope#ChestPain"/>
-        <COPE:hasInterventionName>Statin Treatment</COPE:hasInterventionName>
+        <appliedIn rdf:resource="https://purl.archive.org/cope#AbnormalCSNAObservationEvent"/>
+        <appliedTo rdf:resource="https://purl.archive.org/cope#CAD"/>
+        <targets rdf:resource="https://purl.archive.org/cope#AbnormalCSNA"/>
+        <targets rdf:resource="https://purl.archive.org/cope#ChestPain"/>
+        <hasInterventionName>Statin Treatment</hasInterventionName>
         <rdfs:label>Statin Treatment</rdfs:label>
     </owl:NamedIndividual>
     
@@ -2330,9 +2702,10 @@
 
     <!-- https://purl.archive.org/cope#Stroke -->
 
+
     <owl:NamedIndividual rdf:about="https://purl.archive.org/cope#Stroke">
         <rdf:type rdf:resource="https://purl.archive.org/cope#DiseaseOutcome"/>
-        <COPE:hasDiseaseOutcomeName>Stroke</COPE:hasDiseaseOutcomeName>
+        <hasDiseaseOutcomeName>Stroke</hasDiseaseOutcomeName>
         <rdfs:label>Stroke</rdfs:label>
     </owl:NamedIndividual>
     
@@ -2340,9 +2713,10 @@
 
     <!-- https://purl.archive.org/cope#SuddenCardiacDeath -->
 
+
     <owl:NamedIndividual rdf:about="https://purl.archive.org/cope#SuddenCardiacDeath">
         <rdf:type rdf:resource="https://purl.archive.org/cope#DiseaseOutcome"/>
-        <COPE:hasDiseaseOutcomeName>Sudden Cardiac Death</COPE:hasDiseaseOutcomeName>
+        <hasDiseaseOutcomeName>Sudden Cardiac Death</hasDiseaseOutcomeName>
         <rdfs:label>Sudden Cardiac Death</rdfs:label>
     </owl:NamedIndividual>
     
@@ -2350,10 +2724,11 @@
 
     <!-- https://purl.archive.org/cope#Swelling -->
 
+
     <owl:NamedIndividual rdf:about="https://purl.archive.org/cope#Swelling">
         <rdf:type rdf:resource="https://purl.archive.org/cope#Symptom"/>
-        <COPE:getSymptom rdf:resource="https://purl.archive.org/cope#AnthonyPatel"/>
-        <COPE:hasSymptomName>Swelling</COPE:hasSymptomName>
+        <getSymptom rdf:resource="https://purl.archive.org/cope#AnthonyPatel"/>
+        <hasSymptomName>Swelling</hasSymptomName>
         <rdfs:label>Swelling</rdfs:label>
     </owl:NamedIndividual>
     
@@ -2361,9 +2736,10 @@
 
     <!-- https://purl.archive.org/cope#SystolicBP -->
 
+
     <owl:NamedIndividual rdf:about="https://purl.archive.org/cope#SystolicBP">
         <rdf:type rdf:resource="https://purl.archive.org/cope#InputDataNature"/>
-        <COPE:hasInputDataNatureName>Systolic BP</COPE:hasInputDataNatureName>
+        <hasInputDataNatureName>Systolic BP</hasInputDataNatureName>
         <rdfs:label>Systolic BP</rdfs:label>
     </owl:NamedIndividual>
     
@@ -2371,11 +2747,12 @@
 
     <!-- https://purl.archive.org/cope#SystolicBPSource -->
 
+
     <owl:NamedIndividual rdf:about="https://purl.archive.org/cope#SystolicBPSource">
         <rdf:type rdf:resource="https://purl.archive.org/cope#ObservationSource"/>
-        <COPE:includes rdf:resource="https://purl.archive.org/cope#BloodPressureMonitor"/>
-        <COPE:triggers rdf:resource="https://purl.archive.org/cope#HypertensionObservationEvent"/>
-        <COPE:hasObservationSourceName>Systolic BP Source</COPE:hasObservationSourceName>
+        <includes rdf:resource="https://purl.archive.org/cope#BloodPressureMonitor"/>
+        <triggers rdf:resource="https://purl.archive.org/cope#HypertensionObservationEvent"/>
+        <hasObservationSourceName>Systolic BP Source</hasObservationSourceName>
         <rdfs:label>Systolic BP Source</rdfs:label>
     </owl:NamedIndividual>
     
@@ -2383,14 +2760,15 @@
 
     <!-- https://purl.archive.org/cope#TPOT-optimized_ensemble_model -->
 
+
     <owl:NamedIndividual rdf:about="https://purl.archive.org/cope#TPOT-optimized_ensemble_model">
         <rdf:type rdf:resource="https://purl.archive.org/cope#AIModel"/>
-        <COPE:evaluatedBy rdf:resource="https://purl.archive.org/cope#F1-Score"/>
-        <COPE:hasExplanation rdf:resource="https://purl.archive.org/cope#Explanation5"/>
-        <COPE:includes rdf:resource="https://purl.archive.org/cope#SmokingStatus"/>
-        <COPE:trainedOn rdf:resource="https://purl.archive.org/cope#Dataset005"/>
-        <COPE:usesApproach rdf:resource="https://purl.archive.org/cope#RandomForest+XGBoost"/>
-        <COPE:hasAIModelName>TPOT-optimized ensemble model</COPE:hasAIModelName>
+        <evaluatedBy rdf:resource="https://purl.archive.org/cope#F1-Score"/>
+        <hasExplanation rdf:resource="https://purl.archive.org/cope#Explanation5"/>
+        <includes rdf:resource="https://purl.archive.org/cope#SmokingStatus"/>
+        <trainedOn rdf:resource="https://purl.archive.org/cope#Dataset005"/>
+        <usesApproach rdf:resource="https://purl.archive.org/cope#RandomForest+XGBoost"/>
+        <hasAIModelName>TPOT-optimized ensemble model</hasAIModelName>
         <rdfs:label>TPOT-optimized ensemble model</rdfs:label>
     </owl:NamedIndividual>
     
@@ -2398,10 +2776,11 @@
 
     <!-- https://purl.archive.org/cope#UncontrolledCellGrowth -->
 
+
     <owl:NamedIndividual rdf:about="https://purl.archive.org/cope#UncontrolledCellGrowth">
         <rdf:type rdf:resource="https://purl.archive.org/cope#DiseaseCharacteristic"/>
-        <COPE:getSymptom rdf:resource="https://purl.archive.org/cope#AbuBakar"/>
-        <COPE:hasDiseaseCharacteristicName>Uncontrolled Cell Growth</COPE:hasDiseaseCharacteristicName>
+        <getSymptom rdf:resource="https://purl.archive.org/cope#AbuBakar"/>
+        <hasDiseaseCharacteristicName>Uncontrolled Cell Growth</hasDiseaseCharacteristicName>
         <rdfs:label>Uncontrolled Cell Growth</rdfs:label>
     </owl:NamedIndividual>
     
@@ -2409,9 +2788,10 @@
 
     <!-- https://purl.archive.org/cope#VerifiedTrajectoryPhase -->
 
+
     <owl:NamedIndividual rdf:about="https://purl.archive.org/cope#VerifiedTrajectoryPhase">
         <rdf:type rdf:resource="https://purl.archive.org/cope#TrajectoryPhase"/>
-        <COPE:hasTrajectoryPhaseName>Verified</COPE:hasTrajectoryPhaseName>
+        <hasTrajectoryPhaseName>Verified</hasTrajectoryPhaseName>
         <rdfs:label>Verified</rdfs:label>
     </owl:NamedIndividual>
     
@@ -2419,11 +2799,12 @@
 
     <!-- https://purl.archive.org/cope#WearableDevice -->
 
+
     <owl:NamedIndividual rdf:about="https://purl.archive.org/cope#WearableDevice">
         <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_001236"/>
-        <COPE:hasMeasurementUnit rdf:resource="https://purl.archive.org/cope#cm"/>
-        <COPE:hasMeasurementUnit rdf:resource="https://purl.archive.org/cope#kg"/>
-        <COPE:hasDeviceName>Wearable Device</COPE:hasDeviceName>
+        <hasMeasurementUnit rdf:resource="https://purl.archive.org/cope#cm"/>
+        <hasMeasurementUnit rdf:resource="https://purl.archive.org/cope#kg"/>
+        <hasDeviceName>Wearable Device</hasDeviceName>
         <rdfs:label>Wearable Device</rdfs:label>
     </owl:NamedIndividual>
     
@@ -2431,11 +2812,12 @@
 
     <!-- https://purl.archive.org/cope#WeightMeasurementSource -->
 
+
     <owl:NamedIndividual rdf:about="https://purl.archive.org/cope#WeightMeasurementSource">
         <rdf:type rdf:resource="https://purl.archive.org/cope#ObservationSource"/>
-        <COPE:includes rdf:resource="https://purl.archive.org/cope#WearableDevice"/>
-        <COPE:triggers rdf:resource="https://purl.archive.org/cope#BMIObservationEvent"/>
-        <COPE:hasObservationSourceName>Weight Measurement Source</COPE:hasObservationSourceName>
+        <includes rdf:resource="https://purl.archive.org/cope#WearableDevice"/>
+        <triggers rdf:resource="https://purl.archive.org/cope#BMIObservationEvent"/>
+        <hasObservationSourceName>Weight Measurement Source</hasObservationSourceName>
         <rdfs:label>Weight Measurement Source</rdfs:label>
     </owl:NamedIndividual>
     
@@ -2443,9 +2825,10 @@
 
     <!-- https://purl.archive.org/cope#burstsPerMin -->
 
+
     <owl:NamedIndividual rdf:about="https://purl.archive.org/cope#burstsPerMin">
         <rdf:type rdf:resource="https://purl.archive.org/cope#MeasurementUnit"/>
-        <COPE:hasMeasurementUnitName>bursts/min</COPE:hasMeasurementUnitName>
+        <hasMeasurementUnitName>bursts/min</hasMeasurementUnitName>
         <rdfs:label>bursts/min</rdfs:label>
     </owl:NamedIndividual>
     
@@ -2453,9 +2836,10 @@
 
     <!-- https://purl.archive.org/cope#cm -->
 
+
     <owl:NamedIndividual rdf:about="https://purl.archive.org/cope#cm">
         <rdf:type rdf:resource="https://purl.archive.org/cope#MeasurementUnit"/>
-        <COPE:hasMeasurementUnitName>cm</COPE:hasMeasurementUnitName>
+        <hasMeasurementUnitName>cm</hasMeasurementUnitName>
         <rdfs:label>cm</rdfs:label>
     </owl:NamedIndividual>
     
@@ -2463,9 +2847,10 @@
 
     <!-- https://purl.archive.org/cope#kg -->
 
+
     <owl:NamedIndividual rdf:about="https://purl.archive.org/cope#kg">
         <rdf:type rdf:resource="https://purl.archive.org/cope#MeasurementUnit"/>
-        <COPE:hasMeasurementUnitName>kg</COPE:hasMeasurementUnitName>
+        <hasMeasurementUnitName>kg</hasMeasurementUnitName>
         <rdfs:label>kg</rdfs:label>
     </owl:NamedIndividual>
     
@@ -2473,9 +2858,10 @@
 
     <!-- https://purl.archive.org/cope#mV -->
 
+
     <owl:NamedIndividual rdf:about="https://purl.archive.org/cope#mV">
         <rdf:type rdf:resource="https://purl.archive.org/cope#MeasurementUnit"/>
-        <COPE:hasMeasurementUnitName>mV</COPE:hasMeasurementUnitName>
+        <hasMeasurementUnitName>mV</hasMeasurementUnitName>
         <rdfs:label>mV</rdfs:label>
     </owl:NamedIndividual>
     
@@ -2483,8 +2869,9 @@
 
     <!-- https://purl.archive.org/cope#mmHg -->
 
+
     <owl:NamedIndividual rdf:about="https://purl.archive.org/cope#mmHg">
-        <COPE:hasMeasurementUnitName>mmHg</COPE:hasMeasurementUnitName>
+        <hasMeasurementUnitName>mmHg</hasMeasurementUnitName>
         <rdfs:label>mmHg</rdfs:label>
     </owl:NamedIndividual>
     
@@ -2492,9 +2879,10 @@
 
     <!-- https://purl.archive.org/cope#RandomForest+XGBoost -->
 
+
     <owl:NamedIndividual rdf:about="https://purl.archive.org/cope#RandomForest+XGBoost">
         <rdf:type rdf:resource="https://purl.archive.org/cope#ModellingApproach"/>
-        <COPE:hasModellingApproachName>Random Forest + XGBoost</COPE:hasModellingApproachName>
+        <hasModellingApproachName>Random Forest + XGBoost</hasModellingApproachName>
         <rdfs:label>Random Forest + XGBoost</rdfs:label>
     </owl:NamedIndividual>
     
@@ -2502,9 +2890,10 @@
 
     <!-- https://purl.archive.org/cope#mmol/L -->
 
+
     <owl:NamedIndividual rdf:about="https://purl.archive.org/cope#mmol/L">
         <rdf:type rdf:resource="https://purl.archive.org/cope#MeasurementUnit"/>
-        <COPE:hasMeasurementUnitName>mmol/L</COPE:hasMeasurementUnitName>
+        <hasMeasurementUnitName>mmol/L</hasMeasurementUnitName>
         <rdfs:label>mmol/L</rdfs:label>
     </owl:NamedIndividual>
     
@@ -2518,6 +2907,7 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+
     <rdf:Description rdf:about="https://purl.archive.org/cope#hasParticipationRank">
         <rdfs:comment>Representative of a specific level of inclination towards being a part of.</rdfs:comment>
     </rdf:Description>
@@ -2525,5 +2915,6 @@
 
 
 
-<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
 

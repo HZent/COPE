@@ -23,16 +23,38 @@
         <span></span>
       </div>
       <div class="nav-links" id="nav-links">
-        <a href="#abstract">Abstract</a>
+        <!-- <a href="#abstract">Abstract</a> -->
         <a href="#introduction">Introduction</a>
         <a href="#ontology">Ontology</a>
         <a href="#competency-questions">Competency Questions</a>
-        <a href="#class-definition">Class Definitions</a>
+        <a href="#class-definition">Class/Property Definitions</a>
       </div>
     </nav>
     <div class="container">
-      <h1>COPE: Chronic Observation and Progression Events Ontology</h1>
-      <div id="abstract">
+      <h1 style="text-align: center; font-size: 2em; font-weight: bold; margin: 30px 0; font-family: 'Segoe UI', sans-serif;">
+        COPE: Chronic Observation and Progression Events Ontology
+      </h1>
+
+        <div style="max-width: 900px; margin: 0 auto; font-family: 'Segoe UI', sans-serif; font-size: 1em; line-height: 1.5; text-align: center;">
+          <p>
+            <strong>Asara Senaratne</strong><sup>1*</sup>,
+            <strong>Oshani Seneviratne</strong><sup>2</sup>,
+            <strong>Hon Zent Lim</strong><sup>1</sup>,
+            <strong>Leelanga Seneviratne</strong><sup>3</sup>
+          </p>
+        
+          <p>
+            <sup>1</sup>College of Science and Engineering, Flinders University, South Australia<br>
+            <sup>2</sup>Department of Computer Science, Rensselaer Polytechnic Institute, New York<br>
+            <sup>3</sup>Faculty of Information Technology, University of Moratuwa, Sri Lanka
+          </p>
+        
+          <p>
+            *Corresponding author: <a href="mailto:asara.senaratne@flinders.edu.au">asara.senaratne@flinders.edu.au</a>
+          </p>
+        </div>
+      
+      <!-- <div id="abstract">
         <h2>Abstract</h2>
         <p>
           Artificial Intelligence (AI) and Machine Learning (ML) are
@@ -62,15 +84,23 @@
           exemplar queries and use cases, offering it as a reusable resource for
           advancing the integration of AI in chronic disease care.
         </p>
-      </div>
+      </div> -->
       <div id="introduction">
         <h2>Introduction</h2>
         <p>
-          The Chronic Observation and Progression Events (COPE) Ontology is a structured, semantic framework designed to represent and reason about long-term health data with a focus on chronic disease progression. COPE offers a machine-actionable way to capture the nuanced, context-rich characteristics of individuals ranging from biological and behavioral traits to environmental and psychographic factors, alongside key events such as symptoms, risk factors, interventions, and disease outcomes.
-Developed as an evolving and extensible ontology, COPE supports the integration of diverse health-related data sources to facilitate research, AI-based analysis, and clinical decision-making. A future direction of COPE is to be used to model digital twins of individuals for the simulation and monitoring of health trajectories, enabling proactive and personalized healthcare approaches.
-COPE also includes support for describing datasets, AI models, and scholarly outputs, enabling its application not only in health analytics but also in reproducible research and knowledge sharing.
-We invite researchers, developers, and clinicians to explore the ontology, contribute to its development, and apply it in advancing chronic disease modelling and person-centred care.
+
+          The <a href="https://purl.archive.org/cope#"> Chronic Observation and Progression Events (COPE) Ontology </a> is a structured, 
+          semantic framework designed to represent and reason about long-term health data with a focus on chronic disease progression. 
+          COPE offers a machine-actionable way to capture the nuanced, context-rich characteristics of individuals ranging from biological 
+          and behavioral traits to environmental and psychographic factors, alongside key events such as symptoms, risk factors, interventions, and disease outcomes.
+          Developed as an evolving and extensible ontology, COPE supports the integration of diverse health-related data sources to facilitate research, AI-based analysis, 
+          and clinical decision-making. A future direction of COPE is to be used to model digital twins of individuals for the simulation and monitoring of 
+          <a href="https://extravaganza.gallery/dhw25/exhibits/88ed8446-8931-44e7-b702-c45416995f37" target="new">health trajectories</a>, enabling proactive and personalized healthcare approaches. COPE also includes support for describing datasets, AI models, and 
+          scholarly outputs, enabling its application not only in health analytics but also in reproducible research and knowledge sharing. We invite researchers, 
+          developers, and clinicians to explore the ontology, contribute to its development, and apply it in advancing chronic disease modelling and person-centred care.
+
         </p>
+        
       </div>
       <div id="ontology">
         <h2>Ontology</h2>
@@ -94,7 +124,7 @@ We invite researchers, developers, and clinicians to explore the ontology, contr
             </div>
             <div class="sparql-container" style="display: none">
               <textarea class="sparqlBox" readonly rows="1">
-PREFIX COPE: <http://www.semanticweb.org/user/ontologies/2025/3/cope#>
+PREFIX COPE: <https://purl.archive.org/cope#>
 PREFIX sio: <http://semanticscience.org/resource/>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
@@ -149,7 +179,7 @@ ORDER BY DESC(?patient_count)
             </div>
             <div class="sparql-container" style="display: none">
               <textarea class="sparqlBox" readonly rows="1">
-PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX xsd: <https://purl.archive.org/cope#>
 PREFIX COPE: <http://www.semanticweb.org/user/ontologies/2025/3/cope#>
 PREFIX sio: <http://semanticscience.org/resource/>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -204,7 +234,7 @@ ORDER BY DESC(?patient_count)
             </div>
             <div class="sparql-container" style="display: none">
               <textarea class="sparqlBox" readonly rows="1">
-PREFIX COPE: <http://www.semanticweb.org/user/ontologies/2025/3/cope#>
+PREFIX COPE: <https://purl.archive.org/cope#>
 PREFIX sio:  <http://semanticscience.org/resource/>
 PREFIX xsd:  <http://www.w3.org/2001/XMLSchema#>
 
@@ -237,7 +267,7 @@ SELECT DISTINCT ?person ?disease WHERE {
             </div>
             <div class="sparql-container" style="display: none">
               <textarea class="sparqlBox" readonly rows="1">
-PREFIX COPE: <http://www.semanticweb.org/user/ontologies/2025/3/cope#>
+PREFIX COPE: <https://purl.archive.org/cope#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
 SELECT DISTINCT ?RiskFactor WHERE {
@@ -269,7 +299,7 @@ ORDER BY ?RiskFactor
             </div>
             <div class="sparql-container" style="display: none">
               <textarea class="sparqlBox" readonly rows="1">
-PREFIX COPE: <http://www.semanticweb.org/user/ontologies/2025/3/cope#>
+PREFIX COPE: <https://purl.archive.org/cope#>
 PREFIX sio: <http://semanticscience.org/resource/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
@@ -312,7 +342,7 @@ ORDER BY ?diseaseName ?diseaseOutcomeName ?symptomName
             </div>
             <div class="sparql-container" style="display: none">
               <textarea class="sparqlBox" readonly rows="1">
-PREFIX COPE: <http://www.semanticweb.org/user/ontologies/2025/3/cope#>
+PREFIX COPE: <https://purl.archive.org/cope#>
 
 SELECT ?AI_ML_Technique (STR(COUNT(?model)) AS ?Usage_Count) WHERE {
   ?model COPE:usesApproach ?AI_ML_Technique .
@@ -339,7 +369,7 @@ ORDER BY DESC(?Usage_Count)
             </div>
             <div class="sparql-container" style="display: none">
               <textarea class="sparqlBox" readonly rows="1">
-PREFIX COPE: <http://www.semanticweb.org/user/ontologies/2025/3/cope#>
+PREFIX COPE: <https://purl.archive.org/cope#>
 PREFIX sio: <http://semanticscience.org/resource/>
 
 SELECT DISTINCT ?AIModel ?disease (GROUP_CONCAT(DISTINCT ?inputName; separator=", ") AS ?InputDataNatures)
@@ -380,7 +410,7 @@ GROUP BY ?AIModel ?disease
             </div>
             <div class="sparql-container" style="display: none">
               <textarea class="sparqlBox" readonly rows="1">
-PREFIX COPE: <http://www.semanticweb.org/user/ontologies/2025/3/cope#>
+PREFIX COPE: <https://purl.archive.org/cope#>
 PREFIX sio: <http://semanticscience.org/resource/>
 
 SELECT DISTINCT ?article WHERE {
@@ -415,7 +445,7 @@ SELECT DISTINCT ?article WHERE {
             </div>
             <div class="sparql-container" style="display: none">
               <textarea class="sparqlBox" readonly rows="1">
-PREFIX COPE: <http://www.semanticweb.org/user/ontologies/2025/3/cope#>
+PREFIX COPE: <https://purl.archive.org/cope#>
 PREFIX sio: <http://semanticscience.org/resource/>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 
@@ -452,7 +482,7 @@ ORDER BY DESC(?count)
             </div>
             <div class="sparql-container" style="display: none">
               <textarea class="sparqlBox" readonly rows="1">
-PREFIX COPE: <http://www.semanticweb.org/user/ontologies/2025/3/cope#>
+PREFIX COPE: <https://purl.archive.org/cope#>
 PREFIX sio: <http://semanticscience.org/resource/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -478,192 +508,450 @@ ORDER BY DESC(?usageCount)
               <iframe class="iframeBox" src="results/query10.html"></iframe>
             </div>
           </li>
+
+<li>
+           Which trajectory does the person participate in at a specific observation event? 
+            <img
+              class="competency-questions-img"
+              src="images/out-12.png"
+              alt=""
+            />
+            <div class="query-button-container">
+              <button class="toggle-query-btn">Show SPARQL</button>
+            </div>
+            <div class="sparql-container" style="display: none">
+              <textarea class="sparqlBox" readonly rows="1">
+PREFIX COPE: <https://purl.archive.org/cope#>
+PREFIX sio: <http://semanticscience.org/resource/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+SELECT ?modellingApproach (STR(COUNT(DISTINCT ?model)) AS ?usageCount) WHERE {
+  COPE:Hypertension a sio:SIO_010299 .
+
+  ?riskFactor COPE:contributesTo COPE:Hypertension ;
+              COPE:observedBy ?obsSource .
+
+  ?dataset sio:SIO_000253 ?obsSource ;
+           rdfs:label ?datasetLabel .
+
+  ?model rdf:type COPE:AIModel ;
+         COPE:trainedOn ?dataset ;
+         COPE:usesApproach ?modellingApproach .
+}
+GROUP BY ?modellingApproach
+ORDER BY DESC(?usageCount)
+    </textarea
+              >
+              <p id="answerLabel">Example Answer:</p>
+              <iframe class="iframeBox" src="results/query11.html"></iframe>
+            </div>
+          </li>
+
+<li>
+          Which disease are the symptoms observed in within the current participating trajectory? 
+            <img
+              class="competency-questions-img"
+              src="images/out-13.png"
+              alt=""
+            />
+            <div class="query-button-container">
+              <button class="toggle-query-btn">Show SPARQL</button>
+            </div>
+            <div class="sparql-container" style="display: none">
+              <textarea class="sparqlBox" readonly rows="1">
+PREFIX COPE: <https://purl.archive.org/cope#>
+PREFIX sio: <http://semanticscience.org/resource/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+SELECT ?modellingApproach (STR(COUNT(DISTINCT ?model)) AS ?usageCount) WHERE {
+  COPE:Hypertension a sio:SIO_010299 .
+
+  ?riskFactor COPE:contributesTo COPE:Hypertension ;
+              COPE:observedBy ?obsSource .
+
+  ?dataset sio:SIO_000253 ?obsSource ;
+           rdfs:label ?datasetLabel .
+
+  ?model rdf:type COPE:AIModel ;
+         COPE:trainedOn ?dataset ;
+         COPE:usesApproach ?modellingApproach .
+}
+GROUP BY ?modellingApproach
+ORDER BY DESC(?usageCount)
+    </textarea
+              >
+              <p id="answerLabel">Example Answer:</p>
+              <iframe class="iframeBox" src="results/query12.html"></iframe>
+            </div>
+          </li>
+          
         </ol>
       </div>
       <div id="class-definition">
-        <h2>Class Definitions</h2>
-        <table class="class-definition-table">
-          <th>Class</th>
-          <th>Definition</th>
-          <th>IRI</th>
-          <tr>
-            <td>Person</td>
-            <td>
-              A person is an object that has certain capacities or attributes
-              constituting personhood.
-            </td>
-            <td>http://semanticscience.org/resource/SIO_000498</td>
-          </tr>
-          <tr>
-            <td>Disease</td>
-            <td>
-              Disease is the outward manifestation of one or more disorders
-            </td>
-            <td>http://semanticscience.org/resource/SIO_010299</td>
-          </tr>
-          <tr>
-            <td>Research Article</td>
-            <td>
-              Research article is a published research source for a specific
-              health context.
-            </td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>AI Technique</td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>Symptom</td>
-            <td>
-              Symptom is a variation (range or a threshold) of a measurement
-              that could functionally associated with a specific disease.
-            </td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>Person Characteristic</td>
-            <td>
-              Personal characteristic is a collection of personal aspects that
-              describe the profile of a person.
-            </td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>Health Trajectory</td>
-            <td>
-              A trajectory is a collection of sequentially linked temporal
-              observer events that belong to a specific person and share the
-              same membership.
-            </td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>Risk Factor</td>
-            <td>
-              Risk factor is a condition of a personal charactoristic that
-              recognizes a plausible disease.
-            </td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>Observation Source</td>
-            <td>
-              Observation source is a manifestation of an anchor that collates a
-              variety of measurements.
-            </td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>Measurement Unit</td>
-            <td>
-              Measurement unit is a set of variations observed for a purpose.
-              E.g. ECG
-            </td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>Trajectory Phase</td>
-            <td>
-              Trajectory phase is a lifecycle stage of a trajectory. {predicted,
-              verified, remission}
-            </td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>Participation Rank</td>
-            <td>
-              Participation rank is a numerical representation indicating the
-              unitary distance of a trajectory from the participation. [0,n]
-              where 0 represents the current trajectory.
-            </td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>Observation Event</td>
-            <td>
-              An observation event is a temporal trigger for processing
-              information.
-            </td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>Disease Characteristics</td>
-            <td>
-              Disease characteristic is a collection of disease aspects that
-              describe the profile of a disease.
-            </td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>Disease Outcome</td>
-            <td>
-              Disease outcome is a specific resulting state that a person is
-              forced to be in.
-            </td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>Cycle of Deconditioning</td>
-            <td>
-              Cycle of deconditioning is the stages of changes that occur in a
-              person's body due to prolonged inactivity.
-            </td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>Performance Metric</td>
-            <td>
-              A performance metric is the collection of quantifiable
-              measurements that validates the performance of a model.
-            </td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>Input Data Source</td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>Explanation</td>
-            <td>
-              Explanation is the associated reasoning of the used AI model.
-            </td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>Modelling Approach</td>
-            <td>
-              Modeling Approach is the utilized machine learning approach for a
-              given Artificial Intelligence model.
-            </td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>Device</td>
-            <td>
-              A data collection device is a device that collects information
-              about one or more objects
-            </td>
-            <td>http://semanticscience.org/resource/SIO_001236</td>
-          </tr>
-          <tr>
-            <td>Intervention</td>
-            <td>
-              A medical intervention is a medical procedure to treat (to cure or
-              alleviate) a health condition
-            </td>
-            <td>http://semanticscience.org/resource/SIO_001398</td>
-          </tr>
-          <tr>
-            <td>Dataset</td>
-            <td>A dataset is a data item that is a collection of data items</td>
-            <td>http://semanticscience.org/resource/SIO_000089</td>
-          </tr>
-        </table>
-      </div>
-    </div>
+        <h2>Class/Property Definitions</h2>
+          <table class="class-definition-table">
+            <thead>
+              <tr>
+                <th>Class/Property</th>
+                <th>Definition</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Person</td>
+                <td>
+                  A person is an object that has certain capacities or attributes constituting personhood.
+                  <br />
+                  <a href="http://semanticscience.org/resource/SIO_000498" target="_blank">
+                    http://semanticscience.org/resource/SIO_000498
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td>Disease</td>
+                <td>
+                  Disease is the outward manifestation of one or more disorders.
+                  <br />
+                  <a href="http://semanticscience.org/resource/SIO_010299" target="_blank">
+                    http://semanticscience.org/resource/SIO_010299
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td>Research Article</td>
+                <td>
+                  Research article is a published research source for a specific health context.
+                </td>
+              </tr>
+              <tr>
+                <td>AI Model</td>
+                <td>Represents any artificial intelligence or machine learning model developed or applied for tasks such as disease prediction, health trajectory modelling, symptom classification, or intervention recommendation. This class captures both traditional ML models and advanced AI architectures used in the context of chronic disease analysis.</td>
+              </tr>
+              <tr>
+                <td>Symptom</td>
+                <td>
+                  Symptom is a variation (range or a threshold) of a measurement that could functionally be associated with a specific disease.
+                </td>
+              </tr>
+              <tr>
+                <td>Person Characteristic</td>
+                <td>
+                  Personal characteristic is a collection of personal aspects that describe the profile of a person.
+                </td>
+              </tr>
+              <tr>
+                <td>Health Trajectory</td>
+                <td>
+                  A trajectory is a collection of sequentially linked temporal observer events that belong to a specific person and share the same membership.
+                </td>
+              </tr>
+              <tr>
+                <td>Risk Factor</td>
+                <td>
+                  Risk factor is a condition of a personal characteristic that recognizes a plausible disease.
+                </td>
+              </tr>
+              <tr>
+                <td>Observation Source</td>
+                <td>
+                  Observation source is a manifestation of an anchor that collates a variety of measurements.
+                </td>
+              </tr>
+              <tr>
+                <td>Measurement Unit</td>
+                <td>
+                  Measurement unit is a set of variations observed for a purpose. E.g. ECG
+                </td>
+              </tr>
+              <tr>
+                <td>Trajectory Phase</td>
+                <td>
+                  Trajectory phase is a lifecycle stage of a trajectory. {predicted, verified, remission}
+                </td>
+              </tr>
+              <tr>
+                <td>Participation Rank</td>
+                <td>
+                  Participation rank is a numerical representation indicating the unitary distance of a trajectory from the participation. [0,n] where 0 represents the current trajectory.
+                </td>
+              </tr>
+              <tr>
+                <td>Observation Event</td>
+                <td>
+                  An observation event is a temporal trigger for processing information.
+                </td>
+              </tr>
+              <tr>
+                <td>Disease Characteristics</td>
+                <td>
+                  Disease characteristic is a collection of disease aspects that describe the profile of a disease.
+                </td>
+              </tr>
+              <tr>
+                <td>Disease Outcome</td>
+                <td>
+                  Disease outcome is a specific resulting state that a person is forced to be in.
+                </td>
+              </tr>
+              <tr>
+                <td>Cycle of Deconditioning</td>
+                <td>
+                  Cycle of deconditioning is the stages of changes that occur in a person's body due to prolonged inactivity.
+                </td>
+              </tr>
+              <tr>
+                <td>Performance Metric</td>
+                <td>
+                  A performance metric is the collection of quantifiable measurements that validates the performance of a model.
+                </td>
+              </tr>
+              <tr>
+                <td>Input Data Source</td>
+                <td>Represents any source from which data is acquired and used as input for AI/ML models, clinical analysis, or health trajectory modelling. This includes structured, semi-structured, and unstructured data originating from clinical systems, personal monitoring devices, surveys, or external biomedical repositories.</td>
+              </tr>
+              <tr>
+                <td>Explanation</td>
+                <td>
+                  Explanation is the associated reasoning of the used AI model.
+                </td>
+              </tr>
+              <tr>
+                <td>Modelling Approach</td>
+                <td>
+                  Modeling Approach is the utilized machine learning approach for a given Artificial Intelligence model.
+                </td>
+              </tr>
+              <tr>
+                <td>Device</td>
+                <td>
+                  A data collection device is a device that collects information about one or more objects.
+                  <br />
+                  <a href="http://semanticscience.org/resource/SIO_001236" target="_blank">
+                    http://semanticscience.org/resource/SIO_001236
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td>Intervention</td>
+                <td>
+                  A medical intervention is a medical procedure to treat (to cure or alleviate) a health condition.
+                  <br />
+                  <a href="http://semanticscience.org/resource/SIO_001398" target="_blank">
+                    http://semanticscience.org/resource/SIO_001398
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td>Dataset</td>
+                <td>
+                  A dataset is a data item that is a collection of data items.
+                  <br />
+                  <a href="http://semanticscience.org/resource/SIO_000089" target="_blank">
+                    http://semanticscience.org/resource/SIO_000089
+                  </a>
+                </td>
+              </tr>
+
+              <tr>
+                <td>hasCharacteristic</td>
+                <td>
+                  An instance constitutes an instance of an aspect of a person.
+                </td>
+              </tr>
+              <tr>
+                <td>hasRiskFactor</td>
+                <td>
+                  An instance constitutes an instance of riskFactor.
+                </td>
+              </tr>
+              <tr>
+                <td>showsSymptom</td>
+                <td>
+                  States are explained in an instance of an object.
+                </td>
+              </tr>
+              <tr>
+                <td>includes</td>
+                <td>
+                  An instance of a source comprises of an instance that captures variations.
+                </td>
+              </tr>
+              <tr>
+                <td>hasMeasurementUnit</td>
+                <td>
+                  Collecting information is described in a unit.
+                </td>
+              </tr>
+              <tr>
+                <td>hasHealthTrajectory</td>
+                <td>
+                  Progression is only associated with single instance of the other.
+                </td>
+              </tr>
+              <tr>
+                <td>isPairedWith</td>
+                <td>
+                  Occurrence of which is exclusively associated with a specific entity.
+                </td>
+              </tr>
+              <tr>
+                <td>observedIn</td>
+                <td>
+                  Indicates the event or context in which a variation, measurement, or phenomenon is observed.
+                </td>
+              </tr>
+              <tr>
+                <td>observedBy</td>
+                <td>
+                  Is accessible through a collated set of variations.
+                </td>
+              </tr>
+              <tr>
+                <td>targets</td>
+                <td>
+                  Intends to minimize or to eliminate an existence of another.
+                </td>
+              </tr>
+              <tr>
+                <td>triggers</td>
+                <td>
+                  A change in one causes an initiation of another.
+                </td>
+              </tr>
+              <tr>
+                <td>hasSource</td>
+                <td>
+                  has source is a relation between an entity and another entity from which it stems from.
+                  <br />
+                  <a href="http://semanticscience.org/resource/SIO_000253" target="_blank">
+                    http://semanticscience.org/resource/SIO_000253
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td>trainedOn</td>
+                <td>
+                  The estimates are drawn from a collection of variations.
+                </td>
+              </tr>
+              <tr>
+                <td>usesApproach</td>
+                <td>
+                  A model instance adopts a specific instance of an approach.
+                </td>
+              </tr>
+              <tr>
+                <td>hasExplanation</td>
+                <td>
+                  A model instance extends an instance of an explanation.
+                </td>
+              </tr>
+              <tr>
+                <td>evaluatedBy</td>
+                <td>
+                  One's validity is determined by the specifications of the other.
+                </td>
+              </tr>
+              <tr>
+                <td>Proposes</td>
+                <td>
+                  One entity is suggestive of an application of another.
+                </td>
+              </tr>
+              <tr>
+                <td>describes</td>
+                <td>
+                  describes is a relation between one entity and another entity that it provides a description (detailed account of).
+                  <br />
+                  <a href="http://semanticscience.org/resource/SIO_000563" target="_blank">
+                    http://semanticscience.org/resource/SIO_000563
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td>uses</td>
+                <td>
+                  One refers another in the process of existence.
+                </td>
+              </tr>
+              <tr>
+                <td>appliedTo</td>
+                <td>
+                  Denotes the entity or condition on which an intervention, model, or approach is applied.
+                </td>
+              </tr>
+              <tr>
+                <td>appliedIn</td>
+                <td>
+                  The administering process is initiated in a specific temporal observation event.
+                </td>
+              </tr>
+              <tr>
+                <td>isIdentifiedBy</td>
+                <td>
+                  isIdentifiedBy is a reflective relationship in which the variation of one is reflected in the other.
+                </td>
+              </tr>
+              <tr>
+                <td>precedes</td>
+                <td>
+                  A transitive, temporal relation in which one process precedes (has occurred earlier than) another process.
+                  <br />
+                  <a href="http://semanticscience.org/resource/SIO_000248" target="_blank">
+                    http://semanticscience.org/resource/SIO_000248
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td>isMemberOf</td>
+                <td>
+                  is member of is a mereological relation between an item and a collection.
+                  <br />
+                  <a href="http://semanticscience.org/resource/SIO_000095" target="_blank">
+                    http://semanticscience.org/resource/SIO_000095
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td>hasPhase</td>
+                <td>
+                  Is indicative of a distinct state of a progressive entity.
+                </td>
+              </tr>
+              <tr>
+                <td>pullsFromTrajectory</td>
+                <td>
+                  The progression in place is shifted from a progress of a similar instance.
+                </td>
+              </tr>
+              <tr>
+                <td>hasParticipationRank</td>
+                <td>
+                  Representative of a specific level of inclination towards being a part of.
+                </td>
+              </tr>
+              <tr>
+                <td>isPartOf</td>
+                <td>
+                  is part of is a transitive, reflexive and anti-symmetric mereological relation between a whole and itself or a part and its whole.
+                  <br />
+                  <a href="http://semanticscience.org/resource/SIO_000068" target="_blank">
+                    http://semanticscience.org/resource/SIO_000068
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td>leadsTo</td>
+                <td>
+                  Resulting state or a collection of states due to a change in disease entity.
+                </td>
+              </tr>
+    </tbody>
+  </table>
+</div>
+
     <script>
       function autoExpandTextarea(box) {
         box.style.height = "auto";

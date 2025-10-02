@@ -1,0 +1,713 @@
+<h2 id="overv" class="list">COPE - Comprehensive Ontology for Patient Health Trajectories and AI Models: Overview <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<span class="markdown">
+This ontology has the following classes and properties.</span>
+<h4>Classes</h4>
+<ul xmlns:widoco="https://w3id.org/widoco/vocab#"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    class="hlist">
+   <li>
+      <a href="#AIModel" title="https://purl.archive.org/cope#AIModel">AI Model</a>
+   </li>
+   <li>
+      <a href="#Behavioral" title="https://purl.archive.org/cope#Behavioral">
+         <span>Behavioral</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Biological" title="https://purl.archive.org/cope#Biological">
+         <span>Biological</span>
+      </a>
+   </li>
+   <li>
+      <a href="#CycleOfDeconditioning"
+         title="https://purl.archive.org/cope#CycleOfDeconditioning">Cycle of Deconditioning</a>
+   </li>
+   <li>
+      <a href="#Demographic" title="https://purl.archive.org/cope#Demographic">
+         <span>Demographic</span>
+      </a>
+   </li>
+   <li>
+      <a href="#DiseaseCharacteristic"
+         title="https://purl.archive.org/cope#DiseaseCharacteristic">
+         <span>Disease Characteristic</span>
+      </a>
+   </li>
+   <li>
+      <a href="#DiseaseOutcome" title="https://purl.archive.org/cope#DiseaseOutcome">
+         <span>Disease Outcome</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Explanation" title="https://purl.archive.org/cope#Explanation">
+         <span>Explanation</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Geographical" title="https://purl.archive.org/cope#Geographical">
+         <span>Geographical</span>
+      </a>
+   </li>
+   <li>
+      <a href="#HealthTrajectory" title="https://purl.archive.org/cope#HealthTrajectory">Health Trajectory</a>
+   </li>
+   <li>
+      <a href="#MeasurementUnit" title="https://purl.archive.org/cope#MeasurementUnit">
+         <span>Measurement Unit</span>
+      </a>
+   </li>
+   <li>
+      <a href="#ModellingApproach" title="https://purl.archive.org/cope#ModellingApproach">
+         <span>Modelling Approach</span>
+      </a>
+   </li>
+   <li>
+      <a href="#ObservationEvent" title="https://purl.archive.org/cope#ObservationEvent">
+         <span>Observation Event</span>
+      </a>
+   </li>
+   <li>
+      <a href="#ObservationSource" title="https://purl.archive.org/cope#ObservationSource">
+         <span>Observation Source</span>
+      </a>
+   </li>
+   <li>
+      <a href="#ParticipationRank" title="https://purl.archive.org/cope#ParticipationRank">
+         <span>Participation Rank</span>
+      </a>
+   </li>
+   <li>
+      <a href="#PerformanceMetric" title="https://purl.archive.org/cope#PerformanceMetric">
+         <span>Performance Metric</span>
+      </a>
+   </li>
+   <li>
+      <a href="#PersonCharacteristic"
+         title="https://purl.archive.org/cope#PersonCharacteristic">
+         <span>Person Characteristic</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Pharmalogical" title="https://purl.archive.org/cope#Pharmalogical">
+         <span>Pharmalogical</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Preventive" title="https://purl.archive.org/cope#Preventive">
+         <span>Preventive</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Psychographic" title="https://purl.archive.org/cope#Psychographic">
+         <span>Psychographic</span>
+      </a>
+   </li>
+   <li>
+      <a href="#ResearchArticle" title="https://purl.archive.org/cope#ResearchArticle">
+         <span>Research Article</span>
+      </a>
+   </li>
+   <li>
+      <a href="#RiskFactor" title="https://purl.archive.org/cope#RiskFactor">Risk Factor</a>
+   </li>
+   <li>
+      <a href="#Symptom" title="https://purl.archive.org/cope#Symptom">Symptom</a>
+   </li>
+   <li>
+      <a href="#Therapeutic" title="https://purl.archive.org/cope#Therapeutic">
+         <span>Therapeutic</span>
+      </a>
+   </li>
+   <li>
+      <a href="#TrajectoryPhase" title="https://purl.archive.org/cope#TrajectoryPhase">
+         <span>Trajectory Phase</span>
+      </a>
+   </li>
+</ul><h4>Object Properties</h4><ul xmlns:widoco="https://w3id.org/widoco/vocab#"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    class="hlist">
+   <li>
+      <a href="#appliedIn" title="https://purl.archive.org/cope#appliedIn">
+         <span>applied In</span>
+      </a>
+   </li>
+   <li>
+      <a href="#appliedTo" title="https://purl.archive.org/cope#appliedTo">
+         <span>applied To</span>
+      </a>
+   </li>
+   <li>
+      <a href="#contributesTo" title="https://purl.archive.org/cope#contributesTo">
+         <span>contributes To</span>
+      </a>
+   </li>
+   <li>
+      <a href="#evaluatedBy" title="https://purl.archive.org/cope#evaluatedBy">evaluated by</a>
+   </li>
+   <li>
+      <a href="#getSymptom" title="https://purl.archive.org/cope#getSymptom">
+         <span>get Symptom</span>
+      </a>
+   </li>
+   <li>
+      <a href="#hasCharacteristic" title="https://purl.archive.org/cope#hasCharacteristic">
+         <span>has Characteristic</span>
+      </a>
+   </li>
+   <li>
+      <a href="#hasExplanation" title="https://purl.archive.org/cope#hasExplanation">
+         <span>has Explanation</span>
+      </a>
+   </li>
+   <li>
+      <a href="#hasHealthTrajectory"
+         title="https://purl.archive.org/cope#hasHealthTrajectory">has health trajectory</a>
+   </li>
+   <li>
+      <a href="#hasMeasurementUnit" title="https://purl.archive.org/cope#hasMeasurementUnit">
+         <span>has Measurement Unit</span>
+      </a>
+   </li>
+   <li>
+      <a href="#hasParticipationRank"
+         title="https://purl.archive.org/cope#hasParticipationRank">
+         <span>has Participation Rank</span>
+      </a>
+   </li>
+   <li>
+      <a href="#hasPhase" title="https://purl.archive.org/cope#hasPhase">
+         <span>has Phase</span>
+      </a>
+   </li>
+   <li>
+      <a href="#hasRiskFactor" title="https://purl.archive.org/cope#hasRiskFactor">
+         <span>has Risk Factor</span>
+      </a>
+   </li>
+   <li>
+      <a href="#includes" title="https://purl.archive.org/cope#includes">
+         <span>includes</span>
+      </a>
+   </li>
+   <li>
+      <a href="#isIdentifiedBy" title="https://purl.archive.org/cope#isIdentifiedBy">
+         <span>is Identified By</span>
+      </a>
+   </li>
+   <li>
+      <a href="#isPairedWith" title="https://purl.archive.org/cope#isPairedWith">
+         <span>is Paired With</span>
+      </a>
+   </li>
+   <li>
+      <a href="#leadsTo" title="https://purl.archive.org/cope#leadsTo">
+         <span>leads To</span>
+      </a>
+   </li>
+   <li>
+      <a href="#observedBy" title="https://purl.archive.org/cope#observedBy">
+         <span>observed By</span>
+      </a>
+   </li>
+   <li>
+      <a href="#observedIn" title="https://purl.archive.org/cope#observedIn">
+         <span>observed In</span>
+      </a>
+   </li>
+   <li>
+      <a href="#proposes" title="https://purl.archive.org/cope#proposes">
+         <span>proposes</span>
+      </a>
+   </li>
+   <li>
+      <a href="#pullsFromTrajectory"
+         title="https://purl.archive.org/cope#pullsFromTrajectory">
+         <span>pulls From Trajectory</span>
+      </a>
+   </li>
+   <li>
+      <a href="#targets" title="https://purl.archive.org/cope#targets">
+         <span>targets</span>
+      </a>
+   </li>
+   <li>
+      <a href="#trainedOn" title="https://purl.archive.org/cope#trainedOn">
+         <span>trained On</span>
+      </a>
+   </li>
+   <li>
+      <a href="#triggers" title="https://purl.archive.org/cope#triggers">
+         <span>triggers</span>
+      </a>
+   </li>
+   <li>
+      <a href="#uses" title="https://purl.archive.org/cope#uses">
+         <span>uses</span>
+      </a>
+   </li>
+   <li>
+      <a href="#usesApproach" title="https://purl.archive.org/cope#usesApproach">
+         <span>uses Approach</span>
+      </a>
+   </li>
+</ul><h4>Data Properties</h4><ul xmlns:widoco="https://w3id.org/widoco/vocab#"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    class="hlist">
+   <li>
+      <a href="#hasEndDate" title="https://purl.archive.org/cope#hasEndDate">
+         <span>has End Date</span>
+      </a>
+   </li>
+   <li>
+      <a href="#hasResearchArticleName"
+         title="https://purl.archive.org/cope#hasResearchArticleName">
+         <span>has Research Article Name</span>
+      </a>
+   </li>
+   <li>
+      <a href="#hasStartDate" title="https://purl.archive.org/cope#hasStartDate">has start date</a>
+   </li>
+   <li>
+      <a href="#observationTimestamp"
+         title="https://purl.archive.org/cope#observationTimestamp">observation timestamp</a>
+   </li>
+   <li>
+      <a href="#observationValue" title="https://purl.archive.org/cope#observationValue">
+         <span>observation Value</span>
+      </a>
+   </li>
+   <li>
+      <a href="#hasDatasetName" title="https://purl.archive.org/cope#hasDatasetName">Unhealthy lifestyle &gt; Blood pressure increase &gt; Increases cardiovascular risk &gt; Reduced physical activity &gt; Decline in lifestyle quality &gt; Disease</a>
+   </li>
+</ul><h4>Named Individuals</h4><ul xmlns:widoco="https://w3id.org/widoco/vocab#"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    class="hlist">
+   <li>
+      <a href="#AbnormalCSNA" title="https://purl.archive.org/cope#AbnormalCSNA">Abnormal CSNA</a>
+   </li>
+   <li>
+      <a href="#AbnormalCSNAObservationEvent"
+         title="https://purl.archive.org/cope#AbnormalCSNAObservationEvent">Abnormal CSNA Observation Event</a>
+   </li>
+   <li>
+      <a href="#AbuBakar" title="https://purl.archive.org/cope#AbuBakar">Abu Bakar</a>
+   </li>
+   <li>
+      <a href="#BehavAbuBakar" title="https://purl.archive.org/cope#BehavAbuBakar">Abu Bakar Behavioral</a>
+   </li>
+   <li>
+      <a href="#BioAbuBakar" title="https://purl.archive.org/cope#BioAbuBakar">Abu Bakar Biological</a>
+   </li>
+   <li>
+      <a href="#DemoAbuBakar" title="https://purl.archive.org/cope#DemoAbuBakar">Abu Bakar Demographic</a>
+   </li>
+   <li>
+      <a href="#GeoAbuBakar" title="https://purl.archive.org/cope#GeoAbuBakar">Abu Bakar Geographical</a>
+   </li>
+   <li>
+      <a href="#PsychAbuBakar" title="https://purl.archive.org/cope#PsychAbuBakar">Abu Bakar Psychographic</a>
+   </li>
+   <li>
+      <a href="#AnthonyPatel" title="https://purl.archive.org/cope#AnthonyPatel">Anthony Patel</a>
+   </li>
+   <li>
+      <a href="#BehavAnthonyPatel" title="https://purl.archive.org/cope#BehavAnthonyPatel">Anthony Patel Behavioral</a>
+   </li>
+   <li>
+      <a href="#BioAnthonyPatel" title="https://purl.archive.org/cope#BioAnthonyPatel">Anthony Patel Biological</a>
+   </li>
+   <li>
+      <a href="#DemoAnthonyPatel" title="https://purl.archive.org/cope#DemoAnthonyPatel">Anthony Patel Demographic</a>
+   </li>
+   <li>
+      <a href="#GeoAnthonyPatel" title="https://purl.archive.org/cope#GeoAnthonyPatel">Anthony Patel Geographical</a>
+   </li>
+   <li>
+      <a href="#PsychAnthonyPatel" title="https://purl.archive.org/cope#PsychAnthonyPatel">Anthony Patel Psychographic</a>
+   </li>
+   <li>
+      <a href="#AIHAD" title="https://purl.archive.org/cope#AIHAD">Artificial Intelligence-based Hybrid Anomaly Detection (AIHAD)</a>
+   </li>
+   <li>
+      <a href="#Atherosclerosis" title="https://purl.archive.org/cope#Atherosclerosis">Atherosclerosis</a>
+   </li>
+   <li>
+      <a href="#ResearchArticle3" title="https://purl.archive.org/cope#ResearchArticle3">Bahrami, P., Tanbakuchi, D., Afzalaghaee, M., Ghayour-Mobarhan, M., &amp; Esmaily, H. (2024). Development of risk models for early detection and prediction of chronic kidney disease in clinical settings. Scientific Reports, 14(1), 32136–10. https://doi.org/10.1038/s41598-024-83973-5</a>
+   </li>
+   <li>
+      <a href="#BloodGlucoseMeters"
+         title="https://purl.archive.org/cope#BloodGlucoseMeters">Blood Glucose Meters</a>
+   </li>
+   <li>
+      <a href="#Dataset004" title="https://purl.archive.org/cope#Dataset004">Blood Pressure Data for Disease Prediction from Kaggle</a>
+   </li>
+   <li>
+      <a href="#BloodPressureMonitor"
+         title="https://purl.archive.org/cope#BloodPressureMonitor">Blood Pressure Monitor</a>
+   </li>
+   <li>
+      <a href="#BloodSugar" title="https://purl.archive.org/cope#BloodSugar">Blood Sugar</a>
+   </li>
+   <li>
+      <a href="#BloodSugarLevel" title="https://purl.archive.org/cope#BloodSugarLevel">Blood Sugar Level</a>
+   </li>
+   <li>
+      <a href="#BloodSugarLevelSource"
+         title="https://purl.archive.org/cope#BloodSugarLevelSource">Blood Sugar Level Source</a>
+   </li>
+   <li>
+      <a href="#BlurredVision" title="https://purl.archive.org/cope#BlurredVision">Blurred Vision</a>
+   </li>
+   <li>
+      <a href="#BMIObservationEvent"
+         title="https://purl.archive.org/cope#BMIObservationEvent">BMI Observation Event</a>
+   </li>
+   <li>
+      <a href="#BMI" title="https://purl.archive.org/cope#BMI">Body Mass Index</a>
+   </li>
+   <li>
+      <a href="#burstsPerMin" title="https://purl.archive.org/cope#burstsPerMin">bursts/min</a>
+   </li>
+   <li>
+      <a href="#CADHealthTrajectory"
+         title="https://purl.archive.org/cope#CADHealthTrajectory">CAD Health Trajectory</a>
+   </li>
+   <li>
+      <a href="#CardiacRehab" title="https://purl.archive.org/cope#CardiacRehab">Cardiac Exercise Rehabilitation</a>
+   </li>
+   <li>
+      <a href="#ChestPain" title="https://purl.archive.org/cope#ChestPain">Chest Pain</a>
+   </li>
+   <li>
+      <a href="#ChronicKidneyDisease"
+         title="https://purl.archive.org/cope#ChronicKidneyDisease">Chronic Kidney Disease</a>
+   </li>
+   <li>
+      <a href="#CKDHealthTrajectory"
+         title="https://purl.archive.org/cope#CKDHealthTrajectory">Chronic Kidney Disease Health Trajectory</a>
+   </li>
+   <li>
+      <a href="#cm" title="https://purl.archive.org/cope#cm">cm</a>
+   </li>
+   <li>
+      <a href="#CNN" title="https://purl.archive.org/cope#CNN">Convolutional Neural Networks (CNN)</a>
+   </li>
+   <li>
+      <a href="#CAD" title="https://purl.archive.org/cope#CAD">Coronary Artery Disease (CAD)</a>
+   </li>
+   <li>
+      <a href="#CSNASignalFeatureSource"
+         title="https://purl.archive.org/cope#CSNASignalFeatureSource">CSNA Signal Feature Source</a>
+   </li>
+   <li>
+      <a href="#DiabetesHealthTrajectory"
+         title="https://purl.archive.org/cope#DiabetesHealthTrajectory">Diabetes Health Trajectory</a>
+   </li>
+   <li>
+      <a href="#DiabetesMellitus" title="https://purl.archive.org/cope#DiabetesMellitus">Diabetes Mellitus</a>
+   </li>
+   <li>
+      <a href="#DiastolicBP" title="https://purl.archive.org/cope#DiastolicBP">Diastolic BP</a>
+   </li>
+   <li>
+      <a href="#DiastolicBPSource" title="https://purl.archive.org/cope#DiastolicBPSource">Diastolic BP Source</a>
+   </li>
+   <li>
+      <a href="#DietEducation" title="https://purl.archive.org/cope#DietEducation">Diet Education</a>
+   </li>
+   <li>
+      <a href="#ECGAnomalies" title="https://purl.archive.org/cope#ECGAnomalies">ECG Anomalies</a>
+   </li>
+   <li>
+      <a href="#COD2" title="https://purl.archive.org/cope#COD2">ECG Anomalies Detected &gt; Decreased Cardiac Efficiency &gt; Reduced Physical Activity &gt; Increased Hypertension &gt; Chronic Disease Progression</a>
+   </li>
+   <li>
+      <a href="#ECGAnomalyObservationEvent"
+         title="https://purl.archive.org/cope#ECGAnomalyObservationEvent">ECG Anomaly Observation Event</a>
+   </li>
+   <li>
+      <a href="#ECGMachine" title="https://purl.archive.org/cope#ECGMachine">ECG Machine</a>
+   </li>
+   <li>
+      <a href="#ECGSignalFeatureSource"
+         title="https://purl.archive.org/cope#ECGSignalFeatureSource">ECG Signal Feature Source</a>
+   </li>
+   <li>
+      <a href="#ECGSignalFeatures" title="https://purl.archive.org/cope#ECGSignalFeatures">ECG signal features</a>
+   </li>
+   <li>
+      <a href="#Dataset005" title="https://purl.archive.org/cope#Dataset005">Electronic Medical Records and chest CT scans</a>
+   </li>
+   <li>
+      <a href="#ElevatedBloodPressure"
+         title="https://purl.archive.org/cope#ElevatedBloodPressure">Elevated Blood Pressure</a>
+   </li>
+   <li>
+      <a href="#EnsembleLearning" title="https://purl.archive.org/cope#EnsembleLearning">Ensemble Learning</a>
+   </li>
+   <li>
+      <a href="#ExplainableAI" title="https://purl.archive.org/cope#ExplainableAI">Explainable AI</a>
+   </li>
+   <li>
+      <a href="#Explanation001" title="https://purl.archive.org/cope#Explanation001">Explanation 1 here</a>
+   </li>
+   <li>
+      <a href="#Explanation002" title="https://purl.archive.org/cope#Explanation002">Explanation 2 here</a>
+   </li>
+   <li>
+      <a href="#Explanation003" title="https://purl.archive.org/cope#Explanation003">Explanation 3 here</a>
+   </li>
+   <li>
+      <a href="#Explanation004" title="https://purl.archive.org/cope#Explanation004">Explanation 4 here</a>
+   </li>
+   <li>
+      <a href="#Explanation5" title="https://purl.archive.org/cope#Explanation5">Explanation 5 here</a>
+   </li>
+   <li>
+      <a href="#F1-Score" title="https://purl.archive.org/cope#F1-Score">F1-Score</a>
+   </li>
+   <li>
+      <a href="#FastingBloodGlucoseObservationEvent"
+         title="https://purl.archive.org/cope#FastingBloodGlucoseObservationEvent">Fasting Blood Glucose Observation Event</a>
+   </li>
+   <li>
+      <a href="#Fatigue" title="https://purl.archive.org/cope#Fatigue">Fatigue</a>
+   </li>
+   <li>
+      <a href="#Dataset002" title="https://purl.archive.org/cope#Dataset002">Fully labeled STAFF III and PTBD databases, which contain the 12-lead wideband raw recordings non-invasively acquired from 260 subjects</a>
+   </li>
+   <li>
+      <a href="#ResearchArticle001"
+         title="https://purl.archive.org/cope#ResearchArticle001">Ginting, J., Suci, T., Ginting, C., &amp; Girsang, E. (2023). Early detection system of risk factors for diabetes mellitus type 2 utilization of machine learning-random forest. Journal of Family &amp; Community Medicine, 30(3), 171–179. https://doi.org/10.4103/jfcm.jfcm_33_23</a>
+   </li>
+   <li>
+      <a href="#HeightMeasurementSource"
+         title="https://purl.archive.org/cope#HeightMeasurementSource">Height Measurement Source</a>
+   </li>
+   <li>
+      <a href="#Hypertension" title="https://purl.archive.org/cope#Hypertension">Hypertension</a>
+   </li>
+   <li>
+      <a href="#HypertensionHealthTrajectory"
+         title="https://purl.archive.org/cope#HypertensionHealthTrajectory">Hypertension Health Trajectory</a>
+   </li>
+   <li>
+      <a href="#HypertensionObservationEvent"
+         title="https://purl.archive.org/cope#HypertensionObservationEvent">Hypertension Observation Event</a>
+   </li>
+   <li>
+      <a href="#HighCVDRisk" title="https://purl.archive.org/cope#HighCVDRisk">Increase Cardiovascular Events</a>
+   </li>
+   <li>
+      <a href="#IncreasePhysicalActivity"
+         title="https://purl.archive.org/cope#IncreasePhysicalActivity">Increase Physical Activity</a>
+   </li>
+   <li>
+      <a href="#COD3" title="https://purl.archive.org/cope#COD3">Increased Hypertension &gt; Reduced Kidney Function &gt; Reduced Physical Activity &gt; Metabolic Deterioration &gt; Worsen CKD &gt; Chronic Disease Progression</a>
+   </li>
+   <li>
+      <a href="#InsulinDysfunction"
+         title="https://purl.archive.org/cope#InsulinDysfunction">Insulin Dysfunction</a>
+   </li>
+   <li>
+      <a href="#ResearchArticle4" title="https://purl.archive.org/cope#ResearchArticle4">Islam, H., Iqbal, Md. S., &amp; Hossain, M. M. (2025). Blood pressure abnormality detection and interpretation utilizing explainable artificial intelligence. Intelligent Medicine, 5(1), 54–65. https://doi.org/10.1016/j.imed.2024.09.005</a>
+   </li>
+   <li>
+      <a href="#JohnPaul" title="https://purl.archive.org/cope#JohnPaul">John Paul</a>
+   </li>
+   <li>
+      <a href="#BehavJohnPaul" title="https://purl.archive.org/cope#BehavJohnPaul">John Paul Behavioral</a>
+   </li>
+   <li>
+      <a href="#BioJohnPaul" title="https://purl.archive.org/cope#BioJohnPaul">John Paul Biological</a>
+   </li>
+   <li>
+      <a href="#DemoJohnPaul" title="https://purl.archive.org/cope#DemoJohnPaul">John Paul Demographic</a>
+   </li>
+   <li>
+      <a href="#GeoJohnPaul" title="https://purl.archive.org/cope#GeoJohnPaul">John Paul Geographical</a>
+   </li>
+   <li>
+      <a href="#PsychJohnPaul" title="https://purl.archive.org/cope#PsychJohnPaul">John Paul Psychographic</a>
+   </li>
+   <li>
+      <a href="#kg" title="https://purl.archive.org/cope#kg">kg</a>
+   </li>
+   <li>
+      <a href="#KidneyFailure" title="https://purl.archive.org/cope#KidneyFailure">Kidney Failure</a>
+   </li>
+   <li>
+      <a href="#ResearchArticle5" title="https://purl.archive.org/cope#ResearchArticle5">Levi, M., Lazebnik, T., Kushnir, S., Yosef, N., &amp; Shlomi, D. (2024). Machine learning computational model to predict lung cancer using electronic medical records. Cancer Epidemiology, 92, 102631-. https://doi.org/10.1016/j.canep.2024.102631</a>
+   </li>
+   <li>
+      <a href="#LifestyleImprovementPlan"
+         title="https://purl.archive.org/cope#LifestyleImprovementPlan">Lifestyle Improvement Plan</a>
+   </li>
+   <li>
+      <a href="#LungCancer" title="https://purl.archive.org/cope#LungCancer">Lung Cancer</a>
+   </li>
+   <li>
+      <a href="#LungCancerHealthTrajectory"
+         title="https://purl.archive.org/cope#LungCancerHealthTrajectory">Lung Cancer Health Trajectory</a>
+   </li>
+   <li>
+      <a href="#MaryJane" title="https://purl.archive.org/cope#MaryJane">Mary Jane</a>
+   </li>
+   <li>
+      <a href="#BehavMaryJane" title="https://purl.archive.org/cope#BehavMaryJane">Mary Jane Behavioral</a>
+   </li>
+   <li>
+      <a href="#BioMaryJane" title="https://purl.archive.org/cope#BioMaryJane">Mary Jane Biological</a>
+   </li>
+   <li>
+      <a href="#DemoMaryJane" title="https://purl.archive.org/cope#DemoMaryJane">Mary Jane Demographic</a>
+   </li>
+   <li>
+      <a href="#GeoMaryJane" title="https://purl.archive.org/cope#GeoMaryJane">Mary Jane Geographical</a>
+   </li>
+   <li>
+      <a href="#PsychMaryJane" title="https://purl.archive.org/cope#PsychMaryJane">Mary Jane Psychographic</a>
+   </li>
+   <li>
+      <a href="#Dataset003" title="https://purl.archive.org/cope#Dataset003">Mashhad Stroke and Heart Atherosclerotic Disorders (MASHAD) Study database</a>
+   </li>
+   <li>
+      <a href="#MSE" title="https://purl.archive.org/cope#MSE">Mean Squared Error (MSE)</a>
+   </li>
+   <li>
+      <a href="#MicroneurographySystem"
+         title="https://purl.archive.org/cope#MicroneurographySystem">Microneurography System</a>
+   </li>
+   <li>
+      <a href="#mmHg" title="https://purl.archive.org/cope#mmHg">mmHg</a>
+   </li>
+   <li>
+      <a href="#mmol/L" title="https://purl.archive.org/cope#mmol/L">mmol/L</a>
+   </li>
+   <li>
+      <a href="#MobileAppSurvey" title="https://purl.archive.org/cope#MobileAppSurvey">Mobile App Survey</a>
+   </li>
+   <li>
+      <a href="#mV" title="https://purl.archive.org/cope#mV">mV</a>
+   </li>
+   <li>
+      <a href="#Obesity" title="https://purl.archive.org/cope#Obesity">Obesity</a>
+   </li>
+   <li>
+      <a href="#COD4" title="https://purl.archive.org/cope#COD4">Obesity &gt; Insulin Resistance and Inflammation &gt; Type 2 Diabetes &gt; Hypertension &gt; Vascular Dysfunction &gt; Reduction in Exercise &gt; Worsen Insuin Resistance and Inflammation &gt; Worsen Hypertension</a>
+   </li>
+   <li>
+      <a href="#PersistentCough" title="https://purl.archive.org/cope#PersistentCough">Persistent Cough</a>
+   </li>
+   <li>
+      <a href="#PredictedTrajectoryPhase"
+         title="https://purl.archive.org/cope#PredictedTrajectoryPhase">Predicted</a>
+   </li>
+   <li>
+      <a href="#QuitSmoking" title="https://purl.archive.org/cope#QuitSmoking">Quit Smoking</a>
+   </li>
+   <li>
+      <a href="#RandomForest" title="https://purl.archive.org/cope#RandomForest">Random Forest</a>
+   </li>
+   <li>
+      <a href="#RandomForest XGBoost"
+         title="https://purl.archive.org/cope#RandomForest+XGBoost">Random Forest + XGBoost</a>
+   </li>
+   <li>
+      <a href="#ReducedGFR" title="https://purl.archive.org/cope#ReducedGFR">Reduced Glomerular Filtration Rate</a>
+   </li>
+   <li>
+      <a href="#RespiratoryFailure"
+         title="https://purl.archive.org/cope#RespiratoryFailure">Respiratory Failure</a>
+   </li>
+   <li>
+      <a href="#RFEnhancedFeedForwardNetwork"
+         title="https://purl.archive.org/cope#RFEnhancedFeedForwardNetwork">RF Enhanced Feed Forward Network</a>
+   </li>
+   <li>
+      <a href="#Dataset001" title="https://purl.archive.org/cope#Dataset001">Secondary surveillance data from Puskesmas Johar Baru, Jakarta, in 2019, 2020, and 2021</a>
+   </li>
+   <li>
+      <a href="#SelfReportedSmokingSource"
+         title="https://purl.archive.org/cope#SelfReportedSmokingSource">Self Reported Smoking Source</a>
+   </li>
+   <li>
+      <a href="#Self-ManagementEducation"
+         title="https://purl.archive.org/cope#Self-ManagementEducation">Self-Management Education</a>
+   </li>
+   <li>
+      <a href="#ShortnessOfBreath" title="https://purl.archive.org/cope#ShortnessOfBreath">Shortness Of Breath</a>
+   </li>
+   <li>
+      <a href="#SlowWoundHealing" title="https://purl.archive.org/cope#SlowWoundHealing">Slow Wound Healing</a>
+   </li>
+   <li>
+      <a href="#Smoking" title="https://purl.archive.org/cope#Smoking">Smoking</a>
+   </li>
+   <li>
+      <a href="#COD5" title="https://purl.archive.org/cope#COD5">Smoking &gt; Lung Damage &gt; Fatigue &gt; Reduced Exercise &gt; Increased Disability &gt; Further Reduction in Exercise &gt; Cycle Worsen</a>
+   </li>
+   <li>
+      <a href="#SmokingCessationPrograms"
+         title="https://purl.archive.org/cope#SmokingCessationPrograms">Smoking Cessation Programs</a>
+   </li>
+   <li>
+      <a href="#SmokingStatus" title="https://purl.archive.org/cope#SmokingStatus">Smoking Status</a>
+   </li>
+   <li>
+      <a href="#SmokingStatusCategory"
+         title="https://purl.archive.org/cope#SmokingStatusCategory">Smoking Status Category</a>
+   </li>
+   <li>
+      <a href="#SmokingStatusObservationEvent"
+         title="https://purl.archive.org/cope#SmokingStatusObservationEvent">Smoking Status Observation Event</a>
+   </li>
+   <li>
+      <a href="#StackedEnsembleWithSHAP"
+         title="https://purl.archive.org/cope#StackedEnsembleWithSHAP">Stacked Ensemble + SHAP</a>
+   </li>
+   <li>
+      <a href="#StatinTreatment" title="https://purl.archive.org/cope#StatinTreatment">Statin Treatment</a>
+   </li>
+   <li>
+      <a href="#Stroke" title="https://purl.archive.org/cope#Stroke">Stroke</a>
+   </li>
+   <li>
+      <a href="#SuddenCardiacDeath"
+         title="https://purl.archive.org/cope#SuddenCardiacDeath">Sudden Cardiac Death</a>
+   </li>
+   <li>
+      <a href="#Swelling" title="https://purl.archive.org/cope#Swelling">Swelling</a>
+   </li>
+   <li>
+      <a href="#SystolicBP" title="https://purl.archive.org/cope#SystolicBP">Systolic BP</a>
+   </li>
+   <li>
+      <a href="#SystolicBPSource" title="https://purl.archive.org/cope#SystolicBPSource">Systolic BP Source</a>
+   </li>
+   <li>
+      <a href="#ResearchArticle2" title="https://purl.archive.org/cope#ResearchArticle2">Terzi, M. B., &amp; Arikan, O. (2024). Machine learning based hybrid anomaly detection technique for automatic diagnosis of cardiovascular diseases using cardiac sympathetic nerve activity and electrocardiogram. Biomedizinische Technik, 69(1), 79–109. https://doi.org/10.1515/bmt-2022-0406</a>
+   </li>
+   <li>
+      <a href="#TPOT-optimized_ensemble_model"
+         title="https://purl.archive.org/cope#TPOT-optimized_ensemble_model">TPOT-optimized ensemble model</a>
+   </li>
+   <li>
+      <a href="#UncontrolledCellGrowth"
+         title="https://purl.archive.org/cope#UncontrolledCellGrowth">Uncontrolled Cell Growth</a>
+   </li>
+   <li>
+      <a href="#COD1" title="https://purl.archive.org/cope#COD1">Unhealthy lifestyle &gt; Blood pressure increase &gt; Increases cardiovascular risk &gt; Reduced physical activity &gt; Decline in lifestyle quality &gt; Disease progression</a>
+   </li>
+   <li>
+      <a href="#VerifiedTrajectoryPhase"
+         title="https://purl.archive.org/cope#VerifiedTrajectoryPhase">Verified</a>
+   </li>
+   <li>
+      <a href="#WearableDevice" title="https://purl.archive.org/cope#WearableDevice">Wearable Device</a>
+   </li>
+   <li>
+      <a href="#WeightMeasurementSource"
+         title="https://purl.archive.org/cope#WeightMeasurementSource">Weight Measurement Source</a>
+   </li>
+</ul>
